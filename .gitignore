@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Logs
+*.log
+
+# Flask instance folder (contains config, uploads, etc.)
+instance/
+.webassets-cache
+
+# SQLite database (if using default Flask/SQLAlchemy setup)
+*.sqlite3
+*.db
+*.sqlite3-journal
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+.hypothesis/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# Jupyter notebooks (if used for experiments)
+.ipynb_checkpoints/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype
+.pytype/
+
+# Cython debug
+cython_debug/
