@@ -309,4 +309,27 @@ class ConnectionMonitor:
                     'network_test': {'success': network_test},
                     'plc_test': plc_test
                 },
-                'recommendations': self._generate_connection
+                'recommendations': self._generate_connection_recommendations()
+            }  # ✅ FIXED: Added missing closing brace here
+            
+        except Exception as e:
+            logger.error(f"Error generating connection report: {e}")
+            return {'error': str(e)}
+    
+    def _generate_connection_recommendations(self) -> list:
+        """Generate connection improvement recommendations"""
+        recommendations = []
+        
+        if not self.connection_status['network_connected']:
+            recommendations.append("Check network connectivity - unable to reach external hosts")
+        
+        if not self.connection_status['esp_connected']:
+            recommendations.append("ESP/Arduino not responding - check power and WiFi connection")
+        
+        if not self.connection_status['plc_connected']:
+            recommendations.append("PLC connection issues - verify IP address and MC protocol settings")
+        
+        if len(self.connection_status.get('connection_errors', [])) > 5:
+            recommendations.append("High number of connection errors - consider network infrastructure review")
+        
+        return recommendations

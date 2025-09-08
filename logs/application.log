@@ -1,0 +1,1544 @@
+2025-09-09 02:22:31,602 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:22:31,602 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:22:31,603 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:22:31,603 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:22:31,604 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:22:31,604 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:22:31.604605
+2025-09-09 02:22:31,605 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:22:31,608 - __main__ - INFO - [main.py:51] - Creating Flask application...
+2025-09-09 02:22:31,613 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:22:31,613 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:22:31,615 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:22:31,970 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,971 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,972 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,973 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,975 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:31,979 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,980 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,982 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,982 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,984 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:31,989 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,990 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,991 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,992 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,993 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:31,994 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:31,995 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:31,999 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,001 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,003 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,003 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,005 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:32,015 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,016 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,018 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:32,019 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,019 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,020 - __main__ - INFO - [main.py:55] - Initializing hardware managers...
+2025-09-09 02:22:32,021 - __main__ - INFO - [main.py:59] - Initializing services...
+2025-09-09 02:22:32,022 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,024 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,025 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:32,026 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,027 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,027 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:22:32,028 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,029 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,031 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:32,031 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:32,032 - __main__ - INFO - [main.py:72] - Starting background services...
+2025-09-09 02:22:32,033 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:22:32,033 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:22:32,034 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:22:32,034 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:22:32,034 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:22:32,036 - __main__ - INFO - [main.py:77] - Testing initial connections...
+2025-09-09 02:22:32,038 - __main__ - INFO - [main.py:94] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:22:33,988 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:33,988 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,003 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,019 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,019 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,034 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,050 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:34,136 - __main__ - INFO - [main.py:80] - System initialization completed successfully
+2025-09-09 02:22:34,137 - __main__ - INFO - [main.py:222] - Running system health check...
+2025-09-09 02:22:34,139 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:34,140 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:34,143 - database.manager - ERROR - [manager.py:373] - Error getting system statistics: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT count(sensor_data.id) AS count_1 
+FROM sensor_data]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:34,208 - __main__ - INFO - [main.py:265] - Health check completed: 2/3 components healthy
+2025-09-09 02:22:39,597 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:22:39,598 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:22:39,598 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:22:39,599 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:22:39,599 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:22:39,600 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:22:39.600586
+2025-09-09 02:22:39,600 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:22:39,601 - __main__ - INFO - [main.py:51] - Creating Flask application...
+2025-09-09 02:22:39,605 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:22:39,606 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:22:39,606 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:22:39,704 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,705 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,708 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,709 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,714 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,734 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,734 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,736 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,736 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,739 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,757 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,758 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,760 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,761 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,764 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,767 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,768 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,784 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,785 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,786 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,787 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,789 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,825 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,827 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,829 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,831 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,833 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,834 - __main__ - INFO - [main.py:55] - Initializing hardware managers...
+2025-09-09 02:22:39,835 - __main__ - INFO - [main.py:59] - Initializing services...
+2025-09-09 02:22:39,837 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,838 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,842 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:22:39,844 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,845 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,846 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:22:39,848 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,849 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,850 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:39,851 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:39,852 - __main__ - INFO - [main.py:72] - Starting background services...
+2025-09-09 02:22:39,852 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:22:39,853 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:22:39,854 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:22:39,855 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:22:39,855 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:22:39,858 - __main__ - INFO - [main.py:77] - Testing initial connections...
+2025-09-09 02:22:39,858 - __main__ - INFO - [main.py:94] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:22:41,724 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,740 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,771 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,801 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,832 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,848 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,863 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:41,953 - __main__ - INFO - [main.py:80] - System initialization completed successfully
+2025-09-09 02:22:41,954 - __main__ - INFO - [main.py:222] - Running system health check...
+2025-09-09 02:22:41,957 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by 
+FROM system_configuration 
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:41,958 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:22:41,962 - database.manager - ERROR - [manager.py:373] - Error getting system statistics: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT count(sensor_data.id) AS count_1 
+FROM sensor_data]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:42,035 - __main__ - INFO - [main.py:265] - Health check completed: 2/3 components healthy
+2025-09-09 02:22:48,739 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:48,755 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:48,786 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:48,817 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:48,847 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:48,863 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:54,721 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.716051',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:54,747 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.746354',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:54,779 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.777070',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:54,792 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.791748',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:54,840 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.838397',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:54,855 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:52:54.853047',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:22:55,758 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:55,773 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:55,803 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:55,834 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:55,866 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:22:55,881 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,765 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,781 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,813 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,843 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,874 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:02,889 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,741 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.738093',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,758 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.755429',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,769 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,785 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,787 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.785587',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,803 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.801117',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,817 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,849 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,850 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.848775',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,864 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:09.863699',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:09,879 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:09,910 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,785 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,817 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,847 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,879 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,910 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:16,941 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:21,952 - __main__ - INFO - [main.py:155] - Received SIGINT (Ctrl+C) - initiating graceful shutdown...
+2025-09-09 02:23:21,954 - system.shutdown - INFO - [logger.py:107] - ============================================================
+2025-09-09 02:23:21,955 - system.shutdown - INFO - [logger.py:108] - AI Motor Monitoring System shutting down
+2025-09-09 02:23:21,956 - system.shutdown - INFO - [logger.py:109] - Timestamp: 2025-09-09T02:23:21.956897
+2025-09-09 02:23:21,957 - system.shutdown - INFO - [logger.py:110] - ============================================================
+2025-09-09 02:23:21,958 - __main__ - INFO - [main.py:170] - Stopping background tasks...
+2025-09-09 02:23:21,963 - services.background_tasks - INFO - [background_tasks.py:59] - Stopping background task manager...
+2025-09-09 02:23:23,808 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:23,839 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:23,870 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:23,902 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:23,933 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:23,964 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:24,753 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.752673',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:24,770 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.767972',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:24,800 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.799590',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:24,816 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.814973',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:24,861 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.860466',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:24,877 - database.manager - ERROR - [manager.py:197] - Error retrieving recent data: (sqlite3.OperationalError) no such table: sensor_data
+[SQL: SELECT sensor_data.id, sensor_data.timestamp, sensor_data.esp_current, sensor_data.esp_voltage, sensor_data.esp_rpm, sensor_data.env_temp_c, sensor_data.env_humidity, sensor_data.env_temp_f, sensor_data.heat_index_c, sensor_data.heat_index_f, sensor_data.relay1_status, sensor_data.relay2_status, sensor_data.relay3_status, sensor_data.combined_status, sensor_data.plc_motor_temp, sensor_data.plc_motor_voltage, sensor_data.esp_connected, sensor_data.plc_connected, sensor_data.overall_health_score, sensor_data.electrical_health, sensor_data.thermal_health, sensor_data.mechanical_health, sensor_data.predictive_health, sensor_data.efficiency_score, sensor_data.power_consumption 
+FROM sensor_data 
+WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
+[parameters: ('2025-09-08 18:53:24.875967',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-09 02:23:30,825 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:30,856 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:30,888 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:30,919 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:30,951 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:30,981 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:23:31,974 - services.background_tasks - INFO - [background_tasks.py:67] - Background task manager stopped
+2025-09-09 02:23:31,974 - __main__ - INFO - [main.py:174] - Stopping connection monitor...
+2025-09-09 02:23:31,975 - services.connection_monitor - INFO - [connection_monitor.py:63] - Stopping connection monitor...
+2025-09-09 02:23:31,976 - services.connection_monitor - INFO - [connection_monitor.py:196] - Connection monitor loop ended
+2025-09-09 02:23:31,977 - services.connection_monitor - INFO - [connection_monitor.py:66] - Connection monitor stopped
+2025-09-09 02:23:31,978 - __main__ - INFO - [main.py:178] - Stopping data processor...
+2025-09-09 02:23:31,979 - services.data_processor - INFO - [data_processor.py:329] - Stopping data processor...
+2025-09-09 02:23:31,980 - __main__ - INFO - [main.py:183] - Disconnecting PLC...
+2025-09-09 02:23:31,981 - __main__ - INFO - [main.py:186] - System cleanup completed
+2025-09-09 02:34:35,849 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:34:35,850 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:34:35,850 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:34:35,851 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:34:35,851 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:34:35,851 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:34:35.851166
+2025-09-09 02:34:35,851 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:34:35,852 - __main__ - INFO - [main.py:51] - Creating Flask application...
+2025-09-09 02:34:35,853 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:34:35,853 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:34:35,854 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:34:35,932 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,936 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,938 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,942 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,947 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,949 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,953 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,955 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,956 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,959 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,961 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,963 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,965 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,973 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,974 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,977 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,978 - __main__ - INFO - [main.py:55] - Initializing hardware managers...
+2025-09-09 02:34:35,978 - __main__ - INFO - [main.py:59] - Initializing services...
+2025-09-09 02:34:35,981 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,982 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:34:35,984 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,985 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:34:35,988 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,990 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:35,990 - __main__ - INFO - [main.py:72] - Starting background services...
+2025-09-09 02:34:35,990 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:34:35,991 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:34:35,991 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:34:35,992 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:34:35,992 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:34:35,993 - __main__ - INFO - [main.py:77] - Testing initial connections...
+2025-09-09 02:34:35,993 - __main__ - INFO - [main.py:94] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:34:37,938 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,953 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,968 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,968 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,984 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,984 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:37,999 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:38,104 - __main__ - INFO - [main.py:80] - System initialization completed successfully
+2025-09-09 02:34:38,104 - __main__ - INFO - [main.py:222] - Running system health check...
+2025-09-09 02:34:38,109 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:34:38,186 - __main__ - INFO - [main.py:265] - Health check completed: 2/3 components healthy
+2025-09-09 02:34:44,954 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:44,970 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:44,986 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:44,986 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:45,001 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:45,001 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:51,983 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:51,998 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:52,014 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:52,014 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:52,030 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:52,030 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:58,999 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:59,015 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:59,030 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:59,030 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:59,046 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:34:59,046 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,023 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,038 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,054 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,054 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,069 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:06,069 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,044 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,060 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,076 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,076 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,091 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:13,091 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,063 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,079 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,094 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,094 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,110 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:20,110 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,088 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,104 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,119 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,119 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,135 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:27,135 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,118 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,133 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,149 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,149 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,164 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:34,164 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,136 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,151 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,168 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,168 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,183 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:41,184 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,150 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,166 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,182 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,182 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,198 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:48,198 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,155 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,171 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,203 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,203 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,219 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:35:55,219 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,174 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,190 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,220 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,220 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,235 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:02,236 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,192 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,207 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,239 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,239 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,254 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:09,254 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,216 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,247 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,262 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,262 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,278 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:16,279 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,229 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,261 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,277 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,277 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,292 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:23,292 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,242 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,273 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,289 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,289 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,304 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:30,304 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,269 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,299 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,315 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,315 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,330 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:37,330 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,291 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,323 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,339 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,339 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,355 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:44,355 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,308 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,338 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,354 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,354 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,370 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:51,370 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,333 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,365 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,365 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,365 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,381 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:36:58,381 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,355 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,386 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:05,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,372 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,419 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,434 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,434 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,434 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:12,434 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,431 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,462 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,462 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,462 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:19,462 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,418 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,449 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,481 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,481 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,481 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:26,481 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,430 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,462 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,492 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,492 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,492 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:33,492 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,449 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,480 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,511 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,511 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,511 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:40,511 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,460 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,491 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:47,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,480 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,510 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,542 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,542 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,542 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:37:54,542 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,502 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,534 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,565 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,565 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,565 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:01,565 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,527 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,558 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,590 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,590 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,590 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:08,590 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,549 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,580 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,612 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,612 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,612 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:15,612 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,574 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,604 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,635 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,636 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,636 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:22,636 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,585 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,631 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,662 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,662 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,662 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:29,663 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,596 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,642 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,673 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,673 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,673 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:36,673 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,605 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,666 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,697 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,697 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,697 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:43,697 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,635 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,696 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,726 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,726 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,726 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:50,726 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,654 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,716 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,747 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,747 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,747 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:38:57,747 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,671 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,749 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,780 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,780 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,780 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:04,780 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,689 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,767 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:11,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,703 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,797 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:18,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,721 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,815 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,845 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,845 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,845 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:25,845 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,747 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,840 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,870 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,870 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,870 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:32,870 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:36,015 - services.background_tasks - INFO - [background_tasks.py:183] - Executing scheduled task: connection_health_check
+2025-09-09 02:39:36,041 - services.background_tasks - INFO - [background_tasks.py:199] - Task connection_health_check completed in 0.01s
+2025-09-09 02:39:39,774 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:39,867 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:39,898 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:39,899 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:39,899 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:39,899 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,800 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,893 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,924 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,924 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,924 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:46,924 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,812 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,904 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,935 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,951 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,951 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:39:53,951 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,836 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,929 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,960 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,976 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,976 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:00,976 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:07,862 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:07,954 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:07,986 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:08,001 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:08,001 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:08,001 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:14,879 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:14,973 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:15,003 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:15,019 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:15,019 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:15,019 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:21,899 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:22,008 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:22,023 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:22,039 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:22,039 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:22,039 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:28,927 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:29,035 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:29,051 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:29,066 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:29,066 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:29,066 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:35,944 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:36,052 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:36,084 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:36,099 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:36,099 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:36,099 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:42,976 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:43,068 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:43,115 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:43,115 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:43,115 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:43,131 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:49,996 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:50,076 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:50,123 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:50,123 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:50,123 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:50,155 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,004 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,081 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,143 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,143 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,143 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:40:57,174 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,020 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,098 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,161 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,161 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,161 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:04,192 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,043 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,122 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,184 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,184 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,184 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:11,215 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,068 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,144 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,205 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,205 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,205 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:18,236 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,096 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,159 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,221 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,221 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,221 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:25,253 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,104 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,168 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,230 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,230 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,245 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:32,260 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,117 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,181 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,242 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,242 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,258 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:39,273 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,138 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,199 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,261 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,261 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,276 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:46,292 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,172 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,233 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,279 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,279 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,295 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:41:53,326 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,190 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,253 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,299 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,299 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,314 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:00,345 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,217 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,279 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,325 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,325 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,340 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:07,371 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,240 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,302 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,349 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,349 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,365 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:14,395 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,251 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,313 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,374 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,374 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,374 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:21,406 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,272 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,334 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,396 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,396 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,412 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:28,427 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:41,283 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:42:41,284 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:42:41,284 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:42:41,285 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:42:41,285 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:42:41,285 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:42:41.285596
+2025-09-09 02:42:41,286 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:42:41,286 - __main__ - INFO - [main.py:66] - Creating Flask application...
+2025-09-09 02:42:41,288 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:42:41,288 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:42:41,289 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:42:41,334 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,336 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,338 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,342 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,344 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,346 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,349 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,351 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,352 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,355 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,361 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,363 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,365 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,376 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,378 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,380 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,381 - __main__ - INFO - [main.py:82] - Initializing hardware managers...
+2025-09-09 02:42:41,382 - __main__ - INFO - [main.py:86] - Initializing services...
+2025-09-09 02:42:41,384 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,385 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:42:41,389 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,389 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:42:41,391 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,394 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:41,394 - __main__ - INFO - [main.py:99] - Starting background services...
+2025-09-09 02:42:41,394 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:42:41,395 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:42:41,396 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:42:41,396 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:42:41,396 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:42:41,397 - __main__ - INFO - [main.py:104] - Testing initial connections...
+2025-09-09 02:42:41,398 - __main__ - INFO - [main.py:121] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:42:43,345 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,360 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,360 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,376 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,392 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,392 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,408 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:43,409 - __main__ - WARNING - [main.py:137] - PLC connection failed - will retry automatically
+2025-09-09 02:42:43,482 - __main__ - INFO - [main.py:145] - Network connectivity confirmed
+2025-09-09 02:42:43,483 - __main__ - INFO - [main.py:107] - System initialization completed successfully
+2025-09-09 02:42:43,484 - __main__ - INFO - [main.py:249] - Running system health check...
+2025-09-09 02:42:43,489 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:42:43,564 - __main__ - INFO - [main.py:292] - Health check completed: 2/3 components healthy
+2025-09-09 02:42:50,358 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:50,374 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:50,374 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:50,389 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:50,406 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:50,406 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,383 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,399 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,399 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,415 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,430 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:42:57,430 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,406 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,421 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,421 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,437 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,453 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:04,453 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,430 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,445 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,445 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,461 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,476 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:11,476 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,441 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,456 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,456 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,473 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,489 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:18,489 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,463 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,479 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,479 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,494 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,510 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:25,510 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,492 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,508 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,508 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,508 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:32,523 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,510 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,525 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,525 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,525 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,541 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:39,541 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,522 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,537 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,537 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,539 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,553 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:46,553 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,535 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,550 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,550 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,550 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,566 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:43:53,566 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:04,187 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:44:04,188 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:44:04,188 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:44:04,188 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:44:04,189 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:44:04,189 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:44:04.189805
+2025-09-09 02:44:04,189 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:44:04,189 - __main__ - INFO - [main.py:66] - Creating Flask application...
+2025-09-09 02:44:04,191 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:44:04,191 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:44:04,192 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:44:04,239 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,243 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,245 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,248 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,250 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,252 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,255 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,258 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,259 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,262 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,264 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,266 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,268 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,276 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,278 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,280 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,281 - __main__ - INFO - [main.py:82] - Initializing hardware managers...
+2025-09-09 02:44:04,283 - __main__ - INFO - [main.py:86] - Initializing services...
+2025-09-09 02:44:04,285 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,286 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:04,288 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,289 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:44:04,292 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,294 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:04,294 - __main__ - INFO - [main.py:99] - Starting background services...
+2025-09-09 02:44:04,295 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:44:04,295 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:44:04,296 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:44:04,297 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:44:04,297 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:44:04,297 - __main__ - INFO - [main.py:104] - Testing initial connections...
+2025-09-09 02:44:04,298 - __main__ - INFO - [main.py:121] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:44:06,247 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,262 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,262 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,278 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,293 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,293 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,309 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:06,309 - __main__ - WARNING - [main.py:137] - PLC connection failed - will retry automatically
+2025-09-09 02:44:06,393 - __main__ - INFO - [main.py:145] - Network connectivity confirmed
+2025-09-09 02:44:06,394 - __main__ - INFO - [main.py:107] - System initialization completed successfully
+2025-09-09 02:44:06,395 - __main__ - INFO - [main.py:249] - Running system health check...
+2025-09-09 02:44:06,399 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:06,479 - __main__ - INFO - [main.py:292] - Health check completed: 2/3 components healthy
+2025-09-09 02:44:13,255 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:13,270 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:13,270 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:13,286 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:13,301 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:13,301 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,283 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,298 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,298 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,314 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,330 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:20,330 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:26,428 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:44:26,429 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:44:26,429 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:44:26,429 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:44:26,430 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:44:26,430 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:44:26.430335
+2025-09-09 02:44:26,430 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:44:26,430 - __main__ - INFO - [main.py:66] - Creating Flask application...
+2025-09-09 02:44:26,431 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:44:26,432 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:44:26,432 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:44:26,475 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,478 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,480 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,484 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,486 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,488 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,491 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,493 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,494 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,497 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,500 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,502 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,503 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,512 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,514 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,517 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,519 - __main__ - INFO - [main.py:82] - Initializing hardware managers...
+2025-09-09 02:44:26,519 - __main__ - INFO - [main.py:86] - Initializing services...
+2025-09-09 02:44:26,522 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,524 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:44:26,525 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,526 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:44:26,528 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,530 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:26,532 - __main__ - INFO - [main.py:99] - Starting background services...
+2025-09-09 02:44:26,532 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:44:26,533 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:44:26,533 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:44:26,534 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:44:26,534 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:44:26,535 - __main__ - INFO - [main.py:104] - Testing initial connections...
+2025-09-09 02:44:26,536 - __main__ - INFO - [main.py:121] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:44:28,490 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,491 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,505 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,505 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,521 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,536 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,551 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:28,552 - __main__ - WARNING - [main.py:137] - PLC connection failed - will retry automatically
+2025-09-09 02:44:28,623 - __main__ - INFO - [main.py:145] - Network connectivity confirmed
+2025-09-09 02:44:28,624 - __main__ - INFO - [main.py:107] - System initialization completed successfully
+2025-09-09 02:44:28,625 - __main__ - INFO - [main.py:249] - Running system health check...
+2025-09-09 02:44:28,629 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:44:28,702 - __main__ - INFO - [main.py:292] - Health check completed: 2/3 components healthy
+2025-09-09 02:44:35,513 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:35,513 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:35,513 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:35,529 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:35,529 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:35,544 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,532 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,532 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,532 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,548 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,548 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:42,564 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,553 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,553 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,554 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,569 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,569 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:49,584 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,576 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,576 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,576 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,591 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,591 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:44:56,605 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,591 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,591 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,591 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,606 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,606 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:03,621 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:11,211 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:45:11,211 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:45:11,212 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:45:11,212 - system.startup - INFO - [logger.py:98] - ============================================================
+2025-09-09 02:45:11,212 - system.startup - INFO - [logger.py:99] - AI Motor Monitoring System starting up (version 3.1)
+2025-09-09 02:45:11,212 - system.startup - INFO - [logger.py:100] - Timestamp: 2025-09-09T02:45:11.212148
+2025-09-09 02:45:11,213 - system.startup - INFO - [logger.py:101] - ============================================================
+2025-09-09 02:45:11,213 - __main__ - INFO - [main.py:66] - Creating Flask application...
+2025-09-09 02:45:11,215 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-09 02:45:11,215 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-09 02:45:11,215 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-09 02:45:11,258 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,261 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,262 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,266 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,269 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,271 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,275 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,277 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,279 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,281 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,284 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,286 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,288 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,297 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,298 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,300 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,302 - __main__ - INFO - [main.py:82] - Initializing hardware managers...
+2025-09-09 02:45:11,302 - __main__ - INFO - [main.py:86] - Initializing services...
+2025-09-09 02:45:11,306 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,308 - services.data_processor - INFO - [data_processor.py:189] - Background tasks started successfully
+2025-09-09 02:45:11,311 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,311 - services.background_tasks - INFO - [background_tasks.py:136] - Default scheduled tasks configured
+2025-09-09 02:45:11,314 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,316 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:11,316 - __main__ - INFO - [main.py:99] - Starting background services...
+2025-09-09 02:45:11,317 - services.background_tasks - INFO - [background_tasks.py:39] - Starting background task manager...
+2025-09-09 02:45:11,317 - services.background_tasks - INFO - [background_tasks.py:140] - Scheduler worker started
+2025-09-09 02:45:11,317 - services.background_tasks - INFO - [background_tasks.py:51] - Background task manager started successfully
+2025-09-09 02:45:11,317 - services.connection_monitor - INFO - [connection_monitor.py:172] - Connection monitor loop started
+2025-09-09 02:45:11,317 - services.connection_monitor - INFO - [connection_monitor.py:54] - Connection monitor started
+2025-09-09 02:45:11,319 - __main__ - INFO - [main.py:104] - Testing initial connections...
+2025-09-09 02:45:11,319 - __main__ - INFO - [main.py:121] - Testing PLC connection to 192.168.3.39:5007
+2025-09-09 02:45:13,275 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,276 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,291 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,291 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,307 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,322 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,322 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:13,323 - __main__ - WARNING - [main.py:137] - PLC connection failed - will retry automatically
+2025-09-09 02:45:13,413 - __main__ - INFO - [main.py:145] - Network connectivity confirmed
+2025-09-09 02:45:13,414 - __main__ - INFO - [main.py:107] - System initialization completed successfully
+2025-09-09 02:45:13,415 - __main__ - INFO - [main.py:249] - Running system health check...
+2025-09-09 02:45:13,419 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-09 02:45:13,501 - __main__ - INFO - [main.py:292] - Health check completed: 2/3 components healthy
+2025-09-09 02:45:20,302 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:20,302 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:20,317 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:20,317 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:20,333 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:20,348 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,325 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,325 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,340 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,341 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,355 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:27,371 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,345 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,345 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,361 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,361 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,377 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:34,392 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,362 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,362 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,393 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,393 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,394 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:41,408 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,368 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,368 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,416 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,416 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,416 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:48,416 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,388 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,388 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,435 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,436 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,436 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:45:55,436 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,398 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,398 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,446 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,446 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,446 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:02,446 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,422 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,422 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,467 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,467 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,467 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:09,467 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,454 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,454 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,485 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,500 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,500 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:16,500 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,471 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,471 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,502 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,517 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,517 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:23,517 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,499 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,499 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,530 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,545 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,545 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:30,545 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,518 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,518 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,549 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,564 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,564 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:37,564 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,522 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,537 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,568 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,584 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,584 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:44,584 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,540 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,555 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,585 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,601 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,601 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:51,601 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,559 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,575 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,605 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,637 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,637 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:46:58,637 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,569 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,585 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,616 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,647 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,647 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:05,647 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,592 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,607 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,639 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,670 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,670 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:12,670 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,623 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,639 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,669 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,701 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,701 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:19,701 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,645 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,660 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,690 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,722 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,722 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:26,722 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,658 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,674 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,706 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,737 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,737 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:33,737 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,678 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,678 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,724 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,755 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,755 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:40,755 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,699 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,699 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,730 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,762 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,762 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:47,762 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,705 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,720 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,751 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:47:54,798 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,726 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,742 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,772 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,819 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,819 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:01,819 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,733 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,748 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,780 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,841 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,842 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:08,842 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,745 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,760 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,792 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,855 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,855 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:15,855 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,769 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,785 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,816 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,877 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,877 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:22,877 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,797 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,812 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,844 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,907 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,907 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:29,907 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,814 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,860 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,922 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,938 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:36,938 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,829 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,845 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,877 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,938 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,954 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:43,954 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,836 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,851 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,882 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,943 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,974 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:50,974 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,850 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,866 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,897 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,959 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,990 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:48:57,990 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:04,858 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:04,873 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:04,905 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:04,984 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:05,015 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:05,015 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:11,883 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:11,898 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:11,930 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:12,008 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:12,040 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:12,041 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:18,892 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:18,923 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:18,939 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:19,017 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:19,063 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:19,063 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:25,910 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:25,941 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:25,956 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:26,048 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:26,079 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:26,095 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:32,936 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:32,967 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:32,983 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:33,075 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:33,105 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:33,121 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:39,959 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:39,991 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:40,006 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:40,084 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:40,130 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:40,145 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:46,983 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:47,015 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:47,015 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:47,094 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:47,141 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:47,156 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:53,988 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:54,034 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:54,034 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:54,111 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:54,158 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:49:54,173 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,004 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,051 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,051 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,128 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,173 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:01,189 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,031 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,078 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,078 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,155 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,200 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:08,216 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: timed out
+2025-09-09 02:50:11,325 - services.background_tasks - INFO - [background_tasks.py:183] - Executing scheduled task: connection_health_check
+2025-09-09 02:50:11,356 - services.background_tasks - INFO - [background_tasks.py:199] - Task connection_health_check completed in 0.02s

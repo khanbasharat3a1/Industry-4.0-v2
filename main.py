@@ -14,6 +14,21 @@ import time
 from datetime import datetime
 import logging
 
+# Fix Windows Unicode console encoding
+if sys.platform == 'win32':
+    # Set console to UTF-8
+    os.system('chcp 65001 >nul 2>&1')
+    
+    # Reconfigure stdout/stderr for UTF-8
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # For older Python versions
+        import codecs
+        sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer)
+        sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer)
+
 # Add project root to Python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -50,6 +65,18 @@ def initialize_system():
         # Create Flask application
         logger.info("Creating Flask application...")
         app, socketio = create_app()
+        
+        # Add missing root route for dashboard
+        @app.route('/')
+        def dashboard():
+            """Main dashboard route"""
+            return app.send_static_file('/templates/dashboard.html')
+        
+        # Add health check route
+        @app.route('/health')
+        def health_check():
+            """Health check endpoint"""
+            return {'status': 'healthy', 'timestamp': datetime.now().isoformat()}
         
         # Initialize hardware managers
         logger.info("Initializing hardware managers...")
@@ -95,19 +122,19 @@ def test_initial_connections():
         plc_connected = plc_manager.connect()
         
         if plc_connected:
-            logger.info("✅ PLC connection established successfully")
+            logger.info("PLC connection established successfully")
             
             # Test PLC functionality
             test_result = plc_manager.test_connection()
             if test_result.get('connection_test', False):
-                logger.info("✅ PLC functionality test passed")
+                logger.info("PLC functionality test passed")
                 logger.info(f"Test values: D100={test_result.get('test_values', {}).get('raw_d100', 'N/A')}, "
                            f"D102={test_result.get('test_values', {}).get('raw_d102', 'N/A')}")
             else:
-                logger.warning("⚠️ PLC functionality test failed")
+                logger.warning("PLC functionality test failed")
                 
         else:
-            logger.warning("⚠️ PLC connection failed - will retry automatically")
+            logger.warning("PLC connection failed - will retry automatically")
         
         # Update connection monitor
         connection_monitor.update_plc_status(plc_connected)
@@ -115,9 +142,9 @@ def test_initial_connections():
         # Test network connectivity
         network_ok = connection_monitor.test_network_connectivity()
         if network_ok:
-            logger.info("✅ Network connectivity confirmed")
+            logger.info("Network connectivity confirmed")
         else:
-            logger.warning("⚠️ Network connectivity issues detected")
+            logger.warning("Network connectivity issues detected")
         
     except Exception as e:
         logger.error(f"Error during initial connection tests: {e}")
