@@ -1,10 +1,10 @@
 """
-System Configuration Settings
+System Configuration Settings  
 Centralized configuration management for the AI Motor Monitoring System
 """
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional
 from dotenv import load_dotenv
 
@@ -92,16 +92,17 @@ class LoggingConfig:
 
 @dataclass
 class SystemConfig:
-    """Complete system configuration"""
-    database: DatabaseConfig = DatabaseConfig()
-    plc: PLCConfig = PLCConfig()
-    flask: FlaskConfig = FlaskConfig()
-    connection: ConnectionConfig = ConnectionConfig()
-    optimal: OptimalValues = OptimalValues()
-    thresholds: Thresholds = Thresholds()
-    logging: LoggingConfig = LoggingConfig()
+    """Complete system configuration - FIXED VERSION"""
+    # ✅ Use field(default_factory=...) for mutable defaults
+    database: DatabaseConfig = field(default_factory=DatabaseConfig)
+    plc: PLCConfig = field(default_factory=PLCConfig)
+    flask: FlaskConfig = field(default_factory=FlaskConfig)
+    connection: ConnectionConfig = field(default_factory=ConnectionConfig)
+    optimal: OptimalValues = field(default_factory=OptimalValues)
+    thresholds: Thresholds = field(default_factory=Thresholds)
+    logging: LoggingConfig = field(default_factory=LoggingConfig)
     
-    # Paths
+    # Paths and other simple defaults (these are fine as-is)
     model_path: str = 'models/'
     data_retention_days: int = 90
 
