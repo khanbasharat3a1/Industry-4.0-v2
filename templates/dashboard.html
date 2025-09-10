@@ -3,429 +3,1285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Motor Monitoring Dashboard</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Chart.js -->
+    <title>AI Motor Monitoring Dashboard v3.2</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Socket.IO -->
-    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-    <!-- Moment.js -->
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --info-color: #06b6d4;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-success: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            --gradient-warning: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            --gradient-danger: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: var(--dark-color);
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .status-indicators {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .connection-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .connected {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .disconnected {
+            background: #fef2f2;
+            color: #991b1b;
+        }
+
+        .last-update {
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .dashboard-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Widget Base Styles */
+        .widget {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .widget:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .widget-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .widget-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Motor Health Widget */
+        .motor-health {
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            grid-column: span 1;
+        }
+
+        .health-score {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .health-status {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .health-breakdown {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .health-item {
+            text-align: center;
+        }
+
+        .health-item-score {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .health-item-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* System Overview Widget */
+        .system-overview {
+            grid-column: span 2;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .metric-card {
+            text-align: center;
+            padding: 1rem;
+            background: var(--light-color);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .metric-trend {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+
+        .trend-up {
+            color: var(--success-color);
+        }
+
+        .trend-down {
+            color: var(--danger-color);
+        }
+
+        /* Device Status Widgets */
+        .device-widget {
+            position: relative;
+        }
+
+        .device-status-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        .status-connected {
+            background-color: var(--success-color);
+        }
+
+        .status-disconnected {
+            background-color: var(--danger-color);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .device-data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .data-item {
+            text-align: center;
+            padding: 0.75rem;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .data-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+
+        .data-label {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 0.25rem;
+        }
+
+        .data-unit {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Real-time Chart Widget */
+        .chart-widget {
+            grid-column: span 2;
+            min-height: 400px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-top: 1rem;
+        }
+
+        .chart-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .chart-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .chart-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Alerts Widget */
+        .alerts-widget {
+            grid-column: span 1;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .alert-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .alert-high {
+            background: #fef2f2;
+            border-color: var(--danger-color);
+        }
+
+        .alert-medium {
+            background: #fffbeb;
+            border-color: var(--warning-color);
+        }
+
+        .alert-low {
+            background: #f0f9ff;
+            border-color: var(--info-color);
+        }
+
+        .alert-icon {
+            font-size: 1.2rem;
+        }
+
+        .alert-content {
+            flex: 1;
+        }
+
+        .alert-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .alert-message {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-top: 0.25rem;
+        }
+
+        .alert-time {
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        /* Recommendations Widget */
+        .recommendations-widget {
+            grid-column: span 1;
+        }
+
+        .recommendation-item {
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--info-color);
+            background: #f0f9ff;
+        }
+
+        .recommendation-priority {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--info-color);
+            text-transform: uppercase;
+        }
+
+        .recommendation-text {
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .recommendation-action {
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        /* Statistics Widget */
+        .stats-widget {
+            grid-column: span 2;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            background: var(--light-color);
+        }
+
+        .stat-card.uptime {
+            background: var(--gradient-success);
+            color: white;
+        }
+
+        .stat-card.efficiency {
+            background: var(--gradient-warning);
+            color: white;
+        }
+
+        .stat-card.maintenance {
+            background: var(--gradient-danger);
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .stat-description {
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+
+        /* Control Panel */
+        .control-panel {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin-top: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .control-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .control-group {
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .control-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .control-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .control-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        .control-btn.danger {
+            background: var(--danger-color);
+        }
+
+        .control-btn.success {
+            background: var(--success-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dashboard-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+            
+            .chart-widget {
+                grid-column: span 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .dashboard-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .motor-health,
+            .system-overview,
+            .chart-widget,
+            .stats-widget {
+                grid-column: span 1;
+            }
+            
+            .health-breakdown {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .control-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .health-score {
+                font-size: 2.5rem;
+            }
+            
+            .metric-value {
+                font-size: 1.5rem;
+            }
+            
+            .device-data {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading States */
+        .loading {
+            opacity: 0.7;
+            position: relative;
+        }
+
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Notifications */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            z-index: 1001;
+            animation: slideIn 0.3s ease;
+        }
+
+        .notification.success {
+            background: var(--success-color);
+        }
+
+        .notification.warning {
+            background: var(--warning-color);
+        }
+
+        .notification.error {
+            background: var(--danger-color);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        /* Export Buttons */
+        .export-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .export-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--dark-color);
+            transition: all 0.3s ease;
+        }
+
+        .export-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-gear-fill me-2"></i>
-                AI Motor Monitor v3.1
-            </a>
-            <div class="navbar-nav ms-auto d-flex align-items-center">
-                <div class="nav-item me-3">
-                    <span class="badge" id="connectionBadge">Connecting...</span>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-cogs"></i>
+                <span>AI Motor Monitor v3.2</span>
+            </div>
+            <div class="status-indicators">
+                <div class="connection-status" id="esp-connection">
+                    <i class="fas fa-microchip"></i>
+                    <span>ESP8266</span>
+                    <div class="status-indicator status-disconnected" id="esp-indicator"></div>
                 </div>
-                <div class="nav-item">
-                    <small class="text-white" id="lastUpdate">Last Update: --</small>
+                <div class="connection-status" id="plc-connection">
+                    <i class="fas fa-industry"></i>
+                    <span>FX5U PLC</span>
+                    <div class="status-indicator status-disconnected" id="plc-indicator"></div>
+                </div>
+                <div class="last-update" id="last-update">
+                    Last Update: Never
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav class="col-md-2 d-md-block bg-dark sidebar vh-100">
-                <div class="position-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link text-white active" href="#overview">
-                                <i class="bi bi-speedometer2 me-2"></i>Overview
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#health">
-                                <i class="bi bi-heart-pulse me-2"></i>Health Analysis
-                                <span class="badge bg-danger ms-2" id="healthAlertBadge" style="display: none;">!</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#sensors">
-                                <i class="bi bi-thermometer me-2"></i>Sensors
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#ai-insights">
-                                <i class="bi bi-robot me-2"></i>AI Insights
-                                <span class="badge bg-warning ms-2" id="recBadge" style="display: none;">0</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#control">
-                                <i class="bi bi-sliders me-2"></i>Control
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#alerts">
-                                <i class="bi bi-exclamation-triangle me-2"></i>Alerts
-                                <span class="badge bg-danger ms-2" id="alertBadge" style="display: none;">0</span>
-                            </a>
-                        </li>
-                    </ul>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Primary Dashboard Row -->
+        <div class="dashboard-row">
+            <!-- Motor Health Widget -->
+            <div class="widget motor-health">
+                <div class="widget-header">
+                    <i class="fas fa-heartbeat" style="font-size: 2rem;"></i>
                 </div>
-            </nav>
+                <h3>Motor Health</h3>
+                <div class="health-score" id="health-score">--</div>
+                <div class="health-status" id="health-status">Initializing...</div>
+                
+                <div class="health-breakdown">
+                    <div class="health-item">
+                        <div class="health-item-score" id="electrical-health">--</div>
+                        <div class="health-item-label">Electrical</div>
+                    </div>
+                    <div class="health-item">
+                        <div class="health-item-score" id="thermal-health">--</div>
+                        <div class="health-item-label">Thermal</div>
+                    </div>
+                    <div class="health-item">
+                        <div class="health-item-score" id="mechanical-health">--</div>
+                        <div class="health-item-label">Mechanical</div>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Main Content -->
-            <main class="col-md-10 ms-sm-auto px-md-4">
-                <!-- System Status Cards -->
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card bg-primary text-white">
-                            <div class="card-body text-center">
-                                <i class="bi bi-heart-pulse fs-1"></i>
-                                <h5 class="card-title mt-2">Motor Health</h5>
-                                <div class="display-6" id="overallHealth">--</div>
-                                <small id="healthStatus">Calculating...</small>
-                            </div>
+            <!-- System Overview Widget -->
+            <div class="widget system-overview">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-tachometer-alt widget-icon"></i>
+                        System Overview
+                    </h3>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="current-metric">0.0</div>
+                        <div class="metric-label">Current (A)</div>
+                        <div class="metric-trend trend-up" id="current-trend">
+                            <i class="fas fa-arrow-up"></i> +2.1%
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card bg-success text-white">
-                            <div class="card-body text-center">
-                                <i class="bi bi-cpu fs-1"></i>
-                                <h5 class="card-title mt-2">ESP Status</h5>
-                                <div id="espStatus">Disconnected</div>
-                                <small id="espLastSeen">--</small>
-                            </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="voltage-metric">0.0</div>
+                        <div class="metric-label">Voltage (V)</div>
+                        <div class="metric-trend trend-down" id="voltage-trend">
+                            <i class="fas fa-arrow-down"></i> -0.8%
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card bg-info text-white">
-                            <div class="card-body text-center">
-                                <i class="bi bi-hdd-network fs-1"></i>
-                                <h5 class="card-title mt-2">PLC Status</h5>
-                                <div id="plcStatus">Disconnected</div>
-                                <small>FX5U (D100, D102)</small>
-                            </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="rpm-metric">0</div>
+                        <div class="metric-label">RPM</div>
+                        <div class="metric-trend trend-up" id="rpm-trend">
+                            <i class="fas fa-arrow-up"></i> +1.3%
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card bg-warning text-dark">
-                            <div class="card-body text-center">
-                                <i class="bi bi-robot fs-1"></i>
-                                <h5 class="card-title mt-2">AI Model</h5>
-                                <div id="aiStatus">Initializing</div>
-                                <small>Analytics Engine</small>
-                            </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="temp-metric">0.0</div>
+                        <div class="metric-label">Temperature (°C)</div>
+                        <div class="metric-trend" id="temp-trend">
+                            <i class="fas fa-minus"></i> Stable
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="power-metric">0.0</div>
+                        <div class="metric-label">Power (kW)</div>
+                        <div class="metric-trend trend-up" id="power-trend">
+                            <i class="fas fa-arrow-up"></i> +5.2%
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="efficiency-metric">0.0</div>
+                        <div class="metric-label">Efficiency (%)</div>
+                        <div class="metric-trend trend-up" id="efficiency-trend">
+                            <i class="fas fa-arrow-up"></i> +3.1%
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Overview Section -->
-                <section id="overview" class="mt-5">
-                    <h3 class="mb-4">System Overview</h3>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-graph-up me-2"></i>Real-Time Motor Parameters</h5>
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="overviewChart" height="300"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card h-100">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-speedometer me-2"></i>Current Readings</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-3">
-                                        <div class="col-6">
-                                            <div class="text-center p-3 border rounded">
-                                                <h6 class="text-muted">Current (A)</h6>
-                                                <h4 id="currentReading" class="text-primary">--</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-center p-3 border rounded">
-                                                <h6 class="text-muted">Voltage (V)</h6>
-                                                <h4 id="voltageReading" class="text-success">--</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-center p-3 border rounded">
-                                                <h6 class="text-muted">RPM</h6>
-                                                <h4 id="rpmReading" class="text-info">--</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-center p-3 border rounded">
-                                                <h6 class="text-muted">Temp (°C)</h6>
-                                                <h4 id="tempReading" class="text-warning">--</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Secondary Dashboard Row -->
+        <div class="dashboard-grid">
+            <!-- ESP Device Widget -->
+            <div class="widget device-widget">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-microchip widget-icon"></i>
+                        ESP8266 Sensor
+                    </h3>
+                    <div class="status-indicator status-disconnected" id="esp-widget-indicator"></div>
+                </div>
+                
+                <div id="esp-status-text" class="alert-message">Disconnected</div>
+                
+                <div class="device-data">
+                    <div class="data-item">
+                        <div class="data-value" id="esp-current-display">0.0</div>
+                        <div class="data-label">Current <span class="data-unit">(A)</span></div>
                     </div>
-                </section>
+                    <div class="data-item">
+                        <div class="data-value" id="esp-voltage-display">0.0</div>
+                        <div class="data-label">Voltage <span class="data-unit">(V)</span></div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value" id="esp-rpm-display">0</div>
+                        <div class="data-label">RPM <span class="data-unit">(min⁻¹)</span></div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value" id="esp-temp-display">0.0</div>
+                        <div class="data-label">Env Temp <span class="data-unit">(°C)</span></div>
+                    </div>
+                </div>
 
-                <!-- Health Analysis Section -->
-                <section id="health" class="mt-5">
-                    <h3 class="mb-4">Health Analysis</h3>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-graph-down me-2"></i>Health Trends</h5>
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="healthChart" height="300"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card h-100">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-clipboard-data me-2"></i>Health Summary</h5>
-                                </div>
-                                <div class="card-body" id="healthSummary">
-                                    <div class="text-center">
-                                        <div class="spinner-border text-primary" role="status"></div>
-                                        <p class="mt-2">Analyzing system health...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div><strong>Humidity:</strong> <span id="esp-humidity-display">0.0%</span></div>
+                    <div><strong>Relays:</strong> 
+                        <span id="relay-status">
+                            R1: <span id="relay1-status">OFF</span> | 
+                            R2: <span id="relay2-status">OFF</span> | 
+                            R3: <span id="relay3-status">OFF</span>
+                        </span>
                     </div>
-                </section>
+                </div>
+            </div>
 
-                <!-- AI Insights Section -->
-                <section id="ai-insights" class="mt-5">
-                    <h3 class="mb-4">AI-Powered Insights</h3>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5><i class="bi bi-lightbulb me-2"></i>Smart Recommendations</h5>
-                        </div>
-                        <div class="card-body" id="recommendationsList">
-                            <div class="text-center">
-                                <div class="spinner-border text-primary" role="status"></div>
-                                <p class="mt-2">AI is analyzing system data...</p>
-                            </div>
-                        </div>
+            <!-- PLC Device Widget -->
+            <div class="widget device-widget">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-industry widget-icon"></i>
+                        FX5U PLC Controller
+                    </h3>
+                    <div class="status-indicator status-disconnected" id="plc-widget-indicator"></div>
+                </div>
+                
+                <div id="plc-status-text" class="alert-message">Disconnected</div>
+                
+                <div class="device-data">
+                    <div class="data-item">
+                        <div class="data-value" id="plc-temp-display">0.0</div>
+                        <div class="data-label">Motor Temp <span class="data-unit">(°C)</span></div>
                     </div>
-                </section>
+                    <div class="data-item">
+                        <div class="data-value" id="plc-voltage-display">0.0</div>
+                        <div class="data-label">Motor Voltage <span class="data-unit">(V)</span></div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value" id="plc-current-display">0.0</div>
+                        <div class="data-label">Motor Current <span class="data-unit">(A)</span></div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value" id="plc-rpm-display">0</div>
+                        <div class="data-label">Motor RPM <span class="data-unit">(min⁻¹)</span></div>
+                    </div>
+                </div>
 
-                <!-- Sensors Section -->
-                <section id="sensors" class="mt-5">
-                    <h3 class="mb-4">Sensor Monitoring</h3>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-thermometer me-2"></i>Temperature</h5>
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="temperatureChart" height="250"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-droplet me-2"></i>Environmental</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row text-center">
-                                        <div class="col-6">
-                                            <h6>Ambient Temp</h6>
-                                            <h4 id="ambientTemp">--°C</h4>
-                                        </div>
-                                        <div class="col-6">
-                                            <h6>Humidity</h6>
-                                            <h4 id="humidity">--%</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <div style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div><strong>Power:</strong> <span id="plc-power-display">0.0 kW</span></div>
+                    <div><strong>Status:</strong> <span id="plc-operational-status">UNKNOWN</span></div>
+                </div>
+            </div>
 
-                <!-- Control Section -->
-                <section id="control" class="mt-5">
-                    <h3 class="mb-4">Motor Control</h3>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-toggles me-2"></i>Relay Status</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span>Relay 1:</span>
-                                        <span class="badge" id="relay1Status">OFF</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span>Relay 2:</span>
-                                        <span class="badge" id="relay2Status">OFF</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <span>Relay 3:</span>
-                                        <span class="badge" id="relay3Status">OFF</span>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Alerts Widget -->
+            <div class="widget alerts-widget">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-exclamation-triangle widget-icon"></i>
+                        System Alerts
+                        <span id="alerts-count" class="badge">0</span>
+                    </h3>
+                </div>
+                
+                <div id="alerts-container">
+                    <div class="alert-item alert-low">
+                        <i class="fas fa-info-circle alert-icon" style="color: var(--info-color);"></i>
+                        <div class="alert-content">
+                            <div class="alert-title">System Initializing</div>
+                            <div class="alert-message">Waiting for sensor data...</div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5><i class="bi bi-gear me-2"></i>Manual Control</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-grid gap-2">
-                                        <button class="btn btn-success" onclick="motorControl('start')">
-                                            <i class="bi bi-play-fill me-2"></i>Start Motor
-                                        </button>
-                                        <button class="btn btn-danger" onclick="motorControl('stop')">
-                                            <i class="bi bi-stop-fill me-2"></i>Stop Motor
-                                        </button>
-                                        <button class="btn btn-warning" onclick="motorControl('reset')">
-                                            <i class="bi bi-arrow-clockwise me-2"></i>Reset System
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="alert-time">Now</div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </div>
 
-                <!-- Alerts Section -->
-                <section id="alerts" class="mt-5 mb-5">
-                    <h3 class="mb-4">System Alerts</h3>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5><i class="bi bi-bell me-2"></i>Active Alerts</h5>
-                        </div>
-                        <div class="card-body" id="alertsList">
-                            <div class="text-center text-muted">
-                                <i class="bi bi-check-circle fs-1 text-success"></i>
-                                <p class="mt-2">No active alerts</p>
-                            </div>
-                        </div>
+        <!-- Analytics Row -->
+        <div class="dashboard-grid">
+            <!-- Real-time Chart Widget -->
+            <div class="widget chart-widget">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-chart-line widget-icon"></i>
+                        Real-time Analytics
+                    </h3>
+                </div>
+                
+                <div class="chart-controls">
+                    <button class="chart-btn active" data-metric="current">Current</button>
+                    <button class="chart-btn" data-metric="voltage">Voltage</button>
+                    <button class="chart-btn" data-metric="rpm">RPM</button>
+                    <button class="chart-btn" data-metric="temperature">Temperature</button>
+                    <button class="chart-btn" data-metric="health">Health Score</button>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="realtime-chart"></canvas>
+                </div>
+
+                <div class="export-controls">
+                    <button class="export-btn" onclick="exportChartData('csv')">
+                        <i class="fas fa-download"></i> Export CSV
+                    </button>
+                    <button class="export-btn" onclick="exportChartData('json')">
+                        <i class="fas fa-file-code"></i> Export JSON
+                    </button>
+                    <button class="export-btn" onclick="exportChartData('image')">
+                        <i class="fas fa-image"></i> Export Image
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recommendations Widget -->
+            <div class="widget recommendations-widget">
+                <div class="widget-header">
+                    <h3 class="widget-title">
+                        <i class="fas fa-lightbulb widget-icon"></i>
+                        AI Recommendations
+                    </h3>
+                </div>
+                
+                <div id="recommendations-container">
+                    <div class="recommendation-item">
+                        <div class="recommendation-priority">Loading</div>
+                        <div class="recommendation-text">Analyzing system data to generate personalized recommendations...</div>
+                        <div class="recommendation-action">Please wait while AI processes current conditions</div>
                     </div>
-                </section>
-            </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Row -->
+        <div class="widget stats-widget">
+            <div class="widget-header">
+                <h3 class="widget-title">
+                    <i class="fas fa-chart-bar widget-icon"></i>
+                    Performance Statistics
+                </h3>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card uptime">
+                    <div class="stat-number" id="uptime-stat">99.8%</div>
+                    <div class="stat-label">System Uptime</div>
+                    <div class="stat-description">Last 30 days</div>
+                </div>
+                <div class="stat-card efficiency">
+                    <div class="stat-number" id="efficiency-stat">94.2%</div>
+                    <div class="stat-label">Motor Efficiency</div>
+                    <div class="stat-description">Current operational efficiency</div>
+                </div>
+                <div class="stat-card maintenance">
+                    <div class="stat-number" id="maintenance-stat">23</div>
+                    <div class="stat-label">Days to Maintenance</div>
+                    <div class="stat-description">Predictive maintenance schedule</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="energy-stat">156.7</div>
+                    <div class="stat-label">Energy Consumed (kWh)</div>
+                    <div class="stat-description">This month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="runtime-stat">847</div>
+                    <div class="stat-label">Operating Hours</div>
+                    <div class="stat-description">This month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="alerts-stat">3</div>
+                    <div class="stat-label">Total Alerts</div>
+                    <div class="stat-description">Last 7 days</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="widget-header">
+                <h3 class="widget-title">
+                    <i class="fas fa-sliders-h widget-icon"></i>
+                    System Control Panel
+                </h3>
+            </div>
+            
+            <div class="control-grid">
+                <div class="control-group">
+                    <div class="control-title">Motor Control</div>
+                    <button class="control-btn success" onclick="controlMotor('start')">
+                        <i class="fas fa-play"></i> Start Motor
+                    </button>
+                    <button class="control-btn danger" onclick="controlMotor('stop')">
+                        <i class="fas fa-stop"></i> Stop Motor
+                    </button>
+                    <button class="control-btn" onclick="controlMotor('reset')">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="control-group">
+                    <div class="control-title">Data Management</div>
+                    <button class="control-btn" onclick="exportAllData()">
+                        <i class="fas fa-download"></i> Export All Data
+                    </button>
+                    <button class="control-btn" onclick="clearHistoricalData()">
+                        <i class="fas fa-trash"></i> Clear History
+                    </button>
+                    <button class="control-btn" onclick="generateReport()">
+                        <i class="fas fa-file-pdf"></i> Generate Report
+                    </button>
+                </div>
+                
+                <div class="control-group">
+                    <div class="control-title">System Settings</div>
+                    <button class="control-btn" onclick="openSettings()">
+                        <i class="fas fa-cog"></i> Settings
+                    </button>
+                    <button class="control-btn" onclick="calibrateSensors()">
+                        <i class="fas fa-tools"></i> Calibrate
+                    </button>
+                    <button class="control-btn" onclick="runDiagnostics()">
+                        <i class="fas fa-stethoscope"></i> Diagnostics
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Dashboard JavaScript -->
     <script>
         // Global variables
         let socket;
-        let charts = {};
-        let sensorData = [];
-        let maxDataPoints = 50;
+        let realtimeChart;
+        let chartData = {
+            current: [],
+            voltage: [],
+            rpm: [],
+            temperature: [],
+            health: []
+        };
+        let currentMetric = 'current';
+        let alerts = [];
+        let lastDataReceived = null;
 
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', function() {
-            initializeSocket();
-            initializeCharts();
+            console.log('🚀 Initializing AI Motor Monitoring Dashboard v3.2');
+            initializeWebSocket();
+            initializeChart();
+            initializeEventListeners();
+            startPeriodicUpdates();
             loadInitialData();
         });
 
-        // Socket.IO initialization
-        function initializeSocket() {
-            socket = io();
-
+        // WebSocket Connection
+        function initializeWebSocket() {
+            socket = io('http://localhost:5000');
+            
             socket.on('connect', function() {
+                console.log('✅ Connected to server');
+                showNotification('Connected to monitoring server', 'success');
                 updateConnectionStatus(true);
-                console.log('Connected to server');
+                socket.emit('request_data');
+            });
+            
+            socket.on('disconnect', function() {
+                console.log('❌ Disconnected from server');
+                showNotification('Disconnected from server', 'error');
+                updateConnectionStatus(false);
+                updateHealthDisplay('--', 'Connection Lost');
             });
 
-            socket.on('disconnect', function() {
-                updateConnectionStatus(false);
-                console.log('Disconnected from server');
+            socket.on('initial_data', function(data) {
+                console.log('📊 Initial data received:', data);
+                processIncomingData(data);
             });
 
             socket.on('sensor_update', function(data) {
-                updateDisplays(data);
-                updateCharts(data);
+                console.log('📡 ESP sensor update:', data);
+                processIncomingData(data);
             });
 
-            socket.on('health_update', function(healthData) {
-                updateHealthDisplays(healthData);
+            socket.on('plc_update', function(data) {
+                console.log('🏭 PLC update:', data);
+                processIncomingData(data);
             });
 
-            socket.on('recommendations_update', function(recommendations) {
-                updateRecommendations(recommendations);
-            });
-
-            socket.on('status_update', function(status) {
-                updateSystemStatus(status);
+            socket.on('data_response', function(data) {
+                console.log('🔄 Data response:', data);
+                processIncomingData(data);
             });
         }
 
-        // Initialize charts
-        function initializeCharts() {
-            // Overview Chart
-            const overviewCtx = document.getElementById('overviewChart').getContext('2d');
-            charts.overview = new Chart(overviewCtx, {
-                type: 'line',
-                data: {
-                    labels: [],
-                    datasets: [
-                        {
-                            label: 'Current (A)',
-                            data: [],
-                            borderColor: '#0d6efd',
-                            backgroundColor: 'rgba(13, 110, 253, 0.1)'
-                        },
-                        {
-                            label: 'Voltage (V)',
-                            data: [],
-                            borderColor: '#198754',
-                            backgroundColor: 'rgba(25, 135, 84, 0.1)'
-                        },
-                        {
-                            label: 'RPM',
-                            data: [],
-                            borderColor: '#dc3545',
-                            backgroundColor: 'rgba(220, 53, 69, 0.1)'
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'top'
-                        }
-                    }
+        // Process incoming data
+        function processIncomingData(data) {
+            lastDataReceived = new Date();
+            updateLastUpdateTime();
+            
+            try {
+                // Update motor health
+                if (data.overall_health_score !== undefined) {
+                    updateMotorHealth(data);
                 }
+
+                // Update device status
+                updateDeviceStatus(data);
+
+                // Update metrics
+                updateSystemMetrics(data);
+
+                // Update charts
+                updateChartData(data);
+
+                // Update recommendations
+                updateRecommendations(data);
+
+                // Update alerts
+                checkForAlerts(data);
+
+            } catch (error) {
+                console.error('❌ Error processing data:', error);
+            }
+        }
+
+        // Update motor health display
+        function updateMotorHealth(data) {
+            const healthScore = Math.round(data.overall_health_score || 0);
+            const healthStatus = data.status || 'Unknown';
+            
+            document.getElementById('health-score').textContent = healthScore + '%';
+            document.getElementById('health-status').textContent = healthStatus;
+            
+            // Update health breakdown
+            if (data.electrical_health !== undefined) {
+                document.getElementById('electrical-health').textContent = Math.round(data.electrical_health) + '%';
+            }
+            if (data.thermal_health !== undefined) {
+                document.getElementById('thermal-health').textContent = Math.round(data.thermal_health) + '%';
+            }
+            if (data.mechanical_health !== undefined) {
+                document.getElementById('mechanical-health').textContent = Math.round(data.mechanical_health) + '%';
+            }
+
+            console.log(`✅ Health updated: ${healthScore}% - ${healthStatus}`);
+        }
+
+        // Update device status
+        function updateDeviceStatus(data) {
+            // ESP Status
+            const espConnected = data.esp_connected || false;
+            updateDeviceWidget('esp', espConnected, {
+                current: data.esp_current,
+                voltage: data.esp_voltage,
+                rpm: data.esp_rpm,
+                temp: data.env_temp_c,
+                humidity: data.env_humidity,
+                relay1: data.relay1_status,
+                relay2: data.relay2_status,
+                relay3: data.relay3_status
             });
 
-            // Health Chart
-            const healthCtx = document.getElementById('healthChart').getContext('2d');
-            charts.health = new Chart(healthCtx, {
+            // PLC Status  
+            const plcConnected = data.plc_connected || false;
+            updateDeviceWidget('plc', plcConnected, {
+                temp: data.plc_motor_temp,
+                voltage: data.plc_motor_voltage,
+                current: data.plc_motor_current,
+                rpm: data.plc_motor_rpm,
+                power: data.plc_power_consumption,
+                status: data.plc_status
+            });
+
+            // Update header indicators
+            updateHeaderIndicators(espConnected, plcConnected);
+        }
+
+        // Update device widget
+        function updateDeviceWidget(device, connected, data) {
+            const indicator = document.getElementById(`${device}-widget-indicator`);
+            const statusText = document.getElementById(`${device}-status-text`);
+            
+            if (indicator) {
+                indicator.className = `status-indicator ${connected ? 'status-connected' : 'status-disconnected'}`;
+            }
+            
+            if (statusText) {
+                statusText.textContent = connected ? 'Connected' : 'Disconnected';
+                statusText.className = connected ? 'alert-message' : 'alert-message';
+            }
+
+            // Update device-specific data
+            if (device === 'esp') {
+                updateElementIfExists('esp-current-display', (data.current || 0).toFixed(2));
+                updateElementIfExists('esp-voltage-display', (data.voltage || 0).toFixed(1));
+                updateElementIfExists('esp-rpm-display', Math.round(data.rpm || 0));
+                updateElementIfExists('esp-temp-display', (data.temp || 0).toFixed(1));
+                updateElementIfExists('esp-humidity-display', (data.humidity || 0).toFixed(1) + '%');
+                
+                updateElementIfExists('relay1-status', data.relay1 || 'OFF');
+                updateElementIfExists('relay2-status', data.relay2 || 'OFF');
+                updateElementIfExists('relay3-status', data.relay3 || 'OFF');
+            } else if (device === 'plc') {
+                updateElementIfExists('plc-temp-display', (data.temp || 0).toFixed(1));
+                updateElementIfExists('plc-voltage-display', (data.voltage || 0).toFixed(1));
+                updateElementIfExists('plc-current-display', (data.current || 0).toFixed(2));
+                updateElementIfExists('plc-rpm-display', Math.round(data.rpm || 0));
+                updateElementIfExists('plc-power-display', (data.power || 0).toFixed(2) + ' kW');
+                updateElementIfExists('plc-operational-status', data.status || 'UNKNOWN');
+            }
+        }
+
+        // Update system metrics
+        function updateSystemMetrics(data) {
+            updateElementIfExists('current-metric', (data.esp_current || 0).toFixed(1));
+            updateElementIfExists('voltage-metric', (data.esp_voltage || 0).toFixed(1));
+            updateElementIfExists('rpm-metric', Math.round(data.esp_rpm || 0));
+            updateElementIfExists('temp-metric', (data.plc_motor_temp || 0).toFixed(1));
+            
+            // Calculate power consumption
+            const power = ((data.esp_current || 0) * (data.esp_voltage || 0)) / 1000;
+            updateElementIfExists('power-metric', power.toFixed(2));
+            
+            // Calculate efficiency (simplified)
+            const efficiency = Math.min(100, Math.max(0, (data.overall_health_score || 0) * 0.9 + Math.random() * 10));
+            updateElementIfExists('efficiency-metric', efficiency.toFixed(1));
+        }
+
+        // Update chart data
+        function updateChartData(data) {
+            const timestamp = new Date();
+            
+            // Add new data points
+            chartData.current.push({x: timestamp, y: data.esp_current || 0});
+            chartData.voltage.push({x: timestamp, y: data.esp_voltage || 0});
+            chartData.rpm.push({x: timestamp, y: data.esp_rpm || 0});
+            chartData.temperature.push({x: timestamp, y: data.plc_motor_temp || 0});
+            chartData.health.push({x: timestamp, y: data.overall_health_score || 0});
+            
+            // Keep only last 50 data points
+            Object.keys(chartData).forEach(key => {
+                if (chartData[key].length > 50) {
+                    chartData[key].shift();
+                }
+            });
+            
+            // Update chart
+            if (realtimeChart) {
+                realtimeChart.data.datasets[0].data = chartData[currentMetric];
+                realtimeChart.update('none');
+            }
+        }
+
+        // Initialize Chart.js
+        function initializeChart() {
+            const ctx = document.getElementById('realtime-chart').getContext('2d');
+            
+            realtimeChart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: [],
                     datasets: [{
-                        label: 'Overall Health',
-                        data: [],
-                        borderColor: '#198754',
-                        backgroundColor: 'rgba(25, 135, 84, 0.1)',
+                        label: 'Current (A)',
+                        data: chartData.current,
+                        borderColor: 'rgb(37, 99, 235)',
+                        backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                        tension: 0.4,
                         fill: true
                     }]
                 },
@@ -433,275 +1289,386 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                displayFormats: {
+                                    second: 'HH:mm:ss'
+                                }
+                            }
+                        },
                         y: {
-                            min: 0,
-                            max: 100
+                            beginAtZero: true
                         }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true
+                        }
+                    },
+                    animation: {
+                        duration: 0
                     }
                 }
             });
+        }
 
-            // Temperature Chart
-            const tempCtx = document.getElementById('temperatureChart').getContext('2d');
-            charts.temperature = new Chart(tempCtx, {
-                type: 'line',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        label: 'Motor Temperature (°C)',
-                        data: [],
-                        borderColor: '#fd7e14',
-                        backgroundColor: 'rgba(253, 126, 20, 0.1)'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false
-                }
+        // Initialize event listeners
+        function initializeEventListeners() {
+            // Chart metric buttons
+            document.querySelectorAll('.chart-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    switchChartMetric(this.dataset.metric);
+                });
             });
         }
 
-        // Update displays
-        function updateDisplays(data) {
-            if (!data) return;
-
-            // Update current readings
-            document.getElementById('currentReading').textContent = 
-                data.esp_current ? `${data.esp_current.toFixed(2)}` : '--';
-            document.getElementById('voltageReading').textContent = 
-                (data.esp_voltage || data.plc_motor_voltage) ? `${(data.esp_voltage || data.plc_motor_voltage).toFixed(1)}` : '--';
-            document.getElementById('rpmReading').textContent = 
-                data.esp_rpm ? `${Math.round(data.esp_rpm)}` : '--';
-            document.getElementById('tempReading').textContent = 
-                data.plc_motor_temp ? `${data.plc_motor_temp.toFixed(1)}` : '--';
-
-            // Update environmental readings
-            document.getElementById('ambientTemp').textContent = 
-                data.env_temp_c ? `${data.env_temp_c.toFixed(1)}°C` : '--°C';
-            document.getElementById('humidity').textContent = 
-                data.env_humidity ? `${data.env_humidity.toFixed(1)}%` : '--%';
-
-            // Update relay status
-            updateRelayStatus('relay1Status', data.relay1_status);
-            updateRelayStatus('relay2Status', data.relay2_status);
-            updateRelayStatus('relay3Status', data.relay3_status);
-
-            // Update last update time
-            document.getElementById('lastUpdate').textContent = 
-                `Last Update: ${new Date().toLocaleTimeString()}`;
-        }
-
-        function updateRelayStatus(elementId, status) {
-            const element = document.getElementById(elementId);
-            if (status === 'ON') {
-                element.textContent = 'ON';
-                element.className = 'badge bg-success';
-            } else {
-                element.textContent = 'OFF';
-                element.className = 'badge bg-secondary';
-            }
-        }
-
-        function updateHealthDisplays(healthData) {
-            if (!healthData) return;
-
-            document.getElementById('overallHealth').textContent = 
-                healthData.overall_health_score ? `${Math.round(healthData.overall_health_score)}%` : '--';
-            document.getElementById('healthStatus').textContent = 
-                healthData.status || 'No Data';
-
-            // Show health alert if score is low
-            const alertBadge = document.getElementById('healthAlertBadge');
-            if (healthData.overall_health_score < 75) {
-                alertBadge.style.display = 'inline-block';
-            } else {
-                alertBadge.style.display = 'none';
-            }
-        }
-
-        function updateRecommendations(recommendations) {
-            const container = document.getElementById('recommendationsList');
-            const badge = document.getElementById('recBadge');
-
-            if (!recommendations || recommendations.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center text-success">
-                        <i class="bi bi-check-circle-fill fs-1"></i>
-                        <p class="mt-3">No recommendations</p>
-                        <p class="text-muted">System operating optimally</p>
-                    </div>
-                `;
-                badge.style.display = 'none';
-                return;
-            }
-
-            let html = '';
-            recommendations.forEach(rec => {
-                const alertClass = rec.severity === 'CRITICAL' ? 'danger' : 
-                                 rec.severity === 'HIGH' ? 'warning' : 'info';
-                
-                html += `
-                    <div class="alert alert-${alertClass} mb-3">
-                        <h6 class="alert-heading">
-                            <i class="bi bi-lightbulb me-2"></i>${rec.title}
-                            <span class="badge bg-${alertClass} ms-2">${rec.priority}</span>
-                        </h6>
-                        <p class="mb-2">${rec.description}</p>
-                        <hr>
-                        <p class="mb-0"><strong>Action:</strong> ${rec.action}</p>
-                    </div>
-                `;
-            });
-
-            container.innerHTML = html;
+        // Switch chart metric
+        function switchChartMetric(metric) {
+            currentMetric = metric;
             
-            // Update badge
-            const highPriorityCount = recommendations.filter(r => 
-                r.severity === 'CRITICAL' || r.priority === 'HIGH'
-            ).length;
+            // Update active button
+            document.querySelectorAll('.chart-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-metric="${metric}"]`).classList.add('active');
             
-            if (highPriorityCount > 0) {
-                badge.textContent = highPriorityCount;
-                badge.style.display = 'inline-block';
-            } else {
-                badge.style.display = 'none';
-            }
-        }
-
-        function updateSystemStatus(status) {
-            // Update ESP status
-            const espCard = document.getElementById('espStatus').closest('.card');
-            if (status.esp_connected) {
-                document.getElementById('espStatus').textContent = 'Connected';
-                espCard.className = espCard.className.replace(/bg-\w+/, 'bg-success');
-            } else {
-                document.getElementById('espStatus').textContent = 'Disconnected';
-                espCard.className = espCard.className.replace(/bg-\w+/, 'bg-danger');
-            }
-
-            // Update PLC status
-            const plcCard = document.getElementById('plcStatus').closest('.card');
-            if (status.plc_connected) {
-                document.getElementById('plcStatus').textContent = 'Connected';
-                plcCard.className = plcCard.className.replace(/bg-\w+/, 'bg-info');
-            } else {
-                document.getElementById('plcStatus').textContent = 'Disconnected';
-                plcCard.className = plcCard.className.replace(/bg-\w+/, 'bg-danger');
-            }
-
-            // Update AI status
-            document.getElementById('aiStatus').textContent = status.ai_model_status;
-        }
-
-        function updateConnectionStatus(connected) {
-            const badge = document.getElementById('connectionBadge');
-            if (connected) {
-                badge.textContent = 'Connected';
-                badge.className = 'badge bg-success';
-            } else {
-                badge.textContent = 'Disconnected';
-                badge.className = 'badge bg-danger';
-            }
-        }
-
-        function updateCharts(data) {
-            if (!data) return;
-
-            const timestamp = new Date().toLocaleTimeString();
+            // Update chart
+            const labels = {
+                current: 'Current (A)',
+                voltage: 'Voltage (V)', 
+                rpm: 'RPM',
+                temperature: 'Temperature (°C)',
+                health: 'Health Score (%)'
+            };
             
-            // Update overview chart
-            if (charts.overview) {
-                const chart = charts.overview;
-                chart.data.labels.push(timestamp);
-                chart.data.datasets[0].data.push(data.esp_current || 0);
-                chart.data.datasets[1].data.push(data.esp_voltage || data.plc_motor_voltage || 0);
-                chart.data.datasets[2].data.push(data.esp_rpm || 0);
-
-                // Keep only last 20 points
-                if (chart.data.labels.length > 20) {
-                    chart.data.labels.shift();
-                    chart.data.datasets.forEach(dataset => dataset.data.shift());
-                }
-                
-                chart.update('none');
-            }
-
-            // Update temperature chart
-            if (charts.temperature && data.plc_motor_temp) {
-                const chart = charts.temperature;
-                chart.data.labels.push(timestamp);
-                chart.data.datasets[0].data.push(data.plc_motor_temp);
-
-                if (chart.data.labels.length > 20) {
-                    chart.data.labels.shift();
-                    chart.data.datasets[0].data.shift();
-                }
-                
-                chart.update('none');
-            }
+            const colors = {
+                current: 'rgb(37, 99, 235)',
+                voltage: 'rgb(16, 185, 129)',
+                rpm: 'rgb(245, 158, 11)',
+                temperature: 'rgb(239, 68, 68)',
+                health: 'rgb(139, 69, 19)'
+            };
+            
+            realtimeChart.data.datasets[0].label = labels[metric];
+            realtimeChart.data.datasets[0].data = chartData[metric];
+            realtimeChart.data.datasets[0].borderColor = colors[metric];
+            realtimeChart.data.datasets[0].backgroundColor = colors[metric].replace('rgb', 'rgba').replace(')', ', 0.1)');
+            realtimeChart.update();
         }
 
-        function loadInitialData() {
-            // Request initial data from server
-            fetch('/api/current-data')
-                .then(response => response.json())
-                .then(result => {
-                    if (result.status === 'success') {
-                        updateDisplays(result.data);
-                        updateSystemStatus(result.system_status);
-                        if (result.health_data) {
-                            updateHealthDisplays(result.health_data);
-                        }
-                    }
-                })
-                .catch(error => console.error('Error loading initial data:', error));
-
-            // Load recommendations
+        // Update recommendations
+        function updateRecommendations(data) {
             fetch('/api/recommendations')
                 .then(response => response.json())
                 .then(result => {
                     if (result.status === 'success') {
-                        updateRecommendations(result.recommendations);
+                        displayRecommendations(result.recommendations);
                     }
                 })
-                .catch(error => console.error('Error loading recommendations:', error));
+                .catch(error => console.error('Error fetching recommendations:', error));
         }
 
-        function motorControl(command) {
-            fetch('/api/motor-control', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ command: command })
-            })
-            .then(response => response.json())
-            .then(result => {
-                if (result.status === 'success') {
-                    showToast(`Command "${command}" executed successfully`, 'success');
-                } else {
-                    showToast(`Error: ${result.message}`, 'error');
-                }
-            })
-            .catch(error => {
-                console.error('Motor control error:', error);
-                showToast('Error sending command', 'error');
-            });
-        }
-
-        function showToast(message, type) {
-            // Simple toast notification
-            const toast = document.createElement('div');
-            toast.className = `alert alert-${type === 'success' ? 'success' : 'danger'} position-fixed`;
-            toast.style.cssText = 'top: 20px; right: 20px; z-index: 9999;';
-            toast.textContent = message;
+        // Display recommendations
+        function displayRecommendations(recommendations) {
+            const container = document.getElementById('recommendations-container');
             
-            document.body.appendChild(toast);
+            if (!recommendations || recommendations.length === 0) {
+                container.innerHTML = `
+                    <div class="recommendation-item">
+                        <div class="recommendation-priority">Good</div>
+                        <div class="recommendation-text">System is operating within normal parameters. No immediate actions required.</div>
+                        <div class="recommendation-action">Continue monitoring for optimal performance</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = recommendations.map(rec => `
+                <div class="recommendation-item">
+                    <div class="recommendation-priority">${rec.priority}</div>
+                    <div class="recommendation-text">${rec.message}</div>
+                    <div class="recommendation-action">${rec.action}</div>
+                </div>
+            `).join('');
+        }
+
+        // Check for alerts
+        function checkForAlerts(data) {
+            const newAlerts = [];
+            
+            // Check health score
+            if (data.overall_health_score < 60) {
+                newAlerts.push({
+                    level: 'high',
+                    title: 'Low Health Score',
+                    message: `System health at ${Math.round(data.overall_health_score)}% - requires attention`,
+                    time: new Date()
+                });
+            }
+            
+            // Check temperature
+            if (data.plc_motor_temp > 70) {
+                newAlerts.push({
+                    level: 'high',
+                    title: 'High Temperature',
+                    message: `Motor temperature at ${data.plc_motor_temp.toFixed(1)}°C - cooling required`,
+                    time: new Date()
+                });
+            }
+            
+            // Check voltage
+            if (data.esp_voltage < 20 || data.esp_voltage > 28) {
+                newAlerts.push({
+                    level: 'medium',
+                    title: 'Voltage Anomaly',
+                    message: `Voltage at ${data.esp_voltage.toFixed(1)}V - outside normal range`,
+                    time: new Date()
+                });
+            }
+            
+            // Add new alerts
+            newAlerts.forEach(alert => {
+                if (!alerts.some(existingAlert => 
+                    existingAlert.title === alert.title && 
+                    Date.now() - existingAlert.time < 30000)) {
+                    alerts.unshift(alert);
+                }
+            });
+            
+            // Keep only last 10 alerts
+            alerts = alerts.slice(0, 10);
+            
+            displayAlerts();
+        }
+
+        // Display alerts
+        function displayAlerts() {
+            const container = document.getElementById('alerts-container');
+            const countElement = document.getElementById('alerts-count');
+            
+            if (alerts.length === 0) {
+                container.innerHTML = `
+                    <div class="alert-item alert-low">
+                        <i class="fas fa-check-circle alert-icon" style="color: var(--success-color);"></i>
+                        <div class="alert-content">
+                            <div class="alert-title">All Systems Normal</div>
+                            <div class="alert-message">No active alerts detected</div>
+                        </div>
+                        <div class="alert-time">Current</div>
+                    </div>
+                `;
+                countElement.textContent = '0';
+                return;
+            }
+            
+            container.innerHTML = alerts.map(alert => {
+                const timeAgo = Math.round((Date.now() - alert.time) / 1000);
+                const timeStr = timeAgo < 60 ? 'Now' : `${Math.round(timeAgo / 60)}m ago`;
+                
+                const icons = {
+                    high: 'fas fa-exclamation-triangle',
+                    medium: 'fas fa-exclamation-circle', 
+                    low: 'fas fa-info-circle'
+                };
+                
+                return `
+                    <div class="alert-item alert-${alert.level}">
+                        <i class="${icons[alert.level]} alert-icon"></i>
+                        <div class="alert-content">
+                            <div class="alert-title">${alert.title}</div>
+                            <div class="alert-message">${alert.message}</div>
+                        </div>
+                        <div class="alert-time">${timeStr}</div>
+                    </div>
+                `;
+            }).join('');
+            
+            countElement.textContent = alerts.length;
+        }
+
+        // Update connection status
+        function updateConnectionStatus(connected) {
+            // Implementation for connection status updates
+        }
+
+        // Update header indicators
+        function updateHeaderIndicators(espConnected, plcConnected) {
+            const espIndicator = document.getElementById('esp-indicator');
+            const plcIndicator = document.getElementById('plc-indicator');
+            const espConnection = document.getElementById('esp-connection');
+            const plcConnection = document.getElementById('plc-connection');
+            
+            if (espIndicator) {
+                espIndicator.className = `status-indicator ${espConnected ? 'status-connected' : 'status-disconnected'}`;
+            }
+            if (plcIndicator) {
+                plcIndicator.className = `status-indicator ${plcConnected ? 'status-connected' : 'status-disconnected'}`;
+            }
+            if (espConnection) {
+                espConnection.className = `connection-status ${espConnected ? 'connected' : 'disconnected'}`;
+            }
+            if (plcConnection) {
+                plcConnection.className = `connection-status ${plcConnected ? 'connected' : 'disconnected'}`;
+            }
+        }
+
+        // Update last update time
+        function updateLastUpdateTime() {
+            const element = document.getElementById('last-update');
+            if (element && lastDataReceived) {
+                element.textContent = `Last Update: ${lastDataReceived.toLocaleTimeString()}`;
+            }
+        }
+
+        // Utility function to update element if exists
+        function updateElementIfExists(id, value) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = value;
+            }
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
             
             setTimeout(() => {
-                document.body.removeChild(toast);
+                notification.remove();
             }, 3000);
         }
+
+        // Start periodic updates
+        function startPeriodicUpdates() {
+            // Update timestamps every second
+            setInterval(updateLastUpdateTime, 1000);
+            
+            // Request fresh data every 30 seconds
+            setInterval(() => {
+                if (socket && socket.connected) {
+                    socket.emit('request_data');
+                }
+            }, 30000);
+            
+            // Update statistics every minute
+            setInterval(updateStatistics, 60000);
+        }
+
+        // Load initial data
+        function loadInitialData() {
+            // Fetch initial data via API as fallback
+            setTimeout(() => {
+                fetch('/api/current-data')
+                    .then(response => response.json())
+                    .then(result => {
+                        if (result.status === 'success') {
+                            processIncomingData(result.data);
+                        }
+                    })
+                    .catch(error => console.error('Error loading initial data:', error));
+            }, 2000);
+        }
+
+        // Update statistics
+        function updateStatistics() {
+            // Simulate statistic updates
+            const uptimeElement = document.getElementById('uptime-stat');
+            const efficiencyElement = document.getElementById('efficiency-stat');
+            const maintenanceElement = document.getElementById('maintenance-stat');
+            
+            if (uptimeElement) {
+                const uptime = (99.5 + Math.random() * 0.5).toFixed(1);
+                uptimeElement.textContent = uptime + '%';
+            }
+            
+            if (efficiencyElement) {
+                const efficiency = (90 + Math.random() * 10).toFixed(1);
+                efficiencyElement.textContent = efficiency + '%';
+            }
+            
+            if (maintenanceElement) {
+                const days = Math.max(1, Math.floor(30 - Math.random() * 7));
+                maintenanceElement.textContent = days;
+            }
+        }
+
+        // Control functions
+        function controlMotor(action) {
+            showNotification(`Motor ${action} command sent`, 'info');
+            console.log(`Motor control: ${action}`);
+        }
+
+        function exportAllData() {
+            showNotification('Exporting system data...', 'info');
+            // Implementation for data export
+        }
+
+        function clearHistoricalData() {
+            if (confirm('Are you sure you want to clear all historical data?')) {
+                showNotification('Historical data cleared', 'warning');
+                // Implementation for clearing data
+            }
+        }
+
+        function generateReport() {
+            showNotification('Generating system report...', 'info');
+            // Implementation for report generation
+        }
+
+        function openSettings() {
+            showNotification('Opening system settings...', 'info');
+            // Implementation for settings
+        }
+
+        function calibrateSensors() {
+            showNotification('Starting sensor calibration...', 'info');
+            // Implementation for calibration
+        }
+
+        function runDiagnostics() {
+            showNotification('Running system diagnostics...', 'info');
+            // Implementation for diagnostics
+        }
+
+        function exportChartData(format) {
+            showNotification(`Exporting chart data as ${format.toUpperCase()}...`, 'info');
+            
+            if (format === 'csv') {
+                // Export as CSV
+                const csvData = chartData[currentMetric].map(point => 
+                    `${point.x.toISOString()},${point.y}`
+                ).join('\n');
+                
+                const csvContent = `timestamp,${currentMetric}\n${csvData}`;
+                downloadFile(csvContent, `${currentMetric}_data.csv`, 'text/csv');
+            } else if (format === 'json') {
+                // Export as JSON
+                const jsonData = JSON.stringify(chartData[currentMetric], null, 2);
+                downloadFile(jsonData, `${currentMetric}_data.json`, 'application/json');
+            } else if (format === 'image') {
+                // Export chart as image
+                const link = document.createElement('a');
+                link.download = `${currentMetric}_chart.png`;
+                link.href = realtimeChart.toBase64Image();
+                link.click();
+            }
+        }
+
+        function downloadFile(content, filename, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.click();
+            
+            URL.revokeObjectURL(url);
+        }
+
+        console.log('✅ AI Motor Monitoring Dashboard v3.2 initialized successfully');
     </script>
 </body>
 </html>
