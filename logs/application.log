@@ -3347,3 +3347,749 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-09 03:38:41,042 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-09 03:38:41,058 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-09 03:38:41,059 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:45,896 - root - INFO - Logging system initialized successfully
+2025-09-10 13:46:45,897 - __main__ - INFO - ============================================================
+2025-09-10 13:46:45,898 - __main__ - INFO - AI Motor Monitoring System starting up (version 3.1)
+2025-09-10 13:46:45,898 - __main__ - INFO - Timestamp: 2025-09-10T13:46:45.898081
+2025-09-10 13:46:45,898 - __main__ - INFO - ============================================================
+2025-09-10 13:46:45,899 - __main__ - INFO - Creating necessary directories...
+2025-09-10 13:46:45,899 - __main__ - INFO - Creating Flask application...
+2025-09-10 13:46:47,241 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,245 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,246 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,251 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,254 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,255 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,260 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,263 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,264 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,268 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,273 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,276 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,277 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,281 - __main__ - INFO - Sensor data blueprint registered
+2025-09-10 13:46:47,284 - __main__ - INFO - Health blueprint registered
+2025-09-10 13:46:47,287 - __main__ - INFO - Alerts blueprint registered
+2025-09-10 13:46:47,289 - __main__ - INFO - Control blueprint registered
+2025-09-10 13:46:47,289 - __main__ - INFO - API blueprints registered: 4/4
+2025-09-10 13:46:47,295 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,297 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,302 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,302 - socketio - INFO - WebSocket events registered successfully
+2025-09-10 13:46:47,302 - __main__ - INFO - Initializing services...
+2025-09-10 13:46:47,303 - __main__ - INFO - Initializing hardware managers...
+2025-09-10 13:46:47,303 - __main__ - INFO - PLC manager initialized
+2025-09-10 13:46:47,303 - __main__ - INFO - Initializing services...
+2025-09-10 13:46:47,306 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,307 - services.data_processor - INFO - Background tasks started successfully
+2025-09-10 13:46:47,307 - __main__ - INFO - Data processor initialized
+2025-09-10 13:46:47,312 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,312 - services.background_tasks - INFO - Default scheduled tasks configured
+2025-09-10 13:46:47,313 - services.background_tasks - INFO - Starting background task manager...
+2025-09-10 13:46:47,313 - services.background_tasks - INFO - Scheduler worker started
+2025-09-10 13:46:47,314 - services.background_tasks - INFO - Background task manager started successfully
+2025-09-10 13:46:47,314 - __main__ - INFO - Background task manager started
+2025-09-10 13:46:47,319 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,319 - services.connection_monitor - INFO - Connection monitor loop started
+2025-09-10 13:46:47,320 - services.connection_monitor - INFO - Connection monitor started
+2025-09-10 13:46:47,322 - __main__ - INFO - Connection monitor started
+2025-09-10 13:46:47,326 - database.manager - INFO - Database initialized successfully
+2025-09-10 13:46:47,327 - __main__ - INFO - Alert service initialized
+2025-09-10 13:46:47,327 - __main__ - INFO - Testing initial connections...
+2025-09-10 13:46:47,328 - __main__ - INFO - Testing PLC connection to 192.168.3.39:5007
+2025-09-10 13:46:49,254 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,270 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,270 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,284 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,300 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,315 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,331 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:49,332 - __main__ - WARNING - PLC connection failed - will retry automatically
+2025-09-10 13:46:49,612 - __main__ - INFO - Network connectivity confirmed
+2025-09-10 13:46:49,613 - __main__ - INFO - Running system health check...
+2025-09-10 13:46:49,613 - __main__ - INFO - Health check completed: 2/3 core components healthy
+2025-09-10 13:46:49,645 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.158.247:5000
+2025-09-10 13:46:49,645 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 13:46:54,743 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:46:54] "GET /socket.io/?EIO=4&transport=polling&t=PaoilgL HTTP/1.1" 200 -
+2025-09-10 13:46:55,004 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-10 13:46:55,005 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:46:55] "POST /socket.io/?EIO=4&transport=polling&t=PaoillS&sid=wJNwRfonUGNWLD_6AAAA HTTP/1.1" 200 -
+2025-09-10 13:46:55,064 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:46:55] "GET /socket.io/?EIO=4&transport=polling&t=PaoillU&sid=wJNwRfonUGNWLD_6AAAA HTTP/1.1" 200 -
+2025-09-10 13:46:55,076 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:46:55] "GET /socket.io/?EIO=4&transport=polling&t=PaoilqW&sid=wJNwRfonUGNWLD_6AAAA HTTP/1.1" 200 -
+2025-09-10 13:46:56,270 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:56,285 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:56,286 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:56,301 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:56,316 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:46:56,332 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,295 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,311 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,311 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,326 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,342 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:03,342 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,322 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,354 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,369 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:10,369 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:16,947 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:16] "GET /health HTTP/1.1" 200 -
+2025-09-10 13:47:17,334 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:17,349 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:17,349 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:17,365 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:17,380 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:17,380 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:19,834 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:19] "GET / HTTP/1.1" 200 -
+2025-09-10 13:47:20,112 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "GET /socket.io/?EIO=4&transport=polling&t=Paoirxf HTTP/1.1" 200 -
+2025-09-10 13:47:20,494 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-10 13:47:20,504 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-10 13:47:20,522 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-10 13:47:20,536 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "POST /socket.io/?EIO=4&transport=polling&t=Paoirz0&sid=W4BpvPsADSik8QqeAAAC HTTP/1.1" 200 -
+2025-09-10 13:47:20,546 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "GET /socket.io/?EIO=4&transport=polling&t=Paoirz5&sid=W4BpvPsADSik8QqeAAAC HTTP/1.1" 200 -
+2025-09-10 13:47:20,750 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:20] "GET /socket.io/?EIO=4&transport=polling&t=Paois31&sid=W4BpvPsADSik8QqeAAAC HTTP/1.1" 200 -
+2025-09-10 13:47:24,354 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:24,354 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:24,354 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:24,370 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:24,385 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:24,385 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:29,819 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:47:29] "POST /api/motor-control HTTP/1.1" 200 -
+2025-09-10 13:47:31,381 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:31,382 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:31,382 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:31,397 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:31,412 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:31,412 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,396 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,396 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,396 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,412 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,427 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:38,427 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,417 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,417 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,417 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,432 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,448 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:45,448 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,420 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,420 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,436 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,436 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,467 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:52,469 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,487 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:47:59,487 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,469 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,469 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,485 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,485 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:06,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,506 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,506 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,537 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:13,537 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,510 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,510 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,525 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,526 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,558 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:20,558 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,524 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,524 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,570 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:27,570 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,542 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,542 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,557 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,557 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,588 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:34,588 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,574 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,574 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,607 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:41,607 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,570 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,570 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,586 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,586 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,617 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:48,617 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,587 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,587 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,602 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,602 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,635 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:48:55,635 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,599 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,599 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,615 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,615 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,646 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:02,646 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,624 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,625 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,639 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,640 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,670 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:09,670 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,634 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,634 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,649 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,680 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:16,680 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,666 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,712 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:23,712 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,666 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,682 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,682 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:30,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,684 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,684 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,700 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,701 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,746 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:37,746 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:39,559 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:39] "GET / HTTP/1.1" 200 -
+2025-09-10 13:49:39,583 - api.websocket.events - INFO - Client disconnected from WebSocket
+2025-09-10 13:49:39,612 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:39] "GET /socket.io/?EIO=4&transport=websocket&sid=W4BpvPsADSik8QqeAAAC HTTP/1.1" 200 -
+2025-09-10 13:49:39,661 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:39] "GET /socket.io/?EIO=4&transport=polling&t=PaojO0A HTTP/1.1" 200 -
+2025-09-10 13:49:39,817 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:39] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-10 13:49:40,011 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:40] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-10 13:49:40,019 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-10 13:49:40,025 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:40] "POST /socket.io/?EIO=4&transport=polling&t=PaojO0_&sid=F3hFMBku59jwD9ipAAAE HTTP/1.1" 200 -
+2025-09-10 13:49:40,043 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:40] "GET /socket.io/?EIO=4&transport=polling&t=PaojO10&sid=F3hFMBku59jwD9ipAAAE HTTP/1.1" 200 -
+2025-09-10 13:49:40,364 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:40] "GET /socket.io/?EIO=4&transport=polling&t=PaojO6L&sid=F3hFMBku59jwD9ipAAAE HTTP/1.1" 200 -
+2025-09-10 13:49:42,471 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:42] "GET / HTTP/1.1" 200 -
+2025-09-10 13:49:42,491 - api.websocket.events - INFO - Client disconnected from WebSocket
+2025-09-10 13:49:42,492 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:42] "GET /socket.io/?EIO=4&transport=websocket&sid=F3hFMBku59jwD9ipAAAE HTTP/1.1" 200 -
+2025-09-10 13:49:42,771 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:42] "GET /socket.io/?EIO=4&transport=polling&t=PaojOjo HTTP/1.1" 200 -
+2025-09-10 13:49:42,925 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:42] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-10 13:49:42,927 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:42] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-10 13:49:43,112 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-10 13:49:43,118 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:43] "POST /socket.io/?EIO=4&transport=polling&t=PaojOnJ&sid=hju3kmPqs2tFplJNAAAG HTTP/1.1" 200 -
+2025-09-10 13:49:43,120 - werkzeug - INFO - 127.0.0.1 - - [10/Sep/2025 13:49:43] "GET /socket.io/?EIO=4&transport=polling&t=PaojOnK&sid=hju3kmPqs2tFplJNAAAG HTTP/1.1" 200 -
+2025-09-10 13:49:44,697 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:44,697 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:44,712 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:44,712 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:44,759 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:44,759 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,710 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,771 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:51,771 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,729 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,729 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,744 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,744 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,792 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:49:58,793 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,748 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,748 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,763 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,763 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,809 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:05,809 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,769 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,769 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,785 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,785 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,832 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:12,832 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,787 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,787 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,802 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,802 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,850 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:19,850 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,858 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:26,859 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,809 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,809 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,872 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:33,873 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,824 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,824 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,840 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,840 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,887 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:40,887 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,849 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,849 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,864 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,864 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,911 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:47,911 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,859 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,859 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,875 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,875 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,923 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:50:54,924 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,948 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:01,948 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,894 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,894 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,910 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,910 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,972 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:08,972 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,903 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,903 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,918 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,933 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,995 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:15,996 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:22,913 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:22,913 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:22,929 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:22,945 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:23,022 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:23,022 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:29,932 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:29,932 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:29,948 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:29,964 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:30,042 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:30,042 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:36,938 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:36,938 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:36,954 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:36,969 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:37,047 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:37,047 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:43,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:43,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:43,984 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:43,999 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:44,076 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:44,076 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:47,333 - services.background_tasks - INFO - Executing scheduled task: connection_health_check
+2025-09-10 13:51:47,358 - services.background_tasks - INFO - Task connection_health_check completed in 0.02s
+2025-09-10 13:51:50,995 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:50,996 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:51,011 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:51,026 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:51,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:51,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,022 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,037 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,053 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,113 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:51:58,113 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,040 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,041 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,056 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:05,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,050 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,050 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,066 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,082 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,145 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:12,145 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,060 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,060 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,075 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,091 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,153 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:19,153 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,083 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,083 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,099 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,114 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,176 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:26,176 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,113 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,113 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,128 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,144 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,205 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:33,206 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,153 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,168 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,231 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:40,231 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,158 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,158 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,173 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,251 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:47,251 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,199 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,199 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,214 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,214 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,261 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:52:54,276 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,215 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,215 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,230 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,230 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,277 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:01,292 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,222 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,237 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,237 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,284 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:08,299 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,229 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,244 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,244 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,244 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,291 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:15,322 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,245 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,260 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,260 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,260 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,307 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:22,337 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,271 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,286 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,286 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,286 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,318 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:29,349 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,291 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,307 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,307 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,307 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:36,369 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,310 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,326 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,326 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,326 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,356 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:43,388 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,323 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,338 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,369 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:50,401 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,346 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,393 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:53:57,425 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,409 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:04,440 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,368 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,384 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,400 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,400 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,446 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:11,446 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,379 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,395 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,457 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:18,457 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,395 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,426 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,426 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,473 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:25,489 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,425 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,440 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,440 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,486 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:32,518 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,470 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,471 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,486 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,501 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:39,547 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,460 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,521 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:46,567 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,504 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,505 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,505 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,506 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,536 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:54:53,582 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,546 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:00,592 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,534 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,534 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,535 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,535 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,564 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:07,610 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,544 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,544 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,544 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,544 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,576 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:14,622 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,590 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:21,637 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,572 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,572 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,572 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,572 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,603 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:28,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,625 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:35,671 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,617 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,617 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,617 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,632 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,647 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:42,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,625 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,625 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,625 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,641 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,656 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:49,702 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,655 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,656 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,656 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,657 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,670 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:55:56,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,683 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:03,730 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,691 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,691 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,691 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,691 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,706 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:10,753 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,703 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,703 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,703 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,704 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:17,765 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,728 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,730 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:24,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,751 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,751 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,751 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,751 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,752 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:31,798 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:38,829 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:45,857 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:47,364 - services.background_tasks - INFO - Executing scheduled task: connection_health_check
+2025-09-10 13:56:47,404 - services.background_tasks - INFO - Task connection_health_check completed in 0.01s
+2025-09-10 13:56:52,840 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:52,841 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:52,841 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:52,841 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:52,842 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:52,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,865 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,865 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,865 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,866 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,866 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:56:59,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,885 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:06,901 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,898 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,899 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,899 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,899 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,899 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:13,914 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,914 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,914 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,914 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,914 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:20,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,930 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,945 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:27,945 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,961 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,961 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:34,961 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:41,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,967 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,967 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,968 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,982 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,982 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:48,982 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,996 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,996 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,996 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,997 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,997 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:57:55,997 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:03,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,035 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,050 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,050 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,050 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,051 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:10,051 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,045 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,061 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,061 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,061 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,061 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:17,076 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,063 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,078 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,078 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,078 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,093 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:24,093 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,088 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,104 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,104 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,104 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,119 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:31,119 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,105 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,120 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,120 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,120 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,135 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:38,135 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,108 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,123 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,123 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,123 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,140 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:45,140 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,122 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,153 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:52,153 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,137 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,152 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,152 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,152 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,168 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:58:59,168 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,162 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,177 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,177 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,177 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,193 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:06,193 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,175 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,191 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,191 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,191 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,207 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:13,208 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,189 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,205 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,205 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,205 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,221 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-10 13:59:20,221 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
