@@ -4,6 +4,7 @@ Creates and configures the Flask application with all extensions
 """
 
 import os
+import logging
 from flask import Flask, render_template
 from flask_socketio import SocketIO
 from config.settings import config
@@ -17,8 +18,8 @@ def create_app() -> tuple[Flask, SocketIO]:
     
     # Create Flask app with proper template and static folders
     app = Flask(__name__, 
-                template_folder='../templates',  # ✅ Correct path from core/ to templates/
-                static_folder='../static')       # ✅ Correct path from core/ to static/
+                template_folder='../templates',
+                static_folder='../static')
     
     # Configure Flask
     app.config['SECRET_KEY'] = config.flask.secret_key
@@ -39,15 +40,8 @@ def create_app() -> tuple[Flask, SocketIO]:
         """Health check endpoint"""
         return {
             'status': 'healthy', 
-            'service': 'AI Motor Monitoring System v3.1',
-            'timestamp': '2025-09-09T02:49:00'
+            'service': 'AI Motor Monitoring System v3.1'
         }
-    
-    # ✅ Add API status route
-    @app.route('/api/status')
-    def api_status():
-        """API status endpoint"""
-        return {'api': 'ready', 'endpoints': 'available'}
     
     # Create SocketIO instance
     socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
@@ -84,13 +78,15 @@ def register_blueprints(app: Flask):
 
 def register_socketio_events(socketio: SocketIO):
     """Register WebSocket event handlers with error handling"""
+    logger = logging.getLogger('socketio')  # ✅ Fixed: Use standard logging
+    
     try:
         from api.websocket.events import register_events
         register_events(socketio)
-        socketio.logger.info("WebSocket events registered successfully")
+        logger.info("WebSocket events registered successfully")  # ✅ Fixed
         
     except ImportError as e:
-        socketio.logger.warning(f"WebSocket events could not be registered: {e}")
+        logger.warning(f"WebSocket events could not be registered: {e}")  # ✅ Fixed
         # Continue without WebSocket - dashboard will still work
 
 def create_directories():
@@ -99,16 +95,15 @@ def create_directories():
         'data',
         'logs', 
         'models',
-        'templates',  # ✅ Ensure templates folder exists
-        'static',     # ✅ Ensure static folder exists
+        'templates',
+        'static',
         'static/css',
         'static/js', 
-        'static/images',
-        config.model_path if hasattr(config, 'model_path') else 'models/'
+        'static/images'
     ]
     
     for directory in directories:
         try:
             os.makedirs(directory, exist_ok=True)
         except Exception as e:
-            print(f"Could not create directory {directory}: {e}")
+            logging.getLogger(__name__).warning(f"Could not create directory {directory}: {e}")
