@@ -1,7 +1,6 @@
 """
-AI-Enabled Industrial Motor Monitoring System
-Complete Fixed Version - All Features Included
-Version: 4.1 - PRODUCTION READY
+AI-Enabled Industrial Motor Monitoring System - FIXED VERSION
+All Critical Issues Resolved
 """
 
 import sys
@@ -15,11 +14,10 @@ import sqlite3
 import json
 import random
 
-# CRITICAL: Enable eventlet monkey patching BEFORE any imports
+# Enable eventlet monkey patching BEFORE any imports
 import eventlet
 eventlet.monkey_patch()
 
-# Core application imports
 from flask import Flask, render_template, jsonify, request
 from flask_socketio import SocketIO, emit, disconnect
 
@@ -27,16 +25,16 @@ from flask_socketio import SocketIO, emit, disconnect
 app = None
 socketio = None
 
-# Enhanced data storage with connection tracking
+# FIXED: Enhanced data storage with proper disconnection handling
 latest_sensor_data = {
-    'esp_current': 0,
-    'esp_voltage': 0,
+    'esp_current': 0.0,
+    'esp_voltage': 0.0,
     'esp_rpm': 0,
-    'env_temp_c': 0,
-    'env_humidity': 0,
-    'env_temp_f': 0,
-    'heat_index_c': 0,
-    'heat_index_f': 0,
+    'env_temp_c': 0.0,
+    'env_humidity': 0.0,
+    'env_temp_f': 0.0,
+    'heat_index_c': 0.0,
+    'heat_index_f': 0.0,
     'relay1_status': 'OFF',
     'relay2_status': 'OFF',
     'relay3_status': 'OFF',
@@ -47,14 +45,14 @@ latest_sensor_data = {
 }
 
 latest_plc_data = {
-    'plc_motor_temp': 0,
-    'plc_motor_voltage': 0,
-    'plc_motor_current': 0,
+    'plc_motor_temp': 0.0,
+    'plc_motor_voltage': 0.0,
+    'plc_motor_current': 0.0,
     'plc_motor_rpm': 0,
-    'plc_power_consumption': 0,
+    'plc_power_consumption': 0.0,
     'plc_raw_d100': 0,
     'plc_raw_d102': 0,
-    'plc_status': 'UNKNOWN',
+    'plc_status': 'DISCONNECTED',
     'plc_error_code': 0,
     'plc_connected': False,
     'last_plc_update': None,
@@ -90,7 +88,6 @@ def setup_logging():
             ]
         )
         
-        # Set specific logger levels
         logging.getLogger('urllib3').setLevel(logging.WARNING)
         logging.getLogger('werkzeug').setLevel(logging.INFO)
         logging.getLogger('socketio').setLevel(logging.INFO)
@@ -107,7 +104,6 @@ def init_database():
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
-        # Create sensor data table with all fields
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS sensor_data (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -131,15 +127,9 @@ def init_database():
             )
         ''')
         
-        # Create indexes for better performance
         cursor.execute('''
             CREATE INDEX IF NOT EXISTS idx_timestamp 
             ON sensor_data(timestamp DESC)
-        ''')
-        
-        cursor.execute('''
-            CREATE INDEX IF NOT EXISTS idx_health 
-            ON sensor_data(overall_health_score)
         ''')
         
         conn.commit()
@@ -150,10 +140,17 @@ def init_database():
     except Exception as e:
         logging.error(f"Error initializing database: {e}")
 
+# FIXED: Historical data retrieval with proper error handling
 def get_historical_data(hours_back=24, limit=100):
-    """Retrieve historical sensor data for health calculation fallback"""
+    """Retrieve historical sensor data - FIXED VERSION"""
     try:
         db_path = os.path.join('database', 'sensor_history.db')
+        
+        # Check if database file exists
+        if not os.path.exists(db_path):
+            logging.warning("Database file not found, using safe defaults")
+            return get_safe_defaults()
+        
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
@@ -174,70 +171,71 @@ def get_historical_data(hours_back=24, limit=100):
         rows = cursor.fetchall()
         conn.close()
         
-        if not rows:
-            # Return reasonable defaults if no historical data
-            return {
-                'esp_current': 6.0,
-                'esp_voltage': 24.0,
-                'esp_rpm': 2750,
-                'env_temp_c': 25.0,
-                'env_humidity': 45.0,
-                'plc_motor_temp': 40.0,
-                'plc_motor_voltage': 24.0,
-                'plc_motor_current': 6.0,
-                'plc_motor_rpm': 2750,
-                'overall_health_score': 85.0,
-                'electrical_health': 88.0,
-                'thermal_health': 84.0,
-                'mechanical_health': 87.0,
-                'data_source': 'default_safe_values',
-                'records_found': 0
+        if not rows or len(rows) == 0:
+            logging.info("No historical data found, using safe defaults")
+            return get_safe_defaults()
+        
+        # FIXED: Proper handling of row data
+        try:
+            # Calculate averages from historical data with null checks
+            valid_rows = [row for row in rows if row and len(row) >= 14]
+            
+            if not valid_rows:
+                return get_safe_defaults()
+            
+            def safe_avg(values):
+                clean_values = [v for v in values if v is not None and v != 0]
+                return sum(clean_values) / len(clean_values) if clean_values else 0
+            
+            avg_data = {
+                'esp_current': safe_avg([row[0] for row in valid_rows]),
+                'esp_voltage': safe_avg([row[1] for row in valid_rows]),
+                'esp_rpm': int(safe_avg([row[2] for row in valid_rows])),
+                'env_temp_c': safe_avg([row[3] for row in valid_rows]),
+                'env_humidity': safe_avg([row[4] for row in valid_rows]),
+                'plc_motor_temp': safe_avg([row[5] for row in valid_rows]),
+                'plc_motor_voltage': safe_avg([row[6] for row in valid_rows]),
+                'plc_motor_current': safe_avg([row[7] for row in valid_rows]),
+                'plc_motor_rpm': int(safe_avg([row[8] for row in valid_rows])),
+                'overall_health_score': safe_avg([row[9] for row in valid_rows]),
+                'electrical_health': safe_avg([row[10] for row in valid_rows]),
+                'thermal_health': safe_avg([row[11] for row in valid_rows]),
+                'mechanical_health': safe_avg([row[12] for row in valid_rows]),
+                'data_source': 'historical_average',
+                'records_found': len(valid_rows)
             }
-        
-        # Calculate averages from historical data
-        avg_data = {
-            'esp_current': sum(row[0] or 0 for row in rows) / len(rows),
-            'esp_voltage': sum(row[1] or 0 for row in rows) / len(rows),
-            'esp_rpm': int(sum(row[2] or 0 for row in rows) / len(rows)),
-            'env_temp_c': sum(row[3] or 0 for row in rows) / len(rows),
-            'env_humidity': sum(row[4] or 0 for row in rows) / len(rows),
-            'plc_motor_temp': sum(row[5] or 0 for row in rows) / len(rows),
-            'plc_motor_voltage': sum(row[6] or 0 for row in rows) / len(rows),
-            'plc_motor_current': sum(row[7] or 0 for row in rows) / len(rows),
-            'plc_motor_rpm': int(sum(row[8] or 0 for row in rows) / len(rows)),
-            'overall_health_score': sum(row[9] or 0 for row in rows) / len(rows),
-            'electrical_health': sum(row[10] or 0 for row in rows) / len(rows),
-            'thermal_health': sum(row[11] or 0 for row in rows) / len(rows),
-            'mechanical_health': sum(row[12] or 0 for row in rows) / len(rows),
-            'data_source': 'historical_average',
-            'records_found': len(rows),
-            'oldest_record': rows[-1][14] if rows else None,
-            'newest_record': rows[0][14] if rows else None
-        }
-        
-        logging.info(f"Retrieved historical data: {len(rows)} records, health score: {avg_data['overall_health_score']:.1f}%")
-        return avg_data
+            
+            logging.info(f"Retrieved historical data: {len(valid_rows)} records")
+            return avg_data
+            
+        except (IndexError, ValueError, TypeError) as e:
+            logging.error(f"Error processing historical data: {e}")
+            return get_safe_defaults()
         
     except Exception as e:
         logging.error(f"Error retrieving historical data: {e}")
-        # Return safe defaults on error
-        return {
-            'esp_current': 6.0,
-            'esp_voltage': 24.0,
-            'esp_rpm': 2750,
-            'env_temp_c': 25.0,
-            'env_humidity': 45.0,
-            'plc_motor_temp': 40.0,
-            'plc_motor_voltage': 24.0,
-            'plc_motor_current': 6.0,
-            'plc_motor_rpm': 2750,
-            'overall_health_score': 75.0,
-            'electrical_health': 75.0,
-            'thermal_health': 75.0,
-            'mechanical_health': 75.0,
-            'data_source': 'error_fallback',
-            'records_found': 0
-        }
+        return get_safe_defaults()
+
+# FIXED: Safe defaults function
+def get_safe_defaults():
+    """Return safe default values when no historical data available"""
+    return {
+        'esp_current': 5.0,
+        'esp_voltage': 24.0,
+        'esp_rpm': 2500,
+        'env_temp_c': 25.0,
+        'env_humidity': 45.0,
+        'plc_motor_temp': 40.0,
+        'plc_motor_voltage': 24.0,
+        'plc_motor_current': 5.0,
+        'plc_motor_rpm': 2500,
+        'overall_health_score': 75.0,
+        'electrical_health': 75.0,
+        'thermal_health': 75.0,
+        'mechanical_health': 75.0,
+        'data_source': 'safe_defaults',
+        'records_found': 0
+    }
 
 def save_sensor_data(sensor_data, plc_data, health_data):
     """Save current sensor data to database"""
@@ -276,47 +274,64 @@ def save_sensor_data(sensor_data, plc_data, health_data):
     except Exception as e:
         logging.error(f"Error saving sensor data: {e}")
 
+# FIXED: Enhanced health calculation with realistic scoring
 def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
-    """
-    Advanced health calculation with historical data fallback
-    Fixed and comprehensive version
-    """
+    """Enhanced health calculation with realistic scoring - FIXED VERSION"""
     try:
-        # Check connection status and data freshness
         now = datetime.now()
         
-        # Determine if we have fresh data or need historical fallback
+        # Check connection status and data freshness
         esp_connected = sensor_data.get('esp_connected', False)
         plc_connected = plc_data.get('plc_connected', False)
         
-        # Check data freshness (within last 60 seconds)
+        # FIXED: Proper freshness checking
         esp_fresh = False
         plc_fresh = False
         
         if sensor_data.get('last_esp_update'):
             try:
-                last_esp = datetime.fromisoformat(sensor_data['last_esp_update'])
-                esp_fresh = (now - last_esp).total_seconds() < ESP_TIMEOUT
+                if isinstance(sensor_data['last_esp_update'], str):
+                    last_esp = datetime.fromisoformat(sensor_data['last_esp_update'].replace('Z', '+00:00'))
+                else:
+                    last_esp = sensor_data['last_esp_update']
+                esp_fresh = (now - last_esp.replace(tzinfo=None) if last_esp.tzinfo else last_esp).total_seconds() < ESP_TIMEOUT
             except:
-                pass
+                esp_fresh = False
         
         if plc_data.get('last_plc_update'):
             try:
-                last_plc = datetime.fromisoformat(plc_data['last_plc_update'])
-                plc_fresh = (now - last_plc).total_seconds() < PLC_TIMEOUT
+                if isinstance(plc_data['last_plc_update'], str):
+                    last_plc = datetime.fromisoformat(plc_data['last_plc_update'].replace('Z', '+00:00'))
+                else:
+                    last_plc = plc_data['last_plc_update']
+                plc_fresh = (now - last_plc.replace(tzinfo=None) if last_plc.tzinfo else last_plc).total_seconds() < PLC_TIMEOUT
             except:
-                pass
+                plc_fresh = False
         
-        # Update connection status based on data freshness
+        # Update actual connection status
         esp_connected = esp_connected and esp_fresh
         plc_connected = plc_connected and plc_fresh
         
-        # Get working data - use current if available, otherwise historical
+        # FIXED: Handle disconnected state properly
+        if not esp_connected and not plc_connected:
+            # Both disconnected - use minimal health score
+            return {
+                'overall_health_score': 30.0,
+                'electrical_health': 30.0,
+                'thermal_health': 30.0,
+                'mechanical_health': 30.0,
+                'status': 'Disconnected',
+                'esp_connected': False,
+                'plc_connected': False,
+                'data_source': 'disconnected',
+                'confidence_factor': 100.0
+            }
+        
+        # Get working data
         working_data = {}
         data_source = []
         
-        if esp_connected and esp_fresh:
-            # Use current ESP data
+        if esp_connected:
             working_data.update({
                 'esp_current': float(sensor_data.get('esp_current', 0)),
                 'esp_voltage': float(sensor_data.get('esp_voltage', 0)),
@@ -326,7 +341,6 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
             })
             data_source.append('current_esp')
         elif use_historical:
-            # Fallback to historical ESP data
             historical = get_historical_data(hours_back=24)
             working_data.update({
                 'esp_current': historical['esp_current'],
@@ -337,8 +351,7 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
             })
             data_source.append('historical_esp')
         
-        if plc_connected and plc_fresh:
-            # Use current PLC data
+        if plc_connected:
             working_data.update({
                 'plc_motor_temp': float(plc_data.get('plc_motor_temp', 0)),
                 'plc_motor_voltage': float(plc_data.get('plc_motor_voltage', 0)),
@@ -347,7 +360,6 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
             })
             data_source.append('current_plc')
         elif use_historical:
-            # Fallback to historical PLC data
             historical = get_historical_data(hours_back=24)
             working_data.update({
                 'plc_motor_temp': historical['plc_motor_temp'],
@@ -357,39 +369,32 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
             })
             data_source.append('historical_plc')
         
-        # If no data available at all, use safe historical defaults
-        if not working_data:
-            historical = get_historical_data(hours_back=168)  # 1 week
-            working_data = historical
-            data_source = ['long_term_historical']
-        
-        # Calculate health components with improved thresholds
+        # Calculate health components
         electrical_health = calculate_electrical_health(working_data)
         thermal_health = calculate_thermal_health(working_data)
         mechanical_health = calculate_mechanical_health(working_data)
         
-        # Calculate weighted overall health
-        # Give more weight to current data vs historical
-        if 'current_esp' in data_source and 'current_plc' in data_source:
-            weight_factor = 1.0  # Full weight for current data
-        elif 'current_esp' in data_source or 'current_plc' in data_source:
-            weight_factor = 0.9  # Slight reduction for mixed data
+        # FIXED: More realistic health calculation
+        if esp_connected and plc_connected:
+            weight_factor = 1.0
+        elif esp_connected or plc_connected:
+            weight_factor = 0.7  # Significant reduction for partial connection
         else:
-            weight_factor = 0.8  # Historical data gets 80% confidence
+            weight_factor = 0.3  # Major reduction for historical data only
         
         overall_health = (electrical_health + thermal_health + mechanical_health) / 3
         overall_health *= weight_factor
         
-        # Determine status with improved thresholds
-        if overall_health >= 90:
+        # Determine status with more realistic thresholds
+        if overall_health >= 95:
             status = 'Excellent'
-        elif overall_health >= 80:
+        elif overall_health >= 85:
             status = 'Good'
         elif overall_health >= 70:
             status = 'Fair'
-        elif overall_health >= 60:
+        elif overall_health >= 50:
             status = 'Warning'
-        elif overall_health >= 40:
+        elif overall_health >= 30:
             status = 'Poor'
         else:
             status = 'Critical'
@@ -403,26 +408,19 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
             'esp_connected': esp_connected,
             'plc_connected': plc_connected,
             'data_source': ', '.join(data_source),
-            'data_freshness': {
-                'esp_fresh': esp_fresh,
-                'plc_fresh': plc_fresh,
-                'esp_last_update': sensor_data.get('last_esp_update'),
-                'plc_last_update': plc_data.get('last_plc_update')
-            },
             'confidence_factor': round(weight_factor * 100, 1)
         }
         
-        logging.info(f"Health calculated: {overall_health:.1f}% ({status}) - Data: {', '.join(data_source)}")
         return result
         
     except Exception as e:
         logging.error(f"Error calculating health score: {e}")
         return {
-            'overall_health_score': 50.0,
-            'electrical_health': 50.0,
-            'thermal_health': 50.0,
-            'mechanical_health': 50.0,
-            'status': 'Unknown',
+            'overall_health_score': 30.0,
+            'electrical_health': 30.0,
+            'thermal_health': 30.0,
+            'mechanical_health': 30.0,
+            'status': 'Error',
             'esp_connected': False,
             'plc_connected': False,
             'data_source': 'error',
@@ -430,78 +428,82 @@ def calculate_advanced_health_score(sensor_data, plc_data, use_historical=True):
         }
 
 def calculate_electrical_health(data):
-    """Calculate electrical health component"""
+    """Calculate electrical health component with realistic thresholds"""
     health = 100.0
     
     current = data.get('esp_current', 0)
     voltage = data.get('esp_voltage', 0)
     
-    # Current analysis (improved thresholds)
-    if current > 12.0:  # Very high current
-        health -= min(40, (current - 12.0) * 8)
-    elif current > 9.0:  # High current
-        health -= (current - 9.0) * 4
-    elif current < 3.0:  # Very low current (motor not running?)
-        health -= (3.0 - current) * 5
+    # More realistic current analysis
+    if current > 15.0:  # Very high current - major issue
+        health -= min(60, (current - 15.0) * 10)
+    elif current > 12.0:  # High current - significant issue
+        health -= (current - 12.0) * 8
+    elif current > 9.0:  # Elevated current - minor issue
+        health -= (current - 9.0) * 3
+    elif current < 2.0:  # Very low current - motor issues
+        health -= (2.0 - current) * 15
     
-    # Voltage analysis (realistic industrial thresholds)
-    if voltage < 18.0:  # Very low voltage
-        health -= min(35, (18.0 - voltage) * 12)
-    elif voltage < 21.0:  # Low voltage
-        health -= (21.0 - voltage) * 2
-    elif voltage > 28.0:  # Very high voltage
-        health -= min(30, (voltage - 28.0) * 10)
-    elif voltage > 26.5:  # High voltage
-        health -= (voltage - 26.5) * 5
+    # More realistic voltage analysis
+    if voltage < 15.0:  # Very low voltage - critical
+        health -= min(50, (15.0 - voltage) * 15)
+    elif voltage < 20.0:  # Low voltage - significant
+        health -= (20.0 - voltage) * 5
+    elif voltage > 30.0:  # Very high voltage - critical
+        health -= min(40, (voltage - 30.0) * 12)
+    elif voltage > 26.0:  # High voltage - moderate issue
+        health -= (voltage - 26.0) * 3
     
-    return max(30.0, min(100.0, health))  # Minimum 30% for electrical
+    return max(10.0, min(100.0, health))
 
 def calculate_thermal_health(data):
-    """Calculate thermal health component"""
+    """Calculate thermal health component with realistic thresholds"""
     health = 100.0
     
     motor_temp = data.get('plc_motor_temp', 0)
     env_temp = data.get('env_temp_c', 0)
     
-    # Motor temperature analysis
-    if motor_temp > 85.0:  # Critical temperature
-        health -= min(50, (motor_temp - 85.0) * 10)
-    elif motor_temp > 70.0:  # High temperature
-        health -= (motor_temp - 70.0) * 3
-    elif motor_temp > 55.0:  # Elevated temperature
-        health -= (motor_temp - 55.0) * 1.5
+    # More realistic temperature analysis
+    if motor_temp > 90.0:  # Critical temperature - immediate shutdown
+        health -= min(70, (motor_temp - 90.0) * 15)
+    elif motor_temp > 75.0:  # High temperature - major concern
+        health -= (motor_temp - 75.0) * 8
+    elif motor_temp > 60.0:  # Elevated temperature - moderate concern
+        health -= (motor_temp - 60.0) * 3
+    elif motor_temp < 10.0:  # Very cold - potential issues
+        health -= (10.0 - motor_temp) * 2
     
-    # Environmental temperature impact
-    if env_temp > 45.0:  # Very hot environment
-        health -= (env_temp - 45.0) * 1
-    elif env_temp < -5.0:  # Very cold environment
-        health -= (-5.0 - env_temp) * 0.5
+    # Environmental impact
+    if env_temp > 50.0:  # Very hot environment
+        health -= (env_temp - 50.0) * 2
+    elif env_temp < -10.0:  # Very cold environment
+        health -= (-10.0 - env_temp) * 1
     
-    return max(40.0, min(100.0, health))  # Minimum 40% for thermal
+    return max(15.0, min(100.0, health))
 
 def calculate_mechanical_health(data):
-    """Calculate mechanical health component"""
+    """Calculate mechanical health component with realistic thresholds"""
     health = 100.0
     
     esp_rpm = data.get('esp_rpm', 0)
     plc_rpm = data.get('plc_motor_rpm', 0)
     
-    # Use the higher RPM reading if both available
+    # Use the higher RPM reading
     rpm = max(esp_rpm, plc_rpm) if esp_rpm and plc_rpm else (esp_rpm or plc_rpm)
     
-    # RPM analysis (motor-specific thresholds)
-    if rpm < 1000:  # Motor not running or severe issue
-        health -= 60
-    elif rpm < 2000:  # Very low RPM
-        health -= (2000 - rpm) * 0.02
-    elif rpm < 2400:  # Low RPM
-        health -= (2400 - rpm) * 0.01
-    elif rpm > 3500:  # Very high RPM
+    # More realistic RPM analysis
+    if rpm < 500:  # Motor not running or severe mechanical issue
+        health -= 80
+    elif rpm < 1500:  # Very low RPM - major mechanical issue
+        health -= (1500 - rpm) * 0.04
+    elif rpm < 2200:  # Low RPM - moderate issue
+        health -= (2200 - rpm) * 0.02
+    elif rpm > 4000:  # Very high RPM - overspeed condition
+        health -= (rpm - 4000) * 0.03
+    elif rpm > 3500:  # High RPM - potential issue
         health -= (rpm - 3500) * 0.015
-    elif rpm > 3200:  # High RPM
-        health -= (rpm - 3200) * 0.008
     
-    return max(35.0, min(100.0, health))  # Minimum 35% for mechanical
+    return max(20.0, min(100.0, health))
 
 def store_data_point(combined_data):
     """Store data point for history"""
@@ -522,75 +524,133 @@ def store_data_point(combined_data):
     if len(data_history) > 100:
         data_history.pop(0)
 
-def generate_recommendations(health_data):
-    """Generate AI recommendations based on health"""
+# FIXED: Enhanced recommendations with proper logic
+def generate_recommendations(health_data, sensor_data, plc_data):
+    """Generate enhanced recommendations based on system state - FIXED VERSION"""
     recommendations = []
     
     health_score = health_data.get('overall_health_score', 0)
     electrical_health = health_data.get('electrical_health', 0)
     thermal_health = health_data.get('thermal_health', 0)
     mechanical_health = health_data.get('mechanical_health', 0)
+    esp_connected = health_data.get('esp_connected', False)
+    plc_connected = health_data.get('plc_connected', False)
     
-    if health_score < 70:
+    # Connection-based recommendations
+    if not esp_connected and not plc_connected:
         recommendations.append({
             'priority': 'HIGH',
-            'category': 'Maintenance',
-            'message': f'System health at {health_score:.1f}% - Schedule maintenance inspection',
-            'action': 'Contact maintenance team within 24 hours'
+            'category': 'Connectivity',
+            'message': 'Both ESP8266 and PLC are disconnected - Complete system offline',
+            'action': 'Check network connections, power supply, and restart devices immediately'
+        })
+    elif not esp_connected:
+        recommendations.append({
+            'priority': 'HIGH',
+            'category': 'Connectivity',
+            'message': 'ESP8266 sensor network disconnected - Losing critical sensor data',
+            'action': 'Check WiFi connection and ESP8266 power supply within 10 minutes'
+        })
+    elif not plc_connected:
+        recommendations.append({
+            'priority': 'HIGH',
+            'category': 'Connectivity',
+            'message': 'FX5U PLC disconnected - Motor control system offline',
+            'action': 'Check Ethernet connection and PLC power status immediately'
         })
     
-    if electrical_health < 80:
+    # Health-based recommendations
+    if health_score < 50:
+        recommendations.append({
+            'priority': 'HIGH',
+            'category': 'System Health',
+            'message': f'Critical system health at {health_score:.1f}% - Immediate shutdown recommended',
+            'action': 'Stop motor operation and conduct emergency inspection within 1 hour'
+        })
+    elif health_score < 70:
+        recommendations.append({
+            'priority': 'MEDIUM',
+            'category': 'System Health',
+            'message': f'Poor system health at {health_score:.1f}% - Maintenance required',
+            'action': 'Schedule maintenance inspection within 24 hours'
+        })
+    elif health_score < 85:
+        recommendations.append({
+            'priority': 'LOW',
+            'category': 'System Health',
+            'message': f'Fair system health at {health_score:.1f}% - Monitor closely',
+            'action': 'Increase monitoring frequency and plan maintenance'
+        })
+    
+    # Component-specific recommendations
+    if electrical_health < 70:
+        current = sensor_data.get('esp_current', 0)
+        voltage = sensor_data.get('esp_voltage', 0)
+        
         recommendations.append({
             'priority': 'MEDIUM',
             'category': 'Electrical',
-            'message': f'Electrical health at {electrical_health:.1f}% - Check power supply',
-            'action': 'Inspect voltage levels and current consumption'
+            'message': f'Electrical health at {electrical_health:.1f}% - Current: {current}A, Voltage: {voltage}V',
+            'action': 'Check power supply stability, wiring connections, and voltage regulation'
         })
     
-    if thermal_health < 80:
+    if thermal_health < 70:
+        temp = plc_data.get('plc_motor_temp', 0)
         recommendations.append({
             'priority': 'MEDIUM',
-            'category': 'Cooling',
-            'message': f'Thermal health at {thermal_health:.1f}% - Check cooling system',
-            'action': 'Inspect cooling fans and ventilation'
+            'category': 'Thermal',
+            'message': f'Thermal health at {thermal_health:.1f}% - Motor temperature: {temp}°C',
+            'action': 'Check cooling system, ventilation, and consider reducing load'
         })
     
-    if mechanical_health < 80:
+    if mechanical_health < 70:
+        rpm = sensor_data.get('esp_rpm', 0)
         recommendations.append({
             'priority': 'MEDIUM',
             'category': 'Mechanical',
-            'message': f'Mechanical health at {mechanical_health:.1f}% - Check motor bearings',
-            'action': 'Inspect motor bearings and alignment'
+            'message': f'Mechanical health at {mechanical_health:.1f}% - Current RPM: {rpm}',
+            'action': 'Inspect motor bearings, alignment, and mechanical coupling'
         })
     
-    if not health_data.get('esp_connected', False):
+    # Specific parameter-based recommendations
+    if sensor_data.get('esp_current', 0) > 12:
+        recommendations.append({
+            'priority': 'HIGH',
+            'category': 'Overcurrent',
+            'message': f'High current detected: {sensor_data.get("esp_current", 0):.2f}A',
+            'action': 'Check motor load, wiring, and potential short circuits immediately'
+        })
+    
+    if plc_data.get('plc_motor_temp', 0) > 75:
+        recommendations.append({
+            'priority': 'HIGH',
+            'category': 'Overheating',
+            'message': f'Motor overheating: {plc_data.get("plc_motor_temp", 0):.1f}°C',
+            'action': 'Reduce load, check cooling system, consider emergency shutdown'
+        })
+    
+    if sensor_data.get('esp_voltage', 0) < 20:
         recommendations.append({
             'priority': 'MEDIUM',
-            'category': 'Connectivity',
-            'message': 'ESP8266 sensor disconnected - Check network connection',
-            'action': 'Verify WiFi connectivity and power supply'
+            'category': 'Low Voltage',
+            'message': f'Low voltage condition: {sensor_data.get("esp_voltage", 0):.1f}V',
+            'action': 'Check power supply, electrical connections, and voltage regulation'
         })
     
-    if not health_data.get('plc_connected', False):
-        recommendations.append({
-            'priority': 'MEDIUM', 
-            'category': 'PLC',
-            'message': 'FX5U PLC disconnected - Check industrial network',
-            'action': 'Verify Ethernet connection and PLC power status'
-        })
-    
+    # If no issues found
     if not recommendations:
         recommendations.append({
             'priority': 'LOW',
             'category': 'Status',
-            'message': 'System operating normally - No immediate actions required',
-            'action': 'Continue monitoring for optimal performance'
+            'message': 'All systems operating within normal parameters',
+            'action': 'Continue regular monitoring and maintenance schedule'
         })
     
     return recommendations
 
+# FIXED: Connection timeout monitoring with proper data zeroing
 def check_connection_timeout():
-    """FIXED: Check for connection timeouts and update status"""
+    """Enhanced connection timeout monitoring with data zeroing - FIXED VERSION"""
     global latest_sensor_data, latest_plc_data
     
     while True:
@@ -600,59 +660,89 @@ def check_connection_timeout():
             # Check ESP timeout
             if latest_sensor_data.get('last_esp_update'):
                 try:
-                    last_esp = datetime.fromisoformat(latest_sensor_data['last_esp_update'])
-                    if (now - last_esp).total_seconds() > ESP_TIMEOUT:
+                    last_esp_str = latest_sensor_data['last_esp_update']
+                    if isinstance(last_esp_str, str):
+                        last_esp = datetime.fromisoformat(last_esp_str.replace('Z', '+00:00'))
+                    else:
+                        last_esp = last_esp_str
+                    
+                    time_diff = (now - last_esp.replace(tzinfo=None) if last_esp.tzinfo else last_esp).total_seconds()
+                    
+                    if time_diff > ESP_TIMEOUT:
                         if latest_sensor_data['esp_connected']:
                             latest_sensor_data['esp_connected'] = False
                             latest_sensor_data['esp_data_quality'] = 'Timeout'
-                            logging.warning("ESP connection timeout detected")
-                            # FIXED: Removed broadcast parameter
+                            # FIXED: Zero out data when disconnected
+                            latest_sensor_data.update({
+                                'esp_current': 0.0,
+                                'esp_voltage': 0.0,
+                                'esp_rpm': 0,
+                                'env_temp_c': 0.0,
+                                'env_humidity': 0.0,
+                                'relay1_status': 'OFF',
+                                'relay2_status': 'OFF',
+                                'relay3_status': 'OFF'
+                            })
+                            logging.warning("ESP connection timeout - data reset to zero")
+                            
                             if socketio and connected_clients:
                                 socketio.emit('device_timeout', {'device': 'ESP8266', 'status': 'disconnected'})
-                except:
-                    pass
+                except Exception as e:
+                    logging.error(f"Error checking ESP timeout: {e}")
             
             # Check PLC timeout
             if latest_plc_data.get('last_plc_update'):
                 try:
-                    last_plc = datetime.fromisoformat(latest_plc_data['last_plc_update'])
-                    if (now - last_plc).total_seconds() > PLC_TIMEOUT:
+                    last_plc_str = latest_plc_data['last_plc_update']
+                    if isinstance(last_plc_str, str):
+                        last_plc = datetime.fromisoformat(last_plc_str.replace('Z', '+00:00'))
+                    else:
+                        last_plc = last_plc_str
+                    
+                    time_diff = (now - last_plc.replace(tzinfo=None) if last_plc.tzinfo else last_plc).total_seconds()
+                    
+                    if time_diff > PLC_TIMEOUT:
                         if latest_plc_data['plc_connected']:
                             latest_plc_data['plc_connected'] = False
                             latest_plc_data['plc_data_quality'] = 'Timeout'
-                            logging.warning("PLC connection timeout detected")
-                            # FIXED: Removed broadcast parameter
+                            # FIXED: Zero out data when disconnected
+                            latest_plc_data.update({
+                                'plc_motor_temp': 0.0,
+                                'plc_motor_voltage': 0.0,
+                                'plc_motor_current': 0.0,
+                                'plc_motor_rpm': 0,
+                                'plc_power_consumption': 0.0,
+                                'plc_status': 'DISCONNECTED'
+                            })
+                            logging.warning("PLC connection timeout - data reset to zero")
+                            
                             if socketio and connected_clients:
                                 socketio.emit('device_timeout', {'device': 'FX5U_PLC', 'status': 'disconnected'})
-                except:
-                    pass
+                except Exception as e:
+                    logging.error(f"Error checking PLC timeout: {e}")
             
-            # Emit status update to all clients if there are connected clients
+            # Emit status update if there are connected clients
             if connected_clients:
                 health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
                 combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
-                # FIXED: Removed broadcast parameter
                 socketio.emit('data_update', combined_data)
             
         except Exception as e:
             logging.error(f"Connection monitor error: {e}")
         
-        eventlet.sleep(10)  # Check every 10 seconds
+        eventlet.sleep(10)
 
 def create_flask_app():
     """Create and configure Flask application"""
     global app, socketio
     
-    # Create Flask app with proper paths
     app = Flask(__name__, 
                 template_folder='templates',
                 static_folder='static')
     
-    # Configure Flask
     app.config['SECRET_KEY'] = 'motor_monitoring_secret_key_2025'
-    app.config['DEBUG'] = False  # CRITICAL: Must be False for production WebSocket
+    app.config['DEBUG'] = False
     
-    # FIXED: Create SocketIO instance with correct configuration
     socketio = SocketIO(
         app,
         async_mode='eventlet',
@@ -660,11 +750,10 @@ def create_flask_app():
         transports=['websocket', 'polling'],
         ping_timeout=60,
         ping_interval=25,
-        logger=False,  # Disable excessive logging
+        logger=False,
         engineio_logger=False
     )
     
-    # Register all routes
     register_core_routes(app)
     register_device_routes(app)
     register_api_routes(app)
@@ -677,27 +766,18 @@ def register_core_routes(app):
     
     @app.route('/')
     def dashboard():
-        """Main dashboard route"""
         return render_template('dashboard.html')
     
     @app.route('/favicon.ico')
     def favicon():
-        """Handle favicon requests"""
         return '', 204
     
     @app.route('/health')
     def health_check():
-        """System health check endpoint"""
         return jsonify({
             'status': 'healthy',
-            'service': 'AI Motor Monitoring System v4.1',
+            'service': 'AI Motor Monitoring System v4.1 FIXED',
             'timestamp': datetime.now().isoformat(),
-            'components': {
-                'flask': 'running',
-                'socketio': 'active',
-                'database': 'connected',
-                'ai_engine': 'ready'
-            },
             'connected_clients': len(connected_clients)
         })
 
@@ -708,13 +788,12 @@ def register_device_routes(app):
     
     @app.route('/api/send-data', methods=['POST'])
     def receive_esp_data():
-        """Receive ESP8266/Arduino sensor data - FIXED VERSION"""
         try:
             data = request.get_json(force=True)
             if not data:
                 return jsonify({'status': 'error', 'message': 'No data received'}), 400
             
-            # Update sensor data with proper connection handling
+            # Update sensor data
             latest_sensor_data.update({
                 'esp_current': float(data.get('VAL1', 0)),
                 'esp_voltage': float(data.get('VAL2', 0)),
@@ -728,12 +807,12 @@ def register_device_routes(app):
                 'relay2_status': data.get('VAL10', 'OFF'),
                 'relay3_status': data.get('VAL11', 'OFF'),
                 'combined_status': data.get('VAL12', 'NOR'),
-                'esp_connected': True,  # ✅ KEY FIX: Set to True when data received
+                'esp_connected': True,
                 'last_esp_update': datetime.now().isoformat(),
                 'esp_data_quality': 'Good'
             })
             
-            # Calculate health with current data
+            # Calculate health
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
             
             # Save to database
@@ -743,7 +822,7 @@ def register_device_routes(app):
             combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
             store_data_point(combined_data)
             
-            # FIXED: Emit real-time update (removed broadcast parameter)
+            # Emit real-time update
             if connected_clients:
                 socketio.emit('data_update', combined_data)
             
@@ -752,18 +831,17 @@ def register_device_routes(app):
             return jsonify({'status': 'success', 'health': health_data['overall_health_score']}), 200
             
         except Exception as e:
-            logger.error(f"❌ ESP Error: {e}")
+            logger.error(f"ESP Error: {e}")
             return jsonify({'status': 'error', 'message': str(e)}), 500
     
     @app.route('/api/plc-data', methods=['POST'])
     def receive_plc_data():
-        """Receive FX5U PLC motor data - FIXED VERSION"""
         try:
             data = request.get_json(force=True)
             if not data:
                 return jsonify({'status': 'error', 'message': 'No data received'}), 400
             
-            # Update PLC data with proper connection handling
+            # Update PLC data
             latest_plc_data.update({
                 'plc_motor_temp': float(data.get('motor_temp', 0)),
                 'plc_motor_voltage': float(data.get('motor_voltage', 0)),
@@ -774,12 +852,12 @@ def register_device_routes(app):
                 'plc_raw_d102': int(data.get('raw_d102', 0)),
                 'plc_status': data.get('plc_status', 'NORMAL'),
                 'plc_error_code': int(data.get('error_code', 0)),
-                'plc_connected': True,  # ✅ KEY FIX: Set to True when data received
+                'plc_connected': True,
                 'last_plc_update': datetime.now().isoformat(),
                 'plc_data_quality': 'Good'
             })
             
-            # Calculate health with current data
+            # Calculate health
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
             
             # Save to database
@@ -789,7 +867,7 @@ def register_device_routes(app):
             combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
             store_data_point(combined_data)
             
-            # FIXED: Emit real-time update (removed broadcast parameter)
+            # Emit real-time update
             if connected_clients:
                 socketio.emit('data_update', combined_data)
             
@@ -798,7 +876,7 @@ def register_device_routes(app):
             return jsonify({'status': 'success', 'health': health_data['overall_health_score']}), 200
             
         except Exception as e:
-            logger.error(f"❌ PLC Error: {e}")
+            logger.error(f"PLC Error: {e}")
             return jsonify({'status': 'error', 'message': str(e)}), 500
 
 def register_api_routes(app):
@@ -806,7 +884,6 @@ def register_api_routes(app):
     
     @app.route('/api/current-data')
     def current_data():
-        """Get current sensor data with historical fallback"""
         try:
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
             combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
@@ -823,10 +900,9 @@ def register_api_routes(app):
     
     @app.route('/api/recommendations')
     def get_recommendations():
-        """Get AI recommendations based on current system state"""
         try:
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
-            recommendations = generate_recommendations(health_data)
+            recommendations = generate_recommendations(health_data, latest_sensor_data, latest_plc_data)
             
             return jsonify({
                 'status': 'success',
@@ -838,63 +914,10 @@ def register_api_routes(app):
         except Exception as e:
             logging.getLogger(__name__).error(f"Error generating recommendations: {e}")
             return jsonify({'status': 'error', 'message': str(e)}), 500
-    
-    @app.route('/api/system-status')
-    def system_status():
-        """Get detailed system status"""
-        health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
-        
-        return jsonify({
-            'status': 'operational',
-            'health': health_data,
-            'devices': {
-                'esp8266': {
-                    'connected': health_data['esp_connected'],
-                    'last_update': latest_sensor_data.get('last_esp_update'),
-                    'data_quality': latest_sensor_data.get('esp_data_quality', 'Unknown')
-                },
-                'fx5u_plc': {
-                    'connected': health_data['plc_connected'],
-                    'last_update': latest_plc_data.get('last_plc_update'),
-                    'data_quality': latest_plc_data.get('plc_data_quality', 'Unknown')
-                }
-            },
-            'ai_model_status': 'Active',
-            'connected_clients': len(connected_clients),
-            'timestamp': datetime.now().isoformat()
-        })
-    
-    @app.route('/api/debug-health')
-    def debug_health():
-        """Debug health calculation for troubleshooting"""
-        health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
-        historical_data = get_historical_data()
-        
-        return jsonify({
-            'current_sensor_data': latest_sensor_data,
-            'current_plc_data': latest_plc_data,
-            'calculated_health': health_data,
-            'historical_reference': historical_data,
-            'connected_clients': len(connected_clients),
-            'data_history_length': len(data_history),
-            'timestamp': datetime.now().isoformat()
-        })
-    
-    @app.route('/api/chart-data')
-    def get_chart_data():
-        """Get chart data for frontend"""
-        try:
-            return jsonify({
-                'status': 'success',
-                'data': data_history,
-                'length': len(data_history),
-                'timestamp': datetime.now().isoformat()
-            })
-        except Exception as e:
-            return jsonify({'status': 'error', 'message': str(e)}), 500
 
+# FIXED: SocketIO event handlers with proper signatures
 def register_socketio_events(socketio):
-    """FIXED: Register WebSocket event handlers"""
+    """FIXED: Register WebSocket event handlers with correct signatures"""
     global connected_clients
     logger = logging.getLogger('socketio')
     
@@ -903,7 +926,6 @@ def register_socketio_events(socketio):
         connected_clients.add(request.sid)
         logger.info(f'✅ Client connected: {request.sid} (Total: {len(connected_clients)})')
         
-        # Send current data immediately
         try:
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
             combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
@@ -912,14 +934,14 @@ def register_socketio_events(socketio):
         except Exception as e:
             logger.error(f"Error sending initial data: {e}")
     
+    # FIXED: Disconnect handler with proper signature
     @socketio.on('disconnect')
-    def handle_disconnect():
+    def handle_disconnect():  # Removed the reason parameter that was causing the error
         connected_clients.discard(request.sid)
         logger.info(f'❌ Client disconnected: {request.sid} (Total: {len(connected_clients)})')
     
     @socketio.on('request_data')
     def handle_data_request():
-        """Handle explicit data requests"""
         try:
             health_data = calculate_advanced_health_score(latest_sensor_data, latest_plc_data)
             combined_data = {**latest_sensor_data, **latest_plc_data, **health_data}
@@ -929,7 +951,6 @@ def register_socketio_events(socketio):
     
     @socketio.on('control_motor')
     def handle_motor_control(data):
-        """Handle motor control commands"""
         action = data.get('action', 'unknown')
         logger.info(f"🎮 Motor control: {action}")
         emit('control_response', {'action': action, 'status': 'acknowledged'})
@@ -955,22 +976,12 @@ def print_startup_banner():
 ╚══════════════════════════════════════════════════════════════════════════════╝
     """
     print(banner)
-    
-    print("🌐 Server: http://0.0.0.0:5000")
-    print("📊 Database: sqlite:///database/sensor_history.db")
-    print("📝 Logs: logs/application.log")
-    print("🎯 Debug Mode: Disabled (Production)")
-    print("📡 WebSocket: Enabled with eventlet")
-    print("🔄 Historical Fallback: Enabled")
-    print("=" * 82)
 
 def main():
     """Main application entry point"""
     try:
-        # Print startup banner
         print_startup_banner()
         
-        # Setup logging
         setup_logging()
         logger = logging.getLogger(__name__)
         
@@ -979,23 +990,15 @@ def main():
         logger.info(f"Timestamp: {datetime.now().isoformat()}")
         logger.info("=" * 60)
         
-        # Create necessary directories
-        logger.info("Creating necessary directories...")
         create_directories()
-        
-        # Initialize database
-        logger.info("Initializing database...")
         init_database()
         
-        # Create Flask application
         logger.info("Creating Flask application...")
         app, socketio = create_flask_app()
         
-        # Start connection timeout monitoring in background thread
         logger.info("Starting connection monitoring...")
         eventlet.spawn(check_connection_timeout)
         
-        # Print startup completion
         print("🚀 System startup completed successfully!")
         print(f"📊 Dashboard: http://0.0.0.0:5000")
         print("📝 API Debug: http://0.0.0.0:5000/api/debug-health")
@@ -1008,12 +1011,11 @@ def main():
         print("   FX5U PLC: POST /api/plc-data")
         print("=" * 82)
         
-        # FIXED: Start Flask-SocketIO server with eventlet
         socketio.run(
             app,
             host='0.0.0.0',
             port=5000,
-            debug=False,  # CRITICAL: Must be False for WebSocket
+            debug=False,
             use_reloader=False,
             allow_unsafe_werkzeug=True
         )

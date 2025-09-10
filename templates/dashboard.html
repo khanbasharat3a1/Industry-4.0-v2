@@ -3,580 +3,819 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Motor Monitor v4.1 - COMPLETE DASHBOARD</title>
-    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <title>AI Motor Intelligence Monitoring System</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Socket.IO -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+        :root {
+            --primary-blue: #2563eb;
+            --secondary-blue: #3b82f6;
+            --success-green: #059669;
+            --warning-amber: #d97706;
+            --danger-red: #dc2626;
+            --info-cyan: #0891b2;
+            --dark-slate: #1e293b;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-warning: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --gradient-danger: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            --gradient-info: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-            overflow-x: auto;
+            background-color: var(--light-bg);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
         }
 
-        .header {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo { 
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            color: #2563eb;
+        /* Enhanced Navbar */
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
-        
-        .status-bar { 
-            display: flex; 
-            gap: 1rem; 
-            align-items: center; 
+
+        .navbar-brand i {
+            font-size: 1.8rem;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        
-        .status-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
+
+        /* Enhanced Cards */
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            background: var(--card-bg);
         }
-        
-        .connected { background: #dcfce7; color: #166534; }
-        .disconnected { background: #fef2f2; color: #991b1b; }
-        
-        .indicator {
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            background: transparent;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        /* Status Indicators */
+        .status-indicator {
             width: 12px;
             height: 12px;
             border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
             animation: pulse 2s infinite;
         }
-        .indicator.green { background: #10b981; }
-        .indicator.red { background: #ef4444; }
-        .indicator.yellow { background: #f59e0b; }
 
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-
-        .container { 
-            max-width: 1400px; 
-            margin: 0 auto; 
-            padding: 2rem; 
-        }
-        
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 1.5rem; 
-            margin-bottom: 2rem; 
+        .status-connected { 
+            background-color: var(--success-green);
+            box-shadow: 0 0 10px rgba(5, 150, 105, 0.3);
         }
 
-        .widget {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
+        .status-disconnected { 
+            background-color: var(--danger-red);
+            box-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
+        }
+
+        .status-warning { 
+            background-color: var(--warning-amber);
+            box-shadow: 0 0 10px rgba(217, 119, 6, 0.3);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+
+        /* Enhanced Metric Cards */
+        .metric-card {
+            background: var(--gradient-primary);
+            color: white;
             border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .widget:hover { 
-            transform: translateY(-2px); 
-            box-shadow: 0 10px 25px -3px rgba(0,0,0,0.1);
+            border: none;
+            position: relative;
+            overflow: hidden;
         }
 
-        .widget-title {
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(30px, -30px);
+        }
+
+        .metric-card .card-body {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Health Score Styling */
+        .health-score-excellent { 
+            color: var(--success-green); 
+            font-weight: 700;
+        }
+        .health-score-good { 
+            color: #22c55e; 
+            font-weight: 700;
+        }
+        .health-score-warning { 
+            color: var(--warning-amber); 
+            font-weight: 700;
+        }
+        .health-score-critical { 
+            color: var(--danger-red); 
+            font-weight: 700;
+        }
+
+        /* Enhanced Sidebar */
+        .sidebar {
+            background: var(--card-bg);
+            min-height: calc(100vh - 76px);
+            border-right: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar .nav-link {
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            margin: 0.25rem 0;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: var(--light-bg);
+            color: var(--primary-blue);
+            transform: translateX(4px);
+        }
+
+        .sidebar .nav-link.active {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .sidebar .nav-link i {
             font-size: 1.1rem;
-            font-weight: 600;
+            width: 20px;
+        }
+
+        /* Chart Container */
+        .chart-container {
+            position: relative;
+            height: 350px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        /* Multi-Metric Toggle Buttons */
+        .metric-toggles {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
             margin-bottom: 1rem;
+        }
+
+        .metric-toggle {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: #1f2937;
         }
 
-        /* Motor Health Widget */
-        .health-widget {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .metric-toggle:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .metric-toggle.active {
+            border-color: var(--primary-blue);
+            background: var(--primary-blue);
             color: white;
-            text-align: center;
-            grid-column: span 1;
-        }
-        
-        .health-score { 
-            font-size: 3.5rem; 
-            font-weight: bold; 
-            margin: 1rem 0; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .health-status { 
-            font-size: 1.2rem; 
-            margin-bottom: 1rem; 
-            opacity: 0.9;
-        }
-        
-        .health-breakdown {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        
-        .health-item { text-align: center; }
-        .health-item-score { font-size: 1.3rem; font-weight: bold; }
-        .health-item-label { font-size: 0.9rem; opacity: 0.9; }
-
-        /* Device Status Widgets */
-        .device-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .device-item {
-            text-align: center;
-            padding: 0.75rem;
-            background: #f8fafc;
-            border-radius: 8px;
-        }
-        
-        .device-value { 
-            font-size: 1.4rem; 
-            font-weight: bold; 
-            color: #1f2937;
-            margin-bottom: 0.25rem; 
-        }
-        
-        .device-label { 
-            font-size: 0.85rem; 
-            color: #6b7280; 
+            box-shadow: var(--shadow-md);
         }
 
-        /* Chart Widget */
-        .chart-widget { 
-            grid-column: span 2; 
-            min-height: 450px; 
-        }
-        
-        .chart-controls {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        .chart-btn {
-            padding: 0.5rem 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            background: white;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            color: #374151;
-        }
-        
-        .chart-btn:hover {
-            border-color: #2563eb;
-            color: #2563eb;
-        }
-        
-        .chart-btn.active {
-            background: #2563eb;
-            color: white;
-            border-color: #2563eb;
-        }
-        
-        .chart-container { 
-            position: relative; 
-            height: 300px; 
-            margin-top: 1rem;
+        .metric-toggle.active.current {
+            border-color: var(--success-green);
+            background: var(--success-green);
         }
 
-        /* Alerts & Recommendations */
+        .metric-toggle.active.voltage {
+            border-color: var(--info-cyan);
+            background: var(--info-cyan);
+        }
+
+        .metric-toggle.active.rpm {
+            border-color: var(--warning-amber);
+            background: var(--warning-amber);
+        }
+
+        .metric-toggle.active.temperature {
+            border-color: var(--danger-red);
+            background: var(--danger-red);
+        }
+
+        .metric-toggle.active.health {
+            border-color: #8b5cf6;
+            background: #8b5cf6;
+        }
+
+        .toggle-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        /* Alert Styling */
         .alert-item {
-            padding: 0.75rem;
-            margin-bottom: 0.5rem;
-            border-radius: 8px;
             border-left: 4px solid;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-        }
-        
-        .alert-high { 
-            background: #fef2f2; 
-            border-color: #ef4444; 
-        }
-        
-        .alert-medium { 
-            background: #fffbeb; 
-            border-color: #f59e0b; 
-        }
-        
-        .alert-low { 
-            background: #f0f9ff; 
-            border-color: #06b6d4; 
-        }
-        
-        .alert-content { flex: 1; }
-        
-        .alert-title { 
-            font-weight: 600; 
-            font-size: 0.9rem; 
-            margin-bottom: 0.25rem;
-        }
-        
-        .alert-message { 
-            font-size: 0.8rem; 
-            color: #6b7280; 
-            line-height: 1.4;
+            margin-bottom: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: 0 12px 12px 0;
+            background: var(--card-bg);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
         }
 
-        /* Control Panel */
-        .control-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
+        .alert-item:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateX(4px);
         }
-        
-        .control-btn {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            background: #2563eb;
-            color: white;
-            cursor: pointer;
-            font-weight: 500;
-            font-size: 0.9rem;
+
+        .alert-critical { border-left-color: var(--danger-red); }
+        .alert-warning { border-left-color: var(--warning-amber); }
+        .alert-info { border-left-color: var(--info-cyan); }
+        .alert-success { border-left-color: var(--success-green); }
+
+        /* Enhanced Control Buttons */
+        .control-button {
+            border-radius: 12px;
+            font-weight: 600;
             transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
         }
-        
-        .control-btn:hover { 
-            background: #1d4ed8; 
+
+        .control-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Data Display Cards */
+        .data-display {
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .data-display:hover {
+            background: var(--card-bg);
+            box-shadow: var(--shadow-sm);
             transform: translateY(-1px);
         }
-        
-        .control-btn:disabled {
-            background: #9ca3af;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .control-btn.success { background: #10b981; }
-        .control-btn.success:hover { background: #059669; }
-        .control-btn.danger { background: #ef4444; }
-        .control-btn.danger:hover { background: #dc2626; }
-        .control-btn.warning { background: #f59e0b; }
-        .control-btn.warning:hover { background: #d97706; }
 
-        /* Loading States */
-        .loading {
-            opacity: 0.7;
-            pointer-events: none;
-        }
-        
-        .loading::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 20px;
-            height: 20px;
-            margin: -10px 0 0 -10px;
-            border: 2px solid #f3f3f3;
-            border-top: 2px solid #2563eb;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
+        .data-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Notifications */
-        .notification {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            color: white;
+        .data-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             font-weight: 500;
-            z-index: 1001;
-            animation: slideIn 0.3s ease;
-            max-width: 400px;
         }
-        
-        .notification.success { background: #10b981; }
-        .notification.error { background: #ef4444; }
-        .notification.info { background: #06b6d4; }
-        .notification.warning { background: #f59e0b; }
 
-        @keyframes slideIn {
-            from { transform: translateX(100%); }
-            to { transform: translateX(0); }
+        /* Progress Bars */
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+            background-color: var(--light-bg);
+        }
+
+        .progress-bar {
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        /* Section Titles */
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-blue);
+            padding-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i {
+            color: var(--primary-blue);
+            font-size: 1.75rem;
+        }
+
+        /* Loading Animation */
+        .updating {
+            animation: pulse-update 1.5s infinite;
+        }
+
+        @keyframes pulse-update {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            .grid { grid-template-columns: 1fr; }
-            .chart-widget { grid-column: span 1; }
-            .health-breakdown { grid-template-columns: 1fr; }
-            .device-grid { grid-template-columns: 1fr; }
-            .control-grid { grid-template-columns: repeat(2, 1fr); }
-            .header { flex-direction: column; gap: 1rem; }
+            .sidebar {
+                position: fixed;
+                top: 76px;
+                left: -100%;
+                width: 250px;
+                height: calc(100vh - 76px);
+                z-index: 1050;
+                transition: left 0.3s ease;
+            }
+
+            .sidebar.show {
+                left: 0;
+            }
+
+            .metric-toggles {
+                justify-content: center;
+            }
+
+            .chart-container {
+                height: 250px;
+            }
         }
 
-        @media (max-width: 480px) {
-            .health-score { font-size: 2.5rem; }
-            .control-grid { grid-template-columns: 1fr; }
+        /* Enhanced Tooltips */
+        .tooltip-inner {
+            background: var(--dark-slate);
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="logo">
-            <i class="fas fa-cogs"></i>
-            AI Motor Monitor v4.1
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cpu-fill"></i>
+                AI Motor Intelligence System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <div class="nav-item d-flex align-items-center me-4">
+                        <span class="status-indicator" id="connectionStatus"></span>
+                        <span class="text-white fw-semibold" id="connectionText">Connecting...</span>
+                    </div>
+                    <div class="nav-item d-flex align-items-center me-4">
+                        <i class="bi bi-wifi me-2"></i>
+                        <span class="text-white" id="espStatus">ESP: Offline</span>
+                    </div>
+                    <div class="nav-item d-flex align-items-center me-4">
+                        <i class="bi bi-server me-2"></i>
+                        <span class="text-white" id="plcStatus">PLC: Offline</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="text-white-50" id="lastUpdate">Last Update: --</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="status-bar">
-            <div class="status-item disconnected" id="esp-status">
-                <i class="fas fa-microchip"></i>
-                ESP8266
-                <div class="indicator red" id="esp-indicator"></div>
-            </div>
-            <div class="status-item disconnected" id="plc-status">
-                <i class="fas fa-industry"></i>
-                FX5U PLC
-                <div class="indicator red" id="plc-indicator"></div>
-            </div>
-            <div id="last-update" style="font-size: 0.8rem; color: #6b7280;">
-                Last Update: Connecting...
-            </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Enhanced Sidebar -->
+            <nav class="col-md-2 d-md-block sidebar" id="sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column px-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#overview">
+                                <i class="bi bi-speedometer2"></i>System Overview
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#analytics">
+                                <i class="bi bi-graph-up"></i>Real-Time Analytics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sensors">
+                                <i class="bi bi-thermometer-half"></i>Sensor Monitoring
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#power">
+                                <i class="bi bi-lightning-fill"></i>Power Analysis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#environment">
+                                <i class="bi bi-cloud-sun"></i>Environment
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ai-insights">
+                                <i class="bi bi-robot"></i>AI Intelligence
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#control">
+                                <i class="bi bi-sliders"></i>Motor Control
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#alerts">
+                                <i class="bi bi-exclamation-triangle"></i>Alerts & Status
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+                <!-- System Status Cards -->
+                <section id="overview" class="mt-4">
+                    <h2 class="section-title">
+                        <i class="bi bi-speedometer2"></i>System Overview
+                    </h2>
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card metric-card">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-heart-pulse fs-1 mb-3"></i>
+                                    <h5 class="card-title">Motor Health Score</h5>
+                                    <h2 class="display-6 mb-2" id="healthScore">--</h2>
+                                    <small class="opacity-75" id="healthStatus">Calculating...</small>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-light" id="healthProgress" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card bg-success text-white">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-wifi fs-1 mb-3"></i>
+                                    <h5 class="card-title">ESP8266 Status</h5>
+                                    <h6 id="espConnectionStatus">Disconnected</h6>
+                                    <small class="opacity-75" id="espLastSeen">Waiting for connection...</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card bg-info text-white">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-server fs-1 mb-3"></i>
+                                    <h5 class="card-title">FX5U PLC Status</h5>
+                                    <h6 id="plcConnectionStatus">Disconnected</h6>
+                                    <small class="opacity-75">Industrial Controller</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card bg-warning text-dark">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-robot fs-1 mb-3"></i>
+                                    <h5 class="card-title">AI Intelligence</h5>
+                                    <h6 id="aiStatus">Initializing</h6>
+                                    <small class="opacity-75">Predictive Analytics</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Real-Time Analytics -->
+                <section id="analytics" class="mt-5">
+                    <h2 class="section-title">
+                        <i class="bi bi-graph-up"></i>Multi-Metric Real-Time Analytics
+                    </h2>
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+                            <h5 class="mb-0">
+                                <i class="bi bi-activity me-2"></i>Live System Parameters
+                            </h5>
+                            <div class="metric-toggles">
+                                <button class="metric-toggle active current" data-metric="esp_current">
+                                    <div class="toggle-indicator"></div>
+                                    Current (A)
+                                </button>
+                                <button class="metric-toggle active voltage" data-metric="esp_voltage">
+                                    <div class="toggle-indicator"></div>
+                                    Voltage (V)
+                                </button>
+                                <button class="metric-toggle active rpm" data-metric="esp_rpm">
+                                    <div class="toggle-indicator"></div>
+                                    RPM
+                                </button>
+                                <button class="metric-toggle active temperature" data-metric="plc_motor_temp">
+                                    <div class="toggle-indicator"></div>
+                                    Temperature (°C)
+                                </button>
+                                <button class="metric-toggle active health" data-metric="overall_health_score">
+                                    <div class="toggle-indicator"></div>
+                                    Health Score (%)
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="multiMetricChart"></canvas>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <small class="text-muted">Click metric buttons above to show/hide individual parameters</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Current Readings -->
+                <section class="mt-5">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-speedometer me-2"></i>Live System Readings</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <div class="data-display">
+                                                <div class="data-value text-primary" id="currentRPM">--</div>
+                                                <div class="data-label">Motor RPM</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="data-display">
+                                                <div class="data-value text-success" id="currentAmp">--</div>
+                                                <div class="data-label">Current (A)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="data-display">
+                                                <div class="data-value text-warning" id="currentVolt">--</div>
+                                                <div class="data-label">Voltage (V)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="data-display">
+                                                <div class="data-value text-info" id="currentPower">--</div>
+                                                <div class="data-label">Power (kW)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-thermometer-half me-2"></i>Environmental Data</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="data-display">
+                                                <div class="data-value text-danger" id="envTemp">--</div>
+                                                <div class="data-label">Temperature (°C)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="data-display">
+                                                <div class="data-value text-primary" id="envHumidity">--</div>
+                                                <div class="data-label">Humidity (%)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="data-display">
+                                                <div class="data-value text-warning" id="heatIndex">--</div>
+                                                <div class="data-label">Heat Index</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Motor Control Section -->
+                <section id="control" class="mt-5">
+                    <h2 class="section-title">
+                        <i class="bi bi-sliders"></i>Motor Control & Management
+                    </h2>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-toggles me-2"></i>Relay Status Monitor</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="fw-semibold">Relay 1 (Current Control)</span>
+                                        <span class="badge bg-secondary" id="relay1Badge">OFF</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="fw-semibold">Relay 2 (Voltage Control)</span>
+                                        <span class="badge bg-secondary" id="relay2Badge">OFF</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-semibold">Relay 3 (Temperature)</span>
+                                        <span class="badge bg-secondary" id="relay3Badge">OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-gear me-2"></i>Manual Control Panel</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <button class="btn btn-success control-button w-100" onclick="motorControl('start')">
+                                                <i class="bi bi-play-fill"></i>Start Motor
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-danger control-button w-100" onclick="motorControl('stop')">
+                                                <i class="bi bi-stop-fill"></i>Emergency Stop
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-warning control-button w-100" onclick="motorControl('reset')">
+                                                <i class="bi bi-arrow-clockwise"></i>Reset System
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-info control-button w-100" onclick="refreshData()">
+                                                <i class="bi bi-arrow-repeat"></i>Refresh Data
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-primary control-button w-100" onclick="exportData()">
+                                                <i class="bi bi-download"></i>Export Report
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-secondary control-button w-100" onclick="runDiagnostics()">
+                                                <i class="bi bi-tools"></i>Run Diagnostics
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-info mt-3 mb-0">
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        All control actions are logged and may override automatic systems.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Insights & Alerts -->
+                <section id="alerts" class="mt-5 mb-5">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-exclamation-triangle me-2"></i>System Alerts</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="alertsList">
+                                        <div class="text-center text-muted py-4">
+                                            <i class="bi bi-check-circle fs-1 text-success"></i>
+                                            <p class="mt-2 mb-0">No active alerts</p>
+                                            <small>All systems operating normally</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h5><i class="bi bi-robot me-2"></i>AI Intelligence Recommendations</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="recommendationsList">
+                                        <div class="text-center text-muted py-4">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Analyzing...</span>
+                                            </div>
+                                            <p class="mt-2 mb-0">AI Analysis in Progress</p>
+                                            <small>Loading intelligent recommendations...</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
     </div>
 
-    <!-- Main Dashboard -->
-    <div class="container">
-        <!-- Primary Row -->
-        <div class="grid">
-            <!-- Motor Health Widget -->
-            <div class="widget health-widget">
-                <div class="widget-title" style="color: white;">
-                    <i class="fas fa-heartbeat"></i>
-                    Motor Health Status
-                </div>
-                <div class="health-score" id="health-score">--</div>
-                <div class="health-status" id="health-status">Connecting...</div>
-                <div class="health-breakdown">
-                    <div class="health-item">
-                        <div class="health-item-score" id="electrical-health">--</div>
-                        <div class="health-item-label">Electrical</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-item-score" id="thermal-health">--</div>
-                        <div class="health-item-label">Thermal</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-item-score" id="mechanical-health">--</div>
-                        <div class="health-item-label">Mechanical</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ESP8266 Widget -->
-            <div class="widget">
-                <div class="widget-title">
-                    <i class="fas fa-microchip"></i>
-                    ESP8266 Sensor
-                    <div class="indicator red" id="esp-widget-indicator"></div>
-                </div>
-                <div class="device-grid">
-                    <div class="device-item">
-                        <div class="device-value" id="esp-current">0.0</div>
-                        <div class="device-label">Current (A)</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="esp-voltage">0.0</div>
-                        <div class="device-label">Voltage (V)</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="esp-rpm">0</div>
-                        <div class="device-label">RPM</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="esp-temp">0.0</div>
-                        <div class="device-label">Env Temp (°C)</div>
-                    </div>
-                </div>
-                <div style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div><strong>Humidity:</strong> <span id="esp-humidity">0.0%</span></div>
-                    <div><strong>Relays:</strong> 
-                        R1: <span id="relay1">OFF</span> | 
-                        R2: <span id="relay2">OFF</span> | 
-                        R3: <span id="relay3">OFF</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLC Widget -->
-            <div class="widget">
-                <div class="widget-title">
-                    <i class="fas fa-industry"></i>
-                    FX5U PLC Controller
-                    <div class="indicator red" id="plc-widget-indicator"></div>
-                </div>
-                <div class="device-grid">
-                    <div class="device-item">
-                        <div class="device-value" id="plc-temp">0.0</div>
-                        <div class="device-label">Motor Temp (°C)</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="plc-voltage">0.0</div>
-                        <div class="device-label">Motor Voltage (V)</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="plc-current">0.0</div>
-                        <div class="device-label">Motor Current (A)</div>
-                    </div>
-                    <div class="device-item">
-                        <div class="device-value" id="plc-rpm">0</div>
-                        <div class="device-label">Motor RPM</div>
-                    </div>
-                </div>
-                <div style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div><strong>Power:</strong> <span id="plc-power">0.0 kW</span></div>
-                    <div><strong>Status:</strong> <span id="plc-status-text">UNKNOWN</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Analytics & Alerts Row -->
-        <div class="grid">
-            <!-- Real-time Chart -->
-            <div class="widget chart-widget">
-                <div class="widget-title">
-                    <i class="fas fa-chart-line"></i>
-                    Real-time Analytics
-                </div>
-                <div class="chart-controls">
-                    <button class="chart-btn active" data-metric="esp_current">Current (A)</button>
-                    <button class="chart-btn" data-metric="esp_voltage">Voltage (V)</button>
-                    <button class="chart-btn" data-metric="esp_rpm">RPM</button>
-                    <button class="chart-btn" data-metric="plc_motor_temp">Temperature (°C)</button>
-                    <button class="chart-btn" data-metric="overall_health_score">Health Score (%)</button>
-                </div>
-                <div class="chart-container">
-                    <canvas id="realtime-chart"></canvas>
-                </div>
-            </div>
-
-            <!-- Alerts Widget -->
-            <div class="widget">
-                <div class="widget-title">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    System Alerts
-                    <span id="alerts-count" style="background: #ef4444; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;">0</span>
-                </div>
-                <div id="alerts-container">
-                    <div class="alert-item alert-low">
-                        <i class="fas fa-info-circle" style="color: #06b6d4; margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">System Initializing</div>
-                            <div class="alert-message">Connecting to devices...</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recommendations Widget -->
-            <div class="widget">
-                <div class="widget-title">
-                    <i class="fas fa-lightbulb"></i>
-                    AI Recommendations
-                </div>
-                <div id="recommendations-container">
-                    <div class="alert-item alert-low">
-                        <i class="fas fa-robot" style="color: #06b6d4; margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">AI Analysis</div>
-                            <div class="alert-message">Loading intelligent recommendations...</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Control Panel -->
-        <div class="widget">
-            <div class="widget-title">
-                <i class="fas fa-sliders-h"></i>
-                System Control Panel
-            </div>
-            <div class="control-grid">
-                <button class="control-btn success" onclick="controlMotor('start')">
-                    <i class="fas fa-play"></i>
-                    Start Motor
-                </button>
-                <button class="control-btn danger" onclick="controlMotor('stop')">
-                    <i class="fas fa-stop"></i>
-                    Stop Motor
-                </button>
-                <button class="control-btn warning" onclick="controlMotor('reset')">
-                    <i class="fas fa-redo"></i>
-                    Reset System
-                </button>
-                <button class="control-btn" onclick="refreshData()">
-                    <i class="fas fa-sync"></i>
-                    Refresh Data
-                </button>
-                <button class="control-btn" onclick="exportData()">
-                    <i class="fas fa-download"></i>
-                    Export Data
-                </button>
-                <button class="control-btn" onclick="runDiagnostics()">
-                    <i class="fas fa-stethoscope"></i>
-                    Run Diagnostics
-                </button>
-            </div>
-        </div>
-    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // COMPLETE WORKING JAVASCRIPT - ALL FEATURES FIXED
-        console.log('🚀 AI Motor Monitor v4.1 - Initializing Complete Dashboard');
+        // ===== PROFESSIONAL LIGHT THEME DASHBOARD JAVASCRIPT =====
+        console.log('🚀 AI Motor Intelligence System - Initializing Light Theme Dashboard');
 
-        // Global variables
+        // Global Variables
         let socket;
-        let chart;
+        let multiChart;
         let chartData = {
             esp_current: [],
             esp_voltage: [],
@@ -584,215 +823,223 @@
             plc_motor_temp: [],
             overall_health_score: []
         };
-        let currentMetric = 'esp_current';
+        let activeMetrics = new Set(['esp_current', 'esp_voltage', 'esp_rpm', 'plc_motor_temp', 'overall_health_score']);
         let lastUpdate = null;
-        let reconnectAttempts = 0;
-        const maxReconnectAttempts = 10;
+        let connectionStatus = { esp: false, plc: false };
 
-        // Initialize on page load
+        // Chart Color Configuration for Light Theme
+        const metricColors = {
+            esp_current: '#10b981',
+            esp_voltage: '#0891b2',
+            esp_rpm: '#d97706',
+            plc_motor_temp: '#dc2626',
+            overall_health_score: '#8b5cf6'
+        };
+
+        // Initialize Dashboard
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('📊 DOM loaded, initializing dashboard...');
+            showNotification('🚀 Initializing AI Motor Intelligence System', 'info');
             initializeSocket();
-            initializeChart();
+            initializeMultiChart();
             initializeEventListeners();
             startPeriodicTasks();
             loadInitialData();
         });
 
-        // FIXED: Socket.IO initialization with correct event names
+        // Enhanced Socket Connection
         function initializeSocket() {
-            console.log('🔌 Connecting to WebSocket server...');
+            console.log('🔌 Establishing secure connection...');
             
             socket = io('http://localhost:5000', {
                 transports: ['websocket', 'polling'],
-                reconnectionAttempts: maxReconnectAttempts,
+                reconnectionAttempts: 15,
                 reconnectionDelay: 2000,
-                timeout: 10000
+                timeout: 15000
             });
 
             socket.on('connect', function() {
-                console.log('✅ Socket connected successfully');
-                reconnectAttempts = 0;
-                showNotification('Connected to monitoring system', 'success');
-                updateConnectionUI(true);
-                socket.emit('request_data'); // FIXED: Correct event name
+                console.log('✅ Connection established');
+                showNotification('Connected to AI monitoring system', 'success');
+                updateConnectionStatus(true);
+                socket.emit('request_data');
             });
 
             socket.on('disconnect', function(reason) {
-                console.log('❌ Socket disconnected:', reason);
-                showNotification('Disconnected: ' + reason, 'error');
-                updateConnectionUI(false);
+                console.log('❌ Connection lost:', reason);
+                showNotification('Connection lost: ' + reason, 'error');
+                updateConnectionStatus(false);
             });
 
-            socket.on('connect_error', function(error) {
-                console.error('❌ Connection error:', error);
-                reconnectAttempts++;
-                showNotification(`Connection failed (${reconnectAttempts}/${maxReconnectAttempts})`, 'error');
-            });
-
-            // FIXED: Listen for correct event name from backend
             socket.on('data_update', function(data) {
-                console.log('📊 Data update received:', data);
+                console.log('📊 Data stream received:', data);
                 processDataUpdate(data);
-            });
-
-            socket.on('connection_status', function(status) {
-                console.log('🔗 Connection status update:', status);
             });
 
             socket.on('control_response', function(response) {
                 console.log('🎮 Control response:', response);
-                showNotification(`Motor ${response.action} ${response.status}`, 'success');
-            });
-
-            socket.on('device_timeout', function(data) {
-                console.log('⏰ Device timeout:', data);
-                showNotification(`${data.device} ${data.status}`, 'warning');
+                showNotification(`Motor ${response.action}: ${response.status}`, 'success');
             });
         }
 
-        // FIXED: Process incoming data updates
+        // Process Data Updates
         function processDataUpdate(data) {
-            lastUpdate = new Date();
-            
             try {
-                // Update motor health
+                lastUpdate = new Date();
+                
+                // Update all displays
                 updateMotorHealth(data);
-                
-                // Update device status
                 updateDeviceStatus(data);
-                
-                // Update chart data
-                updateChartData(data);
-                
-                // Update connection indicators
+                updateEnvironmentalData(data);
                 updateConnectionIndicators(data);
-                
-                // Update last update time
+                updateMultiChart(data);
                 updateLastUpdateTime();
                 
             } catch (error) {
                 console.error('❌ Error processing data:', error);
-                showNotification('Error processing data: ' + error.message, 'error');
+                showNotification('Data processing error', 'error');
             }
         }
 
-        // Update motor health display
+        // Update Motor Health Display
         function updateMotorHealth(data) {
             if (data.overall_health_score !== undefined) {
                 const score = Math.round(data.overall_health_score);
                 const status = data.status || 'Unknown';
                 
-                updateElement('health-score', score + '%');
-                updateElement('health-status', status);
-                updateElement('electrical-health', Math.round(data.electrical_health || 0) + '%');
-                updateElement('thermal-health', Math.round(data.thermal_health || 0) + '%');
-                updateElement('mechanical-health', Math.round(data.mechanical_health || 0) + '%');
+                document.getElementById('healthScore').textContent = score + '%';
+                document.getElementById('healthStatus').textContent = status;
+                
+                // Update progress bar
+                const progressBar = document.getElementById('healthProgress');
+                if (progressBar) {
+                    progressBar.style.width = score + '%';
+                    
+                    // Update color based on score
+                    if (score >= 85) {
+                        progressBar.className = 'progress-bar bg-success';
+                    } else if (score >= 70) {
+                        progressBar.className = 'progress-bar bg-warning';
+                    } else {
+                        progressBar.className = 'progress-bar bg-danger';
+                    }
+                }
                 
                 console.log(`✅ Health updated: ${score}% (${status})`);
             }
         }
 
-        // Update device status
+        // Update Device Status
         function updateDeviceStatus(data) {
-            // ESP data
-            updateElement('esp-current', (data.esp_current || 0).toFixed(2));
-            updateElement('esp-voltage', (data.esp_voltage || 0).toFixed(1));
-            updateElement('esp-rpm', Math.round(data.esp_rpm || 0));
-            updateElement('esp-temp', (data.env_temp_c || 0).toFixed(1));
-            updateElement('esp-humidity', (data.env_humidity || 0).toFixed(1) + '%');
+            // ESP8266 Data
+            document.getElementById('currentAmp').textContent = (data.esp_current || 0).toFixed(2) + ' A';
+            document.getElementById('currentVolt').textContent = (data.esp_voltage || 0).toFixed(1) + ' V';
+            document.getElementById('currentRPM').textContent = Math.round(data.esp_rpm || 0);
+            document.getElementById('currentPower').textContent = (data.plc_power_consumption || 0).toFixed(3) + ' kW';
             
-            // Relay status
-            updateElement('relay1', data.relay1_status || 'OFF');
-            updateElement('relay2', data.relay2_status || 'OFF');
-            updateElement('relay3', data.relay3_status || 'OFF');
-            
-            // PLC data
-            updateElement('plc-temp', (data.plc_motor_temp || 0).toFixed(1));
-            updateElement('plc-voltage', (data.plc_motor_voltage || 0).toFixed(1));
-            updateElement('plc-current', (data.plc_motor_current || 0).toFixed(2));
-            updateElement('plc-rpm', Math.round(data.plc_motor_rpm || 0));
-            updateElement('plc-power', (data.plc_power_consumption || 0).toFixed(3) + ' kW');
-            updateElement('plc-status-text', data.plc_status || 'UNKNOWN');
+            // Update relay status
+            updateRelayStatus('relay1Badge', data.relay1_status);
+            updateRelayStatus('relay2Badge', data.relay2_status);
+            updateRelayStatus('relay3Badge', data.relay3_status);
         }
 
-        // FIXED: Chart data updates
-        function updateChartData(data) {
-            const timestamp = new Date();
+        // Update Environmental Data
+        function updateEnvironmentalData(data) {
+            document.getElementById('envTemp').textContent = (data.env_temp_c || 0).toFixed(1) + '°C';
+            document.getElementById('envHumidity').textContent = (data.env_humidity || 0).toFixed(1) + '%';
             
-            // Add data points for all metrics
-            Object.keys(chartData).forEach(metric => {
-                if (data[metric] !== undefined) {
-                    chartData[metric].push({
-                        x: timestamp,
-                        y: data[metric]
-                    });
+            // Calculate heat index display
+            const heatIndex = data.heat_index_c || data.env_temp_c || 0;
+            document.getElementById('heatIndex').textContent = heatIndex.toFixed(1) + '°C';
+        }
+
+        // Update Connection Indicators
+        function updateConnectionIndicators(data) {
+            connectionStatus.esp = data.esp_connected || false;
+            connectionStatus.plc = data.plc_connected || false;
+            
+            // Update status indicators
+            const connectionIndicator = document.getElementById('connectionStatus');
+            const connectionText = document.getElementById('connectionText');
+            const espStatus = document.getElementById('espStatus');
+            const plcStatus = document.getElementById('plcStatus');
+            
+            if (connectionStatus.esp && connectionStatus.plc) {
+                connectionIndicator.className = 'status-indicator status-connected';
+                connectionText.textContent = 'All Systems Connected';
+            } else if (connectionStatus.esp || connectionStatus.plc) {
+                connectionIndicator.className = 'status-indicator status-warning';
+                connectionText.textContent = 'Partial Connection';
+            } else {
+                connectionIndicator.className = 'status-indicator status-disconnected';
+                connectionText.textContent = 'Systems Offline';
+            }
+            
+            espStatus.textContent = `ESP: ${connectionStatus.esp ? 'Online' : 'Offline'}`;
+            plcStatus.textContent = `PLC: ${connectionStatus.plc ? 'Online' : 'Offline'}`;
+            
+            // Update connection cards
+            document.getElementById('espConnectionStatus').textContent = connectionStatus.esp ? 'Connected' : 'Disconnected';
+            document.getElementById('plcConnectionStatus').textContent = connectionStatus.plc ? 'Connected' : 'Disconnected';
+        }
+
+        // Initialize Multi-Metric Chart
+        function initializeMultiChart() {
+            const ctx = document.getElementById('multiMetricChart');
+            if (!ctx) return;
+            
+            const datasets = [];
+            
+            Object.keys(metricColors).forEach(metric => {
+                if (activeMetrics.has(metric)) {
+                    let label = '';
+                    let scaleFactor = 1;
                     
-                    // Keep only last 50 points
-                    if (chartData[metric].length > 50) {
-                        chartData[metric].shift();
+                    switch(metric) {
+                        case 'esp_current':
+                            label = 'Current (A)';
+                            break;
+                        case 'esp_voltage':
+                            label = 'Voltage (V)';
+                            break;
+                        case 'esp_rpm':
+                            label = 'RPM (÷100)';
+                            scaleFactor = 0.01;
+                            break;
+                        case 'plc_motor_temp':
+                            label = 'Temperature (°C)';
+                            break;
+                        case 'overall_health_score':
+                            label = 'Health Score (%)';
+                            break;
                     }
+                    
+                    datasets.push({
+                        label: label,
+                        data: chartData[metric],
+                        borderColor: metricColors[metric],
+                        backgroundColor: metricColors[metric] + '20',
+                        borderWidth: 3,
+                        fill: false,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 6,
+                        pointHoverBackgroundColor: metricColors[metric],
+                        pointHoverBorderColor: '#ffffff',
+                        pointHoverBorderWidth: 2,
+                        scaleFactor: scaleFactor
+                    });
                 }
             });
             
-            // Update active chart
-            if (chart && chart.data && chart.data.datasets[0]) {
-                chart.data.datasets[0].data = chartData[currentMetric] || [];
-                chart.update('none');
-            }
-        }
-
-        // Update connection indicators
-        function updateConnectionIndicators(data) {
-            const espConnected = data.esp_connected || false;
-            const plcConnected = data.plc_connected || false;
-            
-            // Update header indicators
-            updateIndicator('esp-indicator', espConnected);
-            updateIndicator('plc-indicator', plcConnected);
-            updateIndicator('esp-widget-indicator', espConnected);
-            updateIndicator('plc-widget-indicator', plcConnected);
-            
-            // Update status classes
-            const espStatus = document.getElementById('esp-status');
-            const plcStatus = document.getElementById('plc-status');
-            
-            if (espStatus) {
-                espStatus.className = `status-item ${espConnected ? 'connected' : 'disconnected'}`;
-            }
-            if (plcStatus) {
-                plcStatus.className = `status-item ${plcConnected ? 'connected' : 'disconnected'}`;
-            }
-        }
-
-        // FIXED: Chart initialization
-        function initializeChart() {
-            const ctx = document.getElementById('realtime-chart');
-            if (!ctx) {
-                console.error('❌ Chart canvas not found');
-                return;
-            }
-            
-            chart = new Chart(ctx, {
+            multiChart = new Chart(ctx, {
                 type: 'line',
-                data: {
-                    datasets: [{
-                        label: 'Current (A)',
-                        data: chartData[currentMetric],
-                        borderColor: '#2563eb',
-                        backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                        tension: 0.4,
-                        fill: true,
-                        pointRadius: 2,
-                        pointHoverRadius: 6
-                    }]
-                },
+                data: { datasets: datasets },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    interaction: { 
-                        intersect: false,
-                        mode: 'index'
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
                     },
                     scales: {
                         x: {
@@ -802,159 +1049,176 @@
                                     second: 'HH:mm:ss'
                                 }
                             },
-                            title: {
-                                display: true,
-                                text: 'Time'
+                            grid: {
+                                color: '#e2e8f0'
+                            },
+                            ticks: {
+                                color: '#64748b',
+                                font: { weight: '500' }
                             }
                         },
                         y: {
                             beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Value'
+                            grid: {
+                                color: '#e2e8f0'
+                            },
+                            ticks: {
+                                color: '#64748b',
+                                font: { weight: '500' }
                             }
                         }
                     },
                     plugins: {
                         legend: {
-                            display: true
+                            display: false
                         },
                         tooltip: {
                             mode: 'index',
-                            intersect: false
+                            intersect: false,
+                            backgroundColor: 'rgba(15, 23, 42, 0.95)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            borderColor: '#2563eb',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            callbacks: {
+                                label: function(context) {
+                                    let value = context.parsed.y;
+                                    let label = context.dataset.label;
+                                    
+                                    if (context.dataset.scaleFactor) {
+                                        value = value / context.dataset.scaleFactor;
+                                    }
+                                    
+                                    return `${label}: ${value.toFixed(2)}`;
+                                }
+                            }
                         }
                     },
-                    animation: false
+                    animation: {
+                        duration: 300
+                    }
                 }
             });
             
-            console.log('📊 Chart initialized successfully');
+            console.log('📊 Multi-metric chart initialized');
         }
 
-        // FIXED: Event listeners for buttons
+        // Update Multi-Metric Chart
+        function updateMultiChart(data) {
+            const timestamp = new Date();
+            
+            Object.keys(chartData).forEach(metric => {
+                if (data[metric] !== undefined) {
+                    let value = Number(data[metric]);
+                    
+                    if (metric === 'esp_rpm') {
+                        value = value * 0.01; // Scale down RPM
+                    }
+                    
+                    chartData[metric].push({
+                        x: timestamp,
+                        y: value
+                    });
+                    
+                    if (chartData[metric].length > 60) {
+                        chartData[metric].shift();
+                    }
+                }
+            });
+            
+            if (multiChart) {
+                multiChart.data.datasets.forEach((dataset, index) => {
+                    const metric = Object.keys(metricColors)[index];
+                    if (metric && chartData[metric]) {
+                        dataset.data = chartData[metric];
+                        dataset.hidden = !activeMetrics.has(metric);
+                    }
+                });
+                
+                multiChart.update('none');
+            }
+        }
+
+        // Initialize Event Listeners
         function initializeEventListeners() {
-            // Chart metric buttons
-            document.querySelectorAll('.chart-btn').forEach(btn => {
+            // Metric toggle buttons
+            document.querySelectorAll('.metric-toggle').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const metric = this.dataset.metric;
-                    if (metric) {
-                        switchChartMetric(metric);
+                    toggleMetric(metric, this);
+                });
+            });
+
+            // Sidebar navigation
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Smooth scroll to section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
             });
         }
 
-        // FIXED: Chart metric switching
-        function switchChartMetric(metric) {
-            currentMetric = metric;
-            
-            // Update button states
-            document.querySelectorAll('.chart-btn').forEach(btn => btn.classList.remove('active'));
-            const activeBtn = document.querySelector(`[data-metric="${metric}"]`);
-            if (activeBtn) {
-                activeBtn.classList.add('active');
+        // Toggle Metric Visibility
+        function toggleMetric(metric, button) {
+            if (activeMetrics.has(metric)) {
+                activeMetrics.delete(metric);
+                button.classList.remove('active');
+            } else {
+                activeMetrics.add(metric);
+                button.classList.add('active');
             }
             
-            // Chart configurations
-            const configs = {
-                esp_current: { label: 'Current (A)', color: '#2563eb' },
-                esp_voltage: { label: 'Voltage (V)', color: '#10b981' },
-                esp_rpm: { label: 'RPM', color: '#f59e0b' },
-                plc_motor_temp: { label: 'Temperature (°C)', color: '#ef4444' },
-                overall_health_score: { label: 'Health Score (%)', color: '#8b5cf6' }
-            };
+            if (multiChart) {
+                const datasetIndex = Object.keys(metricColors).indexOf(metric);
+                if (datasetIndex !== -1 && multiChart.data.datasets[datasetIndex]) {
+                    multiChart.data.datasets[datasetIndex].hidden = !activeMetrics.has(metric);
+                    multiChart.update();
+                }
+            }
             
-            const config = configs[metric];
-            if (chart && config) {
-                chart.data.datasets[0].label = config.label;
-                chart.data.datasets[0].data = chartData[metric] || [];
-                chart.data.datasets[0].borderColor = config.color;
-                chart.data.datasets[0].backgroundColor = config.color.replace(')', ', 0.1)').replace('rgb', 'rgba');
-                chart.update();
-                
-                console.log(`📊 Chart switched to: ${config.label}`);
-            }
+            const metricName = button.textContent.trim();
+            const action = activeMetrics.has(metric) ? 'enabled' : 'disabled';
+            showNotification(`${metricName} ${action}`, 'info');
         }
 
-        // Utility functions
-        function updateElement(id, value) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.textContent = value;
-            }
-        }
-
-        function updateIndicator(id, connected) {
-            const indicator = document.getElementById(id);
-            if (indicator) {
-                indicator.className = `indicator ${connected ? 'green' : 'red'}`;
-            }
-        }
-
-        function updateConnectionUI(connected) {
-            // Update overall connection status
-            const color = connected ? 'green' : 'red';
-            updateIndicator('esp-indicator', connected);
-            updateIndicator('plc-indicator', connected);
-        }
-
-        function updateLastUpdateTime() {
-            const element = document.getElementById('last-update');
-            if (element && lastUpdate) {
-                element.textContent = `Last Update: ${lastUpdate.toLocaleTimeString()}`;
-            }
-        }
-
-        function showNotification(message, type = 'info') {
-            const notification = document.createElement('div');
-            notification.className = `notification ${type}`;
-            notification.innerHTML = `
-                <i class="fas fa-${type === 'success' ? 'check-circle' : 
-                                    type === 'error' ? 'exclamation-circle' : 
-                                    type === 'warning' ? 'exclamation-triangle' : 'info-circle'}"></i>
-                ${message}
-            `;
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.remove();
-            }, 4000);
-        }
-
-        // Start periodic tasks
+        // Periodic Tasks
         function startPeriodicTasks() {
-            // Update UI every second
             setInterval(updateLastUpdateTime, 1000);
-            
-            // Fetch recommendations every 30 seconds
             setInterval(fetchRecommendations, 30000);
-            
-            // Check alerts every 15 seconds
-            setInterval(updateAlerts, 15000);
+            setInterval(systemHealthCheck, 15000);
         }
 
-        // Load initial data via API fallback
+        // Load Initial Data
         function loadInitialData() {
-            console.log('📡 Loading initial data...');
-            
             fetch('/api/current-data')
                 .then(response => response.json())
                 .then(result => {
                     if (result.status === 'success') {
                         processDataUpdate(result.data);
-                        console.log('✅ Initial data loaded');
                     }
                 })
                 .catch(error => {
-                    console.error('❌ Error loading initial data:', error);
-                    showNotification('Failed to load initial data', 'error');
+                    console.error('❌ Error loading data:', error);
+                    showNotification('Failed to load initial data', 'warning');
                 });
             
-            // Load recommendations
-            setTimeout(fetchRecommendations, 2000);
+            setTimeout(fetchRecommendations, 3000);
         }
 
-        // FIXED: Fetch recommendations
+        // Fetch and Display Recommendations
         function fetchRecommendations() {
             fetch('/api/recommendations')
                 .then(response => response.json())
@@ -968,96 +1232,38 @@
                 });
         }
 
-        // FIXED: Display recommendations
         function displayRecommendations(recommendations) {
-            const container = document.getElementById('recommendations-container');
+            const container = document.getElementById('recommendationsList');
             
             if (!recommendations || recommendations.length === 0) {
                 container.innerHTML = `
-                    <div class="alert-item alert-low">
-                        <i class="fas fa-check-circle" style="color: #10b981; margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">All Systems Normal</div>
-                            <div class="alert-message">No recommendations at this time. System operating within normal parameters.</div>
-                        </div>
+                    <div class="text-center text-muted py-4">
+                        <i class="bi bi-check-circle fs-1 text-success"></i>
+                        <p class="mt-2 mb-0">System Optimal</p>
+                        <small>All parameters within normal range</small>
                     </div>
                 `;
                 return;
             }
             
             container.innerHTML = recommendations.map(rec => {
-                const levelClass = rec.priority.toLowerCase() === 'high' ? 'alert-high' : 
-                                   rec.priority.toLowerCase() === 'medium' ? 'alert-medium' : 'alert-low';
-                const iconClass = rec.priority.toLowerCase() === 'high' ? 'fas fa-exclamation-triangle' :
-                                  rec.priority.toLowerCase() === 'medium' ? 'fas fa-exclamation-circle' : 'fas fa-lightbulb';
-                const iconColor = rec.priority.toLowerCase() === 'high' ? '#ef4444' :
-                                  rec.priority.toLowerCase() === 'medium' ? '#f59e0b' : '#06b6d4';
+                const alertClass = rec.priority.toLowerCase() === 'high' ? 'alert-critical' : 
+                                   rec.priority.toLowerCase() === 'medium' ? 'alert-warning' : 'alert-info';
                 
                 return `
-                    <div class="alert-item ${levelClass}">
-                        <i class="${iconClass}" style="color: ${iconColor}; margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">${rec.category} - ${rec.priority} Priority</div>
-                            <div class="alert-message">${rec.message}</div>
-                            <div class="alert-message"><strong>Action:</strong> ${rec.action}</div>
-                        </div>
+                    <div class="alert-item ${alertClass}">
+                        <div class="fw-semibold">${rec.category} - ${rec.priority} Priority</div>
+                        <div class="small mt-1">${rec.message}</div>
+                        <div class="small text-muted mt-1"><strong>Action:</strong> ${rec.action}</div>
                     </div>
                 `;
             }).join('');
-            
-            console.log(`✅ Recommendations updated: ${recommendations.length} items`);
         }
 
-        // Update alerts based on current data
-        function updateAlerts() {
-            // This would be populated based on the current system state
-            // For now, we'll show connection status
-            const container = document.getElementById('alerts-container');
-            const countElement = document.getElementById('alerts-count');
-            
-            // Example alert logic
-            let alerts = [];
-            
-            // Check if we have recent data
-            if (!lastUpdate || (new Date() - lastUpdate) > 30000) {
-                alerts.push({
-                    level: 'medium',
-                    title: 'No Recent Data',
-                    message: 'No sensor data received in the last 30 seconds'
-                });
-            }
-            
-            if (alerts.length === 0) {
-                container.innerHTML = `
-                    <div class="alert-item alert-low">
-                        <i class="fas fa-check-circle" style="color: #10b981; margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">All Systems Operational</div>
-                            <div class="alert-message">No active alerts detected</div>
-                        </div>
-                    </div>
-                `;
-                countElement.textContent = '0';
-            } else {
-                container.innerHTML = alerts.map(alert => `
-                    <div class="alert-item alert-${alert.level}">
-                        <i class="fas fa-exclamation-circle" style="margin-top: 2px;"></i>
-                        <div class="alert-content">
-                            <div class="alert-title">${alert.title}</div>
-                            <div class="alert-message">${alert.message}</div>
-                        </div>
-                    </div>
-                `).join('');
-                countElement.textContent = alerts.length.toString();
-            }
-        }
-
-        // FIXED: Control functions
-        function controlMotor(action) {
-            console.log(`🎮 Motor control: ${action}`);
-            
+        // Control Functions
+        function motorControl(action) {
             if (!socket || !socket.connected) {
-                showNotification('Not connected to server', 'error');
+                showNotification('Not connected to control system', 'error');
                 return;
             }
             
@@ -1066,51 +1272,109 @@
         }
 
         function refreshData() {
-            console.log('🔄 Refreshing data...');
             if (socket && socket.connected) {
                 socket.emit('request_data');
-                showNotification('Data refresh requested', 'info');
+                showNotification('Data refreshed', 'success');
             } else {
                 loadInitialData();
-                showNotification('Loading fresh data...', 'info');
             }
         }
 
         function exportData() {
-            console.log('📄 Exporting data...');
-            showNotification('Exporting system data...', 'info');
-            
             const data = {
                 timestamp: new Date().toISOString(),
-                chart_data: chartData,
-                current_metric: currentMetric,
-                last_update: lastUpdate
+                health_score: document.getElementById('healthScore').textContent,
+                current: document.getElementById('currentAmp').textContent,
+                voltage: document.getElementById('currentVolt').textContent,
+                rpm: document.getElementById('currentRPM').textContent,
+                power: document.getElementById('currentPower').textContent,
+                temperature: document.getElementById('envTemp').textContent,
+                humidity: document.getElementById('envHumidity').textContent
             };
             
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.download = `motor_data_${new Date().toISOString().split('T')[0]}.json`;
+            link.download = `motor_intelligence_report_${new Date().toISOString().split('T')[0]}.json`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
             
-            showNotification('Data export completed', 'success');
+            showNotification('Report exported successfully', 'success');
         }
 
         function runDiagnostics() {
-            console.log('🔧 Running diagnostics...');
             showNotification('Running system diagnostics...', 'info');
-            
-            // Simulate diagnostics
             setTimeout(() => {
                 showNotification('Diagnostics completed successfully', 'success');
             }, 3000);
         }
 
-        console.log('✅ AI Motor Monitor v4.1 Dashboard initialized successfully');
+        // Utility Functions
+        function updateConnectionStatus(connected) {
+            // Update UI based on connection status
+        }
+
+        function updateLastUpdateTime() {
+            if (lastUpdate) {
+                document.getElementById('lastUpdate').textContent = `Last Update: ${lastUpdate.toLocaleTimeString()}`;
+            }
+        }
+
+        function updateRelayStatus(elementId, status) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = status || 'OFF';
+                if (status === 'ON') {
+                    element.className = 'badge bg-success';
+                } else {
+                    element.className = 'badge bg-secondary';
+                }
+            }
+        }
+
+        function showNotification(message, type = 'info') {
+            // Create Bootstrap toast notification
+            const toastContainer = document.getElementById('toastContainer') || createToastContainer();
+            
+            const toast = document.createElement('div');
+            toast.className = `toast align-items-center text-white bg-${type === 'error' ? 'danger' : type === 'warning' ? 'warning' : type === 'success' ? 'success' : 'primary'} border-0`;
+            toast.setAttribute('role', 'alert');
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">${message}</div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            `;
+            
+            toastContainer.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+            
+            // Remove toast after it's hidden
+            toast.addEventListener('hidden.bs.toast', () => {
+                toast.remove();
+            });
+        }
+
+        function createToastContainer() {
+            const container = document.createElement('div');
+            container.id = 'toastContainer';
+            container.className = 'toast-container position-fixed top-0 end-0 p-3';
+            container.style.zIndex = '1100';
+            document.body.appendChild(container);
+            return container;
+        }
+
+        function systemHealthCheck() {
+            if (lastUpdate && (new Date() - lastUpdate) > 60000) {
+                showNotification('No data received for over 1 minute', 'warning');
+            }
+        }
+
+        console.log('✅ AI Motor Intelligence System initialized successfully');
     </script>
 </body>
 </html>

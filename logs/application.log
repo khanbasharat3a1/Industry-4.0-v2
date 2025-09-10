@@ -9057,3 +9057,1314 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 02:27:07,200 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
 2025-09-11 02:27:07,213 - __main__ - INFO - 🏭 PLC: 39.1°C - Health: 100.0%
 2025-09-11 02:27:09,581 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:18,048 - root - INFO - Logging system initialized successfully
+2025-09-11 02:37:18,052 - __main__ - INFO - ============================================================
+2025-09-11 02:37:18,052 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 02:37:18,052 - __main__ - INFO - Timestamp: 2025-09-11T02:37:18.052236
+2025-09-11 02:37:18,052 - __main__ - INFO - ============================================================
+2025-09-11 02:37:18,053 - __main__ - INFO - Creating necessary directories...
+2025-09-11 02:37:18,053 - __main__ - INFO - Initializing database...
+2025-09-11 02:37:18,060 - root - INFO - Database initialized successfully
+2025-09-11 02:37:18,061 - __main__ - INFO - Creating Flask application...
+2025-09-11 02:37:18,076 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 02:37:19,108 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:37:19,110 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:37:19,111 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:37:19,114 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:37:19,116 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:37:19,116 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:37:21,770 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:37:21,770 - root - INFO - Health calculated: 90.0% (Excellent) - Data: current_esp, historical_plc
+2025-09-11 02:37:21,779 - __main__ - INFO - 📡 ESP: 7.35A, 21.3V - Health: 90.0%
+2025-09-11 02:37:22,441 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:22,452 - __main__ - INFO - 🏭 PLC: 42.1°C - Health: 100.0%
+2025-09-11 02:37:26,512 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:27,512 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:27,522 - __main__ - INFO - 🏭 PLC: 42.1°C - Health: 100.0%
+2025-09-11 02:37:28,866 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:28,877 - __main__ - INFO - 📡 ESP: 7.19A, 21.7V - Health: 100.0%
+2025-09-11 02:37:29,962 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:30,398 - socketio - INFO - ✅ Client connected: Dknp2o9jCB6HRmj4AAAB (Total: 1)
+2025-09-11 02:37:30,398 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:30,423 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:32,583 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:32,603 - __main__ - INFO - 🏭 PLC: 40.9°C - Health: 100.0%
+2025-09-11 02:37:32,967 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:35,941 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:35,959 - __main__ - INFO - 📡 ESP: 7.35A, 21.5V - Health: 100.0%
+2025-09-11 02:37:37,677 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:37,693 - __main__ - INFO - 🏭 PLC: 40.3°C - Health: 100.0%
+2025-09-11 02:37:38,079 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:42,762 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:42,777 - __main__ - INFO - 🏭 PLC: 39.7°C - Health: 100.0%
+2025-09-11 02:37:43,012 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:43,026 - __main__ - INFO - 📡 ESP: 7.26A, 21.7V - Health: 100.0%
+2025-09-11 02:37:47,827 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:47,845 - __main__ - INFO - 🏭 PLC: 41.1°C - Health: 100.0%
+2025-09-11 02:37:48,077 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:50,099 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:50,111 - __main__ - INFO - 📡 ESP: 7.33A, 22.2V - Health: 100.0%
+2025-09-11 02:37:50,365 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:52,924 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:52,939 - __main__ - INFO - 🏭 PLC: 41.3°C - Health: 100.0%
+2025-09-11 02:37:57,174 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:57,190 - __main__ - INFO - 📡 ESP: 7.44A, 22.2V - Health: 100.0%
+2025-09-11 02:37:57,997 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:37:58,013 - __main__ - INFO - 🏭 PLC: 41.0°C - Health: 100.0%
+2025-09-11 02:37:58,089 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:00,106 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:03,081 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:03,096 - __main__ - INFO - 🏭 PLC: 40.4°C - Health: 100.0%
+2025-09-11 02:38:04,260 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:04,274 - __main__ - INFO - 📡 ESP: 7.26A, 21.9V - Health: 100.0%
+2025-09-11 02:38:08,104 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:08,151 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:08,166 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:38:11,350 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:11,364 - __main__ - INFO - 📡 ESP: 7.31A, 21.4V - Health: 100.0%
+2025-09-11 02:38:13,248 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:13,263 - __main__ - INFO - 🏭 PLC: 40.1°C - Health: 100.0%
+2025-09-11 02:38:18,124 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:18,328 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:18,344 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:38:18,436 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:18,448 - __main__ - INFO - 📡 ESP: 7.18A, 21.4V - Health: 100.0%
+2025-09-11 02:38:19,104 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:28,097 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:28,152 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:29,969 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:38,156 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:48,161 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:38:58,100 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:38:58,102 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:38:58,103 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:38:58,167 - root - WARNING - ESP connection timeout detected
+2025-09-11 02:38:58,167 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:38:58,169 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:38:58,173 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:38:58,174 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:00,098 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:00,100 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:00,101 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:08,189 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:08,191 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:08,192 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:18,198 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:18,200 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:18,200 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:28,211 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:28,213 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:28,214 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:30,096 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:30,098 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:30,099 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:38,233 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:38,235 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:38,236 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:48,232 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:48,234 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:48,234 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:39:58,249 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:58,252 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:39:58,253 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:00,101 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:00,105 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:00,106 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:08,254 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:08,258 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:08,258 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:18,274 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:18,279 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:18,280 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:19,115 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:19,119 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:19,120 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:28,289 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:28,292 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:28,293 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:30,096 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:30,101 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:30,103 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:38,301 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:38,304 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:38,305 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:48,319 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:48,322 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:48,323 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:40:58,344 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:58,347 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:40:58,347 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:08,350 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:08,355 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:08,355 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:18,375 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:18,381 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:18,382 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:19,106 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:19,109 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:19,111 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:19,134 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:19,137 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:19,138 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:28,391 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:28,395 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:28,396 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:38,415 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:38,418 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:38,418 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:48,435 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:48,438 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:48,439 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:41:58,459 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:58,462 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:41:58,463 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:08,484 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:08,488 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:08,490 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:18,508 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:18,511 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:18,513 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:19,129 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:19,132 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:19,133 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:19,151 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:19,155 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:19,156 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:28,535 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:28,538 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:28,539 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:38,550 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:38,553 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:38,554 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:48,570 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:48,573 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:48,574 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:42:58,579 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:58,583 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:42:58,584 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:08,600 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:08,603 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:08,604 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:18,618 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:18,622 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:18,623 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:19,109 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:19,113 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:19,113 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:19,135 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:19,139 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:19,139 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:28,636 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:28,640 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:28,641 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:38,641 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:38,644 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:38,645 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:48,674 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:48,677 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:48,678 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:43:58,700 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:58,704 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:43:58,705 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:08,710 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:08,713 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:08,714 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:18,730 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:18,734 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:18,735 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:19,123 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:19,127 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:19,128 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:19,142 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:19,145 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:19,146 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:28,737 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:28,741 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:28,742 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:38,748 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:38,754 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:38,755 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:48,782 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:48,785 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:48,786 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:44:58,811 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:58,814 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:44:58,815 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:08,825 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:08,828 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:08,829 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:18,835 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:18,839 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:18,840 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:19,105 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:19,109 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:19,110 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:19,125 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:19,128 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:19,129 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:28,842 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:28,845 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:28,846 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:38,842 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:38,845 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:38,847 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:48,845 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:48,848 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:48,849 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:45:58,860 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:58,863 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:45:58,864 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:08,872 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:08,875 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:08,876 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:18,892 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:18,896 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:18,897 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:19,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:19,127 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:19,128 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:19,168 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:19,171 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:19,172 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:28,916 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:28,920 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:28,921 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:38,929 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:38,932 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:38,933 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:48,945 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:48,951 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:48,951 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:46:58,955 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:58,958 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:46:58,959 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:08,977 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:08,980 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:08,981 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:18,984 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:18,987 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:18,988 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:19,137 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:19,142 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:19,144 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:19,156 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:19,160 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:19,161 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:29,006 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:29,009 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:29,009 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:39,021 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:39,025 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:39,025 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:49,049 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:49,052 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:49,053 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:47:59,071 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:59,074 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:47:59,075 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:09,094 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:09,099 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:09,099 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:19,114 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,117 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,118 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:19,123 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,126 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,128 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:19,134 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,138 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:19,139 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:29,140 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:29,143 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:29,144 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:39,148 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:39,151 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:39,152 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:49,166 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:49,170 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:49,171 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:48:59,176 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:59,180 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:48:59,180 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:09,188 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:09,193 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:09,193 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:19,110 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,113 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,113 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:19,134 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,137 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,138 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:19,216 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,219 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:19,220 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:29,227 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:29,231 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:29,231 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:39,248 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:39,251 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:39,252 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:49,263 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:49,267 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:49,267 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:49:59,273 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:59,277 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:49:59,278 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:07,784 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:50:15,176 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:15,267 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:15,290 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:16,037 - socketio - INFO - ✅ Client connected: 6plqbb5vd2F7e9kIAAAD (Total: 2)
+2025-09-11 02:50:16,039 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:16,041 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:16,042 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:16,071 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:16,073 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:16,074 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:19,870 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:19,873 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:19,873 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:20,654 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:20,657 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:20,658 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:25,308 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:25,312 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:25,313 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:35,318 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:35,321 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:35,322 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:45,332 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:45,334 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:45,335 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:50:55,359 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:55,362 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:50:55,363 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:05,376 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:05,379 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:05,379 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:15,386 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:15,390 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:15,390 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:19,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:19,126 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:19,127 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:19,137 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:19,141 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:19,142 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:25,399 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:25,402 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:25,402 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:35,411 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:35,412 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:35,412 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:51:45,423 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:45,426 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:51:45,428 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:00,237 - root - INFO - Logging system initialized successfully
+2025-09-11 02:52:00,237 - __main__ - INFO - ============================================================
+2025-09-11 02:52:00,238 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 02:52:00,238 - __main__ - INFO - Timestamp: 2025-09-11T02:52:00.238643
+2025-09-11 02:52:00,238 - __main__ - INFO - ============================================================
+2025-09-11 02:52:00,238 - __main__ - INFO - Creating necessary directories...
+2025-09-11 02:52:00,240 - __main__ - INFO - Initializing database...
+2025-09-11 02:52:00,241 - root - INFO - Database initialized successfully
+2025-09-11 02:52:00,241 - __main__ - INFO - Creating Flask application...
+2025-09-11 02:52:00,257 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 02:52:03,398 - socketio - INFO - ✅ Client connected: Sbjy9qBn243oZFehAAAB (Total: 1)
+2025-09-11 02:52:03,400 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:03,402 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:03,402 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:03,445 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:03,448 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:03,448 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:10,275 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:10,277 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:10,278 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:10,282 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:10,284 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:10,285 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:12,310 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:12,314 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:12,315 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:14,425 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:52:14,752 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:14,753 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:14,754 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:15,047 - socketio - INFO - ✅ Client connected: ZGMe8DiLQwDyYbZCAAAD (Total: 2)
+2025-09-11 02:52:15,049 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:15,050 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:15,051 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:15,120 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:15,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:15,122 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:16,751 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:16,752 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:16,753 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:20,295 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:20,297 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:20,298 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:28,090 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:28,091 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:28,091 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:30,298 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:30,301 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:30,301 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:52:31,765 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:52:31,765 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:52:31,774 - __main__ - INFO - 🏭 PLC: 40.2°C - Health: 90.0%
+2025-09-11 02:52:31,776 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:31,786 - __main__ - INFO - 📡 ESP: 6.3A, 23.9V - Health: 100.0%
+2025-09-11 02:52:36,845 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:36,855 - __main__ - INFO - 🏭 PLC: 41.3°C - Health: 100.0%
+2025-09-11 02:52:38,837 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:38,849 - __main__ - INFO - 📡 ESP: 6.37A, 23.9V - Health: 100.0%
+2025-09-11 02:52:40,312 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:41,916 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:41,929 - __main__ - INFO - 🏭 PLC: 41.7°C - Health: 100.0%
+2025-09-11 02:52:44,758 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:45,912 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:45,924 - __main__ - INFO - 📡 ESP: 6.18A, 24.0V - Health: 100.0%
+2025-09-11 02:52:46,993 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:47,005 - __main__ - INFO - 🏭 PLC: 42.4°C - Health: 100.0%
+2025-09-11 02:52:50,311 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:52,067 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:52,080 - __main__ - INFO - 🏭 PLC: 43.9°C - Health: 100.0%
+2025-09-11 02:52:52,995 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:53,007 - __main__ - INFO - 📡 ESP: 6.01A, 24.2V - Health: 100.0%
+2025-09-11 02:52:57,157 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:52:57,170 - __main__ - INFO - 🏭 PLC: 42.8°C - Health: 100.0%
+2025-09-11 02:52:58,092 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:00,061 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:00,073 - __main__ - INFO - 📡 ESP: 6.17A, 24.6V - Health: 100.0%
+2025-09-11 02:53:00,321 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:02,219 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:02,228 - __main__ - INFO - 🏭 PLC: 42.9°C - Health: 100.0%
+2025-09-11 02:53:07,121 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:07,132 - __main__ - INFO - 📡 ESP: 6.07A, 24.3V - Health: 100.0%
+2025-09-11 02:53:07,290 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:07,302 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:53:10,347 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:14,750 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:20,366 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:30,379 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:53:40,385 - root - WARNING - ESP connection timeout detected
+2025-09-11 02:53:40,386 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:53:40,391 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:40,393 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:40,394 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:53:44,761 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:44,763 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:44,765 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:53:50,393 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:50,394 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:53:50,395 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:00,402 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:00,405 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:00,406 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:10,411 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:10,415 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:10,416 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:15,094 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:15,099 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:15,100 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:19,125 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:19,127 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:19,128 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:20,429 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:20,432 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:20,433 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:30,458 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:30,461 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:30,462 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:40,484 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:40,487 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:40,488 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:45,120 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:45,124 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:45,125 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:54:50,497 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:50,501 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:54:50,502 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:00,511 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:00,518 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:00,521 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:10,549 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:10,553 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:10,554 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:15,094 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:15,096 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:15,098 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:19,115 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:19,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:19,119 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:20,575 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:20,578 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:20,579 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:30,587 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:30,590 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:30,590 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:40,592 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:40,596 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:40,596 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:44,755 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:44,759 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:44,759 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:55:50,590 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:50,593 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:55:50,593 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:00,595 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:00,598 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:00,599 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:10,617 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:10,620 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:10,622 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:15,092 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:15,095 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:15,096 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:19,099 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:19,104 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:19,105 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:20,628 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:20,631 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:20,632 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:30,651 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:30,654 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:30,655 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:40,664 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:40,667 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:40,668 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:45,105 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:45,108 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:45,109 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:56:50,679 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:50,683 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:56:50,684 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:00,700 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:00,702 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:00,704 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:10,707 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:10,710 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:10,712 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:19,172 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:19,176 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:19,178 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:19,188 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:19,192 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:19,193 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:20,720 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:20,723 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:20,724 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:30,734 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:30,737 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:30,738 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:40,738 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:40,741 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:40,742 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:57:50,759 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:50,762 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:57:50,763 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:00,777 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:00,780 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:00,781 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:10,791 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:10,795 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:10,797 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:19,158 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:19,161 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:19,162 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:19,170 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:19,173 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:19,174 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:20,802 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:20,807 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:20,814 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:30,828 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:30,831 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:30,832 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:40,842 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:40,846 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:40,846 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:58:50,859 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:50,863 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:58:50,864 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:00,870 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:00,873 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:00,874 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:10,873 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:10,877 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:10,877 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:19,110 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:19,113 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:19,114 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:19,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:19,126 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:19,127 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:20,895 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:20,899 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:20,900 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:30,921 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:30,924 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:30,925 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:40,938 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:40,942 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:40,943 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:59:50,958 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:50,961 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:59:50,962 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:00,978 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:00,981 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:00,985 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:10,995 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:11,000 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:11,002 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:19,112 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:19,114 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:19,115 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:19,121 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:19,124 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:19,124 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:21,005 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:21,009 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:21,009 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:31,023 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:31,025 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:31,026 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:41,026 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:41,029 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:41,030 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:00:51,028 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:51,031 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:00:51,032 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:01,050 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:01,054 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:01,054 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:11,064 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:11,067 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:11,067 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:19,128 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:19,132 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:19,132 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:19,139 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:19,142 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:19,143 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:21,096 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:21,100 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:21,100 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:31,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:31,121 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:31,122 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:41,139 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:41,143 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:41,144 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:01:51,138 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:51,142 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:01:51,143 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:01,142 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:01,145 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:01,146 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:11,167 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:11,170 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:11,170 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:19,112 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:19,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:19,119 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:19,128 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:19,133 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:19,134 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:21,182 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:21,186 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:21,187 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:31,195 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:31,200 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:31,201 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:41,210 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:41,215 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:41,216 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:02:51,228 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:51,232 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:02:51,232 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:01,233 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:01,238 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:01,241 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:11,245 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:11,250 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:11,254 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:19,112 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:19,117 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:19,118 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:19,128 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:19,132 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:19,133 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:21,258 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:21,261 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:21,261 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:31,272 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:31,275 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:31,275 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:41,289 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:41,293 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:41,293 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:03:51,301 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:51,303 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:03:51,304 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:01,323 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:01,325 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:01,326 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:11,332 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:11,336 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:11,338 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:19,106 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:19,110 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:19,110 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:19,116 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:19,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:19,119 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:21,357 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:21,361 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:21,362 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:31,372 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:31,375 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:31,375 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:41,370 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:41,374 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:41,375 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:04:51,386 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:51,389 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:04:51,390 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:01,402 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:01,404 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:01,405 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:11,403 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:11,407 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:11,408 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:19,114 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:19,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:19,118 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:19,126 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:19,130 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:19,130 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:21,411 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:21,414 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:21,415 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:31,422 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:31,426 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:31,427 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:41,439 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:41,445 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:41,446 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:05:51,463 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:51,466 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:05:51,466 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:01,466 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:01,469 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:01,469 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:11,480 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:11,484 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:11,485 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:19,106 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:19,110 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:19,111 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:19,118 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:19,121 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:19,122 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:21,492 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:21,495 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:21,495 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:31,506 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:31,511 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:31,511 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:41,527 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:41,530 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:41,530 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:06:51,536 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:51,540 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:06:51,541 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:01,552 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:01,555 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:01,555 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:11,558 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:11,560 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:11,561 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:24,697 - root - INFO - Logging system initialized successfully
+2025-09-11 03:07:24,698 - __main__ - INFO - ============================================================
+2025-09-11 03:07:24,698 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 03:07:24,699 - __main__ - INFO - Timestamp: 2025-09-11T03:07:24.699949
+2025-09-11 03:07:24,699 - __main__ - INFO - ============================================================
+2025-09-11 03:07:24,700 - __main__ - INFO - Creating necessary directories...
+2025-09-11 03:07:24,701 - __main__ - INFO - Initializing database...
+2025-09-11 03:07:24,703 - root - INFO - Database initialized successfully
+2025-09-11 03:07:24,704 - __main__ - INFO - Creating Flask application...
+2025-09-11 03:07:24,719 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 03:07:29,401 - socketio - INFO - ✅ Client connected: xqAsuWKL9M-REXpKAAAB (Total: 1)
+2025-09-11 03:07:29,403 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:29,404 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:29,404 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:29,432 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:29,434 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:29,434 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:34,730 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:34,732 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:34,732 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:39,113 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:39,116 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:39,117 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:43,088 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:07:43,455 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,458 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,459 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:43,812 - socketio - INFO - ✅ Client connected: jAQcCnITmw9VJuM1AAAD (Total: 2)
+2025-09-11 03:07:43,816 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,819 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,820 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:43,869 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,872 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:43,873 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:44,736 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:44,740 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:44,741 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:46,443 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:46,447 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:46,448 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:54,759 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:54,762 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:54,762 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:07:58,104 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:58,107 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:07:58,109 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:08:04,785 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:08:04,788 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:08:04,789 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:08:07,953 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:08:07,955 - root - INFO - Health calculated: 90.0% (Excellent) - Data: current_esp, historical_plc
+2025-09-11 03:08:07,969 - __main__ - INFO - 📡 ESP: 6.28A, 23.6V - Health: 90.0%
+2025-09-11 03:08:07,973 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:07,994 - __main__ - INFO - 🏭 PLC: 41.7°C - Health: 100.0%
+2025-09-11 03:08:13,080 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:13,105 - __main__ - INFO - 🏭 PLC: 42.8°C - Health: 100.0%
+2025-09-11 03:08:13,443 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:14,804 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:15,036 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:15,057 - __main__ - INFO - 📡 ESP: 6.38A, 23.8V - Health: 100.0%
+2025-09-11 03:08:18,166 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:18,187 - __main__ - INFO - 🏭 PLC: 44.1°C - Health: 100.0%
+2025-09-11 03:08:22,130 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:22,151 - __main__ - INFO - 📡 ESP: 6.28A, 23.6V - Health: 100.0%
+2025-09-11 03:08:23,249 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:23,274 - __main__ - INFO - 🏭 PLC: 45.3°C - Health: 100.0%
+2025-09-11 03:08:24,808 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:28,089 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:28,335 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:28,354 - __main__ - INFO - 🏭 PLC: 44.8°C - Health: 100.0%
+2025-09-11 03:08:29,208 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:29,228 - __main__ - INFO - 📡 ESP: 6.22A, 23.5V - Health: 100.0%
+2025-09-11 03:08:33,418 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:33,440 - __main__ - INFO - 🏭 PLC: 44.9°C - Health: 100.0%
+2025-09-11 03:08:34,816 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:36,322 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:36,341 - __main__ - INFO - 📡 ESP: 6.08A, 23.4V - Health: 100.0%
+2025-09-11 03:08:38,520 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:38,540 - __main__ - INFO - 🏭 PLC: 45.7°C - Health: 100.0%
+2025-09-11 03:08:43,415 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:43,438 - __main__ - INFO - 📡 ESP: 6.0A, 23.8V - Health: 100.0%
+2025-09-11 03:08:43,459 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:43,602 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:43,622 - __main__ - INFO - 🏭 PLC: 46.8°C - Health: 100.0%
+2025-09-11 03:08:44,813 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:48,702 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:48,723 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 03:08:50,527 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:50,547 - __main__ - INFO - 📡 ESP: 5.92A, 23.4V - Health: 100.0%
+2025-09-11 03:08:53,800 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:53,819 - __main__ - INFO - 🏭 PLC: 46.3°C - Health: 100.0%
+2025-09-11 03:08:54,826 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:57,617 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:57,637 - __main__ - INFO - 📡 ESP: 5.79A, 23.8V - Health: 100.0%
+2025-09-11 03:08:58,879 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:08:58,899 - __main__ - INFO - 🏭 PLC: 46.0°C - Health: 100.0%
+2025-09-11 03:09:03,963 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:03,984 - __main__ - INFO - 🏭 PLC: 46.7°C - Health: 100.0%
+2025-09-11 03:09:04,694 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:04,713 - __main__ - INFO - 📡 ESP: 5.69A, 24.1V - Health: 100.0%
+2025-09-11 03:09:04,832 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:09,039 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:09,059 - __main__ - INFO - 🏭 PLC: 47.0°C - Health: 100.0%
+2025-09-11 03:09:11,785 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:11,806 - __main__ - INFO - 📡 ESP: 5.82A, 23.9V - Health: 100.0%
+2025-09-11 03:09:13,444 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:14,130 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:14,153 - __main__ - INFO - 🏭 PLC: 47.7°C - Health: 100.0%
+2025-09-11 03:09:14,842 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:18,849 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:18,868 - __main__ - INFO - 📡 ESP: 5.94A, 24.0V - Health: 100.0%
+2025-09-11 03:09:19,116 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:19,221 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:19,242 - __main__ - INFO - 🏭 PLC: 46.6°C - Health: 100.0%
+2025-09-11 03:09:24,303 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:24,322 - __main__ - INFO - 🏭 PLC: 45.6°C - Health: 100.0%
+2025-09-11 03:09:24,844 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:25,912 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:25,932 - __main__ - INFO - 📡 ESP: 5.81A, 24.0V - Health: 100.0%
+2025-09-11 03:09:29,402 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:29,422 - __main__ - INFO - 🏭 PLC: 46.0°C - Health: 100.0%
+2025-09-11 03:09:32,998 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:33,024 - __main__ - INFO - 📡 ESP: 5.96A, 23.6V - Health: 100.0%
+2025-09-11 03:09:34,489 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:34,508 - __main__ - INFO - 🏭 PLC: 45.0°C - Health: 100.0%
+2025-09-11 03:09:34,843 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:39,552 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:39,571 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 03:09:40,065 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:09:40,085 - __main__ - INFO - 📡 ESP: 5.93A, 23.9V - Health: 100.0%
+2025-09-11 03:09:44,097 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:12,427 - root - INFO - Logging system initialized successfully
+2025-09-11 03:22:12,430 - __main__ - INFO - ============================================================
+2025-09-11 03:22:12,430 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 03:22:12,431 - __main__ - INFO - Timestamp: 2025-09-11T03:22:12.431645
+2025-09-11 03:22:12,431 - __main__ - INFO - ============================================================
+2025-09-11 03:22:12,432 - __main__ - INFO - Creating necessary directories...
+2025-09-11 03:22:12,432 - __main__ - INFO - Initializing database...
+2025-09-11 03:22:12,436 - root - INFO - Database initialized successfully
+2025-09-11 03:22:12,437 - __main__ - INFO - Creating Flask application...
+2025-09-11 03:22:12,451 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 03:22:12,581 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:22:12,582 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 03:22:12,590 - __main__ - INFO - 🏭 PLC: 49.6°C - Health: 90.0%
+2025-09-11 03:22:12,663 - socketio - INFO - ✅ Client connected: dZZTDHPhtIIEMWSuAAAB (Total: 1)
+2025-09-11 03:22:12,668 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:22:12,669 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 03:22:15,208 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:15,217 - __main__ - INFO - 📡 ESP: 5.35A, 27.8V - Health: 97.8%
+2025-09-11 03:22:17,650 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:17,661 - __main__ - INFO - 🏭 PLC: 45.9°C - Health: 97.8%
+2025-09-11 03:22:22,278 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:22,289 - __main__ - INFO - 📡 ESP: 5.15A, 27.7V - Health: 98.0%
+2025-09-11 03:22:22,447 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:22,710 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:22,722 - __main__ - INFO - 🏭 PLC: 46.5°C - Health: 98.0%
+2025-09-11 03:22:23,138 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:22:24,031 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:24,451 - socketio - INFO - ✅ Client connected: uWnE_GoAZ1udZ8q9AAAD (Total: 2)
+2025-09-11 03:22:24,452 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:24,487 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:27,042 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:27,794 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:27,812 - __main__ - INFO - 🏭 PLC: 46.0°C - Health: 98.0%
+2025-09-11 03:22:29,359 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:29,379 - __main__ - INFO - 📡 ESP: 5.08A, 27.6V - Health: 98.2%
+2025-09-11 03:22:32,447 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:32,885 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:32,907 - __main__ - INFO - 🏭 PLC: 46.9°C - Health: 98.2%
+2025-09-11 03:22:36,433 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:36,455 - __main__ - INFO - 📡 ESP: 5.2A, 27.6V - Health: 98.2%
+2025-09-11 03:22:37,989 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:38,008 - __main__ - INFO - 🏭 PLC: 46.0°C - Health: 98.2%
+2025-09-11 03:22:42,455 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:43,077 - root - INFO - Health calculated: 98.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:43,094 - __main__ - INFO - 🏭 PLC: 44.6°C - Health: 98.2%
+2025-09-11 03:22:43,530 - root - INFO - Health calculated: 97.5% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:43,549 - __main__ - INFO - 📡 ESP: 5.17A, 28.0V - Health: 97.5%
+2025-09-11 03:22:48,173 - root - INFO - Health calculated: 97.5% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:48,197 - __main__ - INFO - 🏭 PLC: 45.6°C - Health: 97.5%
+2025-09-11 03:22:50,630 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:50,651 - __main__ - INFO - 📡 ESP: 5.14A, 27.7V - Health: 98.0%
+2025-09-11 03:22:52,474 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:53,271 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:53,291 - __main__ - INFO - 🏭 PLC: 45.8°C - Health: 98.0%
+2025-09-11 03:22:54,040 - root - INFO - Health calculated: 98.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:57,707 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:57,727 - __main__ - INFO - 📡 ESP: 5.28A, 28.1V - Health: 99.7%
+2025-09-11 03:22:58,342 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:22:58,360 - __main__ - INFO - 🏭 PLC: 45.7°C - Health: 99.7%
+2025-09-11 03:23:02,481 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:03,413 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:03,438 - __main__ - INFO - 🏭 PLC: 45.7°C - Health: 99.7%
+2025-09-11 03:23:04,793 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:04,812 - __main__ - INFO - 📡 ESP: 5.41A, 27.8V - Health: 97.8%
+2025-09-11 03:23:08,523 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:08,548 - __main__ - INFO - 🏭 PLC: 47.0°C - Health: 97.8%
+2025-09-11 03:23:11,872 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:11,887 - __main__ - INFO - 📡 ESP: 5.51A, 27.8V - Health: 97.8%
+2025-09-11 03:23:12,492 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:22,510 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:24,036 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:32,516 - root - INFO - Health calculated: 97.8% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:23:42,522 - root - WARNING - ESP connection timeout detected
+2025-09-11 03:23:42,522 - root - WARNING - PLC connection timeout detected
+2025-09-11 03:23:42,529 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:42,533 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:42,533 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:42,673 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:42,677 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:42,677 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:43,023 - socketio - INFO - ✅ Client connected: gsJD00MLSBurux8lAAAF (Total: 3)
+2025-09-11 03:23:43,028 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:43,032 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:43,033 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:43,063 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:43,067 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:43,067 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:45,678 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:45,681 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:45,681 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:46,359 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:23:52,536 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:52,539 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:52,540 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:23:54,042 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:54,045 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:23:54,047 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:24:02,553 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:02,558 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:02,559 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:24:12,558 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:12,562 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:12,564 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:24:22,560 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:22,562 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:22,563 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:24:24,108 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:24,111 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:24,112 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:24:24,933 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:24:24,934 - root - INFO - Health calculated: 90.0% (Excellent) - Data: current_esp, historical_plc
+2025-09-11 03:24:24,948 - __main__ - INFO - 📡 ESP: 6.36A, 23.8V - Health: 90.0%
+2025-09-11 03:24:24,951 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:24,965 - __main__ - INFO - 🏭 PLC: 38.0°C - Health: 100.0%
+2025-09-11 03:24:32,579 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:33,060 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:33,082 - __main__ - INFO - 🏭 PLC: 40.5°C - Health: 100.0%
+2025-09-11 03:24:33,094 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:33,115 - __main__ - INFO - 📡 ESP: 6.37A, 23.6V - Health: 100.0%
+2025-09-11 03:24:38,166 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:38,188 - __main__ - INFO - 🏭 PLC: 41.7°C - Health: 100.0%
+2025-09-11 03:24:40,195 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:40,213 - __main__ - INFO - 📡 ESP: 6.46A, 23.2V - Health: 100.0%
+2025-09-11 03:24:42,581 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:43,275 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:43,298 - __main__ - INFO - 🏭 PLC: 43.2°C - Health: 100.0%
+2025-09-11 03:24:47,288 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:47,302 - __main__ - INFO - 📡 ESP: 6.42A, 23.4V - Health: 100.0%
+2025-09-11 03:24:48,380 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:48,403 - __main__ - INFO - 🏭 PLC: 44.2°C - Health: 100.0%
+2025-09-11 03:24:52,579 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:53,455 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:53,475 - __main__ - INFO - 🏭 PLC: 44.0°C - Health: 100.0%
+2025-09-11 03:24:54,044 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:54,365 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:54,386 - __main__ - INFO - 📡 ESP: 6.48A, 23.3V - Health: 100.0%
+2025-09-11 03:24:58,553 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:24:58,574 - __main__ - INFO - 🏭 PLC: 43.2°C - Health: 100.0%
+2025-09-11 03:25:01,460 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:01,482 - __main__ - INFO - 📡 ESP: 6.32A, 23.5V - Health: 100.0%
+2025-09-11 03:25:02,587 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:03,649 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:03,668 - __main__ - INFO - 🏭 PLC: 44.0°C - Health: 100.0%
+2025-09-11 03:25:08,533 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:08,550 - __main__ - INFO - 📡 ESP: 6.31A, 23.7V - Health: 100.0%
+2025-09-11 03:25:08,718 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:08,736 - __main__ - INFO - 🏭 PLC: 44.2°C - Health: 100.0%
+2025-09-11 03:25:12,603 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:13,775 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:13,792 - __main__ - INFO - 🏭 PLC: 44.7°C - Health: 100.0%
+2025-09-11 03:25:15,638 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:15,652 - __main__ - INFO - 📡 ESP: 6.33A, 23.7V - Health: 100.0%
+2025-09-11 03:25:18,871 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:18,891 - __main__ - INFO - 🏭 PLC: 44.9°C - Health: 100.0%
+2025-09-11 03:25:22,610 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:22,738 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:22,753 - __main__ - INFO - 📡 ESP: 6.4A, 23.5V - Health: 100.0%
+2025-09-11 03:25:23,983 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:24,004 - __main__ - INFO - 🏭 PLC: 43.8°C - Health: 100.0%
+2025-09-11 03:25:24,097 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:29,089 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:29,109 - __main__ - INFO - 🏭 PLC: 44.0°C - Health: 100.0%
+2025-09-11 03:25:29,821 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:29,839 - __main__ - INFO - 📡 ESP: 6.58A, 23.1V - Health: 100.0%
+2025-09-11 03:25:32,619 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:34,164 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:34,181 - __main__ - INFO - 🏭 PLC: 51.2°C - Health: 100.0%
+2025-09-11 03:25:36,919 - root - INFO - Health calculated: 99.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:36,940 - __main__ - INFO - 📡 ESP: 9.33A, 20.2V - Health: 99.0%
+2025-09-11 03:25:39,263 - root - INFO - Health calculated: 99.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:39,283 - __main__ - INFO - 🏭 PLC: 50.6°C - Health: 99.0%
+2025-09-11 03:25:42,628 - root - INFO - Health calculated: 99.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:43,992 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:44,017 - __main__ - INFO - 📡 ESP: 9.14A, 20.3V - Health: 99.3%
+2025-09-11 03:25:44,347 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:44,378 - __main__ - INFO - 🏭 PLC: 52.2°C - Health: 99.3%
+2025-09-11 03:25:49,430 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:49,459 - __main__ - INFO - 🏭 PLC: 53.2°C - Health: 99.3%
+2025-09-11 03:25:51,075 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:51,095 - __main__ - INFO - 📡 ESP: 9.28A, 20.6V - Health: 99.4%
+2025-09-11 03:25:52,643 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:54,036 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:54,529 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:54,552 - __main__ - INFO - 🏭 PLC: 52.2°C - Health: 99.4%
+2025-09-11 03:25:58,150 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:58,171 - __main__ - INFO - 📡 ESP: 9.23A, 21.0V - Health: 99.7%
+2025-09-11 03:25:59,610 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:25:59,633 - __main__ - INFO - 🏭 PLC: 52.8°C - Health: 99.7%
+2025-09-11 03:26:02,648 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:04,685 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:04,703 - __main__ - INFO - 🏭 PLC: 54.2°C - Health: 99.7%
+2025-09-11 03:26:05,241 - root - INFO - Health calculated: 99.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:05,263 - __main__ - INFO - 📡 ESP: 9.37A, 20.3V - Health: 99.0%
+2025-09-11 03:26:09,795 - root - INFO - Health calculated: 99.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:09,813 - __main__ - INFO - 🏭 PLC: 55.0°C - Health: 99.0%
+2025-09-11 03:26:12,319 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:12,330 - __main__ - INFO - 📡 ESP: 9.21A, 20.5V - Health: 99.4%
+2025-09-11 03:26:12,673 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:22,670 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:24,087 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:32,687 - root - INFO - Health calculated: 99.4% (Excellent) - Data: current_esp, current_plc
+2025-09-11 03:26:42,699 - root - WARNING - ESP connection timeout detected
+2025-09-11 03:26:42,702 - root - WARNING - PLC connection timeout detected
+2025-09-11 03:26:42,708 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:42,713 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:42,714 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:26:52,725 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:52,730 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:52,731 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:26:54,103 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:54,107 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:26:54,107 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:02,745 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:02,749 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:02,750 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:12,755 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:12,761 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:12,762 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:22,759 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:22,760 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:22,761 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:24,106 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:24,108 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:24,109 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:32,775 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:32,777 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:32,777 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:41,595 - root - INFO - Logging system initialized successfully
+2025-09-11 03:27:41,595 - __main__ - INFO - ============================================================
+2025-09-11 03:27:41,596 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 03:27:41,596 - __main__ - INFO - Timestamp: 2025-09-11T03:27:41.596663
+2025-09-11 03:27:41,596 - __main__ - INFO - ============================================================
+2025-09-11 03:27:41,596 - __main__ - INFO - Creating necessary directories...
+2025-09-11 03:27:41,598 - __main__ - INFO - Initializing database...
+2025-09-11 03:27:41,599 - root - INFO - Database initialized successfully
+2025-09-11 03:27:41,599 - __main__ - INFO - Creating Flask application...
+2025-09-11 03:27:41,618 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 03:27:41,910 - socketio - INFO - ✅ Client connected: DIOHhiAYtCh2C0CnAAAB (Total: 1)
+2025-09-11 03:27:41,912 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:41,914 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:41,914 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:41,945 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:41,948 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:41,949 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:27:51,625 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:51,626 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:27:51,627 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:01,632 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:01,634 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:01,635 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:11,639 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:11,642 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:11,643 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:19,450 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:19,453 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:19,454 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:21,641 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:21,645 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:21,645 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:31,654 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:31,657 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:31,658 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:41,670 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:41,673 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:41,674 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:28:51,671 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:51,675 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:28:51,677 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:01,693 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:01,696 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:01,696 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:11,707 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:11,711 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:11,712 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:19,127 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:19,130 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:19,131 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:21,727 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:21,730 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:21,730 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:31,746 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:31,750 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:31,750 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:41,756 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:41,761 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:41,762 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:29:51,786 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:51,790 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:29:51,790 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:01,812 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:01,817 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:01,818 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:11,837 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:11,839 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:11,840 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:19,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:19,125 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:19,125 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:21,850 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:21,853 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:21,854 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:31,873 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:31,879 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:31,880 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:41,906 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:41,910 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:41,911 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:30:51,929 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:51,935 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:30:51,936 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:01,947 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:01,950 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:01,951 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:11,952 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:11,955 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:11,956 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:19,111 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:19,114 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:19,115 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:21,950 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:21,954 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:21,954 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:31,970 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:31,976 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:31,977 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:42,003 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:42,008 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:42,010 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:31:52,033 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:52,036 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:31:52,036 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:02,046 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:02,051 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:02,052 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:12,063 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:12,067 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:12,067 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:19,122 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:19,125 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:19,126 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:22,095 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:22,100 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:22,100 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:32,123 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:32,129 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:32,131 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:42,158 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:42,161 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:42,161 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:52,188 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:52,189 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 03:32:52,190 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
