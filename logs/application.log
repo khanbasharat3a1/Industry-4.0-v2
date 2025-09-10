@@ -5405,3 +5405,1716 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 00:28:21,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-11 00:28:21,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-11 00:28:23,186 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:23] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:41:29,814 - root - INFO - Logging system initialized successfully
+2025-09-11 00:41:29,814 - __main__ - INFO - ============================================================
+2025-09-11 00:41:29,815 - __main__ - INFO - AI Motor Monitoring System starting up (version 3.1)
+2025-09-11 00:41:29,815 - __main__ - INFO - Timestamp: 2025-09-11T00:41:29.815127
+2025-09-11 00:41:29,815 - __main__ - INFO - ============================================================
+2025-09-11 00:41:29,815 - __main__ - INFO - Creating necessary directories...
+2025-09-11 00:41:29,816 - __main__ - INFO - Creating Flask application...
+2025-09-11 00:41:30,632 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,635 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,636 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,640 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,643 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,645 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,649 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,652 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,653 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,656 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,661 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,663 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,665 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,668 - __main__ - INFO - Sensor data blueprint registered
+2025-09-11 00:41:30,670 - __main__ - INFO - Health blueprint registered
+2025-09-11 00:41:30,672 - __main__ - INFO - Alerts blueprint registered
+2025-09-11 00:41:30,674 - __main__ - INFO - Control blueprint registered
+2025-09-11 00:41:30,674 - __main__ - INFO - API blueprints registered: 4/4
+2025-09-11 00:41:30,680 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,681 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,685 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,685 - socketio - INFO - WebSocket events registered successfully
+2025-09-11 00:41:30,685 - __main__ - INFO - Initializing services...
+2025-09-11 00:41:30,685 - __main__ - INFO - Initializing hardware managers...
+2025-09-11 00:41:30,685 - __main__ - INFO - PLC manager initialized
+2025-09-11 00:41:30,686 - __main__ - INFO - Initializing services...
+2025-09-11 00:41:30,688 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,689 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:41:30,690 - __main__ - INFO - Data processor initialized
+2025-09-11 00:41:30,693 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,693 - services.background_tasks - INFO - Default scheduled tasks configured
+2025-09-11 00:41:30,694 - services.background_tasks - INFO - Starting background task manager...
+2025-09-11 00:41:30,695 - services.background_tasks - INFO - Scheduler worker started
+2025-09-11 00:41:30,695 - services.background_tasks - INFO - Background task manager started successfully
+2025-09-11 00:41:30,696 - __main__ - INFO - Background task manager started
+2025-09-11 00:41:30,700 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,701 - services.connection_monitor - INFO - Connection monitor loop started
+2025-09-11 00:41:30,701 - services.connection_monitor - INFO - Connection monitor started
+2025-09-11 00:41:30,701 - __main__ - INFO - Connection monitor started
+2025-09-11 00:41:30,705 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:41:30,705 - __main__ - INFO - Alert service initialized
+2025-09-11 00:41:30,705 - __main__ - INFO - Testing initial connections...
+2025-09-11 00:41:30,706 - __main__ - INFO - Testing PLC connection to 192.168.3.39:5007
+2025-09-11 00:41:32,647 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,647 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,662 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,677 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:32,710 - __main__ - WARNING - PLC connection failed - will retry automatically
+2025-09-11 00:41:32,803 - __main__ - INFO - Network connectivity confirmed
+2025-09-11 00:41:32,804 - __main__ - INFO - Running system health check...
+2025-09-11 00:41:32,804 - __main__ - INFO - Health check completed: 2/2 core components healthy
+2025-09-11 00:41:32,818 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.158.247:5000
+2025-09-11 00:41:32,818 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 00:41:32,899 - __main__ - INFO - 🏭 PLC Data: Temp=40.6°C, Voltage=24.78V, Status=NORMAL
+2025-09-11 00:41:32,900 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:32,900 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:32] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:33,389 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "GET / HTTP/1.1" 200 -
+2025-09-11 00:41:33,534 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "GET /socket.io/?EIO=4&transport=polling&t=Par2bIP HTTP/1.1" 200 -
+2025-09-11 00:41:33,624 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-11 00:41:33,869 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-11 00:41:33,873 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:41:33,876 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "POST /socket.io/?EIO=4&transport=polling&t=Par2bI_&sid=-3CAmC_F4TcLMLtYAAAA HTTP/1.1" 200 -
+2025-09-11 00:41:33,877 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:33] "GET /socket.io/?EIO=4&transport=polling&t=Par2bJ0&sid=-3CAmC_F4TcLMLtYAAAA HTTP/1.1" 200 -
+2025-09-11 00:41:34,202 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:34] "GET /socket.io/?EIO=4&transport=polling&t=Par2bNw&sid=-3CAmC_F4TcLMLtYAAAA HTTP/1.1" 200 -
+2025-09-11 00:41:37,974 - __main__ - INFO - 🏭 PLC Data: Temp=40.5°C, Voltage=24.77V, Status=NORMAL
+2025-09-11 00:41:37,975 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:37,976 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:37] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:38,393 - __main__ - INFO - 📡 ESP Data: Current=6.43A, Voltage=22.8V, RPM=2595
+2025-09-11 00:41:38,394 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:41:38,395 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:41:39,662 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:39,663 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:39,678 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:39,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:39,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:39,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:43,050 - __main__ - INFO - 🏭 PLC Data: Temp=39.7°C, Voltage=24.85V, Status=NORMAL
+2025-09-11 00:41:43,052 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:43,054 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:43] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:45,460 - __main__ - INFO - 📡 ESP Data: Current=6.24A, Voltage=22.7V, RPM=2612
+2025-09-11 00:41:45,461 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:41:45,462 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:45] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:41:46,686 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:46,686 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:46,687 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:46,702 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:46,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:46,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:48,124 - __main__ - INFO - 🏭 PLC Data: Temp=39.7°C, Voltage=24.37V, Status=NORMAL
+2025-09-11 00:41:48,125 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:48,127 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:48] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:52,542 - __main__ - INFO - 📡 ESP Data: Current=6.12A, Voltage=22.9V, RPM=2596
+2025-09-11 00:41:52,543 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:41:52,545 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:52] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:41:53,210 - __main__ - INFO - 🏭 PLC Data: Temp=39.4°C, Voltage=24.57V, Status=NORMAL
+2025-09-11 00:41:53,212 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:53,213 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:53] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:53,710 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:53,710 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:53,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:53,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:53,741 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:53,741 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:41:58,247 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=24.09V, Status=NORMAL
+2025-09-11 00:41:58,249 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:41:58,250 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:58] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:41:59,604 - __main__ - INFO - 📡 ESP Data: Current=6.04A, Voltage=23.1V, RPM=2612
+2025-09-11 00:41:59,607 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:41:59,608 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:41:59] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:00,720 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:00,720 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:00,723 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:00,738 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:00,752 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:00,753 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:03,302 - __main__ - INFO - 🏭 PLC Data: Temp=38.2°C, Voltage=24.45V, Status=NORMAL
+2025-09-11 00:42:03,304 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:03,306 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:03] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:06,662 - __main__ - INFO - 📡 ESP Data: Current=5.95A, Voltage=22.8V, RPM=2625
+2025-09-11 00:42:06,664 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:06,665 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:06] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:07,734 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:07,734 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:07,750 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:07,750 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:07,765 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:07,765 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:08,360 - __main__ - INFO - 🏭 PLC Data: Temp=39.0°C, Voltage=24.33V, Status=NORMAL
+2025-09-11 00:42:08,362 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:08,363 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:08] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:13,421 - __main__ - INFO - 🏭 PLC Data: Temp=38.2°C, Voltage=24.3V, Status=NORMAL
+2025-09-11 00:42:13,422 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:13,423 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:13] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:13,716 - __main__ - INFO - 📡 ESP Data: Current=6.12A, Voltage=22.9V, RPM=2575
+2025-09-11 00:42:13,717 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:13,718 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:13] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:14,759 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:14,759 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:14,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:14,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:14,790 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:14,790 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:18,505 - __main__ - INFO - 🏭 PLC Data: Temp=37.9°C, Voltage=24.65V, Status=NORMAL
+2025-09-11 00:42:18,506 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:18,508 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:18] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:20,807 - __main__ - INFO - 📡 ESP Data: Current=6.02A, Voltage=23.3V, RPM=2558
+2025-09-11 00:42:20,808 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:20,810 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:20] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:21,781 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:21,781 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:21,796 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:21,796 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:21,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:21,811 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:23,573 - __main__ - INFO - 🏭 PLC Data: Temp=36.5°C, Voltage=24.74V, Status=NORMAL
+2025-09-11 00:42:23,574 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:23,575 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:23] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:27,881 - __main__ - INFO - 📡 ESP Data: Current=5.85A, Voltage=23.0V, RPM=2561
+2025-09-11 00:42:27,884 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:27,885 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:27] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:28,634 - __main__ - INFO - 🏭 PLC Data: Temp=35.9°C, Voltage=24.52V, Status=NORMAL
+2025-09-11 00:42:28,635 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:28,636 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:28] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:28,802 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:28,802 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:28,817 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:28,817 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:28,833 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:28,833 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:33,684 - __main__ - INFO - 🏭 PLC Data: Temp=34.8°C, Voltage=24.05V, Status=NORMAL
+2025-09-11 00:42:33,685 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:33,687 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:33] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:34,956 - __main__ - INFO - 📡 ESP Data: Current=6.04A, Voltage=22.6V, RPM=2562
+2025-09-11 00:42:34,957 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:34,961 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:34] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:35,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:35,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:35,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:35,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:35,855 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:35,856 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:38,761 - __main__ - INFO - 🏭 PLC Data: Temp=35.1°C, Voltage=24.36V, Status=NORMAL
+2025-09-11 00:42:38,762 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:38,763 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:38] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:39,716 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:39] "GET / HTTP/1.1" 200 -
+2025-09-11 00:42:39,730 - api.websocket.events - INFO - Client disconnected from WebSocket
+2025-09-11 00:42:39,731 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:39] "GET /socket.io/?EIO=4&transport=websocket&sid=-3CAmC_F4TcLMLtYAAAA HTTP/1.1" 200 -
+2025-09-11 00:42:39,833 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:39] "GET /socket.io/?EIO=4&transport=polling&t=Par2rUI HTTP/1.1" 200 -
+2025-09-11 00:42:39,960 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:39] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-11 00:42:40,182 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:40] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-11 00:42:40,211 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:42:40,218 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:40] "POST /socket.io/?EIO=4&transport=polling&t=Par2rVP&sid=xOA2VH9kPs5RdbtfAAAC HTTP/1.1" 200 -
+2025-09-11 00:42:40,221 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:40] "GET /socket.io/?EIO=4&transport=polling&t=Par2rVR&sid=xOA2VH9kPs5RdbtfAAAC HTTP/1.1" 200 -
+2025-09-11 00:42:42,026 - __main__ - INFO - 📡 ESP Data: Current=5.98A, Voltage=22.3V, RPM=2570
+2025-09-11 00:42:42,028 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:42,030 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:42,835 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:42,835 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:42,835 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:42,836 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:42,866 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:42,866 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:43,830 - __main__ - INFO - 🏭 PLC Data: Temp=35.3°C, Voltage=24.82V, Status=NORMAL
+2025-09-11 00:42:43,832 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:43,834 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:43] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:48,891 - __main__ - INFO - 🏭 PLC Data: Temp=34.5°C, Voltage=24.64V, Status=NORMAL
+2025-09-11 00:42:48,892 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:48,893 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:48] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:49,093 - __main__ - INFO - 📡 ESP Data: Current=6.1A, Voltage=22.3V, RPM=2592
+2025-09-11 00:42:49,094 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:49,095 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:49,851 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:49,851 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:49,851 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:49,867 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:49,882 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:49,898 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:53,954 - __main__ - INFO - 🏭 PLC Data: Temp=35.2°C, Voltage=24.37V, Status=NORMAL
+2025-09-11 00:42:53,955 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:53,957 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:53] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:42:56,182 - __main__ - INFO - 📡 ESP Data: Current=6.05A, Voltage=22.4V, RPM=2544
+2025-09-11 00:42:56,183 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:42:56,185 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:42:56,871 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:56,871 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:56,871 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:56,886 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:56,901 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:56,917 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:42:59,033 - __main__ - INFO - 🏭 PLC Data: Temp=35.1°C, Voltage=24.32V, Status=NORMAL
+2025-09-11 00:42:59,036 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:42:59,038 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:42:59] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:03,245 - __main__ - INFO - 📡 ESP Data: Current=6.05A, Voltage=22.1V, RPM=2557
+2025-09-11 00:43:03,246 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:03,249 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:03,880 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:03,880 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:03,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:03,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:03,912 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:03,943 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:04,099 - __main__ - INFO - 🏭 PLC Data: Temp=34.6°C, Voltage=24.06V, Status=NORMAL
+2025-09-11 00:43:04,100 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:04,102 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:04] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:09,177 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=24.32V, Status=NORMAL
+2025-09-11 00:43:09,178 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:09,179 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:09] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:10,312 - __main__ - INFO - 📡 ESP Data: Current=6.12A, Voltage=22.3V, RPM=2543
+2025-09-11 00:43:10,313 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:10,314 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:10,889 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:10,904 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:10,920 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:10,920 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:10,935 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:10,966 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:14,235 - __main__ - INFO - 🏭 PLC Data: Temp=37.1°C, Voltage=23.88V, Status=NORMAL
+2025-09-11 00:43:14,236 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:14,237 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:14] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:17,362 - __main__ - INFO - 📡 ESP Data: Current=5.99A, Voltage=22.4V, RPM=2583
+2025-09-11 00:43:17,363 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:17,364 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:17,916 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:17,931 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:17,947 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:17,947 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:17,962 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:17,992 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:19,306 - __main__ - INFO - 🏭 PLC Data: Temp=37.7°C, Voltage=23.5V, Status=NORMAL
+2025-09-11 00:43:19,308 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:19,309 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:19] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:24,374 - __main__ - INFO - 🏭 PLC Data: Temp=37.1°C, Voltage=23.02V, Status=NORMAL
+2025-09-11 00:43:24,378 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:24,380 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:24] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:24,420 - __main__ - INFO - 📡 ESP Data: Current=5.81A, Voltage=22.3V, RPM=2611
+2025-09-11 00:43:24,422 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:24,424 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:24,935 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:24,950 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:24,966 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:24,966 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:24,982 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:24,998 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:29,433 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=23.38V, Status=NORMAL
+2025-09-11 00:43:29,436 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:29,438 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:29] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:31,490 - __main__ - INFO - 📡 ESP Data: Current=5.69A, Voltage=22.0V, RPM=2640
+2025-09-11 00:43:31,491 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:31,493 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:31,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:31,973 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:31,989 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:31,989 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:32,004 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:32,020 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:34,499 - __main__ - INFO - 🏭 PLC Data: Temp=39.4°C, Voltage=22.97V, Status=NORMAL
+2025-09-11 00:43:34,504 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:34,506 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:34] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:38,554 - __main__ - INFO - 📡 ESP Data: Current=5.88A, Voltage=21.9V, RPM=2667
+2025-09-11 00:43:38,558 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:38,560 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:38,976 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:38,992 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:39,008 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:39,008 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:39,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:39,039 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:39,582 - __main__ - INFO - 🏭 PLC Data: Temp=38.9°C, Voltage=23.02V, Status=NORMAL
+2025-09-11 00:43:39,583 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:39,585 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:39] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:44,659 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=23.33V, Status=NORMAL
+2025-09-11 00:43:44,661 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:44,665 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:44] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:45,636 - __main__ - INFO - 📡 ESP Data: Current=5.79A, Voltage=21.9V, RPM=2639
+2025-09-11 00:43:45,638 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:45,639 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:45] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:45,998 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:46,010 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:46,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:46,023 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:46,040 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:46,055 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:49,745 - __main__ - INFO - 🏭 PLC Data: Temp=37.5°C, Voltage=23.59V, Status=NORMAL
+2025-09-11 00:43:49,747 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:49,748 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:49] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:52,697 - __main__ - INFO - 📡 ESP Data: Current=5.83A, Voltage=21.8V, RPM=2602
+2025-09-11 00:43:52,699 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:52,700 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:52] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:53,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:53,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:53,040 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:53,071 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:53,071 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:53,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:43:54,828 - __main__ - INFO - 🏭 PLC Data: Temp=36.4°C, Voltage=24.06V, Status=NORMAL
+2025-09-11 00:43:54,830 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:54,831 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:54] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:43:59,783 - __main__ - INFO - 📡 ESP Data: Current=5.79A, Voltage=21.7V, RPM=2594
+2025-09-11 00:43:59,785 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:43:59,786 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:59] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:43:59,907 - __main__ - INFO - 🏭 PLC Data: Temp=36.8°C, Voltage=24.53V, Status=NORMAL
+2025-09-11 00:43:59,909 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:43:59,910 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:43:59] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:00,044 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:00,044 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:00,060 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:00,091 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:00,091 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:00,091 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:05,001 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=24.56V, Status=NORMAL
+2025-09-11 00:44:05,003 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:05,004 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:05] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:06,851 - __main__ - INFO - 📡 ESP Data: Current=5.59A, Voltage=21.5V, RPM=2591
+2025-09-11 00:44:06,853 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:06,854 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:06] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:07,053 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:07,053 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:07,068 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:07,115 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:07,115 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:07,115 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:10,082 - __main__ - INFO - 🏭 PLC Data: Temp=36.8°C, Voltage=24.64V, Status=NORMAL
+2025-09-11 00:44:10,083 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:10,085 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:10] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:13,941 - __main__ - INFO - 📡 ESP Data: Current=5.65A, Voltage=21.8V, RPM=2565
+2025-09-11 00:44:13,943 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:13,944 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:13] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:14,065 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:14,065 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:14,080 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:14,126 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:14,126 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:14,126 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:15,151 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=24.31V, Status=NORMAL
+2025-09-11 00:44:15,153 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:15,154 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:15] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:20,225 - __main__ - INFO - 🏭 PLC Data: Temp=38.9°C, Voltage=24.11V, Status=NORMAL
+2025-09-11 00:44:20,227 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:20,228 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:20] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:21,035 - __main__ - INFO - 📡 ESP Data: Current=5.51A, Voltage=21.4V, RPM=2547
+2025-09-11 00:44:21,036 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:21,037 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:21,081 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:21,081 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:21,097 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:21,143 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:21,143 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:21,143 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:25,278 - __main__ - INFO - 🏭 PLC Data: Temp=38.2°C, Voltage=24.5V, Status=NORMAL
+2025-09-11 00:44:25,279 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:25,281 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:25] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:28,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:28,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:28,117 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:28,118 - __main__ - INFO - 📡 ESP Data: Current=5.44A, Voltage=21.1V, RPM=2585
+2025-09-11 00:44:28,120 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:28,123 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:28,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:28,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:28,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:30,359 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=24.93V, Status=NORMAL
+2025-09-11 00:44:30,361 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:30,362 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:30] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:35,118 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,118 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,134 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,180 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,180 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,181 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:35,198 - __main__ - INFO - 📡 ESP Data: Current=5.51A, Voltage=20.9V, RPM=2543
+2025-09-11 00:44:35,199 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:35,200 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:35,427 - __main__ - INFO - 🏭 PLC Data: Temp=39.1°C, Voltage=25.0V, Status=NORMAL
+2025-09-11 00:44:35,428 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:35,430 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:35] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:40,517 - __main__ - INFO - 🏭 PLC Data: Temp=39.7°C, Voltage=24.94V, Status=NORMAL
+2025-09-11 00:44:40,518 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:40,520 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:40] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:42,141 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,141 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,157 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,203 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,203 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,203 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:42,266 - __main__ - INFO - 📡 ESP Data: Current=5.57A, Voltage=21.0V, RPM=2541
+2025-09-11 00:44:42,268 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:42,269 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:45,607 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=24.91V, Status=NORMAL
+2025-09-11 00:44:45,610 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:45,612 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:45] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:49,160 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,160 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,176 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:49,347 - __main__ - INFO - 📡 ESP Data: Current=5.52A, Voltage=21.4V, RPM=2582
+2025-09-11 00:44:49,349 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:49,351 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:44:50,670 - __main__ - INFO - 🏭 PLC Data: Temp=38.7°C, Voltage=25.15V, Status=NORMAL
+2025-09-11 00:44:50,672 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:50,674 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:50] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:55,751 - __main__ - INFO - 🏭 PLC Data: Temp=37.4°C, Voltage=25.38V, Status=NORMAL
+2025-09-11 00:44:55,752 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:44:55,753 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:55] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:44:56,173 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,173 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,235 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,235 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,235 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:44:56,407 - __main__ - INFO - 📡 ESP Data: Current=5.65A, Voltage=21.8V, RPM=2544
+2025-09-11 00:44:56,408 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:44:56,409 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:44:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:00,829 - __main__ - INFO - 🏭 PLC Data: Temp=38.1°C, Voltage=24.88V, Status=NORMAL
+2025-09-11 00:45:00,831 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:00,833 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:00] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:03,204 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,204 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,219 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,250 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,250 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,265 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:03,482 - __main__ - INFO - 📡 ESP Data: Current=5.81A, Voltage=22.1V, RPM=2576
+2025-09-11 00:45:03,483 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:03,484 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:05,891 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=24.53V, Status=NORMAL
+2025-09-11 00:45:05,892 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:05,893 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:05] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:10,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,223 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,238 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,270 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,270 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,285 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:10,550 - __main__ - INFO - 📡 ESP Data: Current=5.88A, Voltage=21.7V, RPM=2555
+2025-09-11 00:45:10,551 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:10,553 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:10,972 - __main__ - INFO - 🏭 PLC Data: Temp=38.4°C, Voltage=24.32V, Status=NORMAL
+2025-09-11 00:45:10,975 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:10,976 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:10] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:16,036 - __main__ - INFO - 🏭 PLC Data: Temp=37.3°C, Voltage=24.31V, Status=NORMAL
+2025-09-11 00:45:16,038 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:16,040 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:16] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:17,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,243 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,274 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,274 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,290 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:17,620 - __main__ - INFO - 📡 ESP Data: Current=5.98A, Voltage=22.1V, RPM=2595
+2025-09-11 00:45:17,622 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:17,623 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:21,115 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=23.81V, Status=NORMAL
+2025-09-11 00:45:21,115 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:21,115 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:21] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:24,232 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,232 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,248 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,278 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,278 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,293 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:24,697 - __main__ - INFO - 📡 ESP Data: Current=6.08A, Voltage=22.1V, RPM=2622
+2025-09-11 00:45:24,699 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:24,700 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:26,167 - __main__ - INFO - 🏭 PLC Data: Temp=40.0°C, Voltage=24.3V, Status=NORMAL
+2025-09-11 00:45:26,169 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:26,170 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:26] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:31,243 - __main__ - INFO - 🏭 PLC Data: Temp=40.1°C, Voltage=23.86V, Status=NORMAL
+2025-09-11 00:45:31,244 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:31,244 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:31] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:31,257 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,257 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,272 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,303 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,303 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,303 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:31,767 - __main__ - INFO - 📡 ESP Data: Current=5.92A, Voltage=22.1V, RPM=2668
+2025-09-11 00:45:31,768 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:31,770 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:36,291 - __main__ - INFO - 🏭 PLC Data: Temp=40.1°C, Voltage=23.79V, Status=NORMAL
+2025-09-11 00:45:36,292 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:36,292 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:36] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:38,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,288 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,335 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,335 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,335 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:38,828 - __main__ - INFO - 📡 ESP Data: Current=6.01A, Voltage=22.5V, RPM=2695
+2025-09-11 00:45:38,828 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:38,829 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:41,355 - __main__ - INFO - 🏭 PLC Data: Temp=39.2°C, Voltage=23.4V, Status=NORMAL
+2025-09-11 00:45:41,355 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:41,356 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:41] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:45,298 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,298 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,314 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,360 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,360 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,360 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:45,887 - __main__ - INFO - 📡 ESP Data: Current=6.07A, Voltage=22.1V, RPM=2651
+2025-09-11 00:45:45,887 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:45,888 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:45] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:46,427 - __main__ - INFO - 🏭 PLC Data: Temp=38.4°C, Voltage=23.66V, Status=NORMAL
+2025-09-11 00:45:46,428 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:46,429 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:46] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:51,486 - __main__ - INFO - 🏭 PLC Data: Temp=37.4°C, Voltage=23.98V, Status=NORMAL
+2025-09-11 00:45:51,488 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:51,488 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:51] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:52,324 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,324 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,340 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,387 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,387 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,387 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:52,964 - __main__ - INFO - 📡 ESP Data: Current=5.93A, Voltage=21.7V, RPM=2652
+2025-09-11 00:45:52,964 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:45:52,964 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:52] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:45:56,549 - __main__ - INFO - 🏭 PLC Data: Temp=36.7°C, Voltage=23.9V, Status=NORMAL
+2025-09-11 00:45:56,550 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:45:56,550 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:45:56] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:45:59,342 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,342 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,357 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,403 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,403 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,403 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:45:59,999 - __main__ - INFO - 📡 ESP Data: Current=5.83A, Voltage=21.6V, RPM=2666
+2025-09-11 00:46:00,000 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:00,001 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:01,604 - __main__ - INFO - 🏭 PLC Data: Temp=36.2°C, Voltage=23.49V, Status=NORMAL
+2025-09-11 00:46:01,604 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:01,605 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:01] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:06,346 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,346 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,410 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:06,675 - __main__ - INFO - 🏭 PLC Data: Temp=37.4°C, Voltage=23.56V, Status=NORMAL
+2025-09-11 00:46:06,676 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:06,680 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:06] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:07,082 - __main__ - INFO - 📡 ESP Data: Current=5.98A, Voltage=21.9V, RPM=2656
+2025-09-11 00:46:07,083 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:07,084 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:07] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:11,724 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=23.88V, Status=NORMAL
+2025-09-11 00:46:11,724 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:11,725 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:11] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:13,366 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:13,366 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:13,381 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:13,427 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:13,427 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:13,427 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:14,129 - __main__ - INFO - 📡 ESP Data: Current=6.16A, Voltage=22.2V, RPM=2643
+2025-09-11 00:46:14,130 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:14,131 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:14] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:16,774 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=24.24V, Status=NORMAL
+2025-09-11 00:46:16,776 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:16,777 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:16] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:20,375 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:20,375 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:20,391 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:20,452 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:20,452 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:20,452 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:21,197 - __main__ - INFO - 📡 ESP Data: Current=6.14A, Voltage=22.3V, RPM=2605
+2025-09-11 00:46:21,198 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:21,199 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:21,845 - __main__ - INFO - 🏭 PLC Data: Temp=37.2°C, Voltage=24.63V, Status=NORMAL
+2025-09-11 00:46:21,845 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:21,846 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:21] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:26,898 - __main__ - INFO - 🏭 PLC Data: Temp=38.4°C, Voltage=24.33V, Status=NORMAL
+2025-09-11 00:46:26,898 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:26,899 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:26] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:27,379 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:27,379 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:27,394 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:27,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:27,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:27,455 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:28,277 - __main__ - INFO - 📡 ESP Data: Current=6.18A, Voltage=22.4V, RPM=2654
+2025-09-11 00:46:28,278 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:28,279 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:30,703 - services.background_tasks - INFO - Executing scheduled task: connection_health_check
+2025-09-11 00:46:30,725 - services.background_tasks - INFO - Task connection_health_check completed in 0.01s
+2025-09-11 00:46:31,957 - __main__ - INFO - 🏭 PLC Data: Temp=39.2°C, Voltage=23.85V, Status=NORMAL
+2025-09-11 00:46:31,958 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:31,959 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:31] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:34,399 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:34,399 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:34,414 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:34,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:34,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:34,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:35,324 - __main__ - INFO - 📡 ESP Data: Current=6.25A, Voltage=22.3V, RPM=2654
+2025-09-11 00:46:35,327 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:35,329 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:37,027 - __main__ - INFO - 🏭 PLC Data: Temp=39.3°C, Voltage=23.54V, Status=NORMAL
+2025-09-11 00:46:37,027 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:37,028 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:37] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:41,414 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:41,414 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:41,429 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:41,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:41,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:41,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:42,091 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=23.45V, Status=NORMAL
+2025-09-11 00:46:42,092 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:42,093 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:42] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:42,396 - __main__ - INFO - 📡 ESP Data: Current=6.07A, Voltage=22.2V, RPM=2657
+2025-09-11 00:46:42,398 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:42,399 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:47,158 - __main__ - INFO - 🏭 PLC Data: Temp=36.9°C, Voltage=23.55V, Status=NORMAL
+2025-09-11 00:46:47,159 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:47,159 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:47] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:48,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:48,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:48,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:48,500 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:48,500 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:48,516 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:49,449 - __main__ - INFO - 📡 ESP Data: Current=6.1A, Voltage=21.8V, RPM=2620
+2025-09-11 00:46:49,450 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:49,452 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:52,231 - __main__ - INFO - 🏭 PLC Data: Temp=38.3°C, Voltage=23.93V, Status=NORMAL
+2025-09-11 00:46:52,232 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:52,233 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:52] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:46:55,457 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:55,457 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:55,457 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:55,518 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:55,518 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:55,534 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:46:56,499 - __main__ - INFO - 📡 ESP Data: Current=5.99A, Voltage=21.3V, RPM=2599
+2025-09-11 00:46:56,499 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:46:56,500 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:46:57,319 - __main__ - INFO - 🏭 PLC Data: Temp=39.8°C, Voltage=23.44V, Status=NORMAL
+2025-09-11 00:46:57,324 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:46:57,325 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:46:57] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:02,399 - __main__ - INFO - 🏭 PLC Data: Temp=40.2°C, Voltage=23.61V, Status=NORMAL
+2025-09-11 00:47:02,402 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:02,404 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:02] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:02,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:02,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:02,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:02,538 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:02,538 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:02,553 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:03,561 - __main__ - INFO - 📡 ESP Data: Current=5.95A, Voltage=21.7V, RPM=2581
+2025-09-11 00:47:03,565 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:03,566 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:07,484 - __main__ - INFO - 🏭 PLC Data: Temp=41.6°C, Voltage=23.61V, Status=NORMAL
+2025-09-11 00:47:07,486 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:07,487 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:07] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:09,497 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:09,497 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:09,497 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:09,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:09,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:09,575 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:10,630 - __main__ - INFO - 📡 ESP Data: Current=6.09A, Voltage=22.0V, RPM=2566
+2025-09-11 00:47:10,631 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:10,632 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:12,560 - __main__ - INFO - 🏭 PLC Data: Temp=41.3°C, Voltage=23.45V, Status=NORMAL
+2025-09-11 00:47:12,560 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:12,562 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:12] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:16,523 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:16,523 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:16,523 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:16,585 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:16,585 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:16,601 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:17,628 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=23.36V, Status=NORMAL
+2025-09-11 00:47:17,631 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:17,632 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:17] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:17,705 - __main__ - INFO - 📡 ESP Data: Current=6.11A, Voltage=22.3V, RPM=2554
+2025-09-11 00:47:17,706 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:17,706 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:22,691 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=23.12V, Status=NORMAL
+2025-09-11 00:47:22,693 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:22,694 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:22] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:23,538 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:23,538 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:23,538 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:23,601 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:23,601 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:23,616 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:24,772 - __main__ - INFO - 📡 ESP Data: Current=6.02A, Voltage=22.8V, RPM=2573
+2025-09-11 00:47:24,773 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:24,775 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:27,734 - __main__ - INFO - 🏭 PLC Data: Temp=40.5°C, Voltage=23.16V, Status=NORMAL
+2025-09-11 00:47:27,735 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:27,736 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:27] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:30,554 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:30,554 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:30,554 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:30,616 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:30,616 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:30,632 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:31,858 - __main__ - INFO - 📡 ESP Data: Current=6.0A, Voltage=22.3V, RPM=2607
+2025-09-11 00:47:31,858 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:31,859 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:32,808 - __main__ - INFO - 🏭 PLC Data: Temp=39.2°C, Voltage=23.55V, Status=NORMAL
+2025-09-11 00:47:32,810 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:32,811 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:32] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:37,577 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,577 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,577 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,639 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,639 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,654 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:37,886 - __main__ - INFO - 🏭 PLC Data: Temp=40.0°C, Voltage=23.88V, Status=NORMAL
+2025-09-11 00:47:37,889 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:37,890 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:37] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:38,910 - __main__ - INFO - 📡 ESP Data: Current=5.94A, Voltage=22.6V, RPM=2607
+2025-09-11 00:47:38,911 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:38,912 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:42,963 - __main__ - INFO - 🏭 PLC Data: Temp=40.9°C, Voltage=23.73V, Status=NORMAL
+2025-09-11 00:47:42,964 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:42,966 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:42] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:44,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:44,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:44,594 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:44,656 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:44,656 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:44,671 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:45,978 - __main__ - INFO - 📡 ESP Data: Current=5.75A, Voltage=22.8V, RPM=2626
+2025-09-11 00:47:45,979 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:45,981 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:45] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:48,021 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=23.45V, Status=NORMAL
+2025-09-11 00:47:48,022 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:48,023 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:48] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:51,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:51,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:51,613 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:51,660 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:51,660 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:51,675 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:53,036 - __main__ - INFO - 📡 ESP Data: Current=5.59A, Voltage=23.1V, RPM=2609
+2025-09-11 00:47:53,037 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:47:53,037 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:47:53,084 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=23.46V, Status=NORMAL
+2025-09-11 00:47:53,084 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:53,086 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:53] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:58,159 - __main__ - INFO - 🏭 PLC Data: Temp=37.8°C, Voltage=23.2V, Status=NORMAL
+2025-09-11 00:47:58,159 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:47:58,160 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:47:58] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:47:58,607 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:58,607 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:58,622 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:58,668 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:58,668 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:47:58,683 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:00,095 - __main__ - INFO - 📡 ESP Data: Current=5.68A, Voltage=23.4V, RPM=2560
+2025-09-11 00:48:00,095 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:00,096 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:03,231 - __main__ - INFO - 🏭 PLC Data: Temp=36.7°C, Voltage=23.65V, Status=NORMAL
+2025-09-11 00:48:03,231 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:03,232 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:03] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:05,620 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:05,620 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:05,636 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:05,683 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:05,683 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:05,698 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:07,149 - __main__ - INFO - 📡 ESP Data: Current=5.78A, Voltage=23.3V, RPM=2543
+2025-09-11 00:48:07,150 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:07,151 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:07] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:08,288 - __main__ - INFO - 🏭 PLC Data: Temp=35.5°C, Voltage=23.63V, Status=NORMAL
+2025-09-11 00:48:08,289 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:08,290 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:08] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:12,635 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:12,635 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:12,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:12,696 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:12,696 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:12,712 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:13,339 - __main__ - INFO - 🏭 PLC Data: Temp=35.3°C, Voltage=23.68V, Status=NORMAL
+2025-09-11 00:48:13,341 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:13,342 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:13] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:14,207 - __main__ - INFO - 📡 ESP Data: Current=5.92A, Voltage=23.5V, RPM=2520
+2025-09-11 00:48:14,207 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:14,208 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:14] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:18,415 - __main__ - INFO - 🏭 PLC Data: Temp=34.5°C, Voltage=23.91V, Status=NORMAL
+2025-09-11 00:48:18,415 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:18,416 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:18] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:19,647 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:19,647 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:19,662 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:19,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:19,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:19,724 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:21,261 - __main__ - INFO - 📡 ESP Data: Current=5.92A, Voltage=23.2V, RPM=2561
+2025-09-11 00:48:21,261 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:21,262 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:23,482 - __main__ - INFO - 🏭 PLC Data: Temp=35.0°C, Voltage=23.63V, Status=NORMAL
+2025-09-11 00:48:23,482 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:23,483 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:23] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:26,661 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:26,661 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:26,676 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:26,723 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:26,723 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:26,738 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:28,306 - __main__ - INFO - 📡 ESP Data: Current=5.76A, Voltage=22.9V, RPM=2539
+2025-09-11 00:48:28,306 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:28,307 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:28,539 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=24.1V, Status=NORMAL
+2025-09-11 00:48:28,539 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:28,540 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:28] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:33,597 - __main__ - INFO - 🏭 PLC Data: Temp=36.4°C, Voltage=23.87V, Status=NORMAL
+2025-09-11 00:48:33,598 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:33,598 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:33] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:33,672 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:33,672 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:33,703 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:33,733 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:33,733 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:33,749 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:35,379 - __main__ - INFO - 📡 ESP Data: Current=5.77A, Voltage=23.2V, RPM=2560
+2025-09-11 00:48:35,379 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:35,379 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:38,640 - __main__ - INFO - 🏭 PLC Data: Temp=37.4°C, Voltage=23.97V, Status=NORMAL
+2025-09-11 00:48:38,641 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:38,642 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:38] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:40,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:40,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:40,724 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:40,756 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:40,756 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:40,771 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:42,437 - __main__ - INFO - 📡 ESP Data: Current=5.91A, Voltage=23.3V, RPM=2542
+2025-09-11 00:48:42,438 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:42,439 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:43,699 - __main__ - INFO - 🏭 PLC Data: Temp=38.1°C, Voltage=23.88V, Status=NORMAL
+2025-09-11 00:48:43,700 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:43,701 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:43] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:47,714 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:47,714 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:47,744 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:47,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:47,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:47,790 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:48,761 - __main__ - INFO - 🏭 PLC Data: Temp=39.1°C, Voltage=23.6V, Status=NORMAL
+2025-09-11 00:48:48,762 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:48,763 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:48] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:49,503 - __main__ - INFO - 📡 ESP Data: Current=6.01A, Voltage=23.7V, RPM=2555
+2025-09-11 00:48:49,503 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:49,504 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:53,815 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=23.89V, Status=NORMAL
+2025-09-11 00:48:53,816 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:53,817 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:53] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:48:54,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:54,718 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:54,765 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:54,781 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:54,781 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:54,797 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:48:56,561 - __main__ - INFO - 📡 ESP Data: Current=5.92A, Voltage=24.0V, RPM=2581
+2025-09-11 00:48:56,562 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:48:56,563 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:48:58,888 - __main__ - INFO - 🏭 PLC Data: Temp=39.7°C, Voltage=23.91V, Status=NORMAL
+2025-09-11 00:48:58,889 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:48:58,890 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:48:58] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:01,734 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:01,734 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:01,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:01,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:01,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:01,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:03,618 - __main__ - INFO - 📡 ESP Data: Current=6.1A, Voltage=24.1V, RPM=2531
+2025-09-11 00:49:03,618 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:03,619 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:03,972 - __main__ - INFO - 🏭 PLC Data: Temp=39.9°C, Voltage=24.35V, Status=NORMAL
+2025-09-11 00:49:03,973 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:03,974 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:03] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:08,763 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:08,763 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:08,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:08,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:08,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:08,826 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:09,015 - __main__ - INFO - 🏭 PLC Data: Temp=39.2°C, Voltage=24.11V, Status=NORMAL
+2025-09-11 00:49:09,016 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:09,017 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:09] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:10,683 - __main__ - INFO - 📡 ESP Data: Current=6.11A, Voltage=23.6V, RPM=2554
+2025-09-11 00:49:10,684 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:10,685 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:14,070 - __main__ - INFO - 🏭 PLC Data: Temp=37.9°C, Voltage=24.08V, Status=NORMAL
+2025-09-11 00:49:14,070 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:14,071 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:14] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:15,777 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:15,777 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:15,854 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:15,854 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:15,854 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:15,854 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:17,753 - __main__ - INFO - 📡 ESP Data: Current=6.07A, Voltage=24.1V, RPM=2552
+2025-09-11 00:49:17,759 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:17,760 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:19,111 - __main__ - INFO - 🏭 PLC Data: Temp=38.0°C, Voltage=24.15V, Status=NORMAL
+2025-09-11 00:49:19,112 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:19,113 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:19] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:22,793 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:22,793 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:22,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:22,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:22,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:22,869 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:24,171 - __main__ - INFO - 🏭 PLC Data: Temp=38.9°C, Voltage=24.14V, Status=NORMAL
+2025-09-11 00:49:24,172 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:24,173 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:24] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:24,809 - __main__ - INFO - 📡 ESP Data: Current=6.0A, Voltage=24.3V, RPM=2553
+2025-09-11 00:49:24,809 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:24,810 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:29,233 - __main__ - INFO - 🏭 PLC Data: Temp=39.5°C, Voltage=24.16V, Status=NORMAL
+2025-09-11 00:49:29,236 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:29,238 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:29] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:29,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:29,810 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:29,889 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:29,889 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:29,889 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:29,889 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:31,881 - __main__ - INFO - 📡 ESP Data: Current=5.84A, Voltage=24.1V, RPM=2572
+2025-09-11 00:49:31,882 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:31,883 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:34,313 - __main__ - INFO - 🏭 PLC Data: Temp=40.4°C, Voltage=24.06V, Status=NORMAL
+2025-09-11 00:49:34,316 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:34,318 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:34] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:36,832 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:36,832 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:36,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:36,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:36,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:36,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:38,950 - __main__ - INFO - 📡 ESP Data: Current=5.78A, Voltage=24.5V, RPM=2567
+2025-09-11 00:49:38,951 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:38,953 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:39,381 - __main__ - INFO - 🏭 PLC Data: Temp=39.5°C, Voltage=23.61V, Status=NORMAL
+2025-09-11 00:49:39,383 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:39,383 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:39] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:43,850 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:43,850 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:43,928 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:43,928 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:43,928 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:43,928 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:44,456 - __main__ - INFO - 🏭 PLC Data: Temp=38.6°C, Voltage=23.29V, Status=NORMAL
+2025-09-11 00:49:44,458 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:44,459 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:44] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:46,029 - __main__ - INFO - 📡 ESP Data: Current=5.64A, Voltage=24.1V, RPM=2567
+2025-09-11 00:49:46,030 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:46,031 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:46] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:49,510 - __main__ - INFO - 🏭 PLC Data: Temp=39.5°C, Voltage=23.63V, Status=NORMAL
+2025-09-11 00:49:49,510 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:49,511 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:49] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:50,862 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:50,862 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:50,941 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:50,941 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:50,941 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:50,941 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:53,094 - __main__ - INFO - 📡 ESP Data: Current=5.46A, Voltage=23.6V, RPM=2526
+2025-09-11 00:49:53,095 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:49:53,096 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:49:54,573 - __main__ - INFO - 🏭 PLC Data: Temp=38.7°C, Voltage=24.12V, Status=NORMAL
+2025-09-11 00:49:54,574 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:54,575 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:54] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:49:57,875 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:57,875 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:57,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:57,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:57,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:57,953 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:49:59,625 - __main__ - INFO - 🏭 PLC Data: Temp=37.5°C, Voltage=24.21V, Status=NORMAL
+2025-09-11 00:49:59,625 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:49:59,626 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:49:59] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:00,149 - __main__ - INFO - 📡 ESP Data: Current=5.47A, Voltage=23.4V, RPM=2530
+2025-09-11 00:50:00,150 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:00,151 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:04,692 - __main__ - INFO - 🏭 PLC Data: Temp=36.7°C, Voltage=24.52V, Status=NORMAL
+2025-09-11 00:50:04,692 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:04,693 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:04] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:04,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:04,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:04,974 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:04,974 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:04,974 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:04,974 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:07,214 - __main__ - INFO - 📡 ESP Data: Current=5.29A, Voltage=23.1V, RPM=2532
+2025-09-11 00:50:07,214 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:07,215 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:07] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:09,732 - __main__ - INFO - 🏭 PLC Data: Temp=36.2°C, Voltage=24.23V, Status=NORMAL
+2025-09-11 00:50:09,734 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:09,734 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:09] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:11,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:11,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:11,985 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:11,985 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:11,985 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:11,985 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:14,275 - __main__ - INFO - 📡 ESP Data: Current=5.38A, Voltage=22.7V, RPM=2491
+2025-09-11 00:50:14,276 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:14,276 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:14] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:14,803 - __main__ - INFO - 🏭 PLC Data: Temp=36.8°C, Voltage=24.34V, Status=NORMAL
+2025-09-11 00:50:14,804 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:14,805 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:14] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:18,926 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:18,926 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:19,002 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:19,002 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:19,002 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:19,002 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:19,853 - __main__ - INFO - 🏭 PLC Data: Temp=37.6°C, Voltage=24.25V, Status=NORMAL
+2025-09-11 00:50:19,856 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:19,858 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:19] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:21,333 - __main__ - INFO - 📡 ESP Data: Current=5.38A, Voltage=22.7V, RPM=2452
+2025-09-11 00:50:21,334 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:21,335 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:24,928 - __main__ - INFO - 🏭 PLC Data: Temp=36.4°C, Voltage=24.39V, Status=NORMAL
+2025-09-11 00:50:24,928 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:24,929 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:24] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:25,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:25,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:26,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:26,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:26,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:26,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:28,388 - __main__ - INFO - 📡 ESP Data: Current=5.39A, Voltage=22.7V, RPM=2469
+2025-09-11 00:50:28,389 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:28,390 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:29,987 - __main__ - INFO - 🏭 PLC Data: Temp=37.6°C, Voltage=24.33V, Status=NORMAL
+2025-09-11 00:50:29,989 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:29,989 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:29] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:32,960 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:32,960 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:33,038 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:33,038 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:33,038 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:33,038 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:35,054 - __main__ - INFO - 🏭 PLC Data: Temp=37.1°C, Voltage=24.5V, Status=NORMAL
+2025-09-11 00:50:35,055 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:35,056 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:35] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:35,458 - __main__ - INFO - 📡 ESP Data: Current=5.55A, Voltage=22.9V, RPM=2481
+2025-09-11 00:50:35,459 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:35,460 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:39,978 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:39,978 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:40,054 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:40,054 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:40,054 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:40,054 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:40,118 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=24.0V, Status=NORMAL
+2025-09-11 00:50:40,119 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:40,120 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:40] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:42,541 - __main__ - INFO - 📡 ESP Data: Current=5.36A, Voltage=23.2V, RPM=2432
+2025-09-11 00:50:42,542 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:42,542 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:45,183 - __main__ - INFO - 🏭 PLC Data: Temp=35.3°C, Voltage=24.16V, Status=NORMAL
+2025-09-11 00:50:45,183 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:45,185 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:45] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:46,997 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:46,997 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:47,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:47,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:47,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:47,072 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:49,612 - __main__ - INFO - 📡 ESP Data: Current=5.49A, Voltage=23.2V, RPM=2416
+2025-09-11 00:50:49,613 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:49,614 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:50:50,233 - __main__ - INFO - 🏭 PLC Data: Temp=36.1°C, Voltage=24.55V, Status=NORMAL
+2025-09-11 00:50:50,234 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:50,234 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:50] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:54,012 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:54,012 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:54,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:54,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:54,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:54,089 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:50:55,277 - __main__ - INFO - 🏭 PLC Data: Temp=37.0°C, Voltage=24.52V, Status=NORMAL
+2025-09-11 00:50:55,278 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:50:55,279 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:55] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:50:56,653 - __main__ - INFO - 📡 ESP Data: Current=5.47A, Voltage=23.5V, RPM=2426
+2025-09-11 00:50:56,654 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:50:56,655 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:50:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:00,343 - __main__ - INFO - 🏭 PLC Data: Temp=35.9°C, Voltage=24.52V, Status=NORMAL
+2025-09-11 00:51:00,344 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:00,345 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:00] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:01,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:01,024 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:01,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:01,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:01,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:01,102 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:03,706 - __main__ - INFO - 📡 ESP Data: Current=5.58A, Voltage=23.3V, RPM=2396
+2025-09-11 00:51:03,707 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:03,708 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:05,412 - __main__ - INFO - 🏭 PLC Data: Temp=35.4°C, Voltage=24.36V, Status=NORMAL
+2025-09-11 00:51:05,413 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:05,414 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:05] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:08,037 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:08,037 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:08,116 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:08,116 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:08,116 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:08,116 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:10,463 - __main__ - INFO - 🏭 PLC Data: Temp=34.0°C, Voltage=24.58V, Status=NORMAL
+2025-09-11 00:51:10,464 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:10,464 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:10] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:10,771 - __main__ - INFO - 📡 ESP Data: Current=5.39A, Voltage=23.0V, RPM=2405
+2025-09-11 00:51:10,771 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:10,772 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:15,055 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,055 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,133 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:15,538 - __main__ - INFO - 🏭 PLC Data: Temp=33.1°C, Voltage=24.56V, Status=NORMAL
+2025-09-11 00:51:15,538 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:15,540 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:15] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:17,829 - __main__ - INFO - 📡 ESP Data: Current=5.47A, Voltage=23.3V, RPM=2366
+2025-09-11 00:51:17,830 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:17,830 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:20,615 - __main__ - INFO - 🏭 PLC Data: Temp=33.8°C, Voltage=24.34V, Status=NORMAL
+2025-09-11 00:51:20,617 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:20,618 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:20] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:22,070 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:22,070 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:22,148 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:22,148 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:22,148 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:22,148 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:24,877 - __main__ - INFO - 📡 ESP Data: Current=5.49A, Voltage=23.7V, RPM=2385
+2025-09-11 00:51:24,878 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:24,879 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:25,676 - __main__ - INFO - 🏭 PLC Data: Temp=33.0°C, Voltage=23.98V, Status=NORMAL
+2025-09-11 00:51:25,676 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:25,677 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:25] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:29,088 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:29,088 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:29,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:29,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:29,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:29,164 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:30,733 - services.background_tasks - INFO - Executing scheduled task: connection_health_check
+2025-09-11 00:51:30,739 - __main__ - INFO - 🏭 PLC Data: Temp=33.4°C, Voltage=24.22V, Status=NORMAL
+2025-09-11 00:51:30,740 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:30,742 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:30] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:30,755 - services.background_tasks - INFO - Task connection_health_check completed in 0.01s
+2025-09-11 00:51:31,926 - __main__ - INFO - 📡 ESP Data: Current=5.41A, Voltage=23.9V, RPM=2356
+2025-09-11 00:51:31,927 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:31,928 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:35,815 - __main__ - INFO - 🏭 PLC Data: Temp=32.6°C, Voltage=23.79V, Status=NORMAL
+2025-09-11 00:51:35,817 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:35,818 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:35] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:36,110 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:36,110 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:36,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:36,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:36,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:36,188 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:38,985 - __main__ - INFO - 📡 ESP Data: Current=5.25A, Voltage=24.4V, RPM=2319
+2025-09-11 00:51:38,985 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:38,987 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:40,866 - __main__ - INFO - 🏭 PLC Data: Temp=32.7°C, Voltage=23.84V, Status=NORMAL
+2025-09-11 00:51:40,866 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:40,867 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:40] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:43,114 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:43,114 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:43,192 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:43,192 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:43,192 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:43,192 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:45,927 - __main__ - INFO - 🏭 PLC Data: Temp=32.6°C, Voltage=23.69V, Status=NORMAL
+2025-09-11 00:51:45,927 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:45,929 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:45] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:46,067 - __main__ - INFO - 📡 ESP Data: Current=5.28A, Voltage=24.1V, RPM=2351
+2025-09-11 00:51:46,067 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:46,068 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:46] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:50,134 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,134 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:50,990 - __main__ - INFO - 🏭 PLC Data: Temp=32.9°C, Voltage=23.79V, Status=NORMAL
+2025-09-11 00:51:50,991 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:50,992 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:50] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:53,128 - __main__ - INFO - 📡 ESP Data: Current=5.17A, Voltage=24.2V, RPM=2344
+2025-09-11 00:51:53,130 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:51:53,131 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:51:56,069 - __main__ - INFO - 🏭 PLC Data: Temp=33.8°C, Voltage=23.54V, Status=NORMAL
+2025-09-11 00:51:56,072 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:51:56,073 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:51:56] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:51:57,150 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:57,150 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:57,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:57,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:57,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:51:57,228 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:00,193 - __main__ - INFO - 📡 ESP Data: Current=5.23A, Voltage=24.3V, RPM=2367
+2025-09-11 00:52:00,195 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:00,196 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:01,152 - __main__ - INFO - 🏭 PLC Data: Temp=32.5°C, Voltage=23.67V, Status=NORMAL
+2025-09-11 00:52:01,154 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:01,155 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:01] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:04,176 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:04,176 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:04,238 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:04,238 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:04,238 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:04,238 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:06,221 - __main__ - INFO - 🏭 PLC Data: Temp=33.4°C, Voltage=23.6V, Status=NORMAL
+2025-09-11 00:52:06,221 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:06,222 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:06] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:07,261 - __main__ - INFO - 📡 ESP Data: Current=5.16A, Voltage=23.9V, RPM=2391
+2025-09-11 00:52:07,262 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:07,263 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:07] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:11,196 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,196 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,258 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,258 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,258 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,258 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:11,291 - __main__ - INFO - 🏭 PLC Data: Temp=33.2°C, Voltage=23.23V, Status=NORMAL
+2025-09-11 00:52:11,292 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:11,292 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:11] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:14,353 - __main__ - INFO - 📡 ESP Data: Current=5.22A, Voltage=24.2V, RPM=2347
+2025-09-11 00:52:14,353 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:14,354 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:14] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:16,373 - __main__ - INFO - 🏭 PLC Data: Temp=34.7°C, Voltage=23.01V, Status=NORMAL
+2025-09-11 00:52:16,374 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:16,375 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:16] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:18,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:18,211 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:18,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:18,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:18,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:18,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:21,414 - __main__ - INFO - 📡 ESP Data: Current=5.12A, Voltage=24.1V, RPM=2382
+2025-09-11 00:52:21,415 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:21,416 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:21,446 - __main__ - INFO - 🏭 PLC Data: Temp=34.5°C, Voltage=23.43V, Status=NORMAL
+2025-09-11 00:52:21,446 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:21,446 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:21] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:25,225 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:25,225 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:25,287 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:25,287 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:25,287 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:25,287 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:26,520 - __main__ - INFO - 🏭 PLC Data: Temp=33.2°C, Voltage=22.93V, Status=NORMAL
+2025-09-11 00:52:26,523 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:26,524 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:26] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:28,459 - __main__ - INFO - 📡 ESP Data: Current=5.22A, Voltage=23.7V, RPM=2402
+2025-09-11 00:52:28,460 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:28,461 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:31,600 - __main__ - INFO - 🏭 PLC Data: Temp=33.4°C, Voltage=22.81V, Status=NORMAL
+2025-09-11 00:52:31,601 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:31,601 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:31] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:32,251 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:32,251 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:32,314 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:32,314 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:32,314 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:32,314 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:35,516 - __main__ - INFO - 📡 ESP Data: Current=5.21A, Voltage=23.5V, RPM=2431
+2025-09-11 00:52:35,517 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:35,518 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:36,659 - __main__ - INFO - 🏭 PLC Data: Temp=32.9°C, Voltage=23.02V, Status=NORMAL
+2025-09-11 00:52:36,660 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:36,661 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:36] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:39,269 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:39,269 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:39,332 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:39,332 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:39,333 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:39,333 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:41,731 - __main__ - INFO - 🏭 PLC Data: Temp=34.0°C, Voltage=22.95V, Status=NORMAL
+2025-09-11 00:52:41,732 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:41,733 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:41] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:42,577 - __main__ - INFO - 📡 ESP Data: Current=5.21A, Voltage=23.2V, RPM=2476
+2025-09-11 00:52:42,577 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:42,578 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:46,285 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,285 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,347 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,347 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,347 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,347 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:46,812 - __main__ - INFO - 🏭 PLC Data: Temp=35.3°C, Voltage=22.49V, Status=NORMAL
+2025-09-11 00:52:46,812 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:46,813 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:46] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:49,633 - __main__ - INFO - 📡 ESP Data: Current=5.31A, Voltage=23.6V, RPM=2487
+2025-09-11 00:52:49,634 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:49,635 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:51,879 - __main__ - INFO - 🏭 PLC Data: Temp=36.3°C, Voltage=22.0V, Status=WARNING
+2025-09-11 00:52:51,879 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:51,880 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:51] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:52:53,300 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:53,300 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:53,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:53,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:53,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:53,362 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:52:56,701 - __main__ - INFO - 📡 ESP Data: Current=5.42A, Voltage=23.8V, RPM=2499
+2025-09-11 00:52:56,702 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:52:56,703 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:52:56,963 - __main__ - INFO - 🏭 PLC Data: Temp=35.2°C, Voltage=21.57V, Status=WARNING
+2025-09-11 00:52:56,964 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:52:56,966 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:52:56] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:00,317 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:00,317 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:00,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:00,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:00,379 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:00,379 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:02,034 - __main__ - INFO - 🏭 PLC Data: Temp=35.9°C, Voltage=22.07V, Status=NORMAL
+2025-09-11 00:53:02,035 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:02,037 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:02] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:03,790 - __main__ - INFO - 📡 ESP Data: Current=5.44A, Voltage=23.8V, RPM=2493
+2025-09-11 00:53:03,791 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:03,792 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:07,096 - __main__ - INFO - 🏭 PLC Data: Temp=36.4°C, Voltage=21.75V, Status=WARNING
+2025-09-11 00:53:07,098 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:07,101 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:07] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:07,328 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:07,328 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:07,390 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:07,390 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:07,390 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:07,390 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:10,846 - __main__ - INFO - 📡 ESP Data: Current=5.62A, Voltage=23.4V, RPM=2459
+2025-09-11 00:53:10,847 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:10,848 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:12,170 - __main__ - INFO - 🏭 PLC Data: Temp=37.4°C, Voltage=21.9V, Status=WARNING
+2025-09-11 00:53:12,174 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:12,174 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:12] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:14,348 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:14,348 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:14,396 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:14,396 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:14,412 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:14,412 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:17,249 - __main__ - INFO - 🏭 PLC Data: Temp=36.2°C, Voltage=22.02V, Status=NORMAL
+2025-09-11 00:53:17,252 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:17,253 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:17] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:17,922 - __main__ - INFO - 📡 ESP Data: Current=5.79A, Voltage=23.8V, RPM=2481
+2025-09-11 00:53:17,922 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:17,923 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:21,364 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:21,364 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:21,428 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:21,428 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:21,443 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:21,443 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:22,314 - __main__ - INFO - 🏭 PLC Data: Temp=37.1°C, Voltage=21.75V, Status=WARNING
+2025-09-11 00:53:22,315 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:22,316 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:22] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:24,988 - __main__ - INFO - 📡 ESP Data: Current=5.78A, Voltage=23.9V, RPM=2501
+2025-09-11 00:53:24,989 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:24,990 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:27,397 - __main__ - INFO - 🏭 PLC Data: Temp=37.2°C, Voltage=21.98V, Status=WARNING
+2025-09-11 00:53:27,398 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:27,399 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:27] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:28,385 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:28,385 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:28,448 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:28,448 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:28,463 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:28,463 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:32,048 - __main__ - INFO - 📡 ESP Data: Current=5.79A, Voltage=23.5V, RPM=2490
+2025-09-11 00:53:32,058 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:32,065 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:32] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:32,449 - __main__ - INFO - 🏭 PLC Data: Temp=36.6°C, Voltage=21.83V, Status=WARNING
+2025-09-11 00:53:32,450 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:32,452 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:32] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:35,400 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:35,400 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:35,461 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:35,461 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:35,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:35,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:37,494 - __main__ - INFO - 🏭 PLC Data: Temp=35.5°C, Voltage=22.3V, Status=NORMAL
+2025-09-11 00:53:37,495 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:37,497 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:37] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:39,155 - __main__ - INFO - 📡 ESP Data: Current=5.76A, Voltage=23.2V, RPM=2461
+2025-09-11 00:53:39,156 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:39,157 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:39] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:42,414 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,414 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,491 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:42,554 - __main__ - INFO - 🏭 PLC Data: Temp=35.1°C, Voltage=22.61V, Status=NORMAL
+2025-09-11 00:53:42,554 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:42,555 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:42] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:46,199 - __main__ - INFO - 📡 ESP Data: Current=5.96A, Voltage=23.6V, RPM=2418
+2025-09-11 00:53:46,201 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:46,202 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:46] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:47,638 - __main__ - INFO - 🏭 PLC Data: Temp=35.2°C, Voltage=22.17V, Status=NORMAL
+2025-09-11 00:53:47,638 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:47,640 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:47] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:49,431 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:49,431 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:49,493 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:49,493 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:49,509 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:49,509 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:52,702 - __main__ - INFO - 🏭 PLC Data: Temp=34.3°C, Voltage=22.67V, Status=NORMAL
+2025-09-11 00:53:52,703 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:52,704 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:52] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:53:53,249 - __main__ - INFO - 📡 ESP Data: Current=5.87A, Voltage=23.8V, RPM=2392
+2025-09-11 00:53:53,249 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:53:53,250 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:53:56,453 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:56,453 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:56,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:56,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:56,531 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:56,531 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:53:57,788 - __main__ - INFO - 🏭 PLC Data: Temp=35.2°C, Voltage=22.43V, Status=NORMAL
+2025-09-11 00:53:57,789 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:53:57,790 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:53:57] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:00,309 - __main__ - INFO - 📡 ESP Data: Current=5.83A, Voltage=23.9V, RPM=2401
+2025-09-11 00:54:00,309 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:00,310 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:02,855 - __main__ - INFO - 🏭 PLC Data: Temp=34.5°C, Voltage=22.09V, Status=NORMAL
+2025-09-11 00:54:02,857 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:02,858 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:02] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:03,474 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:03,474 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:03,536 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:03,536 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:03,551 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:03,552 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:07,385 - __main__ - INFO - 📡 ESP Data: Current=5.8A, Voltage=24.2V, RPM=2391
+2025-09-11 00:54:07,388 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:07,389 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:07] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:07,932 - __main__ - INFO - 🏭 PLC Data: Temp=35.5°C, Voltage=21.72V, Status=WARNING
+2025-09-11 00:54:07,933 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:07,934 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:07] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:10,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:10,476 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:10,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:10,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:10,571 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:10,571 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:13,004 - __main__ - INFO - 🏭 PLC Data: Temp=35.0°C, Voltage=21.99V, Status=WARNING
+2025-09-11 00:54:13,005 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:13,006 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:13] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:14,451 - __main__ - INFO - 📡 ESP Data: Current=5.6A, Voltage=24.3V, RPM=2406
+2025-09-11 00:54:14,452 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:14,452 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:14] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:17,503 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:17,503 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:17,550 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:17,550 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:17,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:17,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:18,079 - __main__ - INFO - 🏭 PLC Data: Temp=35.2°C, Voltage=21.66V, Status=WARNING
+2025-09-11 00:54:18,079 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:18,081 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:18] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:21,507 - __main__ - INFO - 📡 ESP Data: Current=5.49A, Voltage=24.6V, RPM=2429
+2025-09-11 00:54:21,509 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:21,510 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:21] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:23,163 - __main__ - INFO - 🏭 PLC Data: Temp=34.8°C, Voltage=21.37V, Status=WARNING
+2025-09-11 00:54:23,164 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:23,165 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:23] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:24,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:24,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:24,562 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:24,562 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:24,609 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:24,609 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:28,221 - __main__ - INFO - 🏭 PLC Data: Temp=34.2°C, Voltage=21.41V, Status=WARNING
+2025-09-11 00:54:28,221 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:28,222 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:28] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:28,597 - __main__ - INFO - 📡 ESP Data: Current=5.43A, Voltage=24.5V, RPM=2394
+2025-09-11 00:54:28,598 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:28,599 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:28] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:31,529 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:31,529 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:31,575 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:31,575 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:31,622 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:31,622 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:33,262 - __main__ - INFO - 🏭 PLC Data: Temp=35.5°C, Voltage=21.01V, Status=WARNING
+2025-09-11 00:54:33,263 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:33,264 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:33] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:35,685 - __main__ - INFO - 📡 ESP Data: Current=5.38A, Voltage=24.7V, RPM=2442
+2025-09-11 00:54:35,686 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:35,686 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:35] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:38,328 - __main__ - INFO - 🏭 PLC Data: Temp=35.7°C, Voltage=21.05V, Status=WARNING
+2025-09-11 00:54:38,329 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:38,330 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:38] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:38,545 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:38,545 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:38,590 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:38,590 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:38,636 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:38,636 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:42,750 - __main__ - INFO - 📡 ESP Data: Current=5.33A, Voltage=24.3V, RPM=2407
+2025-09-11 00:54:42,752 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:42,753 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:42] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:43,393 - __main__ - INFO - 🏭 PLC Data: Temp=36.9°C, Voltage=21.35V, Status=WARNING
+2025-09-11 00:54:43,394 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:43,399 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:43] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:45,552 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:45,552 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:45,598 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:45,598 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:45,645 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:45,645 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:48,458 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=21.52V, Status=WARNING
+2025-09-11 00:54:48,459 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:48,460 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:48] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:49,808 - __main__ - INFO - 📡 ESP Data: Current=5.26A, Voltage=24.4V, RPM=2444
+2025-09-11 00:54:49,810 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:49,811 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:49] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:52,576 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:52,577 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:52,623 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:52,623 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:52,670 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:52,670 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:53,523 - __main__ - INFO - 🏭 PLC Data: Temp=35.8°C, Voltage=21.84V, Status=WARNING
+2025-09-11 00:54:53,524 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:53,525 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:53] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:56,861 - __main__ - INFO - 📡 ESP Data: Current=5.2A, Voltage=24.4V, RPM=2418
+2025-09-11 00:54:56,861 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:54:56,862 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:54:58,576 - __main__ - INFO - 🏭 PLC Data: Temp=34.9°C, Voltage=21.65V, Status=WARNING
+2025-09-11 00:54:58,577 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:54:58,577 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:54:58] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:54:59,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:59,597 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:59,642 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:59,642 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:59,690 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:54:59,690 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:55:03,629 - __main__ - INFO - 🏭 PLC Data: Temp=34.0°C, Voltage=21.83V, Status=WARNING
+2025-09-11 00:55:03,630 - __main__ - WARNING - Could not process PLC data with data processor: 'DataProcessor' object has no attribute 'process_plc_data'
+2025-09-11 00:55:03,630 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:03] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:55:03,920 - __main__ - INFO - 📡 ESP Data: Current=5.37A, Voltage=23.9V, RPM=2451
+2025-09-11 00:55:03,921 - __main__ - WARNING - Could not process ESP data with data processor: 'DataProcessor' object has no attribute 'process_esp_data'
+2025-09-11 00:55:03,921 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:55:49,432 - root - INFO - Logging system initialized successfully
+2025-09-11 00:55:49,432 - __main__ - INFO - ============================================================
+2025-09-11 00:55:49,432 - __main__ - INFO - AI Motor Monitoring System v3.2 starting up
+2025-09-11 00:55:49,432 - __main__ - INFO - Timestamp: 2025-09-11T00:55:49.432294
+2025-09-11 00:55:49,432 - __main__ - INFO - ============================================================
+2025-09-11 00:55:49,432 - __main__ - INFO - Creating necessary directories...
+2025-09-11 00:55:49,433 - __main__ - INFO - Initializing database...
+2025-09-11 00:55:49,449 - root - INFO - Database initialized successfully
+2025-09-11 00:55:49,449 - __main__ - INFO - Creating Flask application...
+2025-09-11 00:55:49,696 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 00:55:49,746 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.158.247:5000
+2025-09-11 00:55:49,746 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 00:55:51,288 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 00:55:51,296 - __main__ - INFO - 🏭 PLC Data: 37.9°C, Health: 90.0%
+2025-09-11 00:55:51,298 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:51] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:55:52,407 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:52] "GET /socket.io/?EIO=4&transport=polling&t=Par5svS HTTP/1.1" 200 -
+2025-09-11 00:55:52,671 - socketio - INFO - Client connected to WebSocket
+2025-09-11 00:55:52,675 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 00:55:52,676 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 00:55:52,676 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:52] "POST /socket.io/?EIO=4&transport=polling&t=Par5s-S&sid=1nwTe7E-M1w-26ugAAAA HTTP/1.1" 200 -
+2025-09-11 00:55:52,716 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:52] "GET /socket.io/?EIO=4&transport=polling&t=Par5s-W&sid=1nwTe7E-M1w-26ugAAAA HTTP/1.1" 200 -
+2025-09-11 00:55:52,727 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:52] "GET /socket.io/?EIO=4&transport=polling&t=Par5t3J&sid=1nwTe7E-M1w-26ugAAAA HTTP/1.1" 200 -
+2025-09-11 00:55:56,377 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 00:55:56,378 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 00:55:56,385 - __main__ - INFO - 🏭 PLC Data: 37.8°C, Health: 90.0%
+2025-09-11 00:55:56,386 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:56] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:55:56,499 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:55:56,506 - __main__ - INFO - 📡 ESP Data: 5.24A, 24.5V, Health: 100.0%
+2025-09-11 00:55:56,507 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:56] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:55:58,495 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET / HTTP/1.1" 200 -
+2025-09-11 00:55:58,803 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET /socket.io/?EIO=4&transport=polling&t=Par5uYH HTTP/1.1" 200 -
+2025-09-11 00:55:58,887 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:55:58,888 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-11 00:55:58,889 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:55:58,890 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-11 00:55:58,915 - socketio - INFO - Client connected to WebSocket
+2025-09-11 00:55:58,916 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:55:58,917 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "POST /socket.io/?EIO=4&transport=polling&t=Par5ua0&sid=91jmeLKyGJyK56ZIAAAC HTTP/1.1" 200 -
+2025-09-11 00:55:58,920 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET /socket.io/?EIO=4&transport=polling&t=Par5ua2&sid=91jmeLKyGJyK56ZIAAAC HTTP/1.1" 200 -
+2025-09-11 00:55:58,930 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:55:58] "GET /socket.io/?EIO=4&transport=polling&t=Par5uaF&sid=91jmeLKyGJyK56ZIAAAC HTTP/1.1" 200 -
+2025-09-11 00:56:01,463 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:01,472 - __main__ - INFO - 🏭 PLC Data: 37.0°C, Health: 100.0%
+2025-09-11 00:56:01,473 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:01] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:03,563 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:03,580 - __main__ - INFO - 📡 ESP Data: 5.29A, 24.4V, Health: 100.0%
+2025-09-11 00:56:03,583 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:03] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:06,540 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:06,553 - __main__ - INFO - 🏭 PLC Data: 38.3°C, Health: 100.0%
+2025-09-11 00:56:06,555 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:06] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:10,657 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:10,671 - __main__ - INFO - 📡 ESP Data: 5.31A, 24.8V, Health: 100.0%
+2025-09-11 00:56:10,673 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:11,630 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:11,650 - __main__ - INFO - 🏭 PLC Data: 39.4°C, Health: 100.0%
+2025-09-11 00:56:11,652 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:11] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:15,587 - socketio - INFO - Client disconnected from WebSocket
+2025-09-11 00:56:15,587 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:15] "GET /socket.io/?EIO=4&transport=websocket&sid=1nwTe7E-M1w-26ugAAAA HTTP/1.1" 200 -
+2025-09-11 00:56:16,720 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:16,738 - __main__ - INFO - 🏭 PLC Data: 38.0°C, Health: 100.0%
+2025-09-11 00:56:16,740 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:16] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:17,745 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:17,759 - __main__ - INFO - 📡 ESP Data: 5.12A, 24.6V, Health: 100.0%
+2025-09-11 00:56:17,760 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:21,806 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:21,817 - __main__ - INFO - 🏭 PLC Data: 36.5°C, Health: 100.0%
+2025-09-11 00:56:21,820 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:21] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:24,831 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:24,840 - __main__ - INFO - 📡 ESP Data: 5.32A, 25.0V, Health: 100.0%
+2025-09-11 00:56:24,842 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:26,880 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:26,891 - __main__ - INFO - 🏭 PLC Data: 36.3°C, Health: 100.0%
+2025-09-11 00:56:26,891 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:26] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:31,921 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:31,931 - __main__ - INFO - 📡 ESP Data: 5.14A, 24.8V, Health: 100.0%
+2025-09-11 00:56:31,932 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:31,938 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:31,945 - __main__ - INFO - 🏭 PLC Data: 36.8°C, Health: 100.0%
+2025-09-11 00:56:31,945 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:31] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:37,009 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:37,025 - __main__ - INFO - 🏭 PLC Data: 35.7°C, Health: 100.0%
+2025-09-11 00:56:37,033 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:37] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:39,009 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:39,023 - __main__ - INFO - 📡 ESP Data: 5.22A, 25.1V, Health: 100.0%
+2025-09-11 00:56:39,024 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:39] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:42,106 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:42,119 - __main__ - INFO - 🏭 PLC Data: 35.9°C, Health: 100.0%
+2025-09-11 00:56:42,122 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:42] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:46,069 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:46,082 - __main__ - INFO - 📡 ESP Data: 5.41A, 25.0V, Health: 100.0%
+2025-09-11 00:56:46,083 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:46] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:47,172 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:47,190 - __main__ - INFO - 🏭 PLC Data: 35.1°C, Health: 100.0%
+2025-09-11 00:56:47,191 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:47] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:52,264 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:52,278 - __main__ - INFO - 🏭 PLC Data: 35.7°C, Health: 100.0%
+2025-09-11 00:56:52,280 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:52] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:56:53,152 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:53,168 - __main__ - INFO - 📡 ESP Data: 5.23A, 24.9V, Health: 100.0%
+2025-09-11 00:56:53,170 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:56:57,352 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:56:57,363 - __main__ - INFO - 🏭 PLC Data: 36.9°C, Health: 100.0%
+2025-09-11 00:56:57,365 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:56:57] "POST /api/plc-data HTTP/1.1" 200 -
+2025-09-11 00:57:00,229 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 00:57:00,248 - __main__ - INFO - 📡 ESP Data: 5.28A, 24.6V, Health: 100.0%
+2025-09-11 00:57:00,250 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:57:00] "POST /api/send-data HTTP/1.1" 200 -
