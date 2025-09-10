@@ -8515,3 +8515,545 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 01:55:35,169 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 01:55:35] "GET /api/recommendations HTTP/1.1" 200 -
 2025-09-11 01:55:54,298 - root - WARNING - ESP connection timeout detected
 2025-09-11 01:55:54,299 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:15:29,343 - root - INFO - Logging system initialized successfully
+2025-09-11 02:15:29,346 - __main__ - INFO - ============================================================
+2025-09-11 02:15:29,346 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 02:15:29,346 - __main__ - INFO - Timestamp: 2025-09-11T02:15:29.346423
+2025-09-11 02:15:29,346 - __main__ - INFO - ============================================================
+2025-09-11 02:15:29,346 - __main__ - INFO - Creating necessary directories...
+2025-09-11 02:15:29,347 - __main__ - INFO - Initializing database...
+2025-09-11 02:15:29,357 - root - INFO - Database initialized successfully
+2025-09-11 02:15:29,357 - __main__ - INFO - Creating Flask application...
+2025-09-11 02:15:29,371 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 02:15:30,402 - socketio - INFO - ✅ Client connected: NE4vKA-JTIPeHzFLAAAB (Total: 1)
+2025-09-11 02:15:30,406 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:30,408 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:30,408 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:30,412 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:30,413 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:30,413 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:39,378 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:39,379 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:39,380 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:46,336 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:15:46,824 - socketio - INFO - ✅ Client connected: wO4nc20EdignqghyAAAD (Total: 2)
+2025-09-11 02:15:46,825 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:46,826 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:46,827 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:46,831 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:46,831 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:46,832 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:49,395 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:49,397 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:49,398 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:15:59,408 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:59,410 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:15:59,411 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:16:08,065 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:16:08,065 - root - INFO - Health calculated: 90.0% (Excellent) - Data: current_esp, historical_plc
+2025-09-11 02:16:08,074 - __main__ - INFO - 📡 ESP: 6.22A, 23.9V - Health: 90.0%
+2025-09-11 02:16:08,087 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:08,101 - __main__ - INFO - 🏭 PLC: 40.1°C - Health: 100.0%
+2025-09-11 02:16:09,428 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:13,189 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:13,201 - __main__ - INFO - 🏭 PLC: 41.3°C - Health: 100.0%
+2025-09-11 02:16:15,151 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:15,165 - __main__ - INFO - 📡 ESP: 6.39A, 23.9V - Health: 100.0%
+2025-09-11 02:16:18,267 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:18,283 - __main__ - INFO - 🏭 PLC: 40.5°C - Health: 100.0%
+2025-09-11 02:16:19,450 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:22,241 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:22,255 - __main__ - INFO - 📡 ESP: 6.59A, 23.9V - Health: 100.0%
+2025-09-11 02:16:23,326 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:23,340 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:16:28,410 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:28,426 - __main__ - INFO - 🏭 PLC: 40.6°C - Health: 100.0%
+2025-09-11 02:16:29,295 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:29,309 - __main__ - INFO - 📡 ESP: 6.73A, 23.5V - Health: 100.0%
+2025-09-11 02:16:29,461 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:33,490 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:33,503 - __main__ - INFO - 🏭 PLC: 40.2°C - Health: 100.0%
+2025-09-11 02:16:36,382 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:36,394 - __main__ - INFO - 📡 ESP: 6.85A, 23.0V - Health: 100.0%
+2025-09-11 02:16:38,573 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:38,584 - __main__ - INFO - 🏭 PLC: 40.3°C - Health: 100.0%
+2025-09-11 02:16:39,472 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:43,444 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:43,453 - __main__ - INFO - 📡 ESP: 6.71A, 22.5V - Health: 100.0%
+2025-09-11 02:16:43,627 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:43,636 - __main__ - INFO - 🏭 PLC: 41.3°C - Health: 100.0%
+2025-09-11 02:16:48,693 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:48,702 - __main__ - INFO - 🏭 PLC: 40.6°C - Health: 100.0%
+2025-09-11 02:16:49,482 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:16:59,497 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:01,244 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:06,217 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:17:06,601 - socketio - INFO - ✅ Client connected: u7g4_KKDAPjdgJ10AAAF (Total: 3)
+2025-09-11 02:17:06,602 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:06,604 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:09,503 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:17,220 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:17:17,609 - socketio - INFO - ✅ Client connected: GyeG42VGDUPo_ZAWAAAH (Total: 4)
+2025-09-11 02:17:17,611 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:17,612 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:17:17,615 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:17,615 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:17:18,949 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:17:19,309 - socketio - INFO - ✅ Client connected: tYnx1Y1RJw_uDpMXAAAJ (Total: 5)
+2025-09-11 02:17:19,310 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,311 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,311 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:17:19,315 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,316 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,317 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:17:19,519 - root - WARNING - ESP connection timeout detected
+2025-09-11 02:17:19,519 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:17:19,520 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,522 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:19,522 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:17:29,540 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:29,541 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:29,541 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:17:30,207 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:17:30,207 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:17:30,215 - __main__ - INFO - 🏭 PLC: 39.9°C - Health: 90.0%
+2025-09-11 02:17:30,216 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:30,224 - __main__ - INFO - 📡 ESP: 6.52A, 23.7V - Health: 100.0%
+2025-09-11 02:17:35,266 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:35,276 - __main__ - INFO - 🏭 PLC: 40.2°C - Health: 100.0%
+2025-09-11 02:17:37,288 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:37,299 - __main__ - INFO - 📡 ESP: 6.64A, 23.2V - Health: 100.0%
+2025-09-11 02:17:39,554 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:40,362 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:40,373 - __main__ - INFO - 🏭 PLC: 40.9°C - Health: 100.0%
+2025-09-11 02:17:44,353 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:44,363 - __main__ - INFO - 📡 ESP: 6.65A, 22.8V - Health: 100.0%
+2025-09-11 02:17:45,444 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:45,454 - __main__ - INFO - 🏭 PLC: 40.8°C - Health: 100.0%
+2025-09-11 02:17:49,561 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:50,510 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:50,518 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:17:51,427 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:51,436 - __main__ - INFO - 📡 ESP: 6.62A, 22.9V - Health: 100.0%
+2025-09-11 02:17:55,568 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:55,578 - __main__ - INFO - 🏭 PLC: 40.1°C - Health: 100.0%
+2025-09-11 02:17:58,493 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:17:58,505 - __main__ - INFO - 📡 ESP: 6.51A, 22.5V - Health: 100.0%
+2025-09-11 02:17:59,567 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:00,653 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:00,664 - __main__ - INFO - 🏭 PLC: 41.3°C - Health: 100.0%
+2025-09-11 02:18:05,555 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:05,563 - __main__ - INFO - 📡 ESP: 6.59A, 22.5V - Health: 100.0%
+2025-09-11 02:18:05,712 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:05,719 - __main__ - INFO - 🏭 PLC: 40.5°C - Health: 100.0%
+2025-09-11 02:18:09,585 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:19,596 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:29,604 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:39,616 - root - WARNING - ESP connection timeout detected
+2025-09-11 02:18:39,617 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:18:39,619 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:18:39,620 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:18:39,621 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:18:49,631 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:18:49,632 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:18:49,633 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:18:55,296 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:18:55,296 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:18:55,305 - __main__ - INFO - 🏭 PLC: 41.7°C - Health: 90.0%
+2025-09-11 02:18:55,306 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:18:55,314 - __main__ - INFO - 📡 ESP: 6.14A, 23.2V - Health: 100.0%
+2025-09-11 02:18:59,653 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:00,370 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:00,379 - __main__ - INFO - 🏭 PLC: 40.5°C - Health: 100.0%
+2025-09-11 02:19:02,377 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:02,388 - __main__ - INFO - 📡 ESP: 6.04A, 23.0V - Health: 100.0%
+2025-09-11 02:19:05,444 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:05,455 - __main__ - INFO - 🏭 PLC: 40.1°C - Health: 100.0%
+2025-09-11 02:19:09,453 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:09,464 - __main__ - INFO - 📡 ESP: 6.2A, 23.4V - Health: 100.0%
+2025-09-11 02:19:09,655 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:10,497 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:10,507 - __main__ - INFO - 🏭 PLC: 39.0°C - Health: 100.0%
+2025-09-11 02:19:15,577 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:15,587 - __main__ - INFO - 🏭 PLC: 37.9°C - Health: 100.0%
+2025-09-11 02:19:16,525 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:16,536 - __main__ - INFO - 📡 ESP: 6.14A, 23.2V - Health: 100.0%
+2025-09-11 02:19:19,653 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:20,636 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:20,645 - __main__ - INFO - 🏭 PLC: 36.8°C - Health: 100.0%
+2025-09-11 02:19:23,560 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:23,567 - __main__ - INFO - 📡 ESP: 6.27A, 23.7V - Health: 100.0%
+2025-09-11 02:19:25,712 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:25,722 - __main__ - INFO - 🏭 PLC: 37.3°C - Health: 100.0%
+2025-09-11 02:19:29,661 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:30,611 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:30,621 - __main__ - INFO - 📡 ESP: 6.26A, 24.0V - Health: 100.0%
+2025-09-11 02:19:30,763 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:30,770 - __main__ - INFO - 🏭 PLC: 35.9°C - Health: 100.0%
+2025-09-11 02:19:35,827 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:35,838 - __main__ - INFO - 🏭 PLC: 37.0°C - Health: 100.0%
+2025-09-11 02:19:37,677 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:37,687 - __main__ - INFO - 📡 ESP: 6.17A, 24.2V - Health: 100.0%
+2025-09-11 02:19:39,683 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:40,903 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:40,913 - __main__ - INFO - 🏭 PLC: 38.0°C - Health: 100.0%
+2025-09-11 02:19:44,730 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:44,739 - __main__ - INFO - 📡 ESP: 6.37A, 24.2V - Health: 100.0%
+2025-09-11 02:19:45,960 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:45,969 - __main__ - INFO - 🏭 PLC: 39.5°C - Health: 100.0%
+2025-09-11 02:19:49,702 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:51,010 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:51,020 - __main__ - INFO - 🏭 PLC: 40.5°C - Health: 100.0%
+2025-09-11 02:19:51,802 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:51,812 - __main__ - INFO - 📡 ESP: 6.17A, 23.9V - Health: 100.0%
+2025-09-11 02:19:56,084 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:56,095 - __main__ - INFO - 🏭 PLC: 39.9°C - Health: 100.0%
+2025-09-11 02:19:58,857 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:19:58,866 - __main__ - INFO - 📡 ESP: 5.98A, 23.5V - Health: 100.0%
+2025-09-11 02:19:59,709 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:01,139 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:01,150 - __main__ - INFO - 🏭 PLC: 39.4°C - Health: 100.0%
+2025-09-11 02:20:05,919 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:05,932 - __main__ - INFO - 📡 ESP: 6.05A, 23.4V - Health: 100.0%
+2025-09-11 02:20:06,198 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:06,205 - __main__ - INFO - 🏭 PLC: 40.2°C - Health: 100.0%
+2025-09-11 02:20:09,723 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:11,268 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:11,276 - __main__ - INFO - 🏭 PLC: 40.9°C - Health: 100.0%
+2025-09-11 02:20:12,974 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:12,987 - __main__ - INFO - 📡 ESP: 5.92A, 23.3V - Health: 100.0%
+2025-09-11 02:20:16,360 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:16,370 - __main__ - INFO - 🏭 PLC: 40.8°C - Health: 100.0%
+2025-09-11 02:20:19,720 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:20,047 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:20,057 - __main__ - INFO - 📡 ESP: 6.02A, 23.5V - Health: 100.0%
+2025-09-11 02:20:21,414 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:21,425 - __main__ - INFO - 🏭 PLC: 41.6°C - Health: 100.0%
+2025-09-11 02:20:26,493 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:26,503 - __main__ - INFO - 🏭 PLC: 41.8°C - Health: 100.0%
+2025-09-11 02:20:27,132 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:27,143 - __main__ - INFO - 📡 ESP: 5.9A, 23.1V - Health: 100.0%
+2025-09-11 02:20:29,724 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:31,560 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:31,570 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 100.0%
+2025-09-11 02:20:34,187 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:34,197 - __main__ - INFO - 📡 ESP: 5.74A, 22.8V - Health: 100.0%
+2025-09-11 02:20:36,648 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:36,658 - __main__ - INFO - 🏭 PLC: 43.5°C - Health: 100.0%
+2025-09-11 02:20:39,743 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:41,254 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:41,261 - __main__ - INFO - 📡 ESP: 5.87A, 23.0V - Health: 100.0%
+2025-09-11 02:20:41,721 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:41,730 - __main__ - INFO - 🏭 PLC: 43.6°C - Health: 100.0%
+2025-09-11 02:20:46,786 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:46,797 - __main__ - INFO - 🏭 PLC: 43.4°C - Health: 100.0%
+2025-09-11 02:20:48,303 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:48,314 - __main__ - INFO - 📡 ESP: 5.87A, 22.9V - Health: 100.0%
+2025-09-11 02:20:49,763 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:51,844 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:51,854 - __main__ - INFO - 🏭 PLC: 43.1°C - Health: 100.0%
+2025-09-11 02:20:55,351 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:55,362 - __main__ - INFO - 📡 ESP: 5.88A, 23.0V - Health: 100.0%
+2025-09-11 02:20:56,920 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:20:56,931 - __main__ - INFO - 🏭 PLC: 43.4°C - Health: 100.0%
+2025-09-11 02:20:59,764 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:01,974 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:01,984 - __main__ - INFO - 🏭 PLC: 43.9°C - Health: 100.0%
+2025-09-11 02:21:02,405 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:02,415 - __main__ - INFO - 📡 ESP: 5.84A, 23.1V - Health: 100.0%
+2025-09-11 02:21:07,047 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:07,058 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 100.0%
+2025-09-11 02:21:09,473 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:09,487 - __main__ - INFO - 📡 ESP: 5.72A, 23.5V - Health: 100.0%
+2025-09-11 02:21:09,767 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:12,117 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:12,127 - __main__ - INFO - 🏭 PLC: 46.4°C - Health: 100.0%
+2025-09-11 02:21:16,550 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:16,561 - __main__ - INFO - 📡 ESP: 5.57A, 23.6V - Health: 100.0%
+2025-09-11 02:21:17,190 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:17,197 - __main__ - INFO - 🏭 PLC: 46.4°C - Health: 100.0%
+2025-09-11 02:21:19,761 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:22,248 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:22,258 - __main__ - INFO - 🏭 PLC: 45.6°C - Health: 100.0%
+2025-09-11 02:21:23,620 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:23,630 - __main__ - INFO - 📡 ESP: 5.67A, 24.1V - Health: 100.0%
+2025-09-11 02:21:27,313 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:27,324 - __main__ - INFO - 🏭 PLC: 44.6°C - Health: 100.0%
+2025-09-11 02:21:29,777 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:30,698 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:30,707 - __main__ - INFO - 📡 ESP: 5.68A, 24.3V - Health: 100.0%
+2025-09-11 02:21:32,399 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:32,408 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 100.0%
+2025-09-11 02:21:37,486 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:37,497 - __main__ - INFO - 🏭 PLC: 43.9°C - Health: 100.0%
+2025-09-11 02:21:37,751 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:37,757 - __main__ - INFO - 📡 ESP: 5.53A, 24.4V - Health: 100.0%
+2025-09-11 02:21:39,792 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:42,534 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:42,545 - __main__ - INFO - 🏭 PLC: 42.9°C - Health: 100.0%
+2025-09-11 02:21:44,796 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:44,806 - __main__ - INFO - 📡 ESP: 5.67A, 24.6V - Health: 100.0%
+2025-09-11 02:21:47,612 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:47,621 - __main__ - INFO - 🏭 PLC: 44.1°C - Health: 100.0%
+2025-09-11 02:21:49,800 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:51,865 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:51,875 - __main__ - INFO - 📡 ESP: 5.64A, 24.9V - Health: 100.0%
+2025-09-11 02:21:52,707 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:52,716 - __main__ - INFO - 🏭 PLC: 45.5°C - Health: 100.0%
+2025-09-11 02:21:57,798 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:57,809 - __main__ - INFO - 🏭 PLC: 45.3°C - Health: 100.0%
+2025-09-11 02:21:58,924 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:21:58,934 - __main__ - INFO - 📡 ESP: 5.82A, 24.6V - Health: 100.0%
+2025-09-11 02:21:59,797 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:02,867 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:02,876 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 02:22:05,979 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:05,989 - __main__ - INFO - 📡 ESP: 5.85A, 24.3V - Health: 100.0%
+2025-09-11 02:22:07,952 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:07,960 - __main__ - INFO - 🏭 PLC: 45.0°C - Health: 100.0%
+2025-09-11 02:22:09,789 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:13,027 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:13,039 - __main__ - INFO - 🏭 PLC: 43.8°C - Health: 100.0%
+2025-09-11 02:22:13,056 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:13,063 - __main__ - INFO - 📡 ESP: 5.98A, 24.7V - Health: 100.0%
+2025-09-11 02:22:18,100 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:18,110 - __main__ - INFO - 🏭 PLC: 45.3°C - Health: 100.0%
+2025-09-11 02:22:19,813 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:20,124 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:20,132 - __main__ - INFO - 📡 ESP: 5.95A, 25.0V - Health: 100.0%
+2025-09-11 02:22:23,159 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:23,169 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 02:22:27,183 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:27,193 - __main__ - INFO - 📡 ESP: 5.97A, 24.7V - Health: 100.0%
+2025-09-11 02:22:28,240 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:28,247 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 02:22:29,826 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:33,313 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:33,324 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 100.0%
+2025-09-11 02:22:34,248 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:34,255 - __main__ - INFO - 📡 ESP: 6.14A, 24.8V - Health: 100.0%
+2025-09-11 02:22:38,405 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:38,416 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 100.0%
+2025-09-11 02:22:39,836 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:41,302 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:41,312 - __main__ - INFO - 📡 ESP: 6.29A, 25.2V - Health: 100.0%
+2025-09-11 02:22:43,462 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:43,472 - __main__ - INFO - 🏭 PLC: 46.5°C - Health: 100.0%
+2025-09-11 02:22:48,372 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:48,382 - __main__ - INFO - 📡 ESP: 6.3A, 25.1V - Health: 100.0%
+2025-09-11 02:22:48,544 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:48,551 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 100.0%
+2025-09-11 02:22:49,848 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:53,586 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:53,595 - __main__ - INFO - 🏭 PLC: 44.0°C - Health: 100.0%
+2025-09-11 02:22:55,453 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:55,463 - __main__ - INFO - 📡 ESP: 6.45A, 24.9V - Health: 100.0%
+2025-09-11 02:22:58,644 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:22:58,654 - __main__ - INFO - 🏭 PLC: 42.9°C - Health: 100.0%
+2025-09-11 02:22:59,854 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:02,518 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:02,528 - __main__ - INFO - 📡 ESP: 6.28A, 25.0V - Health: 100.0%
+2025-09-11 02:23:03,718 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:03,728 - __main__ - INFO - 🏭 PLC: 41.9°C - Health: 100.0%
+2025-09-11 02:23:08,787 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:08,798 - __main__ - INFO - 🏭 PLC: 42.5°C - Health: 100.0%
+2025-09-11 02:23:09,591 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:09,602 - __main__ - INFO - 📡 ESP: 6.12A, 24.9V - Health: 100.0%
+2025-09-11 02:23:09,852 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:13,847 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:13,857 - __main__ - INFO - 🏭 PLC: 43.6°C - Health: 100.0%
+2025-09-11 02:23:16,645 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:16,659 - __main__ - INFO - 📡 ESP: 6.14A, 25.2V - Health: 100.0%
+2025-09-11 02:23:18,927 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:18,937 - __main__ - INFO - 🏭 PLC: 42.4°C - Health: 100.0%
+2025-09-11 02:23:19,876 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:23,735 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:23,747 - __main__ - INFO - 📡 ESP: 6.28A, 25.2V - Health: 100.0%
+2025-09-11 02:23:23,982 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:23,990 - __main__ - INFO - 🏭 PLC: 41.8°C - Health: 100.0%
+2025-09-11 02:23:29,049 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:29,059 - __main__ - INFO - 🏭 PLC: 41.5°C - Health: 100.0%
+2025-09-11 02:23:29,885 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:30,801 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:30,811 - __main__ - INFO - 📡 ESP: 6.29A, 25.6V - Health: 100.0%
+2025-09-11 02:23:34,112 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:34,122 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 100.0%
+2025-09-11 02:23:37,869 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:37,879 - __main__ - INFO - 📡 ESP: 6.1A, 25.9V - Health: 100.0%
+2025-09-11 02:23:39,193 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:39,202 - __main__ - INFO - 🏭 PLC: 41.6°C - Health: 100.0%
+2025-09-11 02:23:39,903 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:44,261 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:44,271 - __main__ - INFO - 🏭 PLC: 41.1°C - Health: 100.0%
+2025-09-11 02:23:44,947 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:44,957 - __main__ - INFO - 📡 ESP: 6.07A, 26.0V - Health: 100.0%
+2025-09-11 02:23:49,336 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:49,343 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 100.0%
+2025-09-11 02:23:49,913 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:52,002 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:52,013 - __main__ - INFO - 📡 ESP: 6.25A, 26.3V - Health: 100.0%
+2025-09-11 02:23:54,414 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:54,421 - __main__ - INFO - 🏭 PLC: 41.8°C - Health: 100.0%
+2025-09-11 02:23:59,090 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:59,099 - __main__ - INFO - 📡 ESP: 6.1A, 25.9V - Health: 100.0%
+2025-09-11 02:23:59,493 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:23:59,501 - __main__ - INFO - 🏭 PLC: 41.9°C - Health: 100.0%
+2025-09-11 02:23:59,929 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:04,559 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:04,570 - __main__ - INFO - 🏭 PLC: 41.2°C - Health: 100.0%
+2025-09-11 02:24:06,131 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:06,142 - __main__ - INFO - 📡 ESP: 6.0A, 25.6V - Health: 100.0%
+2025-09-11 02:24:09,630 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:09,640 - __main__ - INFO - 🏭 PLC: 41.6°C - Health: 100.0%
+2025-09-11 02:24:09,940 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:13,210 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:13,217 - __main__ - INFO - 📡 ESP: 5.84A, 25.6V - Health: 100.0%
+2025-09-11 02:24:14,694 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:14,705 - __main__ - INFO - 🏭 PLC: 41.5°C - Health: 100.0%
+2025-09-11 02:24:19,773 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:19,782 - __main__ - INFO - 🏭 PLC: 40.8°C - Health: 100.0%
+2025-09-11 02:24:19,946 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:20,275 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:20,282 - __main__ - INFO - 📡 ESP: 5.78A, 25.7V - Health: 100.0%
+2025-09-11 02:24:24,863 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:24,874 - __main__ - INFO - 🏭 PLC: 41.6°C - Health: 100.0%
+2025-09-11 02:24:27,336 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:27,347 - __main__ - INFO - 📡 ESP: 5.85A, 25.5V - Health: 100.0%
+2025-09-11 02:24:29,948 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:29,958 - __main__ - INFO - 🏭 PLC: 41.9°C - Health: 100.0%
+2025-09-11 02:24:29,959 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:34,427 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:34,436 - __main__ - INFO - 📡 ESP: 6.0A, 25.9V - Health: 100.0%
+2025-09-11 02:24:35,030 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:35,037 - __main__ - INFO - 🏭 PLC: 43.2°C - Health: 100.0%
+2025-09-11 02:24:39,976 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:40,086 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:40,093 - __main__ - INFO - 🏭 PLC: 42.0°C - Health: 100.0%
+2025-09-11 02:24:41,501 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:41,508 - __main__ - INFO - 📡 ESP: 5.92A, 26.2V - Health: 100.0%
+2025-09-11 02:24:49,334 - root - INFO - Logging system initialized successfully
+2025-09-11 02:24:49,334 - __main__ - INFO - ============================================================
+2025-09-11 02:24:49,334 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 02:24:49,335 - __main__ - INFO - Timestamp: 2025-09-11T02:24:49.335711
+2025-09-11 02:24:49,335 - __main__ - INFO - ============================================================
+2025-09-11 02:24:49,335 - __main__ - INFO - Creating necessary directories...
+2025-09-11 02:24:49,336 - __main__ - INFO - Initializing database...
+2025-09-11 02:24:49,340 - root - INFO - Database initialized successfully
+2025-09-11 02:24:49,341 - __main__ - INFO - Creating Flask application...
+2025-09-11 02:24:49,352 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 02:24:49,587 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:24:49,587 - root - INFO - Health calculated: 90.0% (Excellent) - Data: current_esp, historical_plc
+2025-09-11 02:24:49,592 - __main__ - INFO - 📡 ESP: 5.92A, 26.2V - Health: 90.0%
+2025-09-11 02:24:52,255 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:52,263 - __main__ - INFO - 🏭 PLC: 40.0°C - Health: 100.0%
+2025-09-11 02:24:52,399 - socketio - INFO - ✅ Client connected: G0RdgMgbHWaWmUfOAAAB (Total: 1)
+2025-09-11 02:24:52,400 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:52,408 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:56,107 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:24:56,508 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:56,650 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:56,658 - __main__ - INFO - 📡 ESP: 5.99A, 26.7V - Health: 99.7%
+2025-09-11 02:24:56,794 - socketio - INFO - ✅ Client connected: fBFCpTfFNX_prDmAAAAD (Total: 2)
+2025-09-11 02:24:56,796 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:56,812 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:57,331 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:57,342 - __main__ - INFO - 🏭 PLC: 40.4°C - Health: 99.7%
+2025-09-11 02:24:58,508 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:24:59,360 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:02,396 - root - INFO - Health calculated: 99.7% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:02,413 - __main__ - INFO - 🏭 PLC: 41.6°C - Health: 99.7%
+2025-09-11 02:25:03,731 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:03,749 - __main__ - INFO - 📡 ESP: 5.87A, 26.9V - Health: 99.3%
+2025-09-11 02:25:07,467 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:07,483 - __main__ - INFO - 🏭 PLC: 42.3°C - Health: 99.3%
+2025-09-11 02:25:09,373 - root - INFO - Health calculated: 99.3% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:10,814 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:10,828 - __main__ - INFO - 📡 ESP: 5.78A, 27.0V - Health: 99.2%
+2025-09-11 02:25:12,554 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:12,566 - __main__ - INFO - 🏭 PLC: 42.0°C - Health: 99.2%
+2025-09-11 02:25:14,153 - socketio - INFO - 🎮 Motor control: reset
+2025-09-11 02:25:17,609 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:17,624 - __main__ - INFO - 🏭 PLC: 41.7°C - Health: 99.2%
+2025-09-11 02:25:17,890 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:17,901 - __main__ - INFO - 📡 ESP: 5.94A, 27.0V - Health: 99.2%
+2025-09-11 02:25:19,381 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:22,694 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:22,706 - __main__ - INFO - 🏭 PLC: 42.3°C - Health: 99.2%
+2025-09-11 02:25:26,510 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:29,399 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:39,412 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:41,188 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:41,487 - socketio - INFO - ✅ Client connected: J2ZmgVTsFUoPSDIfAAAF (Total: 3)
+2025-09-11 02:25:41,489 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:41,511 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:43,189 - root - INFO - Health calculated: 99.2% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:25:49,433 - root - WARNING - ESP connection timeout detected
+2025-09-11 02:25:49,443 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:49,444 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:25:57,092 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:57,094 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:57,095 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:25:57,787 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 02:25:57,894 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:57,897 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:57,898 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:25:58,179 - socketio - INFO - ✅ Client connected: QQQUej2gARny1676AAAH (Total: 4)
+2025-09-11 02:25:58,182 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:58,184 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:58,184 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:25:58,196 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:58,199 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:58,200 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:25:59,455 - root - WARNING - PLC connection timeout detected
+2025-09-11 02:25:59,458 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:59,460 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:59,461 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:25:59,896 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:59,900 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:25:59,902 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:09,486 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:09,489 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:09,489 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:19,516 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:19,520 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:19,521 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:27,103 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:27,105 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:27,106 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:27,894 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:27,897 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:27,897 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:29,543 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:29,545 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:29,547 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 02:26:36,776 - root - ERROR - Error retrieving historical data: tuple index out of range
+2025-09-11 02:26:36,777 - root - INFO - Health calculated: 90.0% (Excellent) - Data: historical_esp, current_plc
+2025-09-11 02:26:36,788 - __main__ - INFO - 🏭 PLC: 39.0°C - Health: 90.0%
+2025-09-11 02:26:36,790 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:36,803 - __main__ - INFO - 📡 ESP: 6.22A, 24.3V - Health: 100.0%
+2025-09-11 02:26:39,553 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:41,842 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:41,857 - __main__ - INFO - 🏭 PLC: 38.6°C - Health: 100.0%
+2025-09-11 02:26:43,847 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:43,861 - __main__ - INFO - 📡 ESP: 6.41A, 23.8V - Health: 100.0%
+2025-09-11 02:26:46,933 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:46,947 - __main__ - INFO - 🏭 PLC: 37.6°C - Health: 100.0%
+2025-09-11 02:26:49,573 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:50,916 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:50,929 - __main__ - INFO - 📡 ESP: 6.56A, 23.7V - Health: 100.0%
+2025-09-11 02:26:52,003 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:52,015 - __main__ - INFO - 🏭 PLC: 36.3°C - Health: 100.0%
+2025-09-11 02:26:57,077 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:57,091 - __main__ - INFO - 🏭 PLC: 37.7°C - Health: 100.0%
+2025-09-11 02:26:57,118 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:57,995 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:58,010 - __main__ - INFO - 📡 ESP: 6.71A, 23.3V - Health: 100.0%
+2025-09-11 02:26:58,091 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:26:59,581 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:27:02,140 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:27:02,153 - __main__ - INFO - 🏭 PLC: 38.4°C - Health: 100.0%
+2025-09-11 02:27:05,075 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:27:05,089 - __main__ - INFO - 📡 ESP: 6.9A, 23.8V - Health: 100.0%
+2025-09-11 02:27:07,200 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
+2025-09-11 02:27:07,213 - __main__ - INFO - 🏭 PLC: 39.1°C - Health: 100.0%
+2025-09-11 02:27:09,581 - root - INFO - Health calculated: 100.0% (Excellent) - Data: current_esp, current_plc
