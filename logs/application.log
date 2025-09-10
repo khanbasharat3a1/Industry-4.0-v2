@@ -10368,3 +10368,280 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 03:32:52,188 - root - ERROR - Error retrieving historical data: tuple index out of range
 2025-09-11 03:32:52,189 - root - ERROR - Error retrieving historical data: tuple index out of range
 2025-09-11 03:32:52,190 - root - INFO - Health calculated: 80.0% (Good) - Data: historical_esp, historical_plc
+2025-09-11 03:32:59,231 - root - INFO - Logging system initialized successfully
+2025-09-11 03:32:59,231 - __main__ - INFO - ============================================================
+2025-09-11 03:32:59,232 - __main__ - INFO - AI Motor Monitoring System v4.1 starting up
+2025-09-11 03:32:59,232 - __main__ - INFO - Timestamp: 2025-09-11T03:32:59.232453
+2025-09-11 03:32:59,232 - __main__ - INFO - ============================================================
+2025-09-11 03:32:59,234 - root - INFO - Database initialized successfully
+2025-09-11 03:32:59,234 - __main__ - INFO - Creating Flask application...
+2025-09-11 03:32:59,244 - __main__ - INFO - Starting connection monitoring...
+2025-09-11 03:32:59,446 - socketio - INFO - ✅ Client connected: uRHp9-6glAjgj1QQAAAB (Total: 1)
+2025-09-11 03:33:20,642 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:33:21,131 - socketio - INFO - ✅ Client connected: fWIL9lqN2-WA3YG-AAAD (Total: 2)
+2025-09-11 03:33:41,866 - __main__ - INFO - 📡 ESP: 6.25A, 23.9V - Health: 30.0%
+2025-09-11 03:33:41,883 - __main__ - INFO - 🏭 PLC: 39.7°C - Health: 30.0%
+2025-09-11 03:33:46,984 - __main__ - INFO - 🏭 PLC: 38.5°C - Health: 30.0%
+2025-09-11 03:33:48,936 - __main__ - INFO - 📡 ESP: 6.07A, 23.5V - Health: 30.0%
+2025-09-11 03:33:49,304 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:33:49,305 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:33:52,059 - __main__ - INFO - 🏭 PLC: 39.9°C - Health: 30.0%
+2025-09-11 03:33:56,027 - __main__ - INFO - 📡 ESP: 6.24A, 23.6V - Health: 30.0%
+2025-09-11 03:33:57,143 - __main__ - INFO - 🏭 PLC: 40.8°C - Health: 30.0%
+2025-09-11 03:33:59,329 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:33:59,330 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:02,221 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 30.0%
+2025-09-11 03:34:03,111 - __main__ - INFO - 📡 ESP: 6.27A, 23.6V - Health: 30.0%
+2025-09-11 03:34:05,291 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:34:05,899 - socketio - INFO - ✅ Client connected: xTQvwOuhNRNCz7zgAAAF (Total: 3)
+2025-09-11 03:34:07,302 - __main__ - INFO - 🏭 PLC: 42.1°C - Health: 30.0%
+2025-09-11 03:34:09,340 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:09,341 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:10,194 - __main__ - INFO - 📡 ESP: 6.38A, 23.4V - Health: 30.0%
+2025-09-11 03:34:12,382 - __main__ - INFO - 🏭 PLC: 43.0°C - Health: 30.0%
+2025-09-11 03:34:17,249 - __main__ - INFO - 📡 ESP: 6.53A, 23.2V - Health: 30.0%
+2025-09-11 03:34:17,466 - __main__ - INFO - 🏭 PLC: 44.5°C - Health: 30.0%
+2025-09-11 03:34:19,344 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:19,345 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:22,558 - __main__ - INFO - 🏭 PLC: 45.2°C - Health: 30.0%
+2025-09-11 03:34:24,339 - __main__ - INFO - 📡 ESP: 6.47A, 23.0V - Health: 30.0%
+2025-09-11 03:34:27,670 - __main__ - INFO - 🏭 PLC: 44.6°C - Health: 30.0%
+2025-09-11 03:34:28,621 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:34:29,104 - socketio - INFO - ✅ Client connected: cquKaQdLl2WukcTiAAAH (Total: 4)
+2025-09-11 03:34:29,346 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:29,349 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:31,437 - __main__ - INFO - 📡 ESP: 6.64A, 23.4V - Health: 30.0%
+2025-09-11 03:34:32,726 - __main__ - INFO - 🏭 PLC: 43.3°C - Health: 30.0%
+2025-09-11 03:34:37,811 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 30.0%
+2025-09-11 03:34:38,524 - __main__ - INFO - 📡 ESP: 6.64A, 23.6V - Health: 30.0%
+2025-09-11 03:34:39,361 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:39,362 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:42,874 - __main__ - INFO - 🏭 PLC: 42.0°C - Health: 30.0%
+2025-09-11 03:34:45,600 - __main__ - INFO - 📡 ESP: 6.51A, 24.0V - Health: 30.0%
+2025-09-11 03:34:47,939 - __main__ - INFO - 🏭 PLC: 43.3°C - Health: 30.0%
+2025-09-11 03:34:49,378 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:49,379 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:52,658 - __main__ - INFO - 📡 ESP: 6.36A, 23.6V - Health: 30.0%
+2025-09-11 03:34:52,995 - __main__ - INFO - 🏭 PLC: 44.4°C - Health: 30.0%
+2025-09-11 03:34:58,079 - __main__ - INFO - 🏭 PLC: 43.6°C - Health: 30.0%
+2025-09-11 03:34:59,378 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:59,378 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:34:59,723 - __main__ - INFO - 📡 ESP: 6.3A, 23.6V - Health: 30.0%
+2025-09-11 03:35:03,169 - __main__ - INFO - 🏭 PLC: 45.0°C - Health: 30.0%
+2025-09-11 03:35:06,832 - __main__ - INFO - 📡 ESP: 6.45A, 23.4V - Health: 30.0%
+2025-09-11 03:35:08,261 - __main__ - INFO - 🏭 PLC: 46.1°C - Health: 30.0%
+2025-09-11 03:35:09,398 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:09,400 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:13,351 - __main__ - INFO - 🏭 PLC: 46.3°C - Health: 30.0%
+2025-09-11 03:35:13,884 - __main__ - INFO - 📡 ESP: 6.52A, 23.5V - Health: 30.0%
+2025-09-11 03:35:18,421 - __main__ - INFO - 🏭 PLC: 45.1°C - Health: 30.0%
+2025-09-11 03:35:19,415 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:19,415 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:20,971 - __main__ - INFO - 📡 ESP: 6.52A, 23.7V - Health: 30.0%
+2025-09-11 03:35:21,366 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:35:21,979 - socketio - INFO - ✅ Client connected: oc7EypB6_UCgtuYTAAAJ (Total: 5)
+2025-09-11 03:35:23,497 - __main__ - INFO - 🏭 PLC: 44.3°C - Health: 30.0%
+2025-09-11 03:35:28,056 - __main__ - INFO - 📡 ESP: 6.69A, 23.6V - Health: 30.0%
+2025-09-11 03:35:28,585 - __main__ - INFO - 🏭 PLC: 43.2°C - Health: 30.0%
+2025-09-11 03:35:29,431 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:29,431 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:33,656 - __main__ - INFO - 🏭 PLC: 43.9°C - Health: 30.0%
+2025-09-11 03:35:35,119 - __main__ - INFO - 📡 ESP: 6.51A, 23.6V - Health: 30.0%
+2025-09-11 03:35:38,720 - __main__ - INFO - 🏭 PLC: 43.3°C - Health: 30.0%
+2025-09-11 03:35:39,452 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:39,452 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:42,152 - __main__ - INFO - 📡 ESP: 6.52A, 23.3V - Health: 30.0%
+2025-09-11 03:35:43,801 - __main__ - INFO - 🏭 PLC: 42.9°C - Health: 30.0%
+2025-09-11 03:35:45,617 - socketio - ERROR - SocketIO error: register_socketio_events.<locals>.handle_disconnect() takes 0 positional arguments but 1 was given
+2025-09-11 03:35:48,875 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 30.0%
+2025-09-11 03:35:49,241 - __main__ - INFO - 📡 ESP: 6.59A, 23.1V - Health: 30.0%
+2025-09-11 03:35:49,445 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:49,446 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:53,960 - __main__ - INFO - 🏭 PLC: 43.1°C - Health: 30.0%
+2025-09-11 03:35:56,323 - __main__ - INFO - 📡 ESP: 6.52A, 22.9V - Health: 30.0%
+2025-09-11 03:35:59,047 - __main__ - INFO - 🏭 PLC: 44.5°C - Health: 30.0%
+2025-09-11 03:35:59,463 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:35:59,465 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:03,394 - __main__ - INFO - 📡 ESP: 6.67A, 23.3V - Health: 30.0%
+2025-09-11 03:36:04,131 - __main__ - INFO - 🏭 PLC: 44.4°C - Health: 30.0%
+2025-09-11 03:36:09,210 - __main__ - INFO - 🏭 PLC: 45.1°C - Health: 30.0%
+2025-09-11 03:36:09,473 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:09,475 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:10,478 - __main__ - INFO - 📡 ESP: 6.82A, 23.0V - Health: 30.0%
+2025-09-11 03:36:14,320 - __main__ - INFO - 🏭 PLC: 45.8°C - Health: 30.0%
+2025-09-11 03:36:17,560 - __main__ - INFO - 📡 ESP: 6.89A, 22.6V - Health: 30.0%
+2025-09-11 03:36:19,402 - __main__ - INFO - 🏭 PLC: 46.0°C - Health: 30.0%
+2025-09-11 03:36:19,491 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:19,491 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:24,466 - __main__ - INFO - 🏭 PLC: 45.8°C - Health: 30.0%
+2025-09-11 03:36:24,622 - __main__ - INFO - 📡 ESP: 6.77A, 22.8V - Health: 30.0%
+2025-09-11 03:36:29,508 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:29,508 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:29,537 - __main__ - INFO - 🏭 PLC: 46.1°C - Health: 30.0%
+2025-09-11 03:36:31,693 - __main__ - INFO - 📡 ESP: 6.81A, 22.9V - Health: 30.0%
+2025-09-11 03:36:34,597 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 30.0%
+2025-09-11 03:36:38,762 - __main__ - INFO - 📡 ESP: 6.8A, 23.4V - Health: 30.0%
+2025-09-11 03:36:39,523 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:39,524 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:39,665 - __main__ - INFO - 🏭 PLC: 46.4°C - Health: 30.0%
+2025-09-11 03:36:44,749 - __main__ - INFO - 🏭 PLC: 46.5°C - Health: 30.0%
+2025-09-11 03:36:45,822 - __main__ - INFO - 📡 ESP: 6.63A, 23.0V - Health: 30.0%
+2025-09-11 03:36:49,533 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:49,534 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:49,831 - __main__ - INFO - 🏭 PLC: 45.7°C - Health: 30.0%
+2025-09-11 03:36:52,916 - __main__ - INFO - 📡 ESP: 6.75A, 22.6V - Health: 30.0%
+2025-09-11 03:36:54,913 - __main__ - INFO - 🏭 PLC: 46.1°C - Health: 30.0%
+2025-09-11 03:36:59,546 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:59,546 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:36:59,987 - __main__ - INFO - 📡 ESP: 6.76A, 22.3V - Health: 30.0%
+2025-09-11 03:37:00,006 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 30.0%
+2025-09-11 03:37:05,093 - __main__ - INFO - 🏭 PLC: 45.7°C - Health: 30.0%
+2025-09-11 03:37:07,090 - __main__ - INFO - 📡 ESP: 6.75A, 22.7V - Health: 30.0%
+2025-09-11 03:37:09,552 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:09,555 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:10,177 - __main__ - INFO - 🏭 PLC: 47.0°C - Health: 30.0%
+2025-09-11 03:37:14,175 - __main__ - INFO - 📡 ESP: 6.88A, 22.4V - Health: 30.0%
+2025-09-11 03:37:15,232 - __main__ - INFO - 🏭 PLC: 47.1°C - Health: 30.0%
+2025-09-11 03:37:19,579 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:19,580 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:20,305 - __main__ - INFO - 🏭 PLC: 47.1°C - Health: 30.0%
+2025-09-11 03:37:21,257 - __main__ - INFO - 📡 ESP: 6.88A, 22.3V - Health: 30.0%
+2025-09-11 03:37:25,390 - __main__ - INFO - 🏭 PLC: 46.1°C - Health: 30.0%
+2025-09-11 03:37:28,348 - __main__ - INFO - 📡 ESP: 6.86A, 22.6V - Health: 30.0%
+2025-09-11 03:37:29,597 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:29,598 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:30,487 - __main__ - INFO - 🏭 PLC: 44.8°C - Health: 30.0%
+2025-09-11 03:37:35,448 - __main__ - INFO - 📡 ESP: 6.75A, 22.9V - Health: 30.0%
+2025-09-11 03:37:35,599 - __main__ - INFO - 🏭 PLC: 45.9°C - Health: 30.0%
+2025-09-11 03:37:39,601 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:39,602 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:40,657 - __main__ - INFO - 🏭 PLC: 46.3°C - Health: 30.0%
+2025-09-11 03:37:42,553 - __main__ - INFO - 📡 ESP: 6.92A, 22.4V - Health: 30.0%
+2025-09-11 03:37:45,737 - __main__ - INFO - 🏭 PLC: 47.1°C - Health: 30.0%
+2025-09-11 03:37:49,603 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:49,604 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:49,640 - __main__ - INFO - 📡 ESP: 6.83A, 22.7V - Health: 30.0%
+2025-09-11 03:37:50,816 - __main__ - INFO - 🏭 PLC: 47.9°C - Health: 30.0%
+2025-09-11 03:37:55,922 - __main__ - INFO - 🏭 PLC: 46.5°C - Health: 30.0%
+2025-09-11 03:37:56,717 - __main__ - INFO - 📡 ESP: 6.73A, 22.3V - Health: 30.0%
+2025-09-11 03:37:59,626 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:37:59,632 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:01,016 - __main__ - INFO - 🏭 PLC: 47.9°C - Health: 30.0%
+2025-09-11 03:38:03,822 - __main__ - INFO - 📡 ESP: 6.85A, 22.3V - Health: 30.0%
+2025-09-11 03:38:06,100 - __main__ - INFO - 🏭 PLC: 46.8°C - Health: 30.0%
+2025-09-11 03:38:09,636 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:09,637 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:10,915 - __main__ - INFO - 📡 ESP: 6.89A, 22.6V - Health: 30.0%
+2025-09-11 03:38:11,190 - __main__ - INFO - 🏭 PLC: 47.7°C - Health: 30.0%
+2025-09-11 03:38:16,265 - __main__ - INFO - 🏭 PLC: 47.0°C - Health: 30.0%
+2025-09-11 03:38:17,989 - __main__ - INFO - 📡 ESP: 6.8A, 22.4V - Health: 30.0%
+2025-09-11 03:38:19,643 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:19,643 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:21,341 - __main__ - INFO - 🏭 PLC: 45.9°C - Health: 30.0%
+2025-09-11 03:38:25,072 - __main__ - INFO - 📡 ESP: 6.63A, 22.1V - Health: 30.0%
+2025-09-11 03:38:26,424 - __main__ - INFO - 🏭 PLC: 46.2°C - Health: 30.0%
+2025-09-11 03:38:29,651 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:29,652 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:31,517 - __main__ - INFO - 🏭 PLC: 45.0°C - Health: 30.0%
+2025-09-11 03:38:32,155 - __main__ - INFO - 📡 ESP: 6.5A, 21.8V - Health: 30.0%
+2025-09-11 03:38:36,594 - __main__ - INFO - 🏭 PLC: 43.5°C - Health: 30.0%
+2025-09-11 03:38:39,243 - __main__ - INFO - 📡 ESP: 6.37A, 21.7V - Health: 30.0%
+2025-09-11 03:38:39,666 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:39,671 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:41,705 - __main__ - INFO - 🏭 PLC: 42.2°C - Health: 30.0%
+2025-09-11 03:38:46,308 - __main__ - INFO - 📡 ESP: 6.5A, 21.3V - Health: 30.0%
+2025-09-11 03:38:46,768 - __main__ - INFO - 🏭 PLC: 42.5°C - Health: 30.0%
+2025-09-11 03:38:49,689 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:49,691 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:51,852 - __main__ - INFO - 🏭 PLC: 42.8°C - Health: 30.0%
+2025-09-11 03:38:53,379 - __main__ - INFO - 📡 ESP: 6.35A, 21.1V - Health: 30.0%
+2025-09-11 03:38:56,941 - __main__ - INFO - 🏭 PLC: 41.4°C - Health: 30.0%
+2025-09-11 03:38:59,702 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:38:59,703 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:00,473 - __main__ - INFO - 📡 ESP: 6.31A, 21.4V - Health: 30.0%
+2025-09-11 03:39:02,014 - __main__ - INFO - 🏭 PLC: 42.3°C - Health: 30.0%
+2025-09-11 03:39:07,059 - __main__ - INFO - 🏭 PLC: 43.1°C - Health: 30.0%
+2025-09-11 03:39:07,543 - __main__ - INFO - 📡 ESP: 6.26A, 21.8V - Health: 30.0%
+2025-09-11 03:39:09,720 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:09,721 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:12,150 - __main__ - INFO - 🏭 PLC: 43.9°C - Health: 30.0%
+2025-09-11 03:39:14,614 - __main__ - INFO - 📡 ESP: 6.34A, 21.6V - Health: 30.0%
+2025-09-11 03:39:17,234 - __main__ - INFO - 🏭 PLC: 44.6°C - Health: 30.0%
+2025-09-11 03:39:19,729 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:19,730 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:21,689 - __main__ - INFO - 📡 ESP: 6.31A, 21.7V - Health: 30.0%
+2025-09-11 03:39:22,321 - __main__ - INFO - 🏭 PLC: 43.8°C - Health: 30.0%
+2025-09-11 03:39:27,400 - __main__ - INFO - 🏭 PLC: 42.9°C - Health: 30.0%
+2025-09-11 03:39:28,747 - __main__ - INFO - 📡 ESP: 6.29A, 21.5V - Health: 30.0%
+2025-09-11 03:39:29,738 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:29,738 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:32,476 - __main__ - INFO - 🏭 PLC: 44.3°C - Health: 30.0%
+2025-09-11 03:39:35,812 - __main__ - INFO - 📡 ESP: 6.28A, 22.0V - Health: 30.0%
+2025-09-11 03:39:37,558 - __main__ - INFO - 🏭 PLC: 43.1°C - Health: 30.0%
+2025-09-11 03:39:39,738 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:39,738 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:42,629 - __main__ - INFO - 🏭 PLC: 44.5°C - Health: 30.0%
+2025-09-11 03:39:42,893 - __main__ - INFO - 📡 ESP: 6.19A, 22.2V - Health: 30.0%
+2025-09-11 03:39:47,705 - __main__ - INFO - 🏭 PLC: 45.4°C - Health: 30.0%
+2025-09-11 03:39:49,745 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:49,747 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:49,983 - __main__ - INFO - 📡 ESP: 6.05A, 21.8V - Health: 30.0%
+2025-09-11 03:39:52,787 - __main__ - INFO - 🏭 PLC: 44.0°C - Health: 30.0%
+2025-09-11 03:39:57,073 - __main__ - INFO - 📡 ESP: 6.07A, 21.3V - Health: 30.0%
+2025-09-11 03:39:57,880 - __main__ - INFO - 🏭 PLC: 44.9°C - Health: 30.0%
+2025-09-11 03:39:59,753 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:39:59,753 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:02,983 - __main__ - INFO - 🏭 PLC: 45.3°C - Health: 30.0%
+2025-09-11 03:40:04,146 - __main__ - INFO - 📡 ESP: 6.23A, 21.4V - Health: 30.0%
+2025-09-11 03:40:08,075 - __main__ - INFO - 🏭 PLC: 45.2°C - Health: 30.0%
+2025-09-11 03:40:09,757 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:09,758 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:11,224 - __main__ - INFO - 📡 ESP: 6.18A, 21.3V - Health: 30.0%
+2025-09-11 03:40:13,170 - __main__ - INFO - 🏭 PLC: 45.1°C - Health: 30.0%
+2025-09-11 03:40:18,261 - __main__ - INFO - 🏭 PLC: 45.1°C - Health: 30.0%
+2025-09-11 03:40:18,290 - __main__ - INFO - 📡 ESP: 6.15A, 21.2V - Health: 30.0%
+2025-09-11 03:40:19,774 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:19,774 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:23,318 - __main__ - INFO - 🏭 PLC: 46.3°C - Health: 30.0%
+2025-09-11 03:40:25,377 - __main__ - INFO - 📡 ESP: 6.15A, 20.9V - Health: 30.0%
+2025-09-11 03:40:28,393 - __main__ - INFO - 🏭 PLC: 44.8°C - Health: 30.0%
+2025-09-11 03:40:29,787 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:29,788 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:32,467 - __main__ - INFO - 📡 ESP: 6.06A, 21.2V - Health: 30.0%
+2025-09-11 03:40:33,493 - __main__ - INFO - 🏭 PLC: 44.3°C - Health: 30.0%
+2025-09-11 03:40:38,580 - __main__ - INFO - 🏭 PLC: 43.0°C - Health: 30.0%
+2025-09-11 03:40:39,571 - __main__ - INFO - 📡 ESP: 5.93A, 20.9V - Health: 30.0%
+2025-09-11 03:40:39,800 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:39,801 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:43,665 - __main__ - INFO - 🏭 PLC: 42.5°C - Health: 30.0%
+2025-09-11 03:40:46,652 - __main__ - INFO - 📡 ESP: 5.9A, 21.3V - Health: 30.0%
+2025-09-11 03:40:48,739 - __main__ - INFO - 🏭 PLC: 41.8°C - Health: 30.0%
+2025-09-11 03:40:49,802 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:49,802 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:53,733 - __main__ - INFO - 📡 ESP: 5.73A, 21.0V - Health: 30.0%
+2025-09-11 03:40:53,824 - __main__ - INFO - 🏭 PLC: 42.8°C - Health: 30.0%
+2025-09-11 03:40:58,912 - __main__ - INFO - 🏭 PLC: 42.4°C - Health: 30.0%
+2025-09-11 03:40:59,819 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:40:59,819 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:00,812 - __main__ - INFO - 📡 ESP: 5.87A, 21.2V - Health: 30.0%
+2025-09-11 03:41:03,994 - __main__ - INFO - 🏭 PLC: 41.5°C - Health: 30.0%
+2025-09-11 03:41:07,889 - __main__ - INFO - 📡 ESP: 5.7A, 21.4V - Health: 30.0%
+2025-09-11 03:41:09,080 - __main__ - INFO - 🏭 PLC: 40.3°C - Health: 30.0%
+2025-09-11 03:41:09,839 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:09,840 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:14,162 - __main__ - INFO - 🏭 PLC: 38.9°C - Health: 30.0%
+2025-09-11 03:41:14,983 - __main__ - INFO - 📡 ESP: 5.62A, 21.4V - Health: 30.0%
+2025-09-11 03:41:19,250 - __main__ - INFO - 🏭 PLC: 39.3°C - Health: 30.0%
+2025-09-11 03:41:19,859 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:19,860 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:22,066 - __main__ - INFO - 📡 ESP: 5.61A, 21.4V - Health: 30.0%
+2025-09-11 03:41:24,335 - __main__ - INFO - 🏭 PLC: 39.0°C - Health: 30.0%
+2025-09-11 03:41:29,141 - __main__ - INFO - 📡 ESP: 5.8A, 21.5V - Health: 30.0%
+2025-09-11 03:41:29,404 - __main__ - INFO - 🏭 PLC: 38.1°C - Health: 30.0%
+2025-09-11 03:41:29,870 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:29,870 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:34,490 - __main__ - INFO - 🏭 PLC: 38.9°C - Health: 30.0%
+2025-09-11 03:41:36,209 - __main__ - INFO - 📡 ESP: 5.8A, 21.1V - Health: 30.0%
+2025-09-11 03:41:39,569 - __main__ - INFO - 🏭 PLC: 37.5°C - Health: 30.0%
+2025-09-11 03:41:39,881 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-11 03:41:39,885 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
