@@ -1,5 +1,5 @@
 """
-Database initialization and management
+Database initialization - FIXED VERSION
 """
 
 import sqlite3
@@ -8,14 +8,14 @@ from datetime import datetime, timedelta
 import logging
 
 def create_database():
-    """Create database with proper schema"""
+    """Create database with correct schema"""
     db_path = os.path.join('database', 'sensor_history.db')
     os.makedirs('database', exist_ok=True)
     
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # Create sensor data table with all required fields
+    # Create table with ALL required columns
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS sensor_data (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,29 +39,25 @@ def create_database():
         )
     ''')
     
-    # Create indexes for better performance
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_timestamp ON sensor_data(timestamp DESC)')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_health ON sensor_data(overall_health_score)')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_connected ON sensor_data(esp_connected, plc_connected)')
     
     conn.commit()
     conn.close()
     
-    logging.info("Database schema created successfully")
+    print("✅ Database created successfully")
 
 def seed_sample_data():
-    """Seed database with sample historical data"""
+    """Add sample historical data"""
     db_path = os.path.join('database', 'sensor_history.db')
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # Generate 24 hours of sample data
+    # Generate 24 hours of realistic data
     base_time = datetime.now() - timedelta(hours=24)
     
-    for i in range(288):  # Every 5 minutes for 24 hours
+    for i in range(288):  # Every 5 minutes
         timestamp = base_time + timedelta(minutes=i * 5)
         
-        # Generate realistic sample data
         cursor.execute('''
             INSERT INTO sensor_data (
                 timestamp, esp_current, esp_voltage, esp_rpm, env_temp_c, env_humidity,
@@ -71,30 +67,30 @@ def seed_sample_data():
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             timestamp.isoformat(),
-            6.0 + (i % 20) * 0.1,  # Varying current
-            24.0 + (i % 10) * 0.1,  # Varying voltage
-            2750 + (i % 30),        # Varying RPM
-            25.0 + (i % 15),        # Varying temp
-            45.0 + (i % 20),        # Varying humidity
-            1,  # Connected
+            6.0 + (i % 20) * 0.1,   # Current
+            24.0 + (i % 10) * 0.1,  # Voltage  
+            2750 + (i % 30),        # RPM
+            25.0 + (i % 15),        # Env temp
+            45.0 + (i % 20),        # Humidity
+            1,                      # ESP connected
             40.0 + (i % 12),        # Motor temp
             24.0 + (i % 8) * 0.1,   # Motor voltage
             6.0 + (i % 15) * 0.1,   # Motor current
             2750 + (i % 25),        # Motor RPM
-            1,  # Connected
+            1,                      # PLC connected
             85.0 + (i % 20),        # Overall health
             88.0 + (i % 15),        # Electrical health
             84.0 + (i % 18),        # Thermal health
             87.0 + (i % 16),        # Mechanical health
-            'historical_sample'
+            'historical_sample'     # Data source
         ))
     
     conn.commit()
     conn.close()
     
-    logging.info("Sample historical data seeded successfully")
+    print("✅ Sample data seeded successfully")
 
 if __name__ == "__main__":
     create_database()
     seed_sample_data()
-    print("✅ Database initialized with sample data")
+    print("🎉 Database initialized completely!")
