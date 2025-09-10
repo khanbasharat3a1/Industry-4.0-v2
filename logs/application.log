@@ -4891,3 +4891,517 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 00:19:56,194 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-11 00:19:56,210 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
 2025-09-11 00:19:56,241 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:24,393 - root - INFO - Logging system initialized successfully
+2025-09-11 00:22:24,394 - __main__ - INFO - ============================================================
+2025-09-11 00:22:24,394 - __main__ - INFO - AI Motor Monitoring System starting up (version 3.1)
+2025-09-11 00:22:24,394 - __main__ - INFO - Timestamp: 2025-09-11T00:22:24.394501
+2025-09-11 00:22:24,394 - __main__ - INFO - ============================================================
+2025-09-11 00:22:24,395 - __main__ - INFO - Creating necessary directories...
+2025-09-11 00:22:24,396 - __main__ - INFO - Creating Flask application...
+2025-09-11 00:22:25,656 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,659 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,660 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,664 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,667 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,669 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,673 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,676 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,678 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,681 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,686 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,689 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,690 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,693 - __main__ - INFO - Sensor data blueprint registered
+2025-09-11 00:22:25,695 - __main__ - INFO - Health blueprint registered
+2025-09-11 00:22:25,699 - __main__ - INFO - Alerts blueprint registered
+2025-09-11 00:22:25,701 - __main__ - INFO - Control blueprint registered
+2025-09-11 00:22:25,701 - __main__ - INFO - API blueprints registered: 4/4
+2025-09-11 00:22:25,706 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,708 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,711 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,711 - socketio - INFO - WebSocket events registered successfully
+2025-09-11 00:22:25,712 - __main__ - INFO - Initializing services...
+2025-09-11 00:22:25,712 - __main__ - INFO - Initializing hardware managers...
+2025-09-11 00:22:25,712 - __main__ - INFO - PLC manager initialized
+2025-09-11 00:22:25,712 - __main__ - INFO - Initializing services...
+2025-09-11 00:22:25,716 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,718 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:22:25,718 - __main__ - INFO - Data processor initialized
+2025-09-11 00:22:25,721 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,722 - services.background_tasks - INFO - Default scheduled tasks configured
+2025-09-11 00:22:25,722 - services.background_tasks - INFO - Starting background task manager...
+2025-09-11 00:22:25,723 - services.background_tasks - INFO - Scheduler worker started
+2025-09-11 00:22:25,724 - services.background_tasks - INFO - Background task manager started successfully
+2025-09-11 00:22:25,725 - __main__ - INFO - Background task manager started
+2025-09-11 00:22:25,728 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,729 - services.connection_monitor - INFO - Connection monitor loop started
+2025-09-11 00:22:25,729 - services.connection_monitor - INFO - Connection monitor started
+2025-09-11 00:22:25,730 - __main__ - INFO - Connection monitor started
+2025-09-11 00:22:25,734 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:22:25,734 - __main__ - INFO - Alert service initialized
+2025-09-11 00:22:25,735 - __main__ - INFO - Testing initial connections...
+2025-09-11 00:22:25,735 - __main__ - INFO - Testing PLC connection to 192.168.3.39:5007
+2025-09-11 00:22:27,661 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,677 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,677 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,693 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,709 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,740 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:27,740 - __main__ - WARNING - PLC connection failed - will retry automatically
+2025-09-11 00:22:27,968 - __main__ - INFO - Network connectivity confirmed
+2025-09-11 00:22:27,969 - __main__ - INFO - Running system health check...
+2025-09-11 00:22:27,969 - __main__ - INFO - Health check completed: 2/3 core components healthy
+2025-09-11 00:22:27,984 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.158.247:5000
+2025-09-11 00:22:27,985 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 00:22:32,405 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:22:32] "GET /socket.io/?EIO=4&transport=polling&t=Paq-EdP HTTP/1.1" 200 -
+2025-09-11 00:22:32,673 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:22:32,674 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:22:32] "POST /socket.io/?EIO=4&transport=polling&t=Paq-Eia&sid=n74frwG4P5dKgTesAAAA HTTP/1.1" 200 -
+2025-09-11 00:22:32,731 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:22:32] "GET /socket.io/?EIO=4&transport=polling&t=Paq-Ein&sid=n74frwG4P5dKgTesAAAA HTTP/1.1" 200 -
+2025-09-11 00:22:32,745 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:22:32] "GET /socket.io/?EIO=4&transport=polling&t=Paq-EnY&sid=n74frwG4P5dKgTesAAAA HTTP/1.1" 200 -
+2025-09-11 00:22:33,087 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:22:33] "GET /socket.io/?EIO=4&transport=polling&t=Paq-EoB&sid=n74frwG4P5dKgTesAAAA HTTP/1.1" 200 -
+2025-09-11 00:22:34,680 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:34,695 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:34,695 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:34,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:34,727 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:22:34,742 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:45,445 - root - INFO - Logging system initialized successfully
+2025-09-11 00:23:45,445 - __main__ - INFO - ============================================================
+2025-09-11 00:23:45,445 - __main__ - INFO - AI Motor Monitoring System starting up (version 3.1)
+2025-09-11 00:23:45,446 - __main__ - INFO - Timestamp: 2025-09-11T00:23:45.446893
+2025-09-11 00:23:45,446 - __main__ - INFO - ============================================================
+2025-09-11 00:23:45,446 - __main__ - INFO - Creating necessary directories...
+2025-09-11 00:23:45,448 - __main__ - INFO - Creating Flask application...
+2025-09-11 00:23:46,257 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,262 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,264 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,269 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,273 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,274 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,279 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,282 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,284 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,288 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,292 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,295 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,297 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,300 - __main__ - INFO - Sensor data blueprint registered
+2025-09-11 00:23:46,302 - __main__ - INFO - Health blueprint registered
+2025-09-11 00:23:46,304 - __main__ - INFO - Alerts blueprint registered
+2025-09-11 00:23:46,306 - __main__ - INFO - Control blueprint registered
+2025-09-11 00:23:46,306 - __main__ - INFO - API blueprints registered: 4/4
+2025-09-11 00:23:46,313 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,315 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,318 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,319 - socketio - INFO - WebSocket events registered successfully
+2025-09-11 00:23:46,319 - __main__ - INFO - Initializing services...
+2025-09-11 00:23:46,319 - __main__ - INFO - Initializing hardware managers...
+2025-09-11 00:23:46,319 - __main__ - INFO - PLC manager initialized
+2025-09-11 00:23:46,319 - __main__ - INFO - Initializing services...
+2025-09-11 00:23:46,322 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,323 - services.data_processor - INFO - Background tasks started successfully
+2025-09-11 00:23:46,324 - __main__ - INFO - Data processor initialized
+2025-09-11 00:23:46,327 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,328 - services.background_tasks - INFO - Default scheduled tasks configured
+2025-09-11 00:23:46,328 - services.background_tasks - INFO - Starting background task manager...
+2025-09-11 00:23:46,329 - services.background_tasks - INFO - Scheduler worker started
+2025-09-11 00:23:46,330 - services.background_tasks - INFO - Background task manager started successfully
+2025-09-11 00:23:46,330 - __main__ - INFO - Background task manager started
+2025-09-11 00:23:46,333 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,334 - services.connection_monitor - INFO - Connection monitor loop started
+2025-09-11 00:23:46,334 - services.connection_monitor - INFO - Connection monitor started
+2025-09-11 00:23:46,335 - __main__ - INFO - Connection monitor started
+2025-09-11 00:23:46,337 - database.manager - INFO - Database initialized successfully
+2025-09-11 00:23:46,338 - __main__ - INFO - Alert service initialized
+2025-09-11 00:23:46,338 - __main__ - INFO - Testing initial connections...
+2025-09-11 00:23:46,338 - __main__ - INFO - Testing PLC connection to 192.168.3.39:5007
+2025-09-11 00:23:48,273 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,289 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,289 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,305 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,320 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,336 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,351 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:48,351 - __main__ - WARNING - PLC connection failed - will retry automatically
+2025-09-11 00:23:48,421 - __main__ - INFO - Network connectivity confirmed
+2025-09-11 00:23:48,422 - __main__ - INFO - Running system health check...
+2025-09-11 00:23:48,422 - __main__ - INFO - Health check completed: 2/3 core components healthy
+2025-09-11 00:23:48,437 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.158.247:5000
+2025-09-11 00:23:48,437 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 00:23:52,410 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:52] "GET /socket.io/?EIO=4&transport=polling&t=Paq-Y9U HTTP/1.1" 200 -
+2025-09-11 00:23:52,673 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:23:52,675 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:52] "POST /socket.io/?EIO=4&transport=polling&t=Paq-YEW&sid=VVUKJBDSfxkTllOtAAAA HTTP/1.1" 200 -
+2025-09-11 00:23:52,735 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:52] "GET /socket.io/?EIO=4&transport=polling&t=Paq-YEZ&sid=VVUKJBDSfxkTllOtAAAA HTTP/1.1" 200 -
+2025-09-11 00:23:52,748 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:52] "GET /socket.io/?EIO=4&transport=polling&t=Paq-YJc&sid=VVUKJBDSfxkTllOtAAAA HTTP/1.1" 200 -
+2025-09-11 00:23:53,076 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:53] "GET /socket.io/?EIO=4&transport=polling&t=Paq-YJx&sid=VVUKJBDSfxkTllOtAAAA HTTP/1.1" 200 -
+2025-09-11 00:23:55,280 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:55,295 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:55,310 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:55,326 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:55,342 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:55,357 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:23:57,307 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "GET / HTTP/1.1" 200 -
+2025-09-11 00:23:57,594 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "GET /socket.io/?EIO=4&transport=polling&t=Paq-ZTE HTTP/1.1" 200 -
+2025-09-11 00:23:57,797 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-11 00:23:57,800 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-11 00:23:57,954 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:23:57,956 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "POST /socket.io/?EIO=4&transport=polling&t=Paq-ZVt&sid=CwT3V8JBNfWlBIJZAAAC HTTP/1.1" 200 -
+2025-09-11 00:23:57,960 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:23:57] "GET /socket.io/?EIO=4&transport=polling&t=Paq-ZVw&sid=CwT3V8JBNfWlBIJZAAAC HTTP/1.1" 200 -
+2025-09-11 00:24:02,290 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:02,305 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:02,321 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:02,336 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:02,351 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:02,367 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,316 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,331 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,331 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,361 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,361 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:09,377 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,332 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,349 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,351 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,378 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:16,394 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,355 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,371 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,386 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,401 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,401 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:23,416 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,372 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,387 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,403 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,418 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,418 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:30,434 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,392 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,408 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,424 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,439 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:37,454 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,413 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,429 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,445 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,460 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,460 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:44,477 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,429 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,445 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,460 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,477 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,477 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:51,493 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,452 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,468 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,483 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,499 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,499 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:58,515 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:24:59,356 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:24:59] "GET /health HTTP/1.1" 200 -
+2025-09-11 00:25:01,417 - hardware.esp_handler - INFO - ESP data processed: Current=6.25A, Voltage=24.1V, RPM=2750.0
+2025-09-11 00:25:01,466 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:25:01,468 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:01] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:25:03,537 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:03] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:05,475 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:05,490 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:05,490 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:05,506 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:05,507 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:05,522 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,487 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,503 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,503 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,519 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,519 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:12,535 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,502 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,517 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,517 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,532 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,532 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:19,547 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,506 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,521 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,521 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,569 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,585 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:26,601 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,524 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,539 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,585 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,600 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,615 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:33,663 - hardware.esp_handler - INFO - ESP data processed: Current=6.11A, Voltage=24.0V, RPM=2747.0
+2025-09-11 00:25:33,665 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:33] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:33,678 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:25:33,679 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:33] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:25:39,140 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:39] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:39,140 - hardware.esp_handler - INFO - ESP data processed: Current=6.29A, Voltage=24.1V, RPM=2740.0
+2025-09-11 00:25:39,154 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:25:39,157 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:39] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:25:40,535 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:40,551 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:40,551 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:40,598 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:40,613 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:40,628 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:44,225 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:44] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:46,229 - hardware.esp_handler - INFO - ESP data processed: Current=6.24A, Voltage=24.4V, RPM=2696.0
+2025-09-11 00:25:46,243 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:25:46,243 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:46] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:25:47,546 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:47,576 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:47,576 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:47,608 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:47,623 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:47,639 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:49,302 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:49] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:53,305 - hardware.esp_handler - INFO - ESP data processed: Current=6.38A, Voltage=24.8V, RPM=2708.0
+2025-09-11 00:25:53,322 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:25:53,322 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:53] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:25:54,360 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:54] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:25:54,559 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:54,590 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:54,590 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:54,621 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:54,636 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:54,652 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:25:59,416 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:25:59] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:00,406 - hardware.esp_handler - INFO - ESP data processed: Current=6.43A, Voltage=25.0V, RPM=2754.0
+2025-09-11 00:26:00,424 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:00,424 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:00] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:01,573 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:01,605 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:01,605 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:01,636 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:01,651 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:01,667 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:06,398 - hardware.esp_handler - INFO - ESP data processed: Current=6.41A, Voltage=24.1V, RPM=2740.0
+2025-09-11 00:26:06,414 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:06] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:06,419 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:06,420 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:06] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:08,584 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:08,616 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:08,616 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:08,646 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:08,661 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:08,677 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:11,501 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:11] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:13,466 - hardware.esp_handler - INFO - ESP data processed: Current=6.55A, Voltage=23.9V, RPM=2766.0
+2025-09-11 00:26:13,490 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:13,491 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:13] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:15,599 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:15,631 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:15,631 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:15,663 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:15,663 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:15,679 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:16,583 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:16] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:20,537 - hardware.esp_handler - INFO - ESP data processed: Current=6.72A, Voltage=23.7V, RPM=2792.0
+2025-09-11 00:26:20,556 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:20,557 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:20] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:21,656 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:21] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:22,618 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:22,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:22,650 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:22,680 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:22,680 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:22,696 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:26,717 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:26] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:27,615 - hardware.esp_handler - INFO - ESP data processed: Current=6.82A, Voltage=23.4V, RPM=2824.0
+2025-09-11 00:26:27,638 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:27,639 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:27] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:29,635 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:29,665 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:29,665 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:29,696 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:29,696 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:29,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:31,787 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:31] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:31,932 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:31] "GET / HTTP/1.1" 200 -
+2025-09-11 00:26:31,947 - api.websocket.events - INFO - Client disconnected from WebSocket
+2025-09-11 00:26:31,949 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:31] "GET /socket.io/?EIO=4&transport=websocket&sid=CwT3V8JBNfWlBIJZAAAC HTTP/1.1" 200 -
+2025-09-11 00:26:32,023 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:32] "GET /socket.io/?EIO=4&transport=polling&t=Paq_9CH HTTP/1.1" 200 -
+2025-09-11 00:26:32,176 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:32] "GET /api/current-data HTTP/1.1" 200 -
+2025-09-11 00:26:32,359 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:32] "GET /api/recommendations HTTP/1.1" 200 -
+2025-09-11 00:26:32,407 - api.websocket.events - INFO - Client connected to WebSocket
+2025-09-11 00:26:32,410 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:32] "POST /socket.io/?EIO=4&transport=polling&t=Paq_9DN&sid=Ews9Gl_krt-R2JS9AAAE HTTP/1.1" 200 -
+2025-09-11 00:26:32,411 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:32] "GET /socket.io/?EIO=4&transport=polling&t=Paq_9DO&sid=Ews9Gl_krt-R2JS9AAAE HTTP/1.1" 200 -
+2025-09-11 00:26:34,701 - hardware.esp_handler - INFO - ESP data processed: Current=6.9A, Voltage=23.0V, RPM=2780.0
+2025-09-11 00:26:34,721 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:34,722 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:34] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:36,653 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,684 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,684 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,715 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,715 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,730 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:36,855 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:36] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:41,785 - hardware.esp_handler - INFO - ESP data processed: Current=7.04A, Voltage=22.5V, RPM=2809.0
+2025-09-11 00:26:41,807 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:41,808 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:41] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:41,910 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:41] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:43,664 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:43,694 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:43,694 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:43,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:43,725 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:43,740 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:46,970 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:46] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:48,853 - hardware.esp_handler - INFO - ESP data processed: Current=6.86A, Voltage=22.4V, RPM=2849.0
+2025-09-11 00:26:48,870 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:48,871 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:48] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:50,681 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:50,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:50,711 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:50,742 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:50,742 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:50,757 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:52,007 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:52] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:55,899 - hardware.esp_handler - INFO - ESP data processed: Current=6.76A, Voltage=22.0V, RPM=2839.0
+2025-09-11 00:26:55,919 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:26:55,919 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:55] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:26:57,061 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:26:57] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:26:57,699 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:57,730 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:57,730 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:57,761 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:57,761 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:26:57,777 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:02,122 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:02] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:02,963 - hardware.esp_handler - INFO - ESP data processed: Current=6.95A, Voltage=22.3V, RPM=2812.0
+2025-09-11 00:27:02,978 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:02,979 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:02] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:04,729 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:04,760 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:04,760 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:04,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:04,775 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:04,807 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:07,195 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:07] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:10,048 - hardware.esp_handler - INFO - ESP data processed: Current=6.91A, Voltage=22.5V, RPM=2767.0
+2025-09-11 00:27:10,065 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:10,066 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:10] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:11,742 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:11,774 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:11,774 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:11,789 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:11,789 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:11,820 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:12,244 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:12] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:17,135 - hardware.esp_handler - INFO - ESP data processed: Current=6.9A, Voltage=22.3V, RPM=2798.0
+2025-09-11 00:27:17,163 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:17,164 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:17] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:17,326 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:17] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:18,748 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:18,779 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:18,779 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:18,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:18,795 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:18,826 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:22,399 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:22] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:24,215 - hardware.esp_handler - INFO - ESP data processed: Current=6.79A, Voltage=22.0V, RPM=2842.0
+2025-09-11 00:27:24,237 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:24,238 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:24] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:25,764 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:25,794 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:25,794 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:25,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:25,825 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:25,841 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:27,472 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:27] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:31,282 - hardware.esp_handler - INFO - ESP data processed: Current=6.79A, Voltage=22.0V, RPM=2875.0
+2025-09-11 00:27:31,309 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:31,310 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:31] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:32,539 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:32] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:32,783 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:32,814 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:32,814 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:32,845 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:32,845 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:32,845 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:37,587 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:37] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:38,377 - hardware.esp_handler - INFO - ESP data processed: Current=6.77A, Voltage=22.1V, RPM=2876.0
+2025-09-11 00:27:38,392 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:38,393 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:38] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:39,789 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:39,821 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:39,821 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:39,852 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:39,852 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:39,852 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:42,648 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:42] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:45,464 - hardware.esp_handler - INFO - ESP data processed: Current=6.66A, Voltage=22.1V, RPM=2893.0
+2025-09-11 00:27:45,482 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:45,483 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:45] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:46,813 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:46,844 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:46,844 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:46,874 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:46,874 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:46,874 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:47,713 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:47] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:52,550 - hardware.esp_handler - INFO - ESP data processed: Current=6.79A, Voltage=22.1V, RPM=2940.0
+2025-09-11 00:27:52,573 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:52,574 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:52] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:27:52,767 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:52] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:53,833 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:53,864 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:53,864 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:53,895 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:53,895 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:53,895 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:27:57,852 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:57] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:27:59,619 - hardware.esp_handler - INFO - ESP data processed: Current=6.63A, Voltage=22.5V, RPM=2921.0
+2025-09-11 00:27:59,637 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:27:59,637 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:27:59] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:28:00,856 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:00,887 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:00,887 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:00,918 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:00,918 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:00,918 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:02,915 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:02] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:28:06,725 - hardware.esp_handler - INFO - ESP data processed: Current=6.5A, Voltage=22.2V, RPM=2872.0
+2025-09-11 00:28:06,747 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:28:06,748 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:06] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:28:07,877 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,909 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,940 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,940 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,941 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:07,988 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:07] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:28:13,053 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:13] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:28:13,827 - hardware.esp_handler - INFO - ESP data processed: Current=6.63A, Voltage=22.5V, RPM=2859.0
+2025-09-11 00:28:13,845 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:28:13,846 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:13] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:28:14,884 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:14,915 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:14,915 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:14,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:14,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:14,946 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:18,107 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:18] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
+2025-09-11 00:28:20,936 - hardware.esp_handler - INFO - ESP data processed: Current=6.65A, Voltage=22.1V, RPM=2885.0
+2025-09-11 00:28:20,955 - api.routes.sensor_data - INFO - Sensor data received and processed successfully
+2025-09-11 00:28:20,956 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:20] "POST /api/send-data HTTP/1.1" 200 -
+2025-09-11 00:28:21,896 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:21,927 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:21,927 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:21,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:21,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:21,957 - hardware.base_hardware.FX5U_PLC - ERROR - [FX5U_PLC] Connection error: timed out
+2025-09-11 00:28:23,186 - werkzeug - INFO - 127.0.0.1 - - [11/Sep/2025 00:28:23] "[33mPOST /api/plc-data HTTP/1.1[0m" 404 -
