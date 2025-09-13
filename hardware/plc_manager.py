@@ -15,21 +15,22 @@ logger = logging.getLogger(__name__)
 class FX5UPLCManager(BaseHardware):
     """Manages FX5U PLC communication and data conversion"""
     
-    def __init__(self):
+    def __init__(self, mc_protocol_client=None):
         super().__init__("FX5U_PLC")
-        self.mc = pymcprotocol.Type3E()
+        self.mc = mc_protocol_client or pymcprotocol.Type3E()
         self.last_successful_read = None
         
     def connect(self) -> bool:
         """Connect to FX5U PLC"""
         try:
-            if self.mc.connect(config.plc.ip, config.plc.port):
+            # The pymcprotocol connect method returns 0 on success.
+            if self.mc.connect(config.plc.ip, config.plc.port) == 0:
                 self.connected = True
                 self.log_info(f"Connected successfully to {config.plc.ip}:{config.plc.port}")
                 return True
             else:
                 self.connected = False
-                self.log_error("Failed to establish connection")
+                self.log_error("Failed to establish connection (non-zero return code).")
                 return False
         except Exception as e:
             self.connected = False
@@ -92,8 +93,11 @@ class FX5UPLCManager(BaseHardware):
     def _read_register(self, register: str) -> Optional[int]:
         """Read a single register from PLC"""
         try:
-            value = self.mc.batchread_wordunits(headdevice=register, readsize=1)
-            return int(value) if value is not None else None
+            values = self.mc.batchread_wordunits(headdevice=register, readsize=1)
+            # The method returns a list, even for a single read.
+            if values:
+                return int(values[0])
+            return None
         except Exception as e:
             self.log_error(f"Failed to read register {register}: {e}")
             return None

@@ -11184,3 +11184,361 @@ WHERE sensor_data.timestamp >= ? ORDER BY sensor_data.timestamp DESC]
 2025-09-11 04:20:42,141 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
 2025-09-11 04:20:52,142 - root - ERROR - Error checking ESP timeout: 'datetime.datetime' object has no attribute 'total_seconds'
 2025-09-11 04:20:52,142 - root - ERROR - Error checking PLC timeout: 'datetime.datetime' object has no attribute 'total_seconds'
+2025-09-13 16:10:47,470 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:10:47,471 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:10:47,471 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:10:48,913 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:10:48,915 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:10:48,915 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:10:48,916 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:48,947 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:10:49,004 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:10:49,137 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:10:49,139 - utils.validators - WARNING - [validators.py:89] - Unusually large value for VAL1: 999999.0
+2025-09-13 16:10:49,141 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,150 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,156 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,162 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,172 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,202 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,223 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:10:49,242 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection
+2025-09-13 16:10:49,249 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: Connection timeout
+2025-09-13 16:10:49,262 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Error during disconnect: 'NoneType' object has no attribute 'close'
+2025-09-13 16:13:03,713 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:13:53,533 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:13:53,534 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:13:53,534 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:13:54,742 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:13:54,743 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:13:54,744 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:13:54,745 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:54,763 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:13:54,854 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:13:54,994 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:13:54,996 - utils.validators - WARNING - [validators.py:89] - Unusually large value for VAL1: 999999.0
+2025-09-13 16:13:54,998 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:55,001 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:55,003 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:55,005 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:55,007 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:13:55,020 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection
+2025-09-13 16:13:55,027 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: Connection timeout
+2025-09-13 16:13:55,041 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Error during disconnect: 'NoneType' object has no attribute 'close'
+2025-09-13 16:16:10,081 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:16:58,148 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:16:58,149 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:16:58,149 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:16:58,914 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:16:58,916 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:16:58,916 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:16:58,917 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:58,937 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:16:59,015 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:16:59,139 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:16:59,139 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:16:59,141 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:16:59,141 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:16:59,141 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:16:59,143 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:16:59,149 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:16:59,152 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:59,155 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:59,156 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:59,158 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:59,160 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:16:59,176 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection
+2025-09-13 16:16:59,185 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: Connection timeout
+2025-09-13 16:16:59,200 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Error during disconnect: 'NoneType' object has no attribute 'close'
+2025-09-13 16:19:14,401 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:19:50,938 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:19:50,938 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:19:50,938 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:19:52,005 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:19:52,007 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:19:52,008 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:19:52,008 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,026 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:19:52,090 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:19:52,091 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:19:52,092 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:19:52,093 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:19:52,093 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:19:52,093 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:19:52,095 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:19:52,096 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:19:52,098 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,101 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,102 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,103 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,105 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:19:52,246 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection
+2025-09-13 16:19:52,253 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: Connection timeout
+2025-09-13 16:19:52,267 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Error during disconnect: 'NoneType' object has no attribute 'close'
+2025-09-13 16:22:06,434 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:23:25,982 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:23:25,982 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:23:25,982 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:23:26,628 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:23:26,629 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:23:26,630 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:23:26,630 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:23:26,645 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:23:26,700 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:23:26,702 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:23:26,702 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:23:26,703 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:23:26,703 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:23:26,703 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:23:26,705 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:23:26,706 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:23:26,708 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:23:26,710 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:23:26,712 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:23:26,713 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:23:26,715 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:25:41,473 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:27:56,641 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:27:56,645 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D100: socket is not connected
+2025-09-13 16:27:56,645 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D102: socket is not connected
+2025-09-13 16:27:56,645 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:27:56,653 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D100: socket is not connected
+2025-09-13 16:27:56,654 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D102: socket is not connected
+2025-09-13 16:27:56,654 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:27:56,658 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:28:34,760 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:28:34,760 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:28:34,760 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:28:35,944 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:28:35,946 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:28:35,946 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:28:35,947 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:28:35,973 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:28:36,052 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:28:36,054 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:28:36,054 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:28:36,056 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:28:36,056 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:28:36,056 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:28:36,058 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:28:36,060 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:28:36,063 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:28:36,066 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:28:36,068 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:28:36,069 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:28:36,072 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:30:50,721 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:33:05,889 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Connection error: [Errno 110] Connection timed out
+2025-09-13 16:33:05,893 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D100: socket is not connected
+2025-09-13 16:33:05,893 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D102: socket is not connected
+2025-09-13 16:33:05,893 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:33:05,901 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D100: socket is not connected
+2025-09-13 16:33:05,902 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D102: socket is not connected
+2025-09-13 16:33:05,902 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:33:05,906 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:36:02,831 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:36:02,831 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:36:02,831 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:36:03,581 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:36:03,582 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:36:03,583 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:36:03,583 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,599 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:36:03,599 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:36:03,659 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:03,661 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:36:03,661 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:36:03,662 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:36:03,663 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:36:03,663 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:36:03,664 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:03,665 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:03,667 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,670 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,671 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,673 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,675 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:03,682 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Connected successfully to 127.0.0.1:5007
+2025-09-13 16:36:03,684 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection (non-zero return code).
+2025-09-13 16:36:03,687 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D100: int() argument must be a string, a bytes-like object or a real number, not 'list'
+2025-09-13 16:36:03,687 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read register D102: int() argument must be a string, a bytes-like object or a real number, not 'list'
+2025-09-13 16:36:03,687 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:36:03,807 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:36:03,810 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:36:36,924 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:36:36,924 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:36:36,924 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:36:37,610 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:36:37,611 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:36:37,612 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:36:37,612 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,624 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:36:37,624 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:36:37,670 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:37,672 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:36:37,672 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:36:37,673 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:36:37,673 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:36:37,673 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:36:37,675 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:37,676 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:36:37,678 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,681 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,682 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,683 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,685 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:36:37,692 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Connected successfully to 127.0.0.1:5007
+2025-09-13 16:36:37,694 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection (non-zero return code).
+2025-09-13 16:36:37,696 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Data read: D100(1000) -> 7.3V, D102(2048) -> 106.0°C
+2025-09-13 16:36:37,803 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:36:37,806 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:37:30,845 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:37:30,845 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:37:30,845 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:37:31,549 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:37:31,550 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:37:31,551 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:37:31,551 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,566 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:37:31,566 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:37:31,630 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:37:31,632 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:37:31,632 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:37:31,633 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:37:31,633 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:37:31,633 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:37:31,635 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:37:31,636 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:37:31,638 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,641 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,642 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,644 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,646 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:37:31,653 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Connected successfully to 127.0.0.1:5007
+2025-09-13 16:37:31,655 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection (non-zero return code).
+2025-09-13 16:37:31,658 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Data read: D100(1000) -> 7.3V, D102(2048) -> 106.0°C
+2025-09-13 16:37:31,661 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:37:31,664 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:39:54,425 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:39:54,426 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:39:54,426 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:39:55,619 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:39:55,621 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py)
+2025-09-13 16:39:55,621 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: cannot import name 'PLCManager' from 'hardware.plc_manager' (/app/hardware/plc_manager.py). Services will not be available.
+2025-09-13 16:39:55,622 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,636 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:39:55,637 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:39:55,740 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:39:55,741 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:39:55,742 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:39:55,743 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:39:55,743 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:39:55,743 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:39:55,745 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:39:55,746 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:39:55,748 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,760 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,762 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,764 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,768 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:39:55,776 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Connected successfully to 127.0.0.1:5007
+2025-09-13 16:39:55,778 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection (non-zero return code).
+2025-09-13 16:39:55,781 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Data read: D100(1000) -> 7.3V, D102(2048) -> 106.0°C
+2025-09-13 16:39:55,783 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:39:55,786 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
+2025-09-13 16:41:44,226 - root - INFO - [logger.py:69] - Logging system initialized successfully
+2025-09-13 16:41:44,226 - root - INFO - [logger.py:70] - Log level: INFO
+2025-09-13 16:41:44,226 - root - INFO - [logger.py:71] - Log file: logs/application.log
+2025-09-13 16:41:45,044 - core.app_factory - WARNING - [app_factory.py:79] - Some API blueprints could not be registered: No module named 'ping3'
+2025-09-13 16:41:45,045 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,062 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:41:45,062 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:41:45,062 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,064 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:41:45,064 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:41:45,064 - services.data_processor - INFO - [data_processor.py:34] - DataProcessor initialized, using DatabaseManager for all DB operations.
+2025-09-13 16:41:45,068 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,069 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:41:45,070 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:41:45,070 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,070 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,071 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:41:45,071 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:41:45,071 - services.data_processor - INFO - [data_processor.py:34] - DataProcessor initialized, using DatabaseManager for all DB operations.
+2025-09-13 16:41:45,084 - socketio - WARNING - [app_factory.py:92] - WebSocket events could not be registered: No module named 'ping3'
+2025-09-13 16:41:45,085 - core.app_factory - ERROR - [app_factory.py:113] - Failed to import background services: No module named 'ping3'. Services will not be available.
+2025-09-13 16:41:45,086 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,087 - database.manager - ERROR - [manager.py:67] - Error creating default configuration: (sqlite3.OperationalError) no such table: system_configuration
+[SQL: SELECT system_configuration.id AS system_configuration_id, system_configuration.config_key AS system_configuration_config_key, system_configuration.config_value AS system_configuration_config_value, system_configuration.config_type AS system_configuration_config_type, system_configuration.description AS system_configuration_description, system_configuration.created_at AS system_configuration_created_at, system_configuration.updated_at AS system_configuration_updated_at, system_configuration.updated_by AS system_configuration_updated_by
+FROM system_configuration
+WHERE system_configuration.config_key = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('system_name', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-13 16:41:45,087 - database.manager - INFO - [manager.py:36] - Database initialized successfully
+2025-09-13 16:41:45,160 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:41:45,162 - utils.validators - ERROR - [validators.py:30] - ESP data missing TYPE field
+2025-09-13 16:41:45,162 - hardware.esp_handler - ERROR - [esp_handler.py:35] - Invalid ESP data received
+2025-09-13 16:41:45,163 - utils.validators - ERROR - [validators.py:92] - Non-numeric value for VAL4: invalid_temp
+2025-09-13 16:41:45,163 - utils.validators - WARNING - [validators.py:51] - Invalid value in field VAL4: invalid_temp
+2025-09-13 16:41:45,164 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=5.0A, Voltage=23.5V, RPM=None
+2025-09-13 16:41:45,165 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:41:45,167 - hardware.esp_handler - INFO - [esp_handler.py:44] - ESP data processed: Current=6.25A, Voltage=24.0V, RPM=2750.0
+2025-09-13 16:41:45,169 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,172 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,173 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,174 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,177 - ai.anomaly_detector - WARNING - [anomaly_detector.py:51] - scikit-learn is not installed. Anomaly detection features will be disabled.
+2025-09-13 16:41:45,184 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Connected successfully to 127.0.0.1:5007
+2025-09-13 16:41:45,186 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to establish connection (non-zero return code).
+2025-09-13 16:41:45,194 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Data read: D100(1000) -> 7.3V, D102(2048) -> 106.0°C
+2025-09-13 16:41:45,196 - hardware.base_hardware.FX5U_PLC - ERROR - [base_hardware.py:50] - [FX5U_PLC] Failed to read PLC registers
+2025-09-13 16:41:45,200 - hardware.base_hardware.FX5U_PLC - INFO - [base_hardware.py:46] - [FX5U_PLC] Disconnected successfully
