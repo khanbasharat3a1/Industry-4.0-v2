@@ -56,7 +56,9 @@ class DataProcessor:
                 if processed_data:
                     self.latest_data['esp'] = processed_data
             elif source == 'plc':
-                processed_data = self.plc_manager.process_plc_data(raw_data)
+                # The PLC data from the simulator is already processed.
+                # The PLCManager is for connecting to real hardware, not processing this dict.
+                processed_data = raw_data
                 if processed_data:
                     self.latest_data['plc'] = processed_data
             else:

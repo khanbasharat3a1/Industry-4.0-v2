@@ -21,7 +21,6 @@ try:
     SKLEARN_AVAILABLE = True
 except ImportError:
     SKLEARN_AVAILABLE = False
-    # Define dummy classes if sklearn is not available, so the rest of the app doesn't crash.
     class IsolationForest: pass
     class StandardScaler: pass
 
@@ -36,14 +35,17 @@ class MotorAnomalyDetector:
         self.isolation_forest = None
         self.scaler = None
         self.is_trained = False
+
+        # This is the fixed, canonical list of features the model was trained on.
+        self.canonical_features = [
+            'esp_current', 'esp_voltage', 'esp_rpm', 'env_temp_c', 'env_humidity',
+            'plc_motor_temp', 'plc_motor_voltage', 'power_calculated', 'temp_differential',
+            'esp_current_rolling_mean', 'esp_current_rolling_std',
+            'plc_motor_temp_rolling_mean', 'plc_motor_temp_rolling_std'
+        ]
         
         if SKLEARN_AVAILABLE:
             self.scaler = StandardScaler()
-            self.feature_columns = [
-                'esp_current', 'esp_voltage', 'esp_rpm',
-                'env_temp_c', 'env_humidity',
-                'plc_motor_temp', 'plc_motor_voltage'
-            ]
             self.model_path = f"{config.model_path}/anomaly_detector.joblib"
             self.scaler_path = f"{config.model_path}/anomaly_scaler.joblib"
             self._load_model()
@@ -51,26 +53,44 @@ class MotorAnomalyDetector:
             logger.warning("scikit-learn is not installed. Anomaly detection features will be disabled.")
 
     def prepare_features(self, data: pd.DataFrame) -> Optional[np.ndarray]:
-        """Prepare features for anomaly detection."""
+        """
+        Prepare features for anomaly detection, ensuring a consistent feature set.
+        """
         if not SKLEARN_AVAILABLE: return None
         try:
-            # This method remains largely the same but is now guarded by the SKLEARN_AVAILABLE check.
-            if data.empty or len(data) < 1: return None
-            available_columns = [col for col in self.feature_columns if col in data.columns]
-            if len(available_columns) < 3: return None
-            
-            feature_data = data[available_columns].copy()
-            feature_data = feature_data.fillna(feature_data.median())
-            
-            if 'esp_current' in feature_data.columns and 'esp_voltage' in feature_data.columns:
+            if data.empty: return None
+
+            # Start with columns that are present in the input data
+            feature_data = data.copy()
+
+            # 1. Add derived features
+            if 'esp_current' in feature_data and 'esp_voltage' in feature_data:
                 feature_data['power_calculated'] = feature_data['esp_current'] * feature_data['esp_voltage']
-            if 'plc_motor_temp' in feature_data.columns and 'env_temp_c' in feature_data.columns:
+            if 'plc_motor_temp' in feature_data and 'env_temp_c' in feature_data:
                 feature_data['temp_differential'] = feature_data['plc_motor_temp'] - feature_data['env_temp_c']
+
+            # 2. Add rolling statistical features
+            if len(feature_data) > 1:
+                if 'esp_current' in feature_data:
+                    feature_data['esp_current_rolling_mean'] = feature_data['esp_current'].rolling(window=3, min_periods=1).mean()
+                    feature_data['esp_current_rolling_std'] = feature_data['esp_current'].rolling(window=3, min_periods=1).std()
+                if 'plc_motor_temp' in feature_data:
+                    feature_data['plc_motor_temp_rolling_mean'] = feature_data['plc_motor_temp'].rolling(window=3, min_periods=1).mean()
+                    feature_data['plc_motor_temp_rolling_std'] = feature_data['plc_motor_temp'].rolling(window=3, min_periods=1).std()
+
+            # 3. Align DataFrame with the canonical feature list
+            # This adds any missing columns with NaN
+            feature_data = feature_data.reindex(columns=self.canonical_features)
+
+            # 4. Fill any remaining NaN values (from reindexing or rolling std on small windows)
+            feature_data = feature_data.fillna(0)
             
+            # 5. Convert to numpy array
             features = feature_data.values
             return np.nan_to_num(features, nan=0.0, posinf=1e6, neginf=-1e6)
+
         except Exception as e:
-            logger.error(f"Error preparing features for anomaly detection: {e}")
+            logger.error(f"Error preparing features for anomaly detection: {e}", exc_info=True)
             return None
 
     def train_model(self, training_data: pd.DataFrame, contamination: float = 0.1) -> bool:
@@ -104,6 +124,11 @@ class MotorAnomalyDetector:
             if features is None:
                 return {'anomalies_detected': False, 'message': 'Insufficient data for analysis.'}
             
+            # Ensure the number of features matches the scaler's expectations
+            if features.shape[1] != self.scaler.n_features_in_:
+                logger.error(f"Feature mismatch: Got {features.shape[1]} features, but scaler expects {self.scaler.n_features_in_}.")
+                return {'anomalies_detected': False, 'message': 'Feature mismatch during prediction.'}
+
             scaled_features = self.scaler.transform(features)
             anomaly_labels = self.isolation_forest.predict(scaled_features)
             anomaly_scores = self.isolation_forest.decision_function(scaled_features)
@@ -124,7 +149,7 @@ class MotorAnomalyDetector:
                 'message': f'{severity} anomaly rate: {anomaly_percentage:.1f}% of recent readings'
             }
         except Exception as e:
-            logger.error(f"Error detecting anomalies: {e}")
+            logger.error(f"Error detecting anomalies: {e}", exc_info=True)
             return {'anomalies_detected': False, 'message': f'Error in anomaly detection: {e}'}
 
     def _save_model(self):
