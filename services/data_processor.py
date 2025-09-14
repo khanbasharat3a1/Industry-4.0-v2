@@ -108,6 +108,14 @@ class DataProcessor:
         """
         return {**self.latest_data['esp'], **self.latest_data['plc']}
 
+    def get_latest_data(self) -> Dict[str, Any]:
+        """
+        Gets the latest data for WebSocket events.
+        This is a temporary method to fix the bug found during simulation.
+        A better solution would be to have a unified data cache.
+        """
+        return self.get_latest_combined_data()
+
     def get_latest_health_data(self) -> Dict[str, Any]:
         """
         Retrieves the most recent health data from the database.
