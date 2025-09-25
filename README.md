@@ -499,7 +499,3 @@ If you find this project useful, please consider giving it a star!
 [![GitHub watchers](https://img.shields.io/github/watchers/your-username/ai-motor-monitoring?style=social)](https://github.com/your-username/ai-motor-monitoring)
 
 **Made with ❤️ by Khan Basharat **
-
-[Website](https://motor-monitoring.com) • [Documentation](docs/) • [Discord](https://discord.gg/motor-monitoring) • [Email](mailto:support@motor-monitoring.com)
-
-</div>
