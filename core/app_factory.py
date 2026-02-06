@@ -44,7 +44,7 @@ def create_app() -> tuple[Flask, SocketIO]:
         }
     
     # Create SocketIO instance
-    socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
+    socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
     
     # Register blueprints (with error handling)
     register_blueprints(app)
@@ -52,6 +52,9 @@ def create_app() -> tuple[Flask, SocketIO]:
     # Register WebSocket events (with error handling)
     register_socketio_events(socketio)
     
+    # Start background services
+    start_background_services(socketio)
+
     # Create necessary directories
     create_directories()
     
@@ -88,6 +91,29 @@ def register_socketio_events(socketio: SocketIO):
     except ImportError as e:
         logger.warning(f"WebSocket events could not be registered: {e}")  # ✅ Fixed
         # Continue without WebSocket - dashboard will still work
+
+def start_background_services(socketio: SocketIO):
+    """Initialize and start all background services."""
+    logger = logging.getLogger(__name__)
+    try:
+        from services.connection_monitor import ConnectionMonitor
+        from services.background_tasks import BackgroundTaskManager
+
+        # Instantiate services
+        connection_monitor = ConnectionMonitor(socketio)
+        task_manager = BackgroundTaskManager(socketio)
+
+        # Start the main loops as background tasks
+        socketio.start_background_task(connection_monitor.run)
+        socketio.start_background_task(task_manager.run)
+
+        logger.info("Background services started: ConnectionMonitor, BackgroundTaskManager.")
+
+    except ImportError as e:
+        logger.error(f"Failed to import background services: {e}. Services will not be available.")
+    except Exception as e:
+        logger.error(f"Failed to start background services: {e}", exc_info=True)
+
 
 def create_directories():
     """Create necessary directories if they don't exist"""

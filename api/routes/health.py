@@ -117,39 +117,6 @@ def get_health_trends():
             'message': str(e)
         }), 500
 
-@health_bp.route('/recalculate-health', methods=['POST'])
-def recalculate_health():
-    """Manually trigger health recalculation"""
-    try:
-        data = request.get_json() or {}
-        hours = data.get('hours', 1)  # Recalculate for last N hours
-        
-        # Get recent data for recalculation
-        recent_data = db_manager.get_recent_data_df(hours=hours)
-        
-        if recent_data.empty:
-            return jsonify({
-                'status': 'warning',
-                'message': 'No data available for recalculation'
-            }), 200
-        
-        # Trigger recalculation through data processor
-        result = data_processor.recalculate_health_scores(hours=hours)
-        
-        return jsonify({
-            'status': 'success',
-            'message': f'Health scores recalculated for {hours} hours',
-            'result': result,
-            'timestamp': datetime.now().isoformat()
-        }), 200
-        
-    except Exception as e:
-        logger.error(f"Error recalculating health: {e}")
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
-
 @health_bp.route('/health-summary', methods=['GET'])
 def get_health_summary():
     """Get summarized health information"""

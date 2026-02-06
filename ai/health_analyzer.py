@@ -11,11 +11,15 @@ from config.settings import config
 
 logger = logging.getLogger(__name__)
 
+from .anomaly_detector import MotorAnomalyDetector
+
+
 class MotorHealthAnalyzer:
     """Comprehensive motor health analysis with AI capabilities"""
     
     def __init__(self):
         self.name = "HealthAnalyzer"
+        self.anomaly_detector = MotorAnomalyDetector()
         
     def calculate_electrical_health(self, data: Dict) -> Tuple[float, List[str]]:
         """
@@ -233,10 +237,10 @@ class MotorHealthAnalyzer:
                         issues.append(f"Moderate health decline: {health_slope:.1f} points/reading")
             
             # Anomaly pattern detection
-            anomaly_score = self._detect_anomaly_patterns(recent_data)
-            if anomaly_score > 0:
-                score -= anomaly_score
-                issues.append(f"Anomaly patterns detected in recent data")
+            anomaly_penalty, anomaly_message = self._detect_anomaly_patterns(recent_data)
+            if anomaly_penalty > 0:
+                score -= anomaly_penalty
+                issues.append(anomaly_message)
         
         except Exception as e:
             logger.error(f"Error in predictive analysis: {e}")
@@ -244,50 +248,35 @@ class MotorHealthAnalyzer:
         
         return max(0.0, min(100.0, score)), issues
     
-    def _detect_anomaly_patterns(self, data: pd.DataFrame) -> float:
+    def _detect_anomaly_patterns(self, data: pd.DataFrame) -> Tuple[float, str]:
         """
-        Detect anomaly patterns in recent data
-        
-        Args:
-            data: Recent sensor data
-            
-        Returns:
-            Anomaly penalty score (0-40)
+        Detect anomaly patterns using the MotorAnomalyDetector.
+        Gracefully handles cases where the anomaly detector is unavailable.
         """
-        penalty = 0.0
-        
+        # Return a neutral score if the detector is not available or trained
+        if not hasattr(self, 'anomaly_detector') or not self.anomaly_detector.is_trained:
+            return 0.0, "ML anomaly detection not available."
+
         try:
-            # Check for data gaps
-            if len(data) < 10:
-                penalty += 10  # Insufficient data is itself an anomaly
+            anomaly_results = self.anomaly_detector.detect_anomalies(data)
             
-            # Check for sensor reading anomalies
-            numeric_columns = ['esp_current', 'esp_voltage', 'esp_rpm', 'plc_motor_temp']
+            if not anomaly_results.get('anomalies_detected', False):
+                return 0.0, "No significant anomalies detected by ML model."
+
+            severity = anomaly_results.get('severity', 'NORMAL')
+            message = anomaly_results.get('message', 'Anomalies detected.')
+            penalty = 0.0
+
+            if severity == 'HIGH': penalty = 40.0
+            elif severity == 'MEDIUM': penalty = 25.0
+            elif severity == 'LOW': penalty = 15.0
             
-            for col in numeric_columns:
-                if col in data.columns:
-                    col_data = data[col].dropna()
-                    if len(col_data) >= 5:
-                        # Check for outliers using IQR method
-                        Q1 = col_data.quantile(0.25)
-                        Q3 = col_data.quantile(0.75)
-                        IQR = Q3 - Q1
-                        
-                        lower_bound = Q1 - 1.5 * IQR
-                        upper_bound = Q3 + 1.5 * IQR
-                        
-                        outliers = col_data[(col_data < lower_bound) | (col_data > upper_bound)]
-                        outlier_ratio = len(outliers) / len(col_data)
-                        
-                        if outlier_ratio > 0.3:  # >30% outliers
-                            penalty += 10
-                        elif outlier_ratio > 0.15:  # >15% outliers
-                            penalty += 5
-        
+            logger.info(f"Anomaly detection results: Severity '{severity}', Penalty {penalty}, Message: '{message}'")
+            return penalty, message
+
         except Exception as e:
-            logger.error(f"Error in anomaly detection: {e}")
-        
-        return min(penalty, 40.0)  # Cap penalty at 40 points
+            logger.error(f"Error during ML-based anomaly detection: {e}", exc_info=True)
+            return 20.0, "Error in anomaly analysis."
     
     def calculate_comprehensive_health(self, current_data: Dict, recent_data: Optional[pd.DataFrame] = None) -> Dict:
         """
